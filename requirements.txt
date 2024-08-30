@@ -1,0 +1,10 @@
+ipython
+jupyter
+numpy
+scipy
+matplotlib
+jupyter-book
+pandas
+pybryt
+pytest
+PyQt5==5.15.6  
