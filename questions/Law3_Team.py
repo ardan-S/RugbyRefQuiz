@@ -1,4 +1,4 @@
-from questions.questions import Question, QuestionSet, answer_sets
+from questions.utils import Question, QuestionSet, answer_sets
 
 standard_questions_L3 = QuestionSet("Standard Questions Law 3", [
     # 3.1 Numbers

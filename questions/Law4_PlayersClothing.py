@@ -1,4 +1,4 @@
-from questions import Question, QuestionSet, answer_sets
+from questions.utils import Question, QuestionSet, answer_sets
 
 standard_questions_L4 = QuestionSet("Standard Questions Law 4", [
     # 4.1 General Requirements

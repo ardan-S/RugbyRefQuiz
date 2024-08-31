@@ -1,4 +1,4 @@
-from questions.questions import Question, QuestionSet, answer_sets
+from questions.utils import Question, QuestionSet, answer_sets
 
 
 sanctionQuestionsL14 = QuestionSet("Sanction Questions", [

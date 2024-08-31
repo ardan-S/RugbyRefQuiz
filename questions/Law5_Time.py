@@ -1,4 +1,4 @@
-from questions.questions import Question, QuestionSet, answer_sets
+from questions.utils import Question, QuestionSet, answer_sets
 
 standard_questions_L5 = QuestionSet("Standard Questions Law 5", [
     # 5.1 Match Duration

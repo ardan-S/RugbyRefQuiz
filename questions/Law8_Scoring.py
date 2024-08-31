@@ -1,4 +1,4 @@
-from questions.questions import Question, QuestionSet, answer_sets
+from questions.utils import Question, QuestionSet, answer_sets
 
 standard_questions_L8 = QuestionSet("Standard Questions Law 8", [
     # Value of scoring

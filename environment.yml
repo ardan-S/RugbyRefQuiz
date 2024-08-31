@@ -1,13 +1,10 @@
 name: RefQuiz
 channels:
   - defaults
-  - conda-forge
 dependencies:
- - pip
- - ipython
- - jupyter
- - numpy
- - scipy
- - tk
- - pip:
-   - -r requirements.txt
+  - python=3.10
+  - pip
+  - pyqt
+  - pip:
+      - PyQt5>=5.15.4
+

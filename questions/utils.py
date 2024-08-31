@@ -1,7 +1,3 @@
-from Law1_TheGround import standard_questions_L1
-from Law3_Team import standard_questions_L3, sanction_questions_L3
-
-
 class Question:
     def __init__(self, question, options, answers):
         self.question = question
@@ -24,6 +20,4 @@ answer_sets = {
     "answers6": ['True', 'False']
 }
 
-# Combine all question sets
-all_questions = [standard_questions_L1,
-                 standard_questions_L3, sanction_questions_L3]
+
