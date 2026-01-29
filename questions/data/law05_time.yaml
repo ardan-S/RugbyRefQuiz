@@ -1,0 +1,297 @@
+metadata:
+  law: 5
+  title: Time
+  source: World Rugby Laws 2026
+questions:
+- id: L05-001
+  text: How long does a match last?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 80 minutes
+  - 90 minutes
+  - 70 minutes
+  - 60 minutes
+  answers:
+  - 80 minutes
+  law_reference: '5'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L05-002
+  text: How long can each half last?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 30 minutes
+  - 35 minutes
+  - 40 minutes
+  - 45 minutes
+  answers:
+  - 40 minutes
+  law_reference: '5'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L05-003
+  text: What is the maximum duration for half-time?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 10 minutes
+  - 12 minutes
+  - 15 minutes
+  - 20 minutes
+  answers:
+  - 15 minutes
+  law_reference: '5'
+  tags:
+  - time
+  - half-time
+  explanation: null
+  contributor: null
+- id: L05-004
+  text: Who decides the length of the half-time interval?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The match organiser
+  - The governing body
+  - The referee
+  - World Rugby
+  answers:
+  - The match organiser
+  law_reference: '5'
+  tags:
+  - time
+  - half-time
+  explanation: null
+  contributor: null
+- id: L05-005
+  text: In non-international matches, who can decide to reduce the length of the match?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The match organiser
+  - The governing body
+  - The referee
+  - World Rugby
+  answers:
+  - The match organiser
+  law_reference: '5'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L05-006
+  text: |-
+    If the match organiser does not decide the length of a non-international match, who agrees on the length?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The captains
+  - The coaches
+  - The referees
+  - The spectators
+  answers:
+  - The captains
+  law_reference: '5'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L05-007
+  text: Who keeps the time during a match?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The match organiser
+  - The referee
+  - The assistant referees
+  - The timekeeper
+  answers:
+  - The referee
+  law_reference: '5'
+  tags:
+  - time
+  explanation: null
+  contributor: null
+- id: L05-008
+  text: |-
+    True or false: the referee can delegate timekeeping duties to an official timekeeper.
+  type: factual
+  difficulty: beginner
+  options:
+  - 'True'
+  - 'False'
+  answers:
+  - 'True'
+  law_reference: '5'
+  tags:
+  - referee
+  - time
+  explanation: null
+  contributor: null
+- id: L05-009
+  text: Who may the referee consult if there is doubt about the correct time?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The captains
+  - The coaches
+  - The assistant referees and official timekeeper
+  - The spectators
+  answers:
+  - The assistant referees and official timekeeper
+  law_reference: '5'
+  tags:
+  - referee
+  - time
+  explanation: null
+  contributor: null
+- id: L05-010
+  text: How long may the referee allow for a player injury?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Up to 30 seconds
+  - Up to 1 minute
+  - Up to 2 minutes
+  - Up to 5 minutes
+  answers:
+  - Up to 1 minute
+  law_reference: '5'
+  tags:
+  - injury
+  - referee
+  explanation: null
+  contributor: null
+- id: L05-011
+  text: What can the referee do if a player is seriously injured?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Stop the match permanently
+  - Call for a stretcher
+  - Allow more than one minute for the player to be removed
+  - Continue the match
+  answers:
+  - Allow more than one minute for the player to be removed
+  law_reference: '5'
+  tags:
+  - referee
+  explanation: null
+  contributor: null
+- id: L05-012
+  text: |-
+    What are the situations in which the referee may allow time once the ball is dead?
+  type: scenario
+  difficulty: intermediate
+  options:
+  - Replacement of players
+  - Replacing or repairing players' clothing
+  - Re-tying a boot-lace
+  - Retrieving the ball
+  - All of the above
+  answers:
+  - All of the above
+  law_reference: '5'
+  tags:
+  - referee
+  - time
+  explanation: null
+  contributor: null
+- id: L05-013
+  text: When does a half end after time has expired?
+  type: factual
+  difficulty: intermediate
+  options:
+  - When the ball goes out of play
+  - When the referee blows the whistle
+  - When the ball becomes dead
+  - When a try is scored
+  answers:
+  - When the ball becomes dead
+  law_reference: '5'
+  tags:
+  - time
+  explanation: null
+  contributor: null
+- id: L05-014
+  text: Which of the following does NOT cause the half to end after time has expired?
+  type: factual
+  difficulty: intermediate
+  options:
+  - A scrum, lineout or restart kick following a try or touchdown
+  - A penalty kick into touch without the ball first being tapped
+  - A try being scored
+  - A knock-on
+  answers:
+  - A knock-on
+  law_reference: '5'
+  tags:
+  - time
+  explanation: null
+  contributor: null
+- id: L05-015
+  text: 'True or false: a team scoring a try may decline the conversion.'
+  type: factual
+  difficulty: beginner
+  options:
+  - 'True'
+  - 'False'
+  answers:
+  - 'True'
+  law_reference: '5'
+  tags:
+  - try
+  - conversion
+  explanation: null
+  contributor: null
+- id: L05-016
+  text: When can the referee allow a water break?
+  type: factual
+  difficulty: intermediate
+  options:
+  - At half-time
+  - When a player is injured
+  - When the weather conditions are exceptionally hot and/or humid
+  - Any time during the match
+  answers:
+  - When the weather conditions are exceptionally hot and/or humid
+  law_reference: '5'
+  tags:
+  - referee
+  - water-break
+  explanation: null
+  contributor: null
+- id: L05-017
+  text: How long is the water break?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 30 seconds
+  - 1 minute
+  - 2 minutes
+  - 5 minutes
+  answers:
+  - 1 minute
+  law_reference: '5'
+  tags:
+  - water-break
+  explanation: null
+  contributor: null
+- id: L05-018
+  text: What power does the referee have regarding ending or suspending the match?
+  type: factual
+  difficulty: intermediate
+  options:
+  - No power
+  - Only in case of foul play
+  - Only if the match is drawn
+  - To end or suspend the match if it is unsafe to continue
+  answers:
+  - To end or suspend the match if it is unsafe to continue
+  law_reference: '5'
+  tags:
+  - referee
+  explanation: null
+  contributor: null

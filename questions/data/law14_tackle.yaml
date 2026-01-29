@@ -1,0 +1,61 @@
+metadata:
+  law: 14
+  title: Tackle
+  source: World Rugby Laws 2026
+questions:
+- id: L14-001
+  text: |-
+    A tackler has not released the ball or the ball-carrier after both players went to ground. Sanction:
+  type: sanction
+  difficulty: intermediate
+  options:
+  - Penalty
+  - Free kick
+  - Scrum
+  - Play advantage
+  - Other
+  answers:
+  - Penalty
+  law_reference: '14'
+  tags:
+  - tackle
+  - sanction
+  explanation: null
+  contributor: null
+- id: L14-002
+  text: |-
+    A tackler has not immediately moved away from the tackled player and from the ball or got up. Sanction:
+  type: sanction
+  difficulty: intermediate
+  options:
+  - Penalty
+  - Free kick
+  - Scrum
+  - Play advantage
+  - Other
+  answers:
+  - Penalty
+  law_reference: '14'
+  tags:
+  - tackle
+  - sanction
+  explanation: null
+  contributor: null
+- id: L14-003
+  text: 'A tackler was not on their feet before attempting to play the ball. Sanction:'
+  type: sanction
+  difficulty: intermediate
+  options:
+  - Penalty
+  - Free kick
+  - Scrum
+  - Play advantage
+  - Other
+  answers:
+  - Penalty
+  law_reference: '14'
+  tags:
+  - tackle
+  - sanction
+  explanation: null
+  contributor: null

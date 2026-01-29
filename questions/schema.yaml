@@ -1,0 +1,122 @@
+# JSON Schema for Rugby Referee Quiz Questions
+# This schema validates YAML question files for the RugbyRefQuiz application
+
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "https://rugbyrefquiz.example.com/schema/questions.yaml"
+title: "Rugby Referee Quiz Questions"
+description: "Schema for validating quiz question files"
+
+type: object
+required:
+  - metadata
+  - questions
+additionalProperties: false
+
+properties:
+  metadata:
+    type: object
+    required:
+      - law
+      - title
+    additionalProperties: false
+    properties:
+      law:
+        type: integer
+        minimum: 1
+        maximum: 22
+        description: "Law number (1-22)"
+      title:
+        type: string
+        minLength: 1
+        description: "Human-readable law title"
+      source:
+        type: string
+        description: "Source document reference (e.g., 'World Rugby Laws 2026')"
+
+  questions:
+    type: array
+    minItems: 1
+    items:
+      $ref: "#/$defs/question"
+
+$defs:
+  question:
+    type: object
+    required:
+      - id
+      - text
+      - type
+      - difficulty
+      - options
+      - answers
+    additionalProperties: false
+    properties:
+      id:
+        type: string
+        pattern: "^L\\d{2}-\\d{3}$"
+        description: "Unique identifier in format L##-### (e.g., L03-001)"
+
+      text:
+        type: string
+        minLength: 10
+        description: "The question text"
+
+      type:
+        type: string
+        enum:
+          - factual
+          - sanction
+          - scenario
+          - hypothetical
+          - procedural
+        description: "Question type category"
+
+      difficulty:
+        type: string
+        enum:
+          - beginner
+          - intermediate
+          - advanced
+        description: "Difficulty level"
+
+      options:
+        type: array
+        minItems: 1
+        maxItems: 10
+        items:
+          type: string
+          minLength: 1
+        description: "List of answer options (minimum 1 for acknowledgment questions)"
+
+      answers:
+        type: array
+        minItems: 1
+        items:
+          type: string
+          minLength: 1
+        description: "List of correct answers (must be subset of options)"
+
+      law_reference:
+        type: string
+        pattern: "^\\d+(\\.\\d+)*$"
+        description: "Specific law reference (e.g., '3.1' or '3.5.2')"
+
+      tags:
+        type: array
+        items:
+          type: string
+          pattern: "^[a-z0-9-]+$"
+          minLength: 2
+        description: "Lowercase hyphenated tags for categorization"
+
+      explanation:
+        type:
+          - string
+          - "null"
+        description: "Optional explanation shown after answering"
+
+      contributor:
+        type:
+          - string
+          - "null"
+        description: "Contributor identifier (e.g., 'ai-generated', GitHub username)"

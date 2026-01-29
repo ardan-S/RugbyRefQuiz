@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Rugby Ref Quiz - Question{% endblock %}
+
+{% block content %}
+<div class="progress-bar">
+    <span>Score: <strong id="score">{{ score }}</strong> / <span id="answered">{{ answered }}</span></span>
+    <span>Questions: {{ total }}</span>
+</div>
+
+<div id="quiz-content"
+     class="quiz-container"
+     hx-get="{{ url_for('main.get_question') }}"
+     hx-trigger="load"
+     hx-swap="innerHTML">
+    <p aria-busy="true">Loading question...</p>
+</div>
+{% endblock %}

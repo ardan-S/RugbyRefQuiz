@@ -1,0 +1,28 @@
+<article>
+    <header>
+        <small>Question {{ question_num }} of {{ total }}</small>
+    </header>
+
+    {% if error %}
+    <p class="error-message">{{ error }}</p>
+    {% endif %}
+
+    <p><strong>{{ question }}</strong></p>
+
+    <form hx-post="{{ url_for('main.submit_answer') }}"
+          hx-target="#quiz-content"
+          hx-swap="innerHTML">
+        <fieldset>
+            {% for option in options %}
+            <label>
+                <input type="radio" name="answer" value="{{ option }}">
+                {{ option }}
+            </label>
+            {% endfor %}
+        </fieldset>
+        <button type="submit">
+            <span class="htmx-indicator" aria-busy="true"></span>
+            Submit Answer
+        </button>
+    </form>
+</article>

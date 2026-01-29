@@ -1,0 +1,1136 @@
+metadata:
+  law: 6
+  title: Match Officials
+  source: World Rugby Laws 2026
+questions:
+- id: L06-001
+  text: |-
+    The ball or ball-carrier touches the referee or other non-player and either team gains an advantage in the field of play. Award:
+  type: sanction
+  difficulty: intermediate
+  options:
+  - Scrum to attacking team
+  - Scrum to team who last played the ball
+  - Free-kick to attacking team
+  - Free-kick to team who last played the ball
+  answers:
+  - Scrum to team who last played the ball
+  law_reference: '6'
+  tags:
+  - advantage
+  - referee
+  - sanction
+  explanation: null
+  contributor: null
+- id: L06-002
+  text: |-
+    The ball-carrier touches the referee or other non-player in in-goal, either team gains an advantage, the ball is in possession of an attacking player. Award:
+  type: sanction
+  difficulty: intermediate
+  options:
+  - 5m scrum to attacking team
+  - 5m free-kick to attacking team
+  - Try where contact took place
+  - 5m scrum to defending team
+  answers:
+  - Try where contact took place
+  law_reference: '6'
+  tags:
+  - goal
+  - advantage
+  - referee
+  - sanction
+  explanation: null
+  contributor: null
+- id: L06-003
+  text: |-
+    The ball-carrier touches the referee or other non-player in in-goal, either team gains an advantage, the ball is in possession of a defending player. Award:
+  type: sanction
+  difficulty: intermediate
+  options:
+  - 5m scrum to defending team
+  - 5m free-kick to defending team
+  - Touchdown where contact took place
+  - 22m drop-out to defending team
+  answers:
+  - Touchdown where contact took place
+  law_reference: '6'
+  tags:
+  - goal
+  - advantage
+  - referee
+  - sanction
+  explanation: null
+  contributor: null
+- id: L06-004
+  text: 'A medic fields or touches the ball while it is in live play. Sanction:'
+  type: sanction
+  difficulty: intermediate
+  options:
+  - Temporary suspension of the medic
+  - Sending off of the medic
+  - Penalty where play would restart
+  - Free-kick where play would restart
+  answers:
+  - Penalty where play would restart
+  law_reference: '6'
+  tags:
+  - sanction
+  explanation: null
+  contributor: null
+- id: L06-005
+  text: |-
+    Unauthorized entry or interference by a non-sanctioned person during play: Sanction:
+  type: sanction
+  difficulty: intermediate
+  options:
+  - Warning
+  - Penalty where play would restart
+  - Free-kick
+  - No action
+  answers:
+  - Penalty where play would restart
+  law_reference: '6'
+  tags:
+  - try
+  - sanction
+  explanation: null
+  contributor: null
+- id: L06-006
+  text: "PRINCIPLE: Every match is under the control of match officials who consist\
+    \ of the \n             referee and two touch judges or assistant referees. Additional\
+    \ persons, as authorised by the \n             match organisers may include the\
+    \ reserve referee and/or reserve assistant referee, \n             the television\
+    \ match official, the time-keeper, the match doctor, the team doctors, \n    \
+    \         the non-playing members of the teams and the ball persons. \n      \
+    \       Assistant referees and touch judges are responsible for signalling touch,\
+    \ touch \n             in-goal and the success or otherwise of kicks at goal.\
+    \ In addition, assistant referees \n             provide assistance as the referee\
+    \ directs, including the reporting of foul play"
+  type: factual
+  difficulty: advanced
+  options:
+  - 'Yes'
+  answers:
+  - 'Yes'
+  law_reference: '6'
+  tags:
+  - kick
+  - goal
+  - referee
+  - touch-judge
+  - assistant-referee
+  explanation: null
+  contributor: null
+- id: L06-007
+  text: Who appoints the referee?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The match organiser
+  - The governing body
+  - The referee
+  - World Rugby
+  answers:
+  - The match organiser
+  law_reference: '6'
+  tags:
+  - referee
+  explanation: null
+  contributor: null
+- id: L06-008
+  text: If no referee has been appointed, how is one chosen?
+  type: factual
+  difficulty: intermediate
+  options:
+  - By the home team
+  - By the away team
+  - By agreement
+  - Toss of a coin
+  answers:
+  - By agreement
+  law_reference: '6'
+  tags:
+  - referee
+  explanation: null
+  contributor: null
+- id: L06-009
+  text: |-
+    If the referee is unable to complete the match and the match organiser gives no instructions for a replacement, how is one chosen?
+  type: factual
+  difficulty: intermediate
+  options:
+  - By agreement
+  - By the referee
+  - By vote
+  - The match must end
+  answers:
+  - By the referee
+  law_reference: '6'
+  tags:
+  - replacement
+  - referee
+  explanation: null
+  contributor: null
+- id: L06-010
+  text: |-
+    If the referee is unable to complete the match and neither the match organiser nor the referee is able to appoint a replacement, how is one chosen?
+  type: factual
+  difficulty: intermediate
+  options:
+  - By the home team
+  - By the away team
+  - By coin toss
+  - The match ends
+  answers:
+  - By the home team
+  law_reference: '6'
+  tags:
+  - replacement
+  - referee
+  explanation: null
+  contributor: null
+- id: L06-011
+  text: Who organises the toss before the match?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The team captains
+  - The match organiser
+  - The referee
+  - The assistant referees
+  answers:
+  - The referee
+  law_reference: '6'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L06-012
+  text: What is the winner of the toss allowed to decide?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Which side of the field to defend
+  - Which team gets the first possession
+  - Whether to kick off or to choose an end
+  - The duration of the match
+  answers:
+  - Whether to kick off or to choose an end
+  law_reference: '6'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L06-013
+  text: What must match officials inspect before the match?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The field
+  - The players' clothing and studs
+  - The ball
+  - The goalposts
+  answers:
+  - The players' clothing and studs
+  law_reference: '6'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L06-014
+  text: Who is the sole judge of fact and law during a match?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The team captains
+  - The match organiser
+  - The referee
+  - The assistant referees
+  answers:
+  - The referee
+  law_reference: '6'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L06-015
+  text: Who keeps the time during a match?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The match organiser
+  - The referee
+  - The assistant referees
+  - The spectators
+  answers:
+  - The referee
+  law_reference: '6'
+  tags:
+  - time
+  explanation: null
+  contributor: null
+- id: L06-016
+  text: |-
+    True or false: the match organiser may appoint a time-keeper to signify the end of each half.
+  type: factual
+  difficulty: beginner
+  options:
+  - 'True'
+  - 'False'
+  answers:
+  - 'True'
+  law_reference: '6'
+  tags:
+  - time
+  explanation: null
+  contributor: null
+- id: L06-017
+  text: Who permits access to the playing area for players and replacements?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The team captains
+  - The match organiser
+  - The referee
+  - The assistant referees
+  answers:
+  - The referee
+  law_reference: '6'
+  tags:
+  - replacement
+  explanation: null
+  contributor: null
+- id: L06-018
+  text: When can a player access water without needing permission?
+  type: factual
+  difficulty: intermediate
+  options:
+  - During a stoppage
+  - |-
+    From their technical area or from behind the dead ball line after a try has been awarded
+  - While the ball is dead
+  - Any time during the match
+  answers:
+  - |-
+    From their technical area or from behind the dead ball line after a try has been awarded
+  law_reference: '6'
+  tags:
+  - water-break
+  explanation: null
+  contributor: null
+- id: L06-019
+  text: When does the referee NOT blow their whistle?
+  type: factual
+  difficulty: intermediate
+  options:
+  - To indicate the beginning and end of each half
+  - To stop play
+  - To indicate score or touchdown
+  - |-
+    To caution or send off an offended and again when the penalty or penalty try is awarded
+  - To restart play after a score
+  answers:
+  - To restart play after a score
+  law_reference: '6'
+  tags:
+  - referee
+  explanation: null
+  contributor: null
+- id: L06-020
+  text: When does the referee NOT blow their whistle?
+  type: factual
+  difficulty: intermediate
+  options:
+  - When the ball becomes dead, other than a failed conversion kick
+  - When the ball becomes unplayable
+  - When a penalty, free-kick or scrum is awarded
+  - When it would be dangerous to let play continue or a serious injury is suspected
+  - When a substitution is made
+  answers:
+  - When a substitution is made
+  law_reference: '6'
+  tags:
+  - referee
+  explanation: null
+  contributor: null
+- id: L06-021
+  text: When does the referee blow the whistle to stop play?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Only for serious injury
+  - Only for foul play
+  - Any time
+  - When the ball is out of play
+  answers:
+  - Any time
+  law_reference: '6'
+  tags:
+  - referee
+  explanation: null
+  contributor: null
+- id: L06-022
+  text: When is the ball deemed to be dead?
+  type: factual
+  difficulty: intermediate
+  options:
+  - When it touches the ground
+  - When a try is scored
+  - When the ball is in touch or touch in-goal
+  - When the referee blows the whistle
+  answers:
+  - When the ball is in touch or touch in-goal
+  law_reference: '6'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L06-023
+  text: When is the ball NOT deemed to be dead?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The ball is in touch or touch in-goal
+  - The ball is grounded in-goal
+  - A conversion has been attempted
+  - A dropped goal has been attempted
+  answers:
+  - A dropped goal has been attempted
+  law_reference: '6'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L06-024
+  text: When is the ball NOT deemed to be dead?
+  type: factual
+  difficulty: intermediate
+  options:
+  - A try, penalty or dropped goal has been scored
+  - The ball or ball-carrier touches the dead-ball line or anything beyond it
+  - The ball hits anything above the playing arena
+  - The ball is unplayable at a ruck
+  answers:
+  - The ball is unplayable at a ruck
+  law_reference: '6'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L06-025
+  text: |-
+    True or false: if the ball or ball-carrier touches the referee or non-player and either team gains an advantage, play continues.
+  type: factual
+  difficulty: beginner
+  options:
+  - 'True'
+  - 'False'
+  answers:
+  - 'False'
+  law_reference: '6'
+  tags:
+  - advantage
+  - referee
+  explanation: null
+  contributor: null
+- id: L06-026
+  text: |-
+    True or false: if the ball or ball-carrier touches the referee or non-player and neither team gains an advantage, play continues.
+  type: factual
+  difficulty: beginner
+  options:
+  - 'True'
+  - 'False'
+  answers:
+  - 'True'
+  law_reference: '6'
+  tags:
+  - advantage
+  - referee
+  explanation: null
+  contributor: null
+- id: L06-027
+  text: |-
+    If the ball touches the referee or other non-player in in-goal and either team gains an advantage, what happens?
+  type: scenario
+  difficulty: intermediate
+  options:
+  - Play continues
+  - A scrum is awarded
+  - A try is awarded
+  - The ball is deemed dead
+  answers:
+  - A try is awarded
+  law_reference: '6'
+  tags:
+  - goal
+  - advantage
+  - referee
+  explanation: null
+  contributor: null
+- id: L06-028
+  text: |-
+    Can the referee consult with assistant referees about matters relating to their duties?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'Yes'
+  law_reference: '6'
+  tags:
+  - referee
+  - assistant-referee
+  explanation: null
+  contributor: null
+- id: L06-029
+  text: |-
+    Which of the following are referees NOT allowed to consult with assistant referees about?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Matters relating to their duties
+  - Law relating to foul play
+  - Timekeeping
+  - Appointment of captains
+  answers:
+  - Appointment of captains
+  law_reference: '6'
+  tags:
+  - referee
+  - assistant-referee
+  explanation: null
+  contributor: null
+- id: L06-030
+  text: What can assistant referees and touch judges signal?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Touch
+  - Touch in-goal
+  - Success or failure of kicks at goal
+  - All of the above
+  answers:
+  - All of the above
+  law_reference: '6'
+  tags:
+  - referee
+  - touch-judge
+  - assistant-referee
+  explanation: null
+  contributor: null
+- id: L06-031
+  text: 'True or false: the referee may consult with assistant referees about foul
+    play.'
+  type: factual
+  difficulty: beginner
+  options:
+  - 'True'
+  - 'False'
+  answers:
+  - 'True'
+  law_reference: '6'
+  tags:
+  - referee
+  - assistant-referee
+  - foul-play
+  explanation: null
+  contributor: null
+- id: L06-032
+  text: Who decides if a ball was thrown in from the correct place during a throw-in?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The referee
+  - The assistant referees
+  - The team captains
+  - The spectators
+  answers:
+  - The referee
+  law_reference: '6'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L06-033
+  text: |-
+    True or false: a referee may alter their decision after a touch judge or an assistant referee has raised the flag to signal touch, touch-in-goal or foul play.
+  type: factual
+  difficulty: beginner
+  options:
+  - 'True'
+  - 'False'
+  answers:
+  - 'True'
+  law_reference: '6'
+  tags:
+  - goal
+  - referee
+  - touch-judge
+  - assistant-referee
+  - foul-play
+  explanation: null
+  contributor: null
+- id: L06-034
+  text: What must the referee communicate after the match?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The score
+  - The weather conditions
+  - The number of penalties
+  - The length of each half
+  answers:
+  - The score
+  law_reference: '6'
+  tags:
+  - referee
+  explanation: null
+  contributor: null
+- id: L06-035
+  text: If a player was sent off, who must the referee give a written report to?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The team captain
+  - The match organiser
+  - The assistant referees
+  - The spectators
+  answers:
+  - The match organiser
+  law_reference: '6'
+  tags:
+  - referee
+  - sending-off
+  explanation: null
+  contributor: null
+- id: L06-036
+  text: Who provides a touch judge?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The home team
+  - The away team
+  - The referee
+  - The match organiser
+  answers:
+  - The match organiser
+  law_reference: '6'
+  tags:
+  - touch-judge
+  explanation: null
+  contributor: null
+- id: L06-037
+  text: If not appointed by the match organiser, who provides a touch judge?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The home team
+  - Each team
+  - There are no touch judges
+  - The spectators
+  answers:
+  - Each team
+  law_reference: '6'
+  tags:
+  - touch-judge
+  explanation: null
+  contributor: null
+- id: L06-038
+  text: |-
+    Who nominates a person to act as a replacement for assistant referees and touch judges?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The referee
+  - The team captains
+  - The match organiser
+  - The spectators
+  answers:
+  - The match organiser
+  law_reference: '6'
+  tags:
+  - replacement
+  - referee
+  - touch-judge
+  - assistant-referee
+  explanation: null
+  contributor: null
+- id: L06-039
+  text: 'True or false: the referee has control over assistant referees and touch
+    judges.'
+  type: factual
+  difficulty: beginner
+  options:
+  - 'True'
+  - 'False'
+  answers:
+  - 'True'
+  law_reference: '6'
+  tags:
+  - referee
+  - touch-judge
+  - assistant-referee
+  explanation: null
+  contributor: null
+- id: L06-040
+  text: |-
+    True or false: the referee may overrule the decision of an assistant referee or touch judge.
+  type: factual
+  difficulty: beginner
+  options:
+  - 'True'
+  - 'False'
+  answers:
+  - 'True'
+  law_reference: '6'
+  tags:
+  - referee
+  - touch-judge
+  - assistant-referee
+  explanation: null
+  contributor: null
+- id: L06-041
+  text: |-
+    Where does the assistant referee or touch judge remain except when judging a kick?
+  type: factual
+  difficulty: intermediate
+  options:
+  - On the halfway line
+  - Behind the posts
+  - In touch
+  - In the technical area
+  answers:
+  - In touch
+  law_reference: '6'
+  tags:
+  - kick
+  - referee
+  - touch-judge
+  - assistant-referee
+  explanation: null
+  contributor: null
+- id: L06-042
+  text: |-
+    Where does the assistant referee or touch judge stand when judging a kick at goal?
+  type: factual
+  difficulty: intermediate
+  options:
+  - On the halfway line
+  - Behind the posts
+  - On the touchline
+  - In the technical area
+  answers:
+  - Behind the posts
+  law_reference: '6'
+  tags:
+  - kick
+  - goal
+  - referee
+  - touch-judge
+  - assistant-referee
+  explanation: null
+  contributor: null
+- id: L06-043
+  text: When may an assistant referee enter the playing area to report foul play?
+  type: factual
+  difficulty: intermediate
+  options:
+  - At any time
+  - Only when the ball is in play
+  - At the next stoppage in play and when the referee allows
+  - Only during half-time
+  answers:
+  - At the next stoppage in play and when the referee allows
+  law_reference: '6'
+  tags:
+  - referee
+  - assistant-referee
+  - foul-play
+  explanation: null
+  contributor: null
+- id: L06-044
+  text: What do assistant referees or touch judges use to signal decisions?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Flags
+  - Whistles
+  - Hand signals
+  - Verbal calls
+  answers:
+  - Flags
+  law_reference: '6'
+  tags:
+  - referee
+  - touch-judge
+  - assistant-referee
+  explanation: null
+  contributor: null
+- id: L06-045
+  text: |-
+    How is the success of a kick at goal signaled by an assistant referee or touch judge?
+  type: factual
+  difficulty: intermediate
+  options:
+  - By raising the flags
+  - By blowing a whistle
+  - By waving the flags horizontally
+  - By verbal call
+  answers:
+  - By raising the flags
+  law_reference: '6'
+  tags:
+  - kick
+  - goal
+  - referee
+  - touch-judge
+  - assistant-referee
+  explanation: null
+  contributor: null
+- id: L06-046
+  text: |-
+    Before a throw in and after the ball or ball-carrier has gone into touch, which way does the assistant referee point?
+  type: factual
+  difficulty: intermediate
+  options:
+  - To the team entitled to throw in
+  - To the team who took took the ball into touch
+  - Down the centre of the forming line-out
+  answers:
+  - To the team entitled to throw in
+  law_reference: '6'
+  tags:
+  - referee
+  - assistant-referee
+  explanation: null
+  contributor: null
+- id: L06-047
+  text: |-
+    When the ball is thrown in at a line-out, the assistant referee or touch judge lowers the flag with several exceptions. Which of these is NOT an exception?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The player throwing puts any part of either foot in the field of play
+  - The team not entitled to throw in has done so
+  - |-
+    At quick-throw, the ball that went into touch is replaced by another ball, or touched by another person
+  - The throw wasn't straight
+  answers:
+  - The throw wasn't straight
+  law_reference: '6'
+  tags:
+  - lineout
+  - referee
+  - touch-judge
+  - assistant-referee
+  explanation: null
+  contributor: null
+- id: L06-048
+  text: |-
+    Can the assistant referee or touch judge decide if the ball was thrown in from the correct place?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'No'
+  law_reference: '6'
+  tags:
+  - referee
+  - touch-judge
+  - assistant-referee
+  explanation: null
+  contributor: null
+- id: L06-049
+  text: Can the assistant referee signal foul play
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  - Yes with permission from the referee
+  - Yes with permission from the match organiser
+  answers:
+  - Yes with permission from the match organiser
+  law_reference: '6'
+  tags:
+  - referee
+  - assistant-referee
+  - foul-play
+  explanation: null
+  contributor: null
+- id: L06-050
+  text: How does an assistant referee signal foul play or misconduct has been seen?
+  type: factual
+  difficulty: intermediate
+  options:
+  - By raising the flag horizontally
+  - By blowing the whistle
+  - By waving the flag horizontally
+  - By verbal call
+  answers:
+  - By raising the flag horizontally
+  law_reference: '6'
+  tags:
+  - referee
+  - assistant-referee
+  - foul-play
+  explanation: null
+  contributor: null
+- id: L06-051
+  text: |-
+    If an assistant referee's verbal report to the referee leads to a player being sent off, what must the assistant referee do after the match?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Give a written report to the match organiser
+  - Give a verbal report to the match organiser
+  - Give a written report to the referee
+  - Give a verbal report to the referee
+  answers:
+  - Give a written report to the referee
+  law_reference: '6'
+  tags:
+  - referee
+  - assistant-referee
+  - sending-off
+  explanation: null
+  contributor: null
+- id: L06-052
+  text: |-
+    Who can appropriately trained and accredited first-aid or immediate (pitch-side) care persons attend to?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Any player
+  - Only players on their team
+  - The team captain
+  - The referee
+  answers:
+  - Any player
+  law_reference: '6'
+  tags:
+  - front-row
+  explanation: null
+  contributor: null
+- id: L06-053
+  text: |-
+    True or false: medics may enter the playing area to attend to injured players at any time it is safe to do so.
+  type: factual
+  difficulty: beginner
+  options:
+  - 'True'
+  - 'False'
+  answers:
+  - 'True'
+  law_reference: '6'
+  tags:
+  - time
+  explanation: null
+  contributor: null
+- id: L06-054
+  text: 'True or false: medics may not field or touch a ball while it is in live play.'
+  type: factual
+  difficulty: beginner
+  options:
+  - 'True'
+  - 'False'
+  answers:
+  - 'True'
+  law_reference: '6'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L06-055
+  text: When may water carriers enter the playing area?
+  type: factual
+  difficulty: intermediate
+  options:
+  - During a stoppage in play for an injury or try
+  - At half-time
+  - When the referee signals
+  - At any time
+  answers:
+  - During a stoppage in play for an injury or try
+  law_reference: '6'
+  tags:
+  - water-break
+  explanation: null
+  contributor: null
+- id: L06-056
+  text: |-
+    Who must remain in their technical area at all times before entering the field of play?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The team captains
+  - The coaches
+  - Additional persons
+  - The spectators
+  answers:
+  - Additional persons
+  law_reference: '6'
+  tags:
+  - time
+  explanation: null
+  contributor: null
+- id: L06-057
+  text: When may two nominated water carriers enter the playing area?
+  type: factual
+  difficulty: intermediate
+  options:
+  - During a stoppage in play for an injury to a player
+  - When a try has been scored
+  - At any time
+  - During a scrum
+  answers:
+  - During a stoppage in play for an injury to a player
+  - When a try has been scored
+  law_reference: '6'
+  tags:
+  - water-break
+  explanation: null
+  contributor: null
+- id: L06-058
+  text: Under hot weather guidelines, how long is the break per half for water carriers?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 30 seconds
+  - 1 minute
+  - 2 minutes
+  - No break
+  answers:
+  - 1 minute
+  law_reference: '6'
+  tags:
+  - water-break
+  explanation: null
+  contributor: null
+- id: L06-059
+  text: In matches with a squad size of 23, when may water carriers enter the field?
+  type: factual
+  difficulty: intermediate
+  options:
+  - When a try is scored
+  - During a scrum
+  - At any stoppage
+  - During a line-out
+  answers:
+  - When a try is scored
+  law_reference: '6'
+  tags:
+  - water-break
+  explanation: null
+  contributor: null
+- id: L06-060
+  text: Are water carriers allowed to enter the field at a penalty try?
+  type: sanction
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  - Only for the scoring team
+  - Only for the non-scoring team
+  answers:
+  - 'No'
+  law_reference: '6'
+  tags:
+  - penalty
+  - try
+  - water-break
+  explanation: null
+  contributor: null
+- id: L06-061
+  text: Where may players access water without needing permission from the referee?
+  type: factual
+  difficulty: intermediate
+  options:
+  - From the Technical zone and behind their own dead ball line
+  - Anywhere on the field
+  - From the opposition's Technical zone
+  - Only from the sidelines
+  answers:
+  - From the Technical zone and behind their own dead ball line
+  law_reference: '6'
+  tags:
+  - referee
+  - water-break
+  explanation: null
+  contributor: null
+- id: L06-062
+  text: What happens if water is left in-goal?
+  type: scenario
+  difficulty: intermediate
+  options:
+  - The privilege to access water in-goal is removed
+  - A penalty is awarded
+  - The water carriers are sent off
+  - The game is paused
+  answers:
+  - The privilege to access water in-goal is removed
+  law_reference: '6'
+  tags:
+  - goal
+  - water-break
+  explanation: null
+  contributor: null
+- id: L06-063
+  text: Who must not be a water carrier?
+  type: factual
+  difficulty: intermediate
+  options:
+  - A substitute player
+  - A team doctor
+  - The Head Coach or Director of Rugby
+  - A team captain
+  answers:
+  - The Head Coach or Director of Rugby
+  law_reference: '6'
+  tags:
+  - water-break
+  explanation: null
+  contributor: null
+- id: L06-064
+  text: Who may enter the playing area with a kicking tee and one water bottle?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Any team member
+  - The Head Coach
+  - A person designated for the kicker
+  - A referee
+  answers:
+  - A person designated for the kicker
+  law_reference: '6'
+  tags:
+  - kick
+  - water-break
+  explanation: null
+  contributor: null
+- id: L06-065
+  text: When may coaches attend to their teams on the field?
+  type: factual
+  difficulty: intermediate
+  options:
+  - At half-time
+  - During a penalty
+  - After a try has been scored
+  - During a line-out
+  answers:
+  - At half-time
+  law_reference: '6'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L06-066
+  text: Who may approach or address match officials?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Coaches
+  - Water-carriers
+  - Medics in relation to the treatment of a player
+  - Spectators
+  answers:
+  - Medics in relation to the treatment of a player
+  law_reference: '6'
+  tags: []
+  explanation: null
+  contributor: null

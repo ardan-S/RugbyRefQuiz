@@ -1,0 +1,293 @@
+metadata:
+  law: 4
+  title: Players' Clothing
+  source: World Rugby Laws 2026
+questions:
+- id: L04-001
+  text: |-
+    A player wears an item of clothing deemed illegal by the referee during the match. Sanction:
+  type: sanction
+  difficulty: intermediate
+  options:
+  - Penalty
+  - Free kick
+  - Scrum
+  - Play advantage
+  - Other
+  answers:
+  - Penalty
+  law_reference: '4'
+  tags:
+  - referee
+  - clothing
+  - sanction
+  explanation: null
+  contributor: null
+- id: L04-002
+  text: |-
+    A player is found wearing a prohibited item after being warned by the match official. Sanction:
+  type: sanction
+  difficulty: intermediate
+  options:
+  - Penalty
+  - Free kick
+  - Scrum
+  - Play advantage
+  - Other
+  answers:
+  - Penalty
+  law_reference: '4'
+  tags:
+  - sanction
+  explanation: null
+  contributor: null
+- id: L04-003
+  text: |-
+    A player leaves the playing area to change a non-bloodstained item of clothing. Sanction:
+  type: sanction
+  difficulty: intermediate
+  options:
+  - Penalty
+  - Free kick
+  - Scrum
+  - Play advantage
+  - Other
+  answers:
+  - Penalty
+  law_reference: '4'
+  tags:
+  - blood-injury
+  - clothing
+  - sanction
+  explanation: null
+  contributor: null
+- id: L04-004
+  text: All items of clothing must comply with which regulation?
+  type: factual
+  difficulty: intermediate
+  options:
+  - World Rugby Regulation 10
+  - World Rugby Regulation 11
+  - World Rugby Regulation 12
+  - World Rugby Regulation 13
+  answers:
+  - World Rugby Regulation 12
+  law_reference: '4'
+  tags:
+  - clothing
+  explanation: null
+  contributor: null
+- id: L04-005
+  text: What must a player wear during a match?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Jersey, shorts, underwear, socks, and boots
+  - Jersey, shorts, socks, and boots
+  - Jersey, shorts, and socks
+  - Jersey, shorts, and boots
+  answers:
+  - Jersey, shorts, underwear, socks, and boots
+  law_reference: '4'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L04-006
+  text: How far must the sleeve of a jersey extend?
+  type: factual
+  difficulty: intermediate
+  options:
+  - To the wrist
+  - To the elbow
+  - At least halfway from the shoulder point to the elbow
+  - To the shoulder point
+  answers:
+  - At least halfway from the shoulder point to the elbow
+  law_reference: '4'
+  tags:
+  - clothing
+  explanation: null
+  contributor: null
+- id: L04-007
+  text: 'True or false: a player can wear ankle supports extending halfway up the
+    shin?'
+  type: factual
+  difficulty: beginner
+  options:
+  - 'True'
+  - 'False'
+  answers:
+  - 'False'
+  law_reference: '4'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L04-008
+  text: Which of the following items is not allowed?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Fingerless gloves
+  - Jewellery
+  - Mouth guard
+  - Goggles
+  answers:
+  - Jewellery
+  law_reference: '4'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L04-009
+  text: What must a headscarf or covering ensure?
+  type: factual
+  difficulty: intermediate
+  options:
+  - It looks good
+  - It does not cause a danger to the wearer or other players
+  - It matches the team color
+  - It is made of cotton
+  answers:
+  - It does not cause a danger to the wearer or other players
+  law_reference: '4'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L04-010
+  text: 'A player may not wear any item contaminated by:'
+  type: factual
+  difficulty: intermediate
+  options:
+  - Water
+  - Mud
+  - Blood
+  - Sweat
+  answers:
+  - Blood
+  law_reference: '4'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L04-011
+  text: Can a player wear gloves?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'No'
+  law_reference: '4'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L04-012
+  text: What type of boots studs are permitted?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Metal studs only
+  - Plastic studs only
+  - Studs made of moulded rubber
+  - Studs of any material
+  answers:
+  - Studs made of moulded rubber
+  law_reference: '4'
+  tags:
+  - boots
+  explanation: null
+  contributor: null
+- id: L04-013
+  text: 'True or false: a player may wear shorts or leggings with padding sewn into
+    them?'
+  type: factual
+  difficulty: beginner
+  options:
+  - 'True'
+  - 'False'
+  answers:
+  - 'False'
+  law_reference: '4'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L04-014
+  text: Can a player wear communication devices?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'No'
+  law_reference: '4'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L04-015
+  text: |-
+    Who has the power to decide if a player's clothing is dangerous or illegal during a match?
+  type: factual
+  difficulty: intermediate
+  options:
+  - The match organiser
+  - The governing body
+  - The referee
+  - World Rugby
+  answers:
+  - The referee
+  law_reference: '4'
+  tags:
+  - clothing
+  explanation: null
+  contributor: null
+- id: L04-016
+  text: What must a player do if the referee orders the removal of an item of clothing?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Ignore the referee
+  - Remove the item and continue playing
+  - Remove the item or render it harmless
+  - Complain to the referee
+  answers:
+  - Remove the item or render it harmless
+  law_reference: '4'
+  tags:
+  - referee
+  - clothing
+  explanation: null
+  contributor: null
+- id: L04-017
+  text: |-
+    What is the sanction for a player found wearing a banned item during play after being warned?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Penalty
+  - Free kick
+  - Scrum
+  - Play advantage
+  - Other
+  answers:
+  - Penalty
+  law_reference: '4'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L04-018
+  text: |-
+    Under what condition can a player leave the playing area to change items of clothing?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Any time during the match
+  - Only if approved by the referee
+  - If they are bloodstained
+  - At half-time
+  answers:
+  - If they are bloodstained
+  law_reference: '4'
+  tags:
+  - clothing
+  explanation: null
+  contributor: null

@@ -41,7 +41,7 @@ standard_questions_L8 = QuestionSet("Standard Questions Law 8", [
              ["Under the posts"]),
 
     Question("When can a penalty try be awarded? (2 correct answers)",
-             ["If foul play by the opposing team prevents a probable try from being scored", "If foul play by the opposing team prevents a probable try from being scored in a more advantageous position", "If a legal act prevents a try from being scored in a more advantageous position", "If an act of foul play takes place in in-goal"]
+             ["If foul play by the opposing team prevents a probable try from being scored", "If foul play by the opposing team prevents a probable try from being scored in a more advantageous position", "If a legal act prevents a try from being scored in a more advantageous position", "If an act of foul play takes place in in-goal"],
              ["If foul play by the opposing team prevents a probable try from being scored", "If foul play by the opposing team prevents a probable try from being scored in a more advantageous position"]),
 
     Question("Is a conversion attempted following a penalty try?",
@@ -49,7 +49,7 @@ standard_questions_L8 = QuestionSet("Standard Questions Law 8", [
              ["No"]),
 
     Question("True or false: A player guilty of foul play which results in the award of a penalty try MUST be cautioned and temporarily suspended or sent off",
-             answer_sets["answers3"],
+             answer_sets["answers6"],
              ["True"]),
 
     # Conversion, penalty and dropped goal
@@ -95,7 +95,7 @@ standard_questions_L8 = QuestionSet("Standard Questions Law 8", [
              ["A mound of rubber"]),
 
     Question("True or false: at the conversion, the kicker may be assisted by a placer",
-             answer_sets["answers3"],
+             answer_sets["answers6"],
              ["True"]),
 
     Question("At the conversion, if the ball falls over BEFORE the kicker begins the approach, can the kicker replace it?",

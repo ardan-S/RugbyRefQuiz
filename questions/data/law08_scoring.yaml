@@ -1,0 +1,832 @@
+metadata:
+  law: 8
+  title: Scoring
+  source: World Rugby Laws 2026
+questions:
+- id: L08-001
+  text: |-
+    At a conversion, the kick took longer than 90 seconds however, the ball rolled over and had to be placed again. Sanction?,
+  type: sanction
+  difficulty: intermediate
+  options:
+  - Allow additional time for the kick to be taken
+  - The kick is disallowed
+  - The kick is disallowed and play is restarted with a free-kick
+  - The 90 seconds is reset when the ball rolled over
+  answers:
+  - The kick is disallowed
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  - sanction
+  explanation: null
+  contributor: null
+- id: L08-002
+  text: At a conversion, the kick was not taken within 90 seconds. Sanction?
+  type: sanction
+  difficulty: intermediate
+  options:
+  - Allow additional time for the kick to be taken
+  - The kick is disallowed, play restarts as normal
+  - The kick is disallowed and play is restarted with a free-kick
+  - The kick is disallowed and play is restarted with a penalty
+  answers:
+  - The kick is disallowed, play restarts as normal
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  - sanction
+  explanation: null
+  contributor: null
+- id: L08-003
+  text: |-
+    At a conversion, members of the kicker's team (excluding a team-mate holding the ball) were in front of the kicker. Sanction?
+  type: sanction
+  difficulty: intermediate
+  options:
+  - The kick is disallowed
+  - The kick is disallowed and play is restarted with a free-kick
+  - The kick is disallowed and play is restarted with a penalty
+  - The kick is retaken
+  answers:
+  - The kick is disallowed
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  - sanction
+  explanation: null
+  contributor: null
+- id: L08-004
+  text: |-
+    At a conversion, members of the kicker's team misled their opponents into charging too soon. Sanction?
+  type: sanction
+  difficulty: intermediate
+  options:
+  - The kick is disallowed
+  - The kick is disallowed and play is restarted with a free-kick
+  - The kick is disallowed and play is restarted with a penalty
+  - The kick is retaken
+  answers:
+  - The kick is disallowed
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  - sanction
+  explanation: null
+  contributor: null
+- id: L08-005
+  text: |-
+    During a conversion attempt, the opposing team shouts but the goal is successful. Sanction?
+  type: sanction
+  difficulty: intermediate
+  options:
+  - The score stands
+  - The kick is disallowed
+  - A retake is awarded as normal
+  - A retake is awarded but the opposition must not charge
+  answers:
+  - The score stands
+  law_reference: '8'
+  tags:
+  - conversion
+  - goal
+  - sanction
+  explanation: null
+  contributor: null
+- id: L08-006
+  text: |-
+    During a conversion attempt, the opposing team shouts and the attempt is unsuccessful. Sanction?
+  type: sanction
+  difficulty: intermediate
+  options:
+  - The score stands
+  - The kick is disallowed
+  - A retake is awarded as normal
+  - A retake is awarded but the opposition must not charge
+  answers:
+  - A retake is awarded but the opposition must not charge
+  law_reference: '8'
+  tags:
+  - conversion
+  - sanction
+  explanation: null
+  contributor: null
+- id: L08-007
+  text: |-
+    During a penalty goal attempt, the kicker takes longer than 60 seconds (playing time) to take the kick. Sanction?
+  type: sanction
+  difficulty: intermediate
+  options:
+  - The kick is disallowed and a scrum is awarded
+  - The kick is disallowed and the penalty is reversed
+  - The kick is retaken
+  answers:
+  - The kick is disallowed and a scrum is awarded
+  law_reference: '8'
+  tags:
+  - kick
+  - penalty
+  - goal
+  - time
+  - sanction
+  explanation: null
+  contributor: null
+- id: L08-008
+  text: What is the value of a try?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 3 points
+  - 5 points
+  - 7 points
+  - 1 point
+  answers:
+  - 5 points
+  law_reference: '8'
+  tags:
+  - try
+  explanation: null
+  contributor: null
+- id: L08-009
+  text: What is the value of a conversion?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 3 points
+  - 5 points
+  - 2 points
+  - 1 point
+  answers:
+  - 2 points
+  law_reference: '8'
+  tags:
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-010
+  text: What is the value of a penalty try?
+  type: sanction
+  difficulty: intermediate
+  options:
+  - 3 points
+  - 5 points
+  - 7 points
+  - 1 point
+  answers:
+  - 7 points
+  law_reference: '8'
+  tags:
+  - penalty
+  - try
+  explanation: null
+  contributor: null
+- id: L08-011
+  text: What is the value of a penalty goal?
+  type: sanction
+  difficulty: intermediate
+  options:
+  - 3 points
+  - 5 points
+  - 7 points
+  - 1 point
+  answers:
+  - 3 points
+  law_reference: '8'
+  tags:
+  - penalty
+  - goal
+  explanation: null
+  contributor: null
+- id: L08-012
+  text: What is the value of a drop goal?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 3 points
+  - 5 points
+  - 7 points
+  - 1 point
+  answers:
+  - 3 points
+  law_reference: '8'
+  tags:
+  - goal
+  explanation: null
+  contributor: null
+- id: L08-013
+  text: Which of these does NOT result in a try?
+  type: factual
+  difficulty: intermediate
+  options:
+  - A player is the first to ground the ball in the opponents' in-goal
+  - |-
+    A player is the first to ground the ball when a scrum, ruck or maul reaches the goal line
+  - |-
+    A player is tackled near to the opponents' goal line and the player immediately reaches out and grounds the ball
+  - A player touches the ball down on the opponents' dead-ball line
+  answers:
+  - A player touches the ball down on the opponents' dead-ball line
+  law_reference: '8'
+  tags:
+  - try
+  explanation: null
+  contributor: null
+- id: L08-014
+  text: |-
+    If a player is tackled short of the goal line, can their momentum carry them (in a continuous movement) into in-goal where they ground the ball
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'Yes'
+  law_reference: '8'
+  tags:
+  - tackle
+  - goal
+  explanation: null
+  contributor: null
+- id: L08-015
+  text: |-
+    Can a player who is in touch or touch-in-goal ground the ball in the opponents' in-goal?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  - Yes provided the player is not holding the ball
+  - Yes provided the ball is moving
+  answers:
+  - Yes provided the player is not holding the ball
+  law_reference: '8'
+  tags:
+  - goal
+  explanation: null
+  contributor: null
+- id: L08-016
+  text: Where is a penalty try awarded
+  type: sanction
+  difficulty: intermediate
+  options:
+  - Under the posts
+  - At the place of infringement
+  - At the touchline
+  - At the place where the ball was last played
+  answers:
+  - Under the posts
+  law_reference: '8'
+  tags:
+  - penalty
+  - try
+  explanation: null
+  contributor: null
+- id: L08-017
+  text: When can a penalty try be awarded? (2 correct answers)
+  type: sanction
+  difficulty: advanced
+  options:
+  - If foul play by the opposing team prevents a probable try from being scored
+  - |-
+    If foul play by the opposing team prevents a probable try from being scored in a more advantageous position
+  - If a legal act prevents a try from being scored in a more advantageous position
+  - If an act of foul play takes place in in-goal
+  answers:
+  - If foul play by the opposing team prevents a probable try from being scored
+  - |-
+    If foul play by the opposing team prevents a probable try from being scored in a more advantageous position
+  law_reference: '8'
+  tags:
+  - penalty
+  - try
+  explanation: null
+  contributor: null
+- id: L08-018
+  text: Is a conversion attempted following a penalty try?
+  type: sanction
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'No'
+  law_reference: '8'
+  tags:
+  - penalty
+  - try
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-019
+  text: |-
+    True or false: A player guilty of foul play which results in the award of a penalty try MUST be cautioned and temporarily suspended or sent off
+  type: sanction
+  difficulty: beginner
+  options:
+  - 'True'
+  - 'False'
+  answers:
+  - 'True'
+  law_reference: '8'
+  tags:
+  - penalty
+  - try
+  - foul-play
+  - sending-off
+  explanation: null
+  contributor: null
+- id: L08-020
+  text: |-
+    Is a conversion successful if it touches a team-mate before passing over the crossbar and between the goal posts?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'No'
+  law_reference: '8'
+  tags:
+  - conversion
+  - goal
+  explanation: null
+  contributor: null
+- id: L08-021
+  text: |-
+    Is a conversion successful if it touches an opponent before passing over the crossbar and between the goal posts?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'Yes'
+  law_reference: '8'
+  tags:
+  - conversion
+  - goal
+  explanation: null
+  contributor: null
+- id: L08-022
+  text: |-
+    Is a conversion successful if it touches the ground before passing over the crossbar and between the goal posts?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'No'
+  law_reference: '8'
+  tags:
+  - conversion
+  - goal
+  explanation: null
+  contributor: null
+- id: L08-023
+  text: |-
+    Is a conversion successful if it goes over the crossbar and over the height of the goal posts but it is deemed that it would have gone between the goal posts had they been taller?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'Yes'
+  law_reference: '8'
+  tags:
+  - conversion
+  - goal
+  explanation: null
+  contributor: null
+- id: L08-024
+  text: |-
+    Does a score stand if the ball has crossed the crossbar and the wind blows it back into the field of play?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'Yes'
+  law_reference: '8'
+  tags: []
+  explanation: null
+  contributor: null
+- id: L08-025
+  text: What type of kick must a conversion be?
+  type: factual
+  difficulty: intermediate
+  options:
+  - A place kick
+  - A drop kick
+  - Either a place or drop kick
+  - Any kind of kick
+  answers:
+  - Either a place or drop kick
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-026
+  text: When does a team have the right to attempt a conversion?
+  type: factual
+  difficulty: intermediate
+  options:
+  - After a try has been scored
+  - After a penalty try has been awarded
+  - After a penalty goal has been awarded
+  - After a drop goal has been scored
+  answers:
+  - After a try has been scored
+  law_reference: '8'
+  tags:
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-027
+  text: |-
+    At a conversion, must the kicker use the ball that was in play when the try was scored?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  - Yes provided the ball is not defective
+  answers:
+  - Yes provided the ball is not defective
+  law_reference: '8'
+  tags:
+  - kick
+  - try
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-028
+  text: |-
+    From the following options, where must a conversion be taken?
+    1. In the field of play
+    2. Through the place where the try was awarded parallel to the touch lines
+    3. Behind the 5m line
+    4. Within the 15m lines
+  type: factual
+  difficulty: advanced
+  options:
+  - 1, 2 and 3
+  - 1, 2 and 4
+  - 1 and 2
+  - 1 and 3
+  answers:
+  - 1 and 2
+  law_reference: '8'
+  tags:
+  - try
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-029
+  text: What is the ball NOT permitted to be placed on when taking a conversion?
+  type: factual
+  difficulty: intermediate
+  options:
+  - A kicking tee
+  - A mound of sand
+  - A mound of sawdust
+  - A mound of rubber
+  answers:
+  - A mound of rubber
+  law_reference: '8'
+  tags:
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-030
+  text: 'True or false: at the conversion, the kicker may be assisted by a placer'
+  type: factual
+  difficulty: beginner
+  options:
+  - 'True'
+  - 'False'
+  answers:
+  - 'True'
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-031
+  text: |-
+    At the conversion, if the ball falls over BEFORE the kicker begins the approach, can the kicker replace it?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'Yes'
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-032
+  text: |-
+    At the conversion, if the ball falls over before the kicker begins the approach and the kicker moves to replace it, can the opponents advance past the goal line?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'No'
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  - goal
+  explanation: null
+  contributor: null
+- id: L08-033
+  text: |-
+    At the conversion, if the ball falls over AFTER the kicker begins the approach, what may the kicker do?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Replace the ball
+  - Kick or attempt a dropped goal
+  - Nothing, the kick is disallowed
+  - Kick the ball where it landed
+  answers:
+  - Kick or attempt a dropped goal
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-034
+  text: |-
+    At the conversion, if the ball falls over and rolls away from the line through the place where the try was awarded, and the kicker kicks the ball over the crossbar, is the conversion successful?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'Yes'
+  law_reference: '8'
+  tags:
+  - kick
+  - try
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-035
+  text: |-
+    At the conversion, what are the options for the kicker if the ball falls over and rolls into touch after the kicker begins their approach?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Kick the ball where it landed
+  - Replace the ball
+  - Kick or attempt a dropped goal
+  - Nothing, the kick is disallowed
+  answers:
+  - Nothing, the kick is disallowed
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-036
+  text: |-
+    At the conversion, where must the opposing team retire to until the kicker begins their approach?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Behind the 22m
+  - Behind the 5m
+  - Behind the try line
+  - Behind the dead ball line
+  answers:
+  - Behind the try line
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-037
+  text: |-
+    At the conversion, in what direction must the kicker move for their approach to the kick to have began?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Towards the ball
+  - Towards the goal line
+  - Towards the touchline
+  - Any direction
+  answers:
+  - Any direction
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-038
+  text: |-
+    At the conversion, after the kicker has began their approach, the opponents may charge. Can they jump to prevent a goal?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  - Yes provided they are not physically supported by other players
+  answers:
+  - Yes provided they are not physically supported by other players
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  - goal
+  explanation: null
+  contributor: null
+- id: L08-039
+  text: Is the opposing team permitted to shout during a conversion attempt?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'No'
+  law_reference: '8'
+  tags:
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-040
+  text: |-
+    At a conversion attempt, the opposing team shouts and the attempt is unsuccessful. A retake is awarded to the kicking team. May the kicker change the type of kick for the second attempt?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'Yes'
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-041
+  text: |-
+    At the conversion, if the ball falls over after the kicker begins the approach to kick, may the opponents continue to charge?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'Yes'
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  explanation: null
+  contributor: null
+- id: L08-042
+  text: |-
+    At the conversion, if the opposition touches the ball and the kick is successful, does the goal stand?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'Yes'
+  law_reference: '8'
+  tags:
+  - kick
+  - conversion
+  - goal
+  explanation: null
+  contributor: null
+- id: L08-043
+  text: Can a penalty goal be scored other then from a penalty?
+  type: sanction
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'No'
+  law_reference: '8'
+  tags:
+  - penalty
+  - goal
+  explanation: null
+  contributor: null
+- id: L08-044
+  text: How soon must a team indicate their intention to kick for goal?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Immediately
+  - Within 30 seconds of the penalty being awarded
+  - Within 60 seconds of the penalty being awarded
+  - Without delay
+  answers:
+  - Without delay
+  law_reference: '8'
+  tags:
+  - kick
+  - goal
+  explanation: null
+  contributor: null
+- id: L08-045
+  text: |-
+    If the team indicates to the referee the intention to kick at goal, can they change their decision?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 'Yes'
+  - 'No'
+  answers:
+  - 'No'
+  law_reference: '8'
+  tags:
+  - kick
+  - goal
+  - referee
+  explanation: null
+  contributor: null
+- id: L08-046
+  text: Which of these does NOT signal intention to kick at goal?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Direct communication to the referee
+  - Arrival of kicking tee or sand
+  - The player makes a mark on the ground
+  - The ball is given to the kicker
+  answers:
+  - The ball is given to the kicker
+  law_reference: '8'
+  tags:
+  - kick
+  - goal
+  explanation: null
+  contributor: null
+- id: L08-047
+  text: |-
+    Within what time (playing time) must a penalty goal kick be taken after the team indicated their intention to do so?
+  type: sanction
+  difficulty: intermediate
+  options:
+  - 30 seconds
+  - 60 seconds
+  - 90 seconds
+  - 45 seconds
+  answers:
+  - 60 seconds
+  law_reference: '8'
+  tags:
+  - kick
+  - penalty
+  - goal
+  - time
+  explanation: null
+  contributor: null
+- id: L08-048
+  text: |-
+    At a penalty goal attempt, what happens to the time permitted to take the kick if the ball rolls over and has to be played again?
+  type: sanction
+  difficulty: intermediate
+  options:
+  - The time is reset
+  - The time is extended
+  - The time is reduced
+  - The time is not affected
+  answers:
+  - The time is not affected
+  law_reference: '8'
+  tags:
+  - kick
+  - penalty
+  - goal
+  - time
+  explanation: null
+  contributor: null

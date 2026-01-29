@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Rugby Ref Quiz - Start{% endblock %}
+
+{% block content %}
+<article>
+    <header>
+        <h2>Test Your Rugby Refereeing Knowledge</h2>
+    </header>
+    <p>Select the laws you want to be quizzed on:</p>
+
+    {% if error %}
+    <p class="error-message">{{ error }}</p>
+    {% endif %}
+
+    <form action="{{ url_for('main.select_count') }}" method="POST">
+        <fieldset>
+            <label class="select-all-label">
+                <input type="checkbox" id="select-all">
+                <strong>Select All</strong>
+            </label>
+            <hr>
+            {% for law_num, law in laws.items() %}
+            <label>
+                <input type="checkbox" name="laws" value="{{ law_num }}" class="law-checkbox">
+                <span class="law-info">
+                    <span class="law-name">Law {{ law_num }}: {{ law.name }}</span>
+                    <span class="question-count">({{ law.question_count }} questions)</span>
+                </span>
+            </label>
+            {% endfor %}
+        </fieldset>
+        <button type="submit">Continue</button>
+    </form>
+</article>
+
+<script>
+    const selectAll = document.getElementById('select-all');
+    const lawCheckboxes = document.querySelectorAll('.law-checkbox');
+
+    selectAll.addEventListener('change', function() {
+        lawCheckboxes.forEach(cb => cb.checked = this.checked);
+    });
+
+    lawCheckboxes.forEach(cb => {
+        cb.addEventListener('change', function() {
+            selectAll.checked = [...lawCheckboxes].every(c => c.checked);
+        });
+    });
+</script>
+{% endblock %}

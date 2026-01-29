@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Rugby Ref Quiz{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <style>
+        :root {
+            --pico-font-size: 100%;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .quiz-container {
+            min-height: 400px;
+        }
+        .feedback-correct {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .feedback-wrong {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .error-message {
+            color: #dc3545;
+            margin-bottom: 1rem;
+        }
+        .progress-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 0.5rem 1rem;
+            background-color: #f8f9fa;
+            border-radius: 0.5rem;
+        }
+        .htmx-indicator {
+            display: none;
+        }
+        .htmx-request .htmx-indicator {
+            display: inline-block;
+        }
+        .htmx-request.htmx-indicator {
+            display: inline-block;
+        }
+        fieldset {
+            border: none;
+            padding: 0;
+        }
+        fieldset label {
+            display: flex;
+            align-items: flex-start;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #dee2e6;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        fieldset label input[type="checkbox"] {
+            margin-top: 0.2rem;
+        }
+        fieldset label:hover {
+            background-color: #f8f9fa;
+        }
+        fieldset input[type="radio"],
+        fieldset input[type="checkbox"] {
+            margin-right: 0.75rem;
+        }
+        .select-all-label {
+            background-color: #e9ecef;
+        }
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-end;
+        }
+        .button-group a {
+            margin: 0;
+        }
+        fieldset hr {
+            margin: 0.5rem 0;
+        }
+        fieldset .law-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        fieldset .law-info .question-count {
+            color: #6c757d;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Rugby Ref Quiz</h1>
+        </header>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

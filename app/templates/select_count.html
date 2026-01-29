@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Rugby Ref Quiz - Question Count{% endblock %}
+
+{% block content %}
+<article>
+    <header>
+        <h2>How Many Questions?</h2>
+    </header>
+    <p>You have <strong>{{ max_questions }}</strong> questions available from your selected laws.</p>
+    <p>Choose how many questions you want to answer:</p>
+
+    <form action="{{ url_for('main.start_quiz') }}" method="POST">
+        <fieldset>
+            {% if max_questions >= 5 %}
+            <label>
+                <input type="radio" name="count" value="5">
+                5 questions
+            </label>
+            {% endif %}
+            {% if max_questions >= 20 %}
+            <label>
+                <input type="radio" name="count" value="20">
+                20 questions
+            </label>
+            {% endif %}
+            {% if max_questions >= 50 %}
+            <label>
+                <input type="radio" name="count" value="50">
+                50 questions
+            </label>
+            {% endif %}
+            <label>
+                <input type="radio" name="count" value="all" checked>
+                All {{ max_questions }} questions
+            </label>
+            <label>
+                <input type="radio" name="count" value="custom" id="custom-radio">
+                Custom:
+                <input type="number"
+                       name="custom_count"
+                       id="custom-input"
+                       min="1"
+                       max="{{ max_questions }}"
+                       placeholder="Enter number"
+                       style="width: 120px; display: inline-block; margin-left: 0.5rem;">
+            </label>
+        </fieldset>
+        <div class="button-group">
+            <a href="{{ url_for('main.index') }}" role="button" class="secondary">Back</a>
+            <button type="submit">Start Quiz</button>
+        </div>
+    </form>
+</article>
+
+<script>
+    const customInput = document.getElementById('custom-input');
+    const customRadio = document.getElementById('custom-radio');
+
+    customInput.addEventListener('focus', function() {
+        customRadio.checked = true;
+    });
+
+    customInput.addEventListener('input', function() {
+        customRadio.checked = true;
+    });
+</script>
+{% endblock %}

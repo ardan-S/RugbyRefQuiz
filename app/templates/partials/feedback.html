@@ -1,0 +1,26 @@
+{% if is_correct %}
+<div class="feedback-correct">
+    <h3>Correct!</h3>
+    <p>Your answer "{{ selected }}" is correct.</p>
+</div>
+{% else %}
+<div class="feedback-wrong">
+    <h3>Incorrect</h3>
+    <p>Your answer: {{ selected }}</p>
+    <p>Correct answer(s): {{ correct_answers | join(', ') }}</p>
+</div>
+{% endif %}
+
+<p>Score: <strong>{{ score }}</strong> / {{ answered }} answered</p>
+
+<button hx-get="{{ url_for('main.get_question') }}"
+        hx-target="#quiz-content"
+        hx-swap="innerHTML">
+    Next Question
+</button>
+
+<script>
+    // Update the score display in the progress bar
+    document.getElementById('score').textContent = '{{ score }}';
+    document.getElementById('answered').textContent = '{{ answered }}';
+</script>
