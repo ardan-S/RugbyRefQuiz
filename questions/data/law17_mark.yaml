@@ -1,0 +1,230 @@
+metadata:
+  law: 17
+  title: "Mark"
+  source: "World Rugby Laws 2026"
+
+questions:
+  - id: L17-001
+    text: "What is the purpose of a mark?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "To stop play within a player's own 22 by catching an opponent's kick"
+      - "To restart play after a try"
+      - "To challenge for a high ball"
+      - "To claim a fair catch anywhere on the field"
+    answers: ["To stop play within a player's own 22 by catching an opponent's kick"]
+    law_reference: "17"
+    tags: ["mark", "principle"]
+    explanation: "A mark is a means of stopping play within a player's own 22 by directly catching an opponent's kick."
+    contributor: null
+
+  - id: L17-002
+    text: "To claim a mark, where must the player's feet be when catching the ball?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "At least one foot on or behind their own 22-metre line"
+      - "Both feet behind the 22-metre line"
+      - "Anywhere in their own half"
+      - "In the in-goal area only"
+    answers: ["At least one foot on or behind their own 22-metre line"]
+    law_reference: "17.1a"
+    tags: ["mark", "requirements"]
+    explanation: "Law 17.1a: The player must have at least one foot on or behind their own 22-metre line when catching or when landing."
+    contributor: null
+
+  - id: L17-003
+    text: "To claim a mark, from where must the ball have been kicked?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "By an opponent"
+      - "By a team-mate"
+      - "From a set piece"
+      - "From a penalty"
+    answers: ["By an opponent"]
+    law_reference: "17.1b"
+    tags: ["mark", "requirements"]
+    explanation: "Law 17.1b: The ball must be caught directly from an opponent's kick."
+    contributor: null
+
+  - id: L17-004
+    text: "Can a mark be claimed if the ball bounces before being caught?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "No"
+      - "Yes"
+      - "Only if it bounces once"
+      - "Only in the in-goal"
+    answers: ["No"]
+    law_reference: "17.1b"
+    tags: ["mark", "requirements"]
+    explanation: "Law 17.1b: The ball must be caught before it touches the ground or another player."
+    contributor: null
+
+  - id: L17-005
+    text: "What must a player call when claiming a mark?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "'Mark'"
+      - "'Mine'"
+      - "'Fair catch'"
+      - "Nothing - just raise their arm"
+    answers: ["'Mark'"]
+    law_reference: "17.1c"
+    tags: ["mark", "call"]
+    explanation: "Law 17.1c: The player must simultaneously call 'mark'."
+    contributor: null
+
+  - id: L17-006
+    text: "Can a mark be claimed if the ball hits the goal post before being caught?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "Yes"
+      - "No"
+      - "Only if caught before touching ground"
+      - "Only from a penalty kick"
+    answers: ["Yes"]
+    law_reference: "17.2"
+    tags: ["mark", "goal-post"]
+    explanation: "Law 17.2: A player may claim a mark even if the ball hits a goal post or crossbar before being caught."
+    contributor: null
+
+  - id: L17-007
+    text: "What happens when a mark is correctly claimed?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "The referee stops the game and awards a free-kick"
+      - "Play continues"
+      - "A scrum is awarded"
+      - "A penalty is awarded"
+    answers: ["The referee stops the game and awards a free-kick"]
+    law_reference: "17.3"
+    tags: ["mark", "restart"]
+    explanation: "Law 17.3: When a mark is called correctly, the referee immediately stops the game and awards a free-kick."
+    contributor: null
+
+  - id: L17-008
+    text: "Can a mark be claimed from a kick-off?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "No"
+      - "Yes"
+      - "Only in international matches"
+      - "Only if it reaches the 22"
+    answers: ["No"]
+    law_reference: "17.4"
+    tags: ["mark", "kick-off"]
+    explanation: "Law 17.4: A mark may not be claimed from a kick-off or a restart kick after a score."
+    contributor: null
+
+  - id: L17-009
+    text: "Can a mark be claimed from a restart kick after a score?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "No"
+      - "Yes"
+      - "Only in the in-goal"
+      - "Only if it's a drop-out"
+    answers: ["No"]
+    law_reference: "17.4"
+    tags: ["mark", "restart-kick"]
+    explanation: "Law 17.4: A mark may not be claimed from a kick-off or a restart kick after a score."
+    contributor: null
+
+  - id: L17-010
+    text: "Who takes the free-kick after a mark is claimed?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "The player who claimed the mark"
+      - "Any player on the team"
+      - "The captain"
+      - "The scrum-half"
+    answers: ["The player who claimed the mark"]
+    law_reference: "17.5"
+    tags: ["mark", "free-kick"]
+    explanation: "Law 17.5: The player who claimed the mark takes the free-kick."
+    contributor: null
+
+  - id: L17-011
+    text: "The player who claimed the mark cannot take the free-kick within one minute. What happens?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "A team-mate may take the free-kick"
+      - "The mark is cancelled"
+      - "A scrum is awarded"
+      - "The opposition gets the ball"
+    answers: ["A team-mate may take the free-kick"]
+    law_reference: "17.6"
+    tags: ["mark", "free-kick", "time"]
+    explanation: "Law 17.6: If the player is unable to take the free-kick within one minute, a team-mate may take it."
+    contributor: null
+
+  - id: L17-012
+    text: "A mark is claimed on the 22-metre line. Where is the free-kick taken?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "At the place of the mark but at least 5 metres from try line"
+      - "On the 22-metre line"
+      - "At the 5-metre line"
+      - "Anywhere in the 22"
+    answers: ["At the place of the mark but at least 5 metres from try line"]
+    law_reference: "17.7"
+    tags: ["mark", "free-kick", "location"]
+    explanation: "Law 17.7: Within the 22, the free-kick is at the place of the mark but at least 5 metres from the try line."
+    contributor: null
+
+  - id: L17-013
+    text: "A mark is claimed in the in-goal. Where is the free-kick taken?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "On the 5-metre line in line with the place of the mark"
+      - "In the in-goal"
+      - "On the try line"
+      - "On the 22-metre line"
+    answers: ["On the 5-metre line in line with the place of the mark"]
+    law_reference: "17.7"
+    tags: ["mark", "in-goal", "free-kick"]
+    explanation: "Law 17.7: Within the in-goal, the free-kick is on the 5-metre line in line with the place of the mark."
+    contributor: null
+
+  - id: L17-014
+    text: "A player catches an opponent's kick in their own 22 but forgets to call 'mark'. What happens?"
+    type: scenario
+    difficulty: intermediate
+    options:
+      - "No mark - play continues"
+      - "Mark is still awarded"
+      - "Free-kick to opposition"
+      - "Referee asks if they want a mark"
+    answers: ["No mark - play continues"]
+    law_reference: "17.1c"
+    tags: ["mark", "call", "scenario"]
+    explanation: "All three requirements must be met including the call. No call means no mark - play continues."
+    contributor: null
+
+  - id: L17-015
+    text: "A player jumps from behind the 22, catches an opponent's kick, and lands in front of the 22. Can they claim a mark?"
+    type: scenario
+    difficulty: advanced
+    options:
+      - "Yes, if they had at least one foot on/behind the 22 when catching or landing"
+      - "No, they must land behind the 22"
+      - "Yes, jumping position doesn't matter"
+      - "No, both feet must be behind the 22"
+    answers: ["Yes, if they had at least one foot on/behind the 22 when catching or landing"]
+    law_reference: "17.1a"
+    tags: ["mark", "jumping", "scenario"]
+    explanation: "Law 17.1a: Player must have at least one foot on or behind 22 when catching or when landing."
+    contributor: null

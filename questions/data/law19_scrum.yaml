@@ -1,0 +1,455 @@
+metadata:
+  law: 19
+  title: "Scrum"
+  source: "World Rugby Laws 2026"
+
+questions:
+  - id: L19-001
+    text: "What is the purpose of a scrum?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "To restart play with a contest for possession after a minor infringement"
+      - "To award possession to one team"
+      - "To allow substitutions"
+      - "To reset after any stoppage"
+    answers: ["To restart play with a contest for possession after a minor infringement"]
+    law_reference: "19"
+    tags: ["scrum", "principle"]
+    explanation: "The purpose of a scrum is to restart play with a contest for possession after a minor infringement or stoppage."
+    contributor: null
+
+  - id: L19-002
+    text: "How long do teams have to form a scrum after the mark is made?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "30 seconds"
+      - "20 seconds"
+      - "60 seconds"
+      - "No time limit"
+    answers: ["30 seconds"]
+    law_reference: "19.4"
+    tags: ["scrum", "time"]
+    explanation: "Law 19.4: Teams must be ready to form the scrum within 30 seconds of the mark being made."
+    contributor: null
+
+  - id: L19-003
+    text: "Teams are not ready to form a scrum within 30 seconds. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Free-kick"
+      - "Penalty"
+      - "Scrum reset"
+      - "Warning"
+    answers: ["Free-kick"]
+    law_reference: "19.4"
+    tags: ["scrum", "time", "sanction"]
+    explanation: "Law 19.4: Teams must be ready within 30 seconds. Sanction: Free-kick."
+    contributor: null
+
+  - id: L19-004
+    text: "How many players must be in a scrum when both teams have 15 players?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "8 from each team"
+      - "7 from each team"
+      - "6 from each team"
+      - "As many as the team wants"
+    answers: ["8 from each team"]
+    law_reference: "19.5"
+    tags: ["scrum", "numbers"]
+    explanation: "Law 19.5: When both teams have 15 players, eight players from each team bind together."
+    contributor: null
+
+  - id: L19-005
+    text: "What is the minimum number of players allowed in a scrum?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "5"
+      - "6"
+      - "4"
+      - "3"
+    answers: ["5"]
+    law_reference: "19.6"
+    tags: ["scrum", "minimum"]
+    explanation: "Law 19.6: A team must not have fewer than five players in the scrum."
+    contributor: null
+
+  - id: L19-006
+    text: "What are the three referee calls to start a scrum?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Crouch, Bind, Set"
+      - "Crouch, Touch, Engage"
+      - "Ready, Set, Go"
+      - "Crouch, Hold, Engage"
+    answers: ["Crouch, Bind, Set"]
+    law_reference: "19.10-12"
+    tags: ["scrum", "engagement"]
+    explanation: "Law 19.10-12: The referee calls 'crouch', then 'bind', then 'set'."
+    contributor: null
+
+  - id: L19-007
+    text: "During 'crouch', players' heads and shoulders must be:"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "No lower than their hips"
+      - "Below their hips"
+      - "At any height"
+      - "Above shoulder level"
+    answers: ["No lower than their hips"]
+    law_reference: "19.10a"
+    tags: ["scrum", "body-position"]
+    explanation: "Law 19.10a: Heads and shoulders must be no lower than hips, maintained for duration of scrum."
+    contributor: null
+
+  - id: L19-008
+    text: "What is a 'brake foot' in scrum terminology?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "A foot positioned by the hooker for stability before engagement"
+      - "A technique to stop the scrum moving"
+      - "The foot used to hook the ball"
+      - "The prop's rear foot"
+    answers: ["A foot positioned by the hooker for stability before engagement"]
+    law_reference: "19.10c"
+    tags: ["scrum", "brake-foot", "hooker"]
+    explanation: "Law 19.10c: Hookers must have a brake foot positioned to help stability and avoid axial loading."
+    contributor: null
+
+  - id: L19-009
+    text: "Which side of the scrum can the scrum-half choose to throw in?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Either side"
+      - "The left side only"
+      - "The right side only"
+      - "The referee decides"
+    answers: ["Either side"]
+    law_reference: "19.13"
+    tags: ["scrum", "throw-in"]
+    explanation: "Law 19.13: The scrum-half chooses which side of the scrum to throw in the ball."
+    contributor: null
+
+  - id: L19-010
+    text: "The ball is not thrown in straight at a scrum. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Free-kick"
+      - "Penalty"
+      - "Scrum reset"
+      - "Play on"
+    answers: ["Free-kick"]
+    law_reference: "19.15f"
+    tags: ["scrum", "not-straight", "sanction"]
+    explanation: "Law 19.15f: The ball must be thrown straight. Sanction: Free-kick."
+    contributor: null
+
+  - id: L19-011
+    text: "When does the scrum begin?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "When the ball leaves the hands of the scrum-half"
+      - "When the referee calls 'set'"
+      - "When the front rows engage"
+      - "When the ball touches the ground"
+    answers: ["When the ball leaves the hands of the scrum-half"]
+    law_reference: "19.16"
+    tags: ["scrum", "start"]
+    explanation: "Law 19.16: The scrum begins when the ball leaves the hands of the scrum-half."
+    contributor: null
+
+  - id: L19-012
+    text: "Teams start pushing before the ball is thrown in. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Free-kick"
+      - "Penalty"
+      - "Scrum reset"
+      - "Play on"
+    answers: ["Free-kick"]
+    law_reference: "19.17"
+    tags: ["scrum", "early-push", "sanction"]
+    explanation: "Law 19.17: Only when the scrum begins may the teams push. Sanction: Free-kick."
+    contributor: null
+
+  - id: L19-013
+    text: "Players must push straight and:"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Parallel to the ground"
+      - "Upwards"
+      - "At an angle"
+      - "Downwards"
+    answers: ["Parallel to the ground"]
+    law_reference: "19.19"
+    tags: ["scrum", "pushing"]
+    explanation: "Law 19.19: Players may push provided they do so straight and parallel to the ground."
+    contributor: null
+
+  - id: L19-014
+    text: "When can front-row players strike for the ball?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Once the ball touches the ground in the tunnel"
+      - "As soon as the ball is thrown"
+      - "When the referee signals"
+      - "Before the ball is thrown"
+    answers: ["Once the ball touches the ground in the tunnel"]
+    law_reference: "19.20"
+    tags: ["scrum", "hooking"]
+    explanation: "Law 19.20: Front-row players may strike for the ball only once the ball touches the ground in the tunnel."
+    contributor: null
+
+  - id: L19-015
+    text: "A front-row player strikes with both feet simultaneously. What is the sanction?"
+    type: sanction
+    difficulty: advanced
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum reset"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "19.21"
+    tags: ["scrum", "hooking", "sanction"]
+    explanation: "Law 19.21: A front-row player may strike with either foot but not both at the same time. Sanction: Penalty."
+    contributor: null
+
+  - id: L19-016
+    text: "The hooker from the throwing team does not strike for the ball. What is the sanction?"
+    type: sanction
+    difficulty: advanced
+    options:
+      - "Free-kick"
+      - "Penalty"
+      - "Scrum reset"
+      - "Play on"
+    answers: ["Free-kick"]
+    law_reference: "19.22"
+    tags: ["scrum", "hooking", "sanction"]
+    explanation: "Law 19.22: The hooker from the team which threw in must strike for the ball. Sanction: Free-kick."
+    contributor: null
+
+  - id: L19-017
+    text: "How long does the ball have to be available at the back of a stationary scrum before 'use it' is called?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "3-5 seconds"
+      - "5-10 seconds"
+      - "Immediately"
+      - "10 seconds"
+    answers: ["3-5 seconds"]
+    law_reference: "19.26"
+    tags: ["scrum", "use-it"]
+    explanation: "Law 19.26: When scrum is stationary and ball available at back for 3-5 seconds, referee calls 'use it'."
+    contributor: null
+
+  - id: L19-018
+    text: "The ball is not played immediately after 'use it' is called at a scrum. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Scrum to opposition"
+      - "Free-kick"
+      - "Penalty"
+      - "Play on"
+    answers: ["Scrum to opposition"]
+    law_reference: "19.26"
+    tags: ["scrum", "use-it", "sanction"]
+    explanation: "Law 19.26: Team must play the ball out immediately after 'use it'. Sanction: Scrum."
+    contributor: null
+
+  - id: L19-019
+    text: "Where must non-participating players stand at a scrum?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "At least 5 metres behind their team's hindmost foot"
+      - "At least 10 metres behind"
+      - "Behind the offside line"
+      - "Behind the half-way line"
+    answers: ["At least 5 metres behind their team's hindmost foot"]
+    law_reference: "19.31"
+    tags: ["scrum", "offside"]
+    explanation: "Law 19.31: Non-participating players remain at least 5 metres behind the hindmost foot of their team."
+    contributor: null
+
+  - id: L19-020
+    text: "The scrum is wheeled through more than 90 degrees without infringement. What happens?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Scrum is reset, same team throws in"
+      - "Penalty"
+      - "Free-kick"
+      - "Play continues"
+    answers: ["Scrum is reset, same team throws in"]
+    law_reference: "19.34c"
+    tags: ["scrum", "wheel", "reset"]
+    explanation: "Law 19.34c: If wheeled through more than 90 degrees without infringement, the scrum is reset."
+    contributor: null
+
+  - id: L19-021
+    text: "When does the scrum end?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "When ball comes out (not through tunnel), or picked up by hindmost player/scrum-half"
+      - "When the referee blows the whistle"
+      - "When one team pushes back 5 metres"
+      - "When a player falls"
+    answers: ["When ball comes out (not through tunnel), or picked up by hindmost player/scrum-half"]
+    law_reference: "19.36"
+    tags: ["scrum", "ending"]
+    explanation: "Law 19.36: Scrum ends when ball comes out (except tunnel), or is picked up by hindmost player or scrum-half."
+    contributor: null
+
+  - id: L19-022
+    text: "A front row intentionally collapses a scrum. What is the sanction?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum reset"
+      - "Yellow card only"
+    answers: ["Penalty"]
+    law_reference: "19.37d"
+    tags: ["scrum", "collapse", "sanction"]
+    explanation: "Law 19.37d: Intentionally collapsing a scrum is dangerous play. Sanction: Penalty."
+    contributor: null
+
+  - id: L19-023
+    text: "The scrum-half kicks the ball while it is still in the scrum. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum reset"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "19.38b"
+    tags: ["scrum", "kicking", "sanction"]
+    explanation: "Law 19.38b: Scrum-half must not kick the ball while it is in the scrum. Sanction: Penalty."
+    contributor: null
+
+  - id: L19-024
+    text: "The scrum-half pretends the ball is out when it isn't. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Free-kick"
+      - "Penalty"
+      - "Scrum reset"
+      - "Play on"
+    answers: ["Free-kick"]
+    law_reference: "19.38f"
+    tags: ["scrum", "deception", "sanction"]
+    explanation: "Law 19.38f: Scrum-half must not make opponents believe ball is out when it is not. Sanction: Free-kick."
+    contributor: null
+
+  - id: L19-025
+    text: "A knock forward occurs in open play. Who throws in at the resulting scrum?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "The non-offending team"
+      - "The team that knocked on"
+      - "The attacking team"
+      - "The team going forward"
+    answers: ["The non-offending team"]
+    law_reference: "19.1"
+    tags: ["scrum", "throw-in", "knock-on"]
+    explanation: "Law 19.1: At a scrum for a knock forward, the non-offending team throws in."
+    contributor: null
+
+  - id: L19-026
+    text: "A ruck becomes unplayable. Who throws in at the scrum?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "The team last moving forward, or attacking team if neither was moving"
+      - "The team that won the previous ruck"
+      - "The defending team"
+      - "The team with fewer penalties"
+    answers: ["The team last moving forward, or attacking team if neither was moving"]
+    law_reference: "19.1"
+    tags: ["scrum", "throw-in", "ruck"]
+    explanation: "Law 19.1: At an unplayable ruck, the team last moving forward throws in (or attacking team if neither moving)."
+    contributor: null
+
+  - id: L19-027
+    text: "A maul ends unsuccessfully. Who throws in at the scrum?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "The team not in possession at the start of the maul"
+      - "The team in possession at the start"
+      - "The attacking team"
+      - "The defending team"
+    answers: ["The team not in possession at the start of the maul"]
+    law_reference: "19.1"
+    tags: ["scrum", "throw-in", "maul"]
+    explanation: "Law 19.1: When a maul ends unsuccessfully, the team not in possession at start of maul throws in."
+    contributor: null
+
+  - id: L19-028
+    text: "A player brings the ball back into the scrum after it has left. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Free-kick"
+      - "Penalty"
+      - "Scrum reset"
+      - "Play on"
+    answers: ["Free-kick"]
+    law_reference: "19.38d"
+    tags: ["scrum", "ball-return", "sanction"]
+    explanation: "Law 19.38d: Must not bring ball back into scrum once it has left. Sanction: Free-kick."
+    contributor: null
+
+  - id: L19-029
+    text: "A non-front-row player holds an opponent at a scrum. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum reset"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "19.38c"
+    tags: ["scrum", "holding", "sanction"]
+    explanation: "Law 19.38c: Non-front-row player must not hold or push an opponent. Sanction: Penalty."
+    contributor: null
+
+  - id: L19-030
+    text: "The ball comes out of the tunnel during a scrum. What happens?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Scrum is reset, same team throws in"
+      - "Scrum to opposition"
+      - "Free-kick"
+      - "Play continues"
+    answers: ["Scrum is reset, same team throws in"]
+    law_reference: "19.34a"
+    tags: ["scrum", "reset", "tunnel"]
+    explanation: "Law 19.34a: If ball comes out at either end of the tunnel, the scrum is reset."
+    contributor: null

@@ -1,0 +1,617 @@
+metadata:
+  law: 9
+  title: "Foul Play"
+  source: "World Rugby Laws 2026"
+
+questions:
+  # Obstruction
+  - id: L09-001
+    text: "When a player and an opponent are running for the ball, what contact is permitted?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "No contact is permitted"
+      - "Shoulder-to-shoulder only"
+      - "Any pushing or charging"
+      - "Grabbing the jersey"
+    answers: ["Shoulder-to-shoulder only"]
+    law_reference: "9.1"
+    tags: ["obstruction", "contact"]
+    explanation: "Law 9.1 states that when running for the ball, neither player may charge or push the other except shoulder-to-shoulder."
+    contributor: null
+
+  - id: L09-002
+    text: "An offside player intentionally obstructs an opponent. What is the sanction?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "9.2"
+    tags: ["obstruction", "offside", "sanction"]
+    explanation: "Law 9.2 states an offside player must not intentionally obstruct an opponent. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-003
+    text: "A player intentionally prevents an opponent from tackling the ball-carrier. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Warning only"
+    answers: ["Penalty"]
+    law_reference: "9.3"
+    tags: ["obstruction", "sanction"]
+    explanation: "Law 9.3: A player must not intentionally prevent an opponent from tackling the ball-carrier. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-004
+    text: "A ball-carrier intentionally runs into an offside team-mate to obstruct the opposition. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on - legal play"
+    answers: ["Penalty"]
+    law_reference: "9.5"
+    tags: ["obstruction", "offside", "sanction"]
+    explanation: "Law 9.5: A ball-carrier must not intentionally run into an offside team-mate to obstruct the opposition. Sanction: Penalty."
+    contributor: null
+
+  # Unfair Play
+  - id: L09-005
+    text: "A player intentionally knocks the ball out of the playing area with their hand. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Lineout to opposition"
+    answers: ["Penalty"]
+    law_reference: "9.7b"
+    tags: ["unfair-play", "sanction"]
+    explanation: "Law 9.7b: A player must not intentionally knock, place, push or throw the ball with arm or hand from the playing area. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-006
+    text: "A player wastes time. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Warning"
+    answers: ["Free-kick"]
+    law_reference: "9.7d"
+    tags: ["unfair-play", "time-wasting", "sanction"]
+    explanation: "Law 9.7d: A player must not waste time. Sanction: Free-kick."
+    contributor: null
+
+  # Repeated Infringements
+  - id: L09-007
+    text: "A team repeatedly commits the same offence. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Warning only"
+    answers: ["Penalty"]
+    law_reference: "9.8"
+    tags: ["repeated-infringement", "sanction"]
+    explanation: "Law 9.8-9: A team or player must not repeatedly commit the same offence or infringe the laws. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-008
+    text: "Different players of the same team repeatedly commit the same offence. What should the referee do first?"
+    type: procedural
+    difficulty: advanced
+    options:
+      - "Show a yellow card immediately"
+      - "Give a general caution to the team"
+      - "Send off the captain"
+      - "Award a penalty try"
+    answers: ["Give a general caution to the team"]
+    law_reference: "9.10"
+    tags: ["repeated-infringement", "caution"]
+    explanation: "Law 9.10: The referee gives a general caution to the team first, then shows yellow cards if they repeat the offence."
+    contributor: null
+
+  # Dangerous Play
+  - id: L09-009
+    text: "Which of the following is NOT listed as physical abuse in Law 9?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Biting"
+      - "Punching"
+      - "Shoulder charging with an attempt to wrap"
+      - "Contact with the eye area"
+    answers: ["Shoulder charging with an attempt to wrap"]
+    law_reference: "9.12"
+    tags: ["dangerous-play", "physical-abuse"]
+    explanation: "Law 9.12 lists physical abuse including biting, punching, eye contact, striking, stamping, trampling, tripping, kicking. A wrap tackle is legal."
+    contributor: null
+
+  - id: L09-010
+    text: "A player tackles an opponent above the line of the shoulders. What is the sanction?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on if unintentional"
+    answers: ["Penalty"]
+    law_reference: "9.13"
+    tags: ["dangerous-tackle", "high-tackle", "sanction"]
+    explanation: "Law 9.13: Dangerous tackling includes tackling above the line of shoulders, even if it starts below. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-011
+    text: "A player tackles an opponent who is not in possession of the ball. What is the sanction?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "9.14"
+    tags: ["dangerous-play", "tackle", "sanction"]
+    explanation: "Law 9.14: A player must not tackle an opponent who is not in possession of the ball. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-012
+    text: "A player charges into an opponent carrying the ball without attempting to grasp them. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on - legal tackle"
+    answers: ["Penalty"]
+    law_reference: "9.16"
+    tags: ["dangerous-play", "tackle", "sanction"]
+    explanation: "Law 9.16: A player must not charge or knock down a ball-carrier without attempting to grasp that player. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-013
+    text: "A player tackles an opponent whose feet are off the ground. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "9.17"
+    tags: ["dangerous-play", "tackle", "sanction"]
+    explanation: "Law 9.17: A player must not tackle, charge, pull, push or grasp an opponent whose feet are off the ground. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-014
+    text: "A player lifts an opponent and drops them so their head makes contact with the ground. What is the sanction?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty (minimum)"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on"
+    answers: ["Penalty (minimum)"]
+    law_reference: "9.18"
+    tags: ["dangerous-play", "tip-tackle", "sanction"]
+    explanation: "Law 9.18: A player must not lift an opponent and drop or drive them so head/upper body contacts ground. Sanction: Penalty (likely card)."
+    contributor: null
+
+  # Dangerous play in scrum
+  - id: L09-015
+    text: "A front row forms at a distance from opponents and rushes against them. What is this called and what is the sanction?"
+    type: scenario
+    difficulty: intermediate
+    options:
+      - "Charging - Penalty"
+      - "Rushing - Free-kick"
+      - "Collapsing - Scrum reset"
+      - "Pushing - Play on"
+    answers: ["Charging - Penalty"]
+    law_reference: "9.19a"
+    tags: ["scrum", "dangerous-play", "sanction"]
+    explanation: "Law 9.19a: The front row must not form at a distance and rush against opponents. This is dangerous play. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-016
+    text: "A front-row player intentionally collapses a scrum. What is the sanction?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum reset"
+      - "Warning"
+    answers: ["Penalty"]
+    law_reference: "9.19d"
+    tags: ["scrum", "dangerous-play", "collapse", "sanction"]
+    explanation: "Law 9.19d: A front-row player must not intentionally collapse a scrum. Sanction: Penalty."
+    contributor: null
+
+  # Dangerous play in ruck/maul
+  - id: L09-017
+    text: "A player charges into a ruck without binding onto another player. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "9.20a"
+    tags: ["ruck", "maul", "dangerous-play", "sanction"]
+    explanation: "Law 9.20a: A player must not charge into a ruck or maul. Charging includes contact without binding. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-018
+    text: "In a ruck, a player makes contact with an opponent above the line of the shoulders. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "9.20b"
+    tags: ["ruck", "dangerous-play", "sanction"]
+    explanation: "Law 9.20b: A player must not make contact above the line of shoulders in a ruck or maul. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-019
+    text: "A player intentionally collapses a ruck. What is the sanction?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "9.20c"
+    tags: ["ruck", "collapse", "dangerous-play", "sanction"]
+    explanation: "Law 9.20c: A player must not intentionally collapse a ruck or maul. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-020
+    text: "A player removes a jackler by pushing them backwards and grabbing their leg. Is this legal?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "Yes, this is permitted"
+      - "No, you cannot touch their legs"
+      - "No, you must bind first"
+      - "Only if the jackler is not bound"
+    answers: ["Yes, this is permitted"]
+    law_reference: "9.20d"
+    tags: ["ruck", "jackler", "clearout"]
+    explanation: "Law 9.20d: A player may remove a jackler by pushing/driving them backwards including grabbing knee/leg, but must not roll, pull or twist."
+    contributor: null
+
+  - id: L09-021
+    text: "A player attempts to remove a jackler by rolling them sideways. What is the sanction?"
+    type: sanction
+    difficulty: advanced
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Play on - legal"
+      - "Scrum"
+    answers: ["Penalty"]
+    law_reference: "9.20d"
+    tags: ["ruck", "jackler", "clearout", "sanction"]
+    explanation: "Law 9.20d: A player may push/drive a jackler backwards but must not roll, pull or twist. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-022
+    text: "A player drops their weight onto an opponent in a ruck. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "9.20e"
+    tags: ["ruck", "dangerous-play", "sanction"]
+    explanation: "Law 9.20e: A player must not drop their weight onto an opponent. Sanction: Penalty."
+    contributor: null
+
+  # Other dangerous play
+  - id: L09-023
+    text: "A player retaliates after being fouled. What is the sanction?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Play on - justified"
+      - "Both players penalized"
+    answers: ["Penalty"]
+    law_reference: "9.21"
+    tags: ["retaliation", "dangerous-play", "sanction"]
+    explanation: "Law 9.21: A player must not retaliate. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-024
+    text: "What is a 'flying wedge' and is it permitted?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "A V-shaped attack formation - not permitted"
+      - "A type of tackle - permitted"
+      - "A scrum technique - permitted"
+      - "A lineout move - not permitted"
+    answers: ["A V-shaped attack formation - not permitted"]
+    law_reference: "9.22"
+    tags: ["flying-wedge", "dangerous-play"]
+    explanation: "Law 9.22: Teams must not use the flying wedge (a V-shaped attack formation). Sanction: Penalty."
+    contributor: null
+
+  - id: L09-025
+    text: "A player attempts to kick the ball from the hands of the ball-carrier. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Play on - legal"
+      - "Scrum"
+    answers: ["Penalty"]
+    law_reference: "9.23"
+    tags: ["dangerous-play", "kicking", "sanction"]
+    explanation: "Law 9.23: A player must not attempt to kick the ball from the hands of the ball-carrier. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-026
+    text: "Is a ball-carrier permitted to hand off an opponent?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Yes, provided excessive force is not used"
+      - "No, hand-offs are not permitted"
+      - "Only to the face"
+      - "Only below the shoulders"
+    answers: ["Yes, provided excessive force is not used"]
+    law_reference: "9.24"
+    tags: ["hand-off", "ball-carrier"]
+    explanation: "Law 9.24: A ball-carrier is permitted to hand off an opponent provided excessive force is not used."
+    contributor: null
+
+  # Late tackle on kicker
+  - id: L09-027
+    text: "A player intentionally charges an opponent who has just kicked the ball. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty with location options"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on"
+    answers: ["Penalty with location options"]
+    law_reference: "9.25"
+    tags: ["late-tackle", "kicker", "sanction"]
+    explanation: "Law 9.25: Late charge on kicker results in penalty. The non-offending team can choose from several locations."
+    contributor: null
+
+  - id: L09-028
+    text: "After a late tackle on the kicker, the ball lands in in-goal and goes dead. Where can the penalty be taken?"
+    type: scenario
+    difficulty: advanced
+    options:
+      - "5 metres from try line, at least 15m from touchline"
+      - "Where the ball went dead"
+      - "Where the infringement occurred only"
+      - "Centre of the field"
+    answers: ["5 metres from try line, at least 15m from touchline"]
+    law_reference: "9.25d"
+    tags: ["late-tackle", "kicker", "penalty-location"]
+    explanation: "Law 9.25d: If ball lands in in-goal and goes dead, penalty can be 5m from try line in line with where it crossed, at least 15m from touchline."
+    contributor: null
+
+  # Lifting in open play
+  - id: L09-029
+    text: "In open play, a player lifts a team-mate to catch a high ball but fails to lower them safely. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Free-kick"
+      - "Penalty"
+      - "Play on"
+      - "Scrum"
+    answers: ["Free-kick"]
+    law_reference: "9.26"
+    tags: ["lifting", "open-play", "sanction"]
+    explanation: "Law 9.26: Players who lift a team-mate must lower them safely as soon as the ball is won. Sanction: Free-kick."
+    contributor: null
+
+  # Misconduct
+  - id: L09-030
+    text: "A player disputes the referee's decision. What is the sanction?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Warning"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "9.28"
+    tags: ["misconduct", "dissent", "sanction"]
+    explanation: "Law 9.28: Players must respect the referee's authority and not dispute decisions. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-031
+    text: "A player does something against the spirit of good sportsmanship. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Warning"
+      - "Depends on severity"
+    answers: ["Penalty"]
+    law_reference: "9.27"
+    tags: ["misconduct", "sportsmanship", "sanction"]
+    explanation: "Law 9.27: A player must not do anything against the spirit of good sportsmanship. Sanction: Penalty."
+    contributor: null
+
+  # Yellow and Red Cards
+  - id: L09-032
+    text: "How long is a player suspended when shown a yellow card?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "5 minutes"
+      - "10 minutes"
+      - "15 minutes"
+      - "20 minutes"
+    answers: ["10 minutes"]
+    law_reference: "9.29"
+    tags: ["yellow-card", "suspension"]
+    explanation: "Law 9.29: A player shown a yellow card is suspended for 10 minutes."
+    contributor: null
+
+  - id: L09-033
+    text: "A player receives a second yellow card in the same match. What happens?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "The player must be sent off"
+      - "Another 10 minute suspension"
+      - "20 minute suspension"
+      - "Warning from the captain"
+    answers: ["The player must be sent off"]
+    law_reference: "9.29"
+    tags: ["yellow-card", "red-card", "sending-off"]
+    explanation: "Law 9.29: If a player commits another yellow-card offence after receiving a yellow card, the player must be sent off."
+    contributor: null
+
+  - id: L09-034
+    text: "Can a player who is sent off be replaced?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "No, never"
+      - "Yes, immediately"
+      - "In elite rugby, after 20 minutes for some offences"
+      - "Only at half time"
+    answers: ["In elite rugby, after 20 minutes for some offences"]
+    law_reference: "9.30"
+    tags: ["red-card", "replacement", "elite-rugby"]
+    explanation: "Law 9.30: In elite rugby, for non-intentional/highly dangerous actions, the sent-off player may be replaced after 20 minutes playing time."
+    contributor: null
+
+  - id: L09-035
+    text: "In elite rugby, a player is sent off for an intentional and highly dangerous action. Can they be replaced?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "No, they cannot be replaced"
+      - "Yes, after 20 minutes"
+      - "Yes, after 10 minutes"
+      - "Yes, immediately"
+    answers: ["No, they cannot be replaced"]
+    law_reference: "9.30"
+    tags: ["red-card", "replacement", "elite-rugby"]
+    explanation: "Law 9.30: For intentional and highly dangerous actions in elite rugby, the player cannot be replaced."
+    contributor: null
+
+  # Scenario questions
+  - id: L09-036
+    text: "Blue 8 tackles White 10 late after the ball has been passed. White 10 is injured. What action should the referee take?"
+    type: scenario
+    difficulty: intermediate
+    options:
+      - "Penalty only"
+      - "Penalty and at least a yellow card"
+      - "Free-kick"
+      - "Scrum to White"
+    answers: ["Penalty and at least a yellow card"]
+    law_reference: "9.13"
+    tags: ["late-tackle", "dangerous-play", "card"]
+    explanation: "A late tackle is dangerous play (9.13). The referee awards a penalty and should consider at minimum a yellow card for the dangerous action."
+    contributor: null
+
+  - id: L09-037
+    text: "A defending team has given away 5 penalties in quick succession for being offside at the ruck. What should the referee consider?"
+    type: scenario
+    difficulty: advanced
+    options:
+      - "General caution to the team, then yellow card on next offence"
+      - "Continue awarding penalties only"
+      - "Award a penalty try"
+      - "Award a free-kick instead"
+    answers: ["General caution to the team, then yellow card on next offence"]
+    law_reference: "9.8-10"
+    tags: ["repeated-infringement", "team-warning"]
+    explanation: "Law 9.10: When different players repeatedly commit the same offence, give a general caution to the team, then yellow card the next offender."
+    contributor: null
+
+  - id: L09-038
+    text: "A player leads with their elbow when running into contact. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Play on if no contact made"
+      - "Scrum"
+    answers: ["Penalty"]
+    law_reference: "9.11"
+    tags: ["dangerous-play", "elbow", "sanction"]
+    explanation: "Law 9.11: Players must not do anything reckless or dangerous including leading with the elbow or forearm. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-039
+    text: "A player verbally abuses an opponent. What is the sanction?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Warning"
+      - "Depends on what was said"
+    answers: ["Penalty"]
+    law_reference: "9.12"
+    tags: ["abuse", "misconduct", "sanction"]
+    explanation: "Law 9.12: A player must not physically or verbally abuse anyone. Sanction: Penalty."
+    contributor: null
+
+  - id: L09-040
+    text: "A front-row player pulls an opponent in the scrum. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Reset scrum"
+      - "Warning"
+    answers: ["Penalty"]
+    law_reference: "9.19b"
+    tags: ["scrum", "dangerous-play", "sanction"]
+    explanation: "Law 9.19b: A front-row player must not pull an opponent. Sanction: Penalty."
+    contributor: null

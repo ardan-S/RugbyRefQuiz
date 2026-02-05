@@ -1,0 +1,305 @@
+metadata:
+  law: 2
+  title: "The Ball"
+  source: "World Rugby Laws 2026"
+
+questions:
+  - id: L02-001
+    text: "What shape is a rugby ball?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Oval"
+      - "Round"
+      - "Cylindrical"
+      - "Hexagonal"
+    answers: ["Oval"]
+    law_reference: "2.1"
+    tags: ["ball", "shape"]
+    explanation: "Law 2.1: The ball is oval and made of four panels."
+    contributor: null
+
+  - id: L02-002
+    text: "How many panels make up a rugby ball?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Four"
+      - "Two"
+      - "Six"
+      - "Eight"
+    answers: ["Four"]
+    law_reference: "2.1"
+    tags: ["ball", "construction"]
+    explanation: "Law 2.1: The ball is oval and made of four panels."
+    contributor: null
+
+  - id: L02-003
+    text: "What is the length range of a rugby ball?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "280-300 mm"
+      - "250-270 mm"
+      - "300-320 mm"
+      - "260-280 mm"
+    answers: ["280-300 mm"]
+    law_reference: "2.2"
+    tags: ["ball", "dimensions"]
+    explanation: "Law 2.2: The ball has a length of 280-300 mm."
+    contributor: null
+
+  - id: L02-004
+    text: "What is the end-to-end circumference range of a rugby ball?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "740-770 mm"
+      - "700-730 mm"
+      - "780-810 mm"
+      - "720-750 mm"
+    answers: ["740-770 mm"]
+    law_reference: "2.2"
+    tags: ["ball", "dimensions", "circumference"]
+    explanation: "Law 2.2: The end-to-end circumference is 740-770 mm."
+    contributor: null
+
+  - id: L02-005
+    text: "What is the circumference range around the widest part of a rugby ball?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "580-620 mm"
+      - "550-590 mm"
+      - "620-660 mm"
+      - "560-600 mm"
+    answers: ["580-620 mm"]
+    law_reference: "2.2"
+    tags: ["ball", "dimensions", "circumference"]
+    explanation: "Law 2.2: The circumference around the widest part is 580-620 mm."
+    contributor: null
+
+  - id: L02-006
+    text: "What is the weight range of a rugby ball?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "410-460 grams"
+      - "380-420 grams"
+      - "450-500 grams"
+      - "400-450 grams"
+    answers: ["410-460 grams"]
+    law_reference: "2.3"
+    tags: ["ball", "weight"]
+    explanation: "Law 2.3: The ball weighs 410-460 grams."
+    contributor: null
+
+  - id: L02-007
+    text: "Can smaller balls be used for matches between young players?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Yes"
+      - "No"
+      - "Only in training"
+      - "Only for players under 10"
+    answers: ["Yes"]
+    law_reference: "2.4"
+    tags: ["ball", "youth"]
+    explanation: "Law 2.4: Smaller balls may be used for matches between young players."
+    contributor: null
+
+  - id: L02-008
+    text: "What materials can be used to make a rugby ball?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Leather or a suitable synthetic material"
+      - "Leather only"
+      - "Rubber only"
+      - "Synthetic material only"
+    answers: ["Leather or a suitable synthetic material"]
+    law_reference: "2.5"
+    tags: ["ball", "material"]
+    explanation: "Law 2.5: The ball is made of leather or a suitable synthetic material."
+    contributor: null
+
+  - id: L02-009
+    text: "Can a rugby ball be treated to make it water resistant?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Yes"
+      - "No"
+      - "Only in wet conditions"
+      - "Only for international matches"
+    answers: ["Yes"]
+    law_reference: "2.5"
+    tags: ["ball", "treatment"]
+    explanation: "Law 2.5: The ball may be treated to make it water resistant and easier to grip."
+    contributor: null
+
+  - id: L02-010
+    text: "What is the air pressure range of a rugby ball at the start of play in kilopascals?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "65.71-68.75 kilopascals"
+      - "60.00-65.00 kilopascals"
+      - "70.00-75.00 kilopascals"
+      - "55.00-60.00 kilopascals"
+    answers: ["65.71-68.75 kilopascals"]
+    law_reference: "2.6"
+    tags: ["ball", "pressure"]
+    explanation: "Law 2.6: The air pressure at the start of play is 65.71-68.75 kilopascals."
+    contributor: null
+
+  - id: L02-011
+    text: "What is the air pressure range of a rugby ball in pounds per square inch?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "9.5-10.0 psi"
+      - "8.0-9.0 psi"
+      - "10.5-11.0 psi"
+      - "7.5-8.5 psi"
+    answers: ["9.5-10.0 psi"]
+    law_reference: "2.6"
+    tags: ["ball", "pressure"]
+    explanation: "Law 2.6: The air pressure at the start of play is 9.5-10.0 pounds per square inch."
+    contributor: null
+
+  - id: L02-012
+    text: "Are spare balls allowed to be available during a match?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Yes"
+      - "No"
+      - "Only with referee permission"
+      - "Only for professional matches"
+    answers: ["Yes"]
+    law_reference: "2.7"
+    tags: ["ball", "spare"]
+    explanation: "Law 2.7: Spare balls may be available during a match."
+    contributor: null
+
+  - id: L02-013
+    text: "A ball is found to weigh 405 grams before kick-off. Is this ball legal?"
+    type: scenario
+    difficulty: intermediate
+    options:
+      - "No, it is too light"
+      - "Yes, it is within the legal range"
+      - "It depends on the competition"
+      - "Only if both teams agree"
+    answers: ["No, it is too light"]
+    law_reference: "2.3"
+    tags: ["ball", "weight", "scenario"]
+    explanation: "Law 2.3: The ball must weigh 410-460 grams. 405 grams is below the minimum."
+    contributor: null
+
+  - id: L02-014
+    text: "A ball measures 305 mm in length. Is this ball legal for senior rugby?"
+    type: scenario
+    difficulty: intermediate
+    options:
+      - "No, it is too long"
+      - "Yes, it is within the legal range"
+      - "It depends on the competition"
+      - "Only for training purposes"
+    answers: ["No, it is too long"]
+    law_reference: "2.2"
+    tags: ["ball", "dimensions", "scenario"]
+    explanation: "Law 2.2: The ball must be 280-300 mm in length. 305 mm exceeds the maximum."
+    contributor: null
+
+  - id: L02-015
+    text: "What is the air pressure range of a rugby ball in kilograms per square centimetre?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "0.67-0.70 kg/cm²"
+      - "0.60-0.65 kg/cm²"
+      - "0.75-0.80 kg/cm²"
+      - "0.55-0.60 kg/cm²"
+    answers: ["0.67-0.70 kg/cm²"]
+    law_reference: "2.6"
+    tags: ["ball", "pressure"]
+    explanation: "Law 2.6: The air pressure at the start of play is 0.67-0.70 kilograms per square centimetre."
+    contributor: null
+
+  - id: L02-016
+    text: "The ball becomes damaged during play. What should happen?"
+    type: procedural
+    difficulty: intermediate
+    options:
+      - "Replace it with a spare ball"
+      - "Continue playing regardless"
+      - "End the match"
+      - "Award a scrum to the attacking team"
+    answers: ["Replace it with a spare ball"]
+    law_reference: "2.7"
+    tags: ["ball", "damaged", "procedure"]
+    explanation: "Law 2.7 allows spare balls to be available during a match for situations like this."
+    contributor: null
+
+  - id: L02-017
+    text: "A team wants to use a rubber ball for their match. Is this permitted?"
+    type: scenario
+    difficulty: intermediate
+    options:
+      - "Only if it is a suitable synthetic material meeting specifications"
+      - "Yes, rubber is always acceptable"
+      - "No, only leather is permitted"
+      - "Only for youth matches"
+    answers: ["Only if it is a suitable synthetic material meeting specifications"]
+    law_reference: "2.5"
+    tags: ["ball", "material", "scenario"]
+    explanation: "Law 2.5: The ball is made of leather or a suitable synthetic material. Any synthetic material must meet all specifications."
+    contributor: null
+
+  - id: L02-018
+    text: "Before an under-12s match, a smaller ball is proposed. Is this allowed?"
+    type: scenario
+    difficulty: beginner
+    options:
+      - "Yes, smaller balls may be used for young players"
+      - "No, only standard balls are permitted"
+      - "Only with union approval"
+      - "Only for training"
+    answers: ["Yes, smaller balls may be used for young players"]
+    law_reference: "2.4"
+    tags: ["ball", "youth", "scenario"]
+    explanation: "Law 2.4: Smaller balls may be used for matches between young players."
+    contributor: null
+
+  - id: L02-019
+    text: "A ball has an air pressure of 9.3 psi at kick-off. Is this legal?"
+    type: scenario
+    difficulty: advanced
+    options:
+      - "No, the pressure is too low"
+      - "Yes, it is within the legal range"
+      - "It depends on the altitude"
+      - "It depends on the weather"
+    answers: ["No, the pressure is too low"]
+    law_reference: "2.6"
+    tags: ["ball", "pressure", "scenario"]
+    explanation: "Law 2.6: The air pressure at the start of play must be 9.5-10.0 psi. 9.3 psi is below the minimum."
+    contributor: null
+
+  - id: L02-020
+    text: "Why might a ball be treated before use?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "To make it water resistant and easier to grip"
+      - "To make it heavier"
+      - "To change its colour"
+      - "To make it bounce higher"
+    answers: ["To make it water resistant and easier to grip"]
+    law_reference: "2.5"
+    tags: ["ball", "treatment"]
+    explanation: "Law 2.5: The ball may be treated to make it water resistant and easier to grip."
+    contributor: null

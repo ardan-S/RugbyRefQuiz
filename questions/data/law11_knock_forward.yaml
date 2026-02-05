@@ -1,0 +1,230 @@
+metadata:
+  law: 11
+  title: "Knock Forward or Throw Forward"
+  source: "World Rugby Laws 2026"
+
+questions:
+  - id: L11-001
+    text: "Where can a knock forward occur?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Anywhere in the playing area"
+      - "Only in open play"
+      - "Only in the field of play"
+      - "Only in the opposition half"
+    answers: ["Anywhere in the playing area"]
+    law_reference: "11.1"
+    tags: ["knock-on", "playing-area"]
+    explanation: "Law 11.1: A knock forward may occur anywhere in the playing area."
+    contributor: null
+
+  - id: L11-002
+    text: "What is the sanction for a knock forward?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Scrum"
+      - "Penalty"
+      - "Free-kick"
+      - "Play on"
+    answers: ["Scrum"]
+    law_reference: "11.1"
+    tags: ["knock-on", "sanction"]
+    explanation: "Law 11.1: Sanction for a knock forward is a scrum (or lineout/quick-throw if ball goes into touch)."
+    contributor: null
+
+  - id: L11-003
+    text: "If the ball goes into touch after a knock forward, what options does the non-offending team have?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Scrum, quick-throw, or lineout"
+      - "Scrum only"
+      - "Lineout only"
+      - "Quick-throw only"
+    answers: ["Scrum, quick-throw, or lineout"]
+    law_reference: "11.1"
+    tags: ["knock-on", "touch", "options"]
+    explanation: "Law 11.1: If the ball goes into touch after a knock forward, non-offending team may opt for quick-throw or lineout instead of scrum."
+    contributor: null
+
+  - id: L11-004
+    text: "A player knocks the ball forward while tackling an opponent. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Scrum"
+      - "Penalty"
+      - "Free-kick"
+      - "Play on - legal"
+    answers: ["Scrum"]
+    law_reference: "11.2"
+    tags: ["knock-on", "tackle", "sanction"]
+    explanation: "Law 11.2: It is a knock forward when a player, in tackling or attempting to tackle, makes contact with the ball and it goes forward. Sanction: Scrum."
+    contributor: null
+
+  - id: L11-005
+    text: "A player intentionally knocks the ball forward with their hand. What is the sanction?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty"
+      - "Scrum"
+      - "Free-kick"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "11.3"
+    tags: ["knock-on", "intentional", "sanction"]
+    explanation: "Law 11.3: A player must not intentionally knock the ball forward with hand or arm. Sanction: Penalty."
+    contributor: null
+
+  - id: L11-006
+    text: "A player knocks the ball forward while trying to catch it, but had no reasonable expectation of gaining possession. What is the sanction?"
+    type: sanction
+    difficulty: advanced
+    options:
+      - "Penalty"
+      - "Scrum"
+      - "Free-kick"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "11.4"
+    tags: ["knock-on", "intentional", "sanction"]
+    explanation: "Law 11.4: It is not intentional if, when trying to catch the ball, there was a reasonable expectation of gaining possession. Without that expectation, it is intentional."
+    contributor: null
+
+  - id: L11-007
+    text: "A player knocks the ball forward while trying to catch a difficult pass but had a reasonable expectation of catching it. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Scrum"
+      - "Penalty"
+      - "Free-kick"
+      - "Play on"
+    answers: ["Scrum"]
+    law_reference: "11.4"
+    tags: ["knock-on", "unintentional", "sanction"]
+    explanation: "Law 11.4: If there was a reasonable expectation of gaining possession, the knock forward is not intentional. Sanction: Scrum."
+    contributor: null
+
+  - id: L11-008
+    text: "A player knocks the ball forward immediately after an opponent kicks it (charge down). What is the decision?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Play continues - no sanction"
+      - "Scrum"
+      - "Penalty"
+      - "Free-kick"
+    answers: ["Play continues - no sanction"]
+    law_reference: "11.5a"
+    tags: ["knock-on", "charge-down"]
+    explanation: "Law 11.5a: There is no sanction and play continues if a player knocks the ball forward immediately after an opponent kicks it (charge down)."
+    contributor: null
+
+  - id: L11-009
+    text: "A player rips the ball from an opponent and the ball goes forward from the opponent's arm. What is the decision?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Play continues - no sanction"
+      - "Scrum to the team that lost the ball"
+      - "Penalty"
+      - "Scrum to the team that ripped"
+    answers: ["Play continues - no sanction"]
+    law_reference: "11.5b"
+    tags: ["knock-on", "rip"]
+    explanation: "Law 11.5b: There is no sanction if a player rips or knocks the ball from an opponent and the ball goes forward from the opponent's hand or arm."
+    contributor: null
+
+  - id: L11-010
+    text: "Where can a throw forward occur?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Anywhere in the playing area"
+      - "Only in open play"
+      - "Only in the field of play"
+      - "Only behind the try line"
+    answers: ["Anywhere in the playing area"]
+    law_reference: "11.6"
+    tags: ["throw-forward", "playing-area"]
+    explanation: "Law 11.6: A throw forward may occur anywhere in the playing area."
+    contributor: null
+
+  - id: L11-011
+    text: "What is the sanction for a throw forward?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Scrum"
+      - "Penalty"
+      - "Free-kick"
+      - "Lineout"
+    answers: ["Scrum"]
+    law_reference: "11.6"
+    tags: ["throw-forward", "sanction"]
+    explanation: "Law 11.6: A throw forward may occur anywhere in the playing area. Sanction: Scrum."
+    contributor: null
+
+  - id: L11-012
+    text: "A player intentionally throws the ball forward. What is the sanction?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty"
+      - "Scrum"
+      - "Free-kick"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "11.7"
+    tags: ["throw-forward", "intentional", "sanction"]
+    explanation: "Law 11.7: A player must not intentionally throw or pass the ball forward. Sanction: Penalty."
+    contributor: null
+
+  - id: L11-013
+    text: "What is the difference between an intentional and unintentional knock forward in terms of sanction?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Intentional = Penalty, Unintentional = Scrum"
+      - "Both result in a Penalty"
+      - "Both result in a Scrum"
+      - "Intentional = Scrum, Unintentional = Play on"
+    answers: ["Intentional = Penalty, Unintentional = Scrum"]
+    law_reference: "11.1-3"
+    tags: ["knock-on", "sanction"]
+    explanation: "Unintentional knock forward = Scrum (11.1). Intentional knock forward = Penalty (11.3)."
+    contributor: null
+
+  - id: L11-014
+    text: "Blue 9 passes the ball, but it travels forward due to the wind. What is the sanction?"
+    type: scenario
+    difficulty: intermediate
+    options:
+      - "Scrum to White"
+      - "Penalty to White"
+      - "Play on - wind is not player's fault"
+      - "Free-kick to White"
+    answers: ["Scrum to White"]
+    law_reference: "11.6"
+    tags: ["throw-forward", "scenario"]
+    explanation: "A forward pass is judged by the direction the ball travels, not the passer's intent. If it goes forward, it's a forward pass. Sanction: Scrum."
+    contributor: null
+
+  - id: L11-015
+    text: "A player deliberately slaps the ball forward to prevent an opponent from catching it. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Scrum"
+      - "Free-kick"
+      - "Yellow card only"
+    answers: ["Penalty"]
+    law_reference: "11.3"
+    tags: ["knock-on", "intentional", "sanction"]
+    explanation: "Law 11.3: A player must not intentionally knock the ball forward. Sanction: Penalty."
+    contributor: null

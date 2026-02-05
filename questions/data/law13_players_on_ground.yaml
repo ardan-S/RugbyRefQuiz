@@ -1,0 +1,230 @@
+metadata:
+  law: 13
+  title: "Players on the Ground in Open Play"
+  source: "World Rugby Laws 2026"
+
+questions:
+  - id: L13-001
+    text: "What is the principle behind Law 13?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "The game is played only by players who are on their feet"
+      - "Players must stay on the ground once tackled"
+      - "Players can play the ball from any position"
+      - "Only forwards can go to ground"
+    answers: ["The game is played only by players who are on their feet"]
+    law_reference: "13"
+    tags: ["principle", "on-feet"]
+    explanation: "The principle of Law 13 is that the game is played only by players who are on their feet."
+    contributor: null
+
+  - id: L13-002
+    text: "A player goes to ground to gather the ball. What must they do immediately?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Get up, play the ball, or release the ball"
+      - "Wait for support to arrive"
+      - "Hold the ball and protect it"
+      - "Roll away from opponents"
+    answers: ["Get up, play the ball, or release the ball"]
+    law_reference: "13.1"
+    tags: ["ground", "ball-carrier"]
+    explanation: "Law 13.1: Players who go to ground with the ball must immediately get up, play (not kick) the ball, or release the ball."
+    contributor: null
+
+  - id: L13-003
+    text: "Can a player who goes to ground with the ball kick it?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "No"
+      - "Yes, always"
+      - "Only in their own 22"
+      - "Only if no opponents nearby"
+    answers: ["No"]
+    law_reference: "13.1b"
+    tags: ["ground", "kicking"]
+    explanation: "Law 13.1b: Players on the ground must play the ball but not kick it."
+    contributor: null
+
+  - id: L13-004
+    text: "A player with the ball goes to ground and does not immediately get up, play, or release the ball. What is the sanction?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "13.1"
+    tags: ["ground", "sanction"]
+    explanation: "Law 13.1: Players on the ground must immediately get up, play, or release the ball. Sanction: Penalty."
+    contributor: null
+
+  - id: L13-005
+    text: "Once the ball is played or released, what must a player on the ground do immediately?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Move away from the ball or get up"
+      - "Stay and protect the ball"
+      - "Wait for the referee's whistle"
+      - "Roll towards their own try line"
+    answers: ["Move away from the ball or get up"]
+    law_reference: "13.2"
+    tags: ["ground", "release"]
+    explanation: "Law 13.2: Once the ball is played or released, players on the ground must immediately move away from the ball or get up."
+    contributor: null
+
+  - id: L13-006
+    text: "A player on the ground does not move away after releasing the ball. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "13.2"
+    tags: ["ground", "roll-away", "sanction"]
+    explanation: "Law 13.2: Once the ball is played or released, players on the ground must immediately move away or get up. Sanction: Penalty."
+    contributor: null
+
+  - id: L13-007
+    text: "A player on the ground without the ball is considered:"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Out of the game"
+      - "Still in play"
+      - "Offside"
+      - "A tackler"
+    answers: ["Out of the game"]
+    law_reference: "13.3"
+    tags: ["ground", "out-of-game"]
+    explanation: "Law 13.3: A player on the ground in the field of play without the ball is out of the game."
+    contributor: null
+
+  - id: L13-008
+    text: "A player on the ground (without the ball) plays the ball. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "13.3b"
+    tags: ["ground", "out-of-game", "sanction"]
+    explanation: "Law 13.3b: A player on the ground without the ball must not play the ball. Sanction: Penalty."
+    contributor: null
+
+  - id: L13-009
+    text: "A player on the ground tackles an opponent who has the ball. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on if tackle is successful"
+    answers: ["Penalty"]
+    law_reference: "13.3c"
+    tags: ["ground", "tackle", "sanction"]
+    explanation: "Law 13.3c: A player on the ground must not tackle or attempt to tackle an opponent. Sanction: Penalty."
+    contributor: null
+
+  - id: L13-010
+    text: "A player on the ground without the ball prevents opponents from gaining possession. What must they do?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Allow opponents to play or gain possession"
+      - "Protect the ball for team-mates"
+      - "Hold the ball until support arrives"
+      - "Stay still and wait"
+    answers: ["Allow opponents to play or gain possession"]
+    law_reference: "13.3a"
+    tags: ["ground", "opponents"]
+    explanation: "Law 13.3a: A player on the ground must allow opponents who are not on the ground to play or gain possession of the ball."
+    contributor: null
+
+  - id: L13-011
+    text: "A player on their feet falls on a player on the ground who has the ball. What is the sanction?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "13.4"
+    tags: ["ground", "falling", "sanction"]
+    explanation: "Law 13.4: Players on their feet must not fall on or over players on the ground who have the ball. Sanction: Penalty."
+    contributor: null
+
+  - id: L13-012
+    text: "A player on their feet falls over players on the ground who are near the ball. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on - legal"
+    answers: ["Penalty"]
+    law_reference: "13.4"
+    tags: ["ground", "falling", "sanction"]
+    explanation: "Law 13.4: Players on their feet must not fall on or over players on the ground who have the ball or are near it. Sanction: Penalty."
+    contributor: null
+
+  - id: L13-013
+    text: "Blue 7 is on the ground without the ball near a ruck. White 9 tries to pick up the ball but Blue 7 grabs their arm. What is the decision?"
+    type: scenario
+    difficulty: intermediate
+    options:
+      - "Penalty to White - player on ground cannot interfere"
+      - "Play on - competing for ball"
+      - "Scrum to White"
+      - "Free-kick to White"
+    answers: ["Penalty to White - player on ground cannot interfere"]
+    law_reference: "13.3"
+    tags: ["ground", "scenario", "sanction"]
+    explanation: "A player on the ground without the ball is out of the game and must not tackle or interfere with opponents. Penalty to White."
+    contributor: null
+
+  - id: L13-014
+    text: "A player dives on a loose ball on the ground. What must they do?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Immediately get up, play it, or release it"
+      - "Hold it and wait for support"
+      - "Cover it with their body"
+      - "Kick it away"
+    answers: ["Immediately get up, play it, or release it"]
+    law_reference: "13.1"
+    tags: ["ground", "loose-ball"]
+    explanation: "Law 13.1: A player who goes to ground with the ball must immediately get up, play (not kick) it, or release it."
+    contributor: null
+
+  - id: L13-015
+    text: "Why is it illegal for players on their feet to fall on players on the ground near the ball?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "It is dangerous and prevents quick ball"
+      - "It gives an unfair advantage"
+      - "It is only illegal in the 22"
+      - "It is legal if done carefully"
+    answers: ["It is dangerous and prevents quick ball"]
+    law_reference: "13.4"
+    tags: ["ground", "falling", "safety"]
+    explanation: "Falling on players is dangerous and prevents the ball from being available quickly, contrary to the principle that the game is played on feet."
+    contributor: null

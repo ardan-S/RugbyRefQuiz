@@ -1,0 +1,305 @@
+metadata:
+  law: 10
+  title: "Offside and Onside in Open Play"
+  source: "World Rugby Laws 2026"
+
+questions:
+  - id: L10-001
+    text: "When is a player offside in open play?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "In front of a team-mate who is carrying the ball or who last played it"
+      - "Behind the ball-carrier"
+      - "Within 5 metres of the ball"
+      - "In the opposition half"
+    answers: ["In front of a team-mate who is carrying the ball or who last played it"]
+    law_reference: "10.1"
+    tags: ["offside", "open-play"]
+    explanation: "Law 10.1: A player is offside in open play if in front of a team-mate who is carrying the ball or who last played it."
+    contributor: null
+
+  - id: L10-002
+    text: "An offside player plays the ball. What is the sanction?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "10.1a"
+    tags: ["offside", "sanction"]
+    explanation: "Law 10.1: An offside player must not interfere with play, including playing the ball. Sanction: Penalty."
+    contributor: null
+
+  - id: L10-003
+    text: "Can a player be offside anywhere in the playing area?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Yes"
+      - "No, only in the opposition half"
+      - "No, only within 10 metres of the ball"
+      - "No, only in the 22"
+    answers: ["Yes"]
+    law_reference: "10.2"
+    tags: ["offside", "playing-area"]
+    explanation: "Law 10.2: A player can be offside anywhere in the playing area."
+    contributor: null
+
+  - id: L10-004
+    text: "A player receives an unintentional throw forward. Is that player offside?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "No"
+      - "Yes"
+      - "Only if they gain an advantage"
+      - "Only if in the opposition 22"
+    answers: ["No"]
+    law_reference: "10.3"
+    tags: ["offside", "throw-forward"]
+    explanation: "Law 10.3: A player who receives an unintentional throw forward is not offside."
+    contributor: null
+
+  - id: L10-005
+    text: "An offside player moves towards the ball after a team-mate's kick. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on if they stop"
+    answers: ["Penalty"]
+    law_reference: "10.4b"
+    tags: ["offside", "kick", "sanction"]
+    explanation: "Law 10.4b: An offside player may be penalised if they move towards the ball. Sanction: Penalty."
+    contributor: null
+
+  - id: L10-006
+    text: "A team-mate kicks the ball. Where must players who were in front of the kicker retire to?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Behind an onside team-mate or 10m behind where the ball lands/is caught"
+      - "Behind the kicker"
+      - "Behind the halfway line"
+      - "5 metres behind the ball"
+    answers: ["Behind an onside team-mate or 10m behind where the ball lands/is caught"]
+    law_reference: "10.4c"
+    tags: ["offside", "10-metre-law", "kick"]
+    explanation: "Law 10.4c: Players in front of the kicker must retire behind an onside team-mate or 10m behind where the ball lands/is caught."
+    contributor: null
+
+  - id: L10-007
+    text: "A player in front of the kicker fails to retire 10 metres. The opposition has the option of:"
+    type: factual
+    difficulty: advanced
+    options:
+      - "Penalty at place of infringement or scrum where ball was last played"
+      - "Penalty only"
+      - "Scrum only"
+      - "Free-kick"
+    answers: ["Penalty at place of infringement or scrum where ball was last played"]
+    law_reference: "10.4c"
+    tags: ["offside", "10-metre-law", "sanction"]
+    explanation: "Law 10.4c: The non-offending team can choose penalty at place of infringement or scrum where the offending team last played the ball."
+    contributor: null
+
+  - id: L10-008
+    text: "Does the 10-metre law apply when a kick is charged down?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "No"
+      - "Yes"
+      - "Only in the 22"
+      - "Only from restarts"
+    answers: ["No"]
+    law_reference: "10.4c"
+    tags: ["offside", "10-metre-law", "charge-down"]
+    explanation: "Law 10.4c: The 10-metre law does not apply when the kick is charged down."
+    contributor: null
+
+  - id: L10-009
+    text: "A player is accidentally offside (cannot avoid being touched by the ball). When should play stop?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Only if the offending team gains an advantage"
+      - "Immediately"
+      - "Never - play continues"
+      - "At the next stoppage"
+    answers: ["Only if the offending team gains an advantage"]
+    law_reference: "10.5"
+    tags: ["offside", "accidental"]
+    explanation: "Law 10.5: A player is accidentally offside if they cannot avoid contact. Play stops only if the offending team gains an advantage."
+    contributor: null
+
+  - id: L10-010
+    text: "What is the sanction for accidental offside when play is stopped?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Scrum"
+      - "Penalty"
+      - "Free-kick"
+      - "Play on"
+    answers: ["Scrum"]
+    law_reference: "10.5"
+    tags: ["offside", "accidental", "sanction"]
+    explanation: "Law 10.5: Accidental offside. Sanction: Scrum."
+    contributor: null
+
+  - id: L10-011
+    text: "How can an offside player be put onside by a team-mate?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Moving behind a team-mate who last played the ball or who is onside"
+      - "Staying still for 5 seconds"
+      - "Touching the ground with both hands"
+      - "Moving 10 metres away from the ball"
+    answers: ["Moving behind a team-mate who last played the ball or who is onside"]
+    law_reference: "10.6"
+    tags: ["onside", "team-mate"]
+    explanation: "Law 10.6: An offside player can be put onside by moving behind a team-mate who last played the ball or who is onside."
+    contributor: null
+
+  - id: L10-012
+    text: "Can an opponent's action put an offside player onside (other than under 10-metre law)?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "Yes, if opponent kicks the ball or intentionally touches it without gaining possession"
+      - "No, only team-mates can put a player onside"
+      - "Yes, if opponent tackles the ball-carrier"
+      - "Yes, if opponent calls for the ball"
+    answers: ["Yes, if opponent kicks the ball or intentionally touches it without gaining possession"]
+    law_reference: "10.7b"
+    tags: ["onside", "opponent"]
+    explanation: "Law 10.7b: An opponent can put an offside player onside by kicking or intentionally touching the ball without gaining possession."
+    contributor: null
+
+  - id: L10-013
+    text: "A player is offside under the 10-metre law. Can an opponent's action put them onside?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "Only a charge down puts them onside"
+      - "Yes, any touch of the ball"
+      - "No, they must retire"
+      - "Yes, if the opponent kicks"
+    answers: ["Only a charge down puts them onside"]
+    law_reference: "10.8"
+    tags: ["offside", "10-metre-law", "onside"]
+    explanation: "Law 10.8: A player offside under the 10-metre law cannot be put onside by opponent's action, apart from a charge down."
+    contributor: null
+
+  - id: L10-014
+    text: "A player was offside at a ruck that has now ended. When are they put onside?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "When they retire behind the offside line, or opponent carries ball 5m, or opponent kicks"
+      - "Immediately when the ruck ends"
+      - "When they touch an onside team-mate"
+      - "They remain offside until the next stoppage"
+    answers: ["When they retire behind the offside line, or opponent carries ball 5m, or opponent kicks"]
+    law_reference: "10.9-10"
+    tags: ["offside", "ruck", "onside"]
+    explanation: "Law 10.10: A player offside at a ruck can be put onside by retiring, opponent carrying 5m, or opponent kicking."
+    contributor: null
+
+  - id: L10-015
+    text: "An offside player fails to retire without undue delay and benefits from a better position. What is the sanction?"
+    type: sanction
+    difficulty: advanced
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on"
+    answers: ["Penalty"]
+    law_reference: "10.11a"
+    tags: ["offside", "retiring", "sanction"]
+    explanation: "Law 10.11a: An offside player who fails to retire without delay and benefits from it may be penalised. Sanction: Penalty."
+    contributor: null
+
+  - id: L10-016
+    text: "An offside player does not make an effort to retreat and interferes with play. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on if no advantage gained"
+    answers: ["Penalty"]
+    law_reference: "10.4a"
+    tags: ["offside", "interfere", "sanction"]
+    explanation: "Law 10.4a: An offside player who doesn't make an effort to retreat and interferes with play is penalised. Sanction: Penalty."
+    contributor: null
+
+  - id: L10-017
+    text: "A player is in an offside position but is not interfering with play. What happens?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "No sanction unless they interfere"
+      - "Penalty immediately"
+      - "Free-kick"
+      - "Warning from referee"
+    answers: ["No sanction unless they interfere"]
+    law_reference: "10.1"
+    tags: ["offside", "interfere"]
+    explanation: "Law 10.1: An offside player must not interfere with play - they are only penalised if they do interfere."
+    contributor: null
+
+  - id: L10-018
+    text: "An offside player loiters in an offside position. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Play on unless they touch ball"
+    answers: ["Penalty"]
+    law_reference: "10.1d"
+    tags: ["offside", "loitering", "sanction"]
+    explanation: "Law 10.1d: Loitering in an offside position is interference with play. Sanction: Penalty."
+    contributor: null
+
+  - id: L10-019
+    text: "Which of the following is NOT a way an offside player interferes with play?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Standing still with hands raised"
+      - "Playing the ball"
+      - "Tackling the ball-carrier"
+      - "Preventing the opposition from playing as they wish"
+    answers: ["Standing still with hands raised"]
+    law_reference: "10.1"
+    tags: ["offside", "interfere"]
+    explanation: "Law 10.1: Interference includes playing the ball, tackling the carrier, preventing opposition from playing, and loitering - not standing still uninvolved."
+    contributor: null
+
+  - id: L10-020
+    text: "Blue 10 kicks ahead. Blue 7 was in front of the kicker and chases the ball. Blue 7 reaches the ball before retiring. What is the decision?"
+    type: scenario
+    difficulty: intermediate
+    options:
+      - "Penalty to the opposition or scrum where Blue last played"
+      - "Play on - advantage Blue"
+      - "Scrum only"
+      - "Free-kick"
+    answers: ["Penalty to the opposition or scrum where Blue last played"]
+    law_reference: "10.4c"
+    tags: ["offside", "10-metre-law", "scenario"]
+    explanation: "Blue 7 was offside (in front of kicker) and failed to retire. Non-offending team chooses penalty or scrum."
+    contributor: null

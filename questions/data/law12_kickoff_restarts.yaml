@@ -1,0 +1,457 @@
+metadata:
+  law: 12
+  title: "Kick-off and Restart Kicks"
+  source: "World Rugby Laws 2026"
+
+questions:
+  # Kick-offs
+  - id: L12-001
+    text: "What type of kick must all kick-offs and restart kicks be?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Drop kicks"
+      - "Place kicks"
+      - "Punt kicks"
+      - "Any type of kick"
+    answers: ["Drop kicks"]
+    law_reference: "12.1"
+    tags: ["kick-off", "drop-kick"]
+    explanation: "Law 12.1: All kick-offs and restart kicks are drop kicks."
+    contributor: null
+
+  - id: L12-002
+    text: "A kick-off is taken as a place kick instead of a drop kick. What are the options for the non-kicking team?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Kick retaken or scrum"
+      - "Penalty"
+      - "Free-kick"
+      - "Play on"
+    answers: ["Kick retaken or scrum"]
+    law_reference: "12.1"
+    tags: ["kick-off", "sanction"]
+    explanation: "Law 12.1: If not a drop kick, the non-kicking team has the option of the kick being retaken or a scrum."
+    contributor: null
+
+  - id: L12-003
+    text: "Where must kick-offs be taken from?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "On or behind the centre of the half-way line"
+      - "On the centre spot exactly"
+      - "Anywhere on the half-way line"
+      - "Within 5 metres of centre"
+    answers: ["On or behind the centre of the half-way line"]
+    law_reference: "12.2"
+    tags: ["kick-off", "location"]
+    explanation: "Law 12.2: Kick-offs are taken on or behind the centre of the half-way line."
+    contributor: null
+
+  - id: L12-004
+    text: "Which team starts the second half with the kick-off?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "The opponents of the team who kicked off the first half"
+      - "The team who kicked off the first half"
+      - "The team that is losing"
+      - "The team that scored last"
+    answers: ["The opponents of the team who kicked off the first half"]
+    law_reference: "12.3"
+    tags: ["kick-off", "second-half"]
+    explanation: "Law 12.3: The opponents of the team who kicked off the match start the second half."
+    contributor: null
+
+  - id: L12-005
+    text: "After a team scores, who takes the restart kick?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "The team that was scored against"
+      - "The team that scored"
+      - "Alternating teams"
+      - "The team with fewer points"
+    answers: ["The team that was scored against"]
+    law_reference: "12.4"
+    tags: ["restart", "scoring"]
+    explanation: "Law 12.4: After a team has scored, their opponents restart play."
+    contributor: null
+
+  - id: L12-006
+    text: "At a kick-off, where must the kicker's team-mates be when the ball is kicked?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Behind the ball"
+      - "Behind the half-way line"
+      - "Within 10 metres of the kicker"
+      - "Anywhere on the field"
+    answers: ["Behind the ball"]
+    law_reference: "12.5a"
+    tags: ["kick-off", "team-mates"]
+    explanation: "Law 12.5a: Team-mates of the kicker must be behind the ball. Sanction: Scrum."
+    contributor: null
+
+  - id: L12-007
+    text: "At a kick-off, where must the opposition be when the ball is kicked?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "On or behind the 10-metre line"
+      - "Behind the half-way line"
+      - "In their own half"
+      - "Behind the 22-metre line"
+    answers: ["On or behind the 10-metre line"]
+    law_reference: "12.5b"
+    tags: ["kick-off", "opposition"]
+    explanation: "Law 12.5b: Opposition players must be on or behind the 10-metre line. Sanction: Kick is retaken."
+    contributor: null
+
+  - id: L12-008
+    text: "The kick-off does not reach the 10-metre line. What are the options for the non-kicking team?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Kick retaken or scrum"
+      - "Penalty"
+      - "Play on"
+      - "Free-kick"
+    answers: ["Kick retaken or scrum"]
+    law_reference: "12.6"
+    tags: ["kick-off", "10-metre", "sanction"]
+    explanation: "Law 12.6: The ball must reach the 10-metre line. Sanction: Non-kicking team has option of kick retaken or scrum."
+    contributor: null
+
+  - id: L12-009
+    text: "The ball reaches the 10-metre line but is blown back by the wind. What happens?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Play continues"
+      - "Kick is retaken"
+      - "Scrum to receiving team"
+      - "Free-kick"
+    answers: ["Play continues"]
+    law_reference: "12.7"
+    tags: ["kick-off", "wind"]
+    explanation: "Law 12.7: If the ball reaches the 10-metre line but is then blown back, play continues."
+    contributor: null
+
+  - id: L12-010
+    text: "An opponent plays the ball before it reaches the 10-metre line. What happens?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Play continues"
+      - "Kick is retaken"
+      - "Scrum to kicking team"
+      - "Penalty to kicking team"
+    answers: ["Play continues"]
+    law_reference: "12.7"
+    tags: ["kick-off", "10-metre"]
+    explanation: "Law 12.7: If an opponent plays the ball before it reaches the 10-metre line, play continues."
+    contributor: null
+
+  - id: L12-011
+    text: "The kick-off goes directly into touch. What options does the non-kicking team have?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Kick retaken, scrum, lineout, or quick-throw"
+      - "Kick retaken only"
+      - "Lineout only"
+      - "Scrum only"
+    answers: ["Kick retaken, scrum, lineout, or quick-throw"]
+    law_reference: "12.8"
+    tags: ["kick-off", "touch", "options"]
+    explanation: "Law 12.8: If kick goes directly into touch, non-kicking team chooses: kick retaken, scrum, lineout, or quick-throw."
+    contributor: null
+
+  - id: L12-012
+    text: "The kick-off is kicked into the opponents' in-goal and grounded without delay. What are the options?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "Kick retaken or scrum"
+      - "22-metre drop-out"
+      - "Try line drop-out"
+      - "Penalty to receiving team"
+    answers: ["Kick retaken or scrum"]
+    law_reference: "12.9"
+    tags: ["kick-off", "in-goal"]
+    explanation: "Law 12.9: If kicked into opponents' in-goal and grounded without delay or goes dead, non-kicking team can have kick retaken or scrum."
+    contributor: null
+
+  - id: L12-013
+    text: "The kick-off is kicked into the kicking team's own in-goal and made dead. What is the decision?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "Five-metre scrum to the non-kicking team"
+      - "22-metre drop-out"
+      - "Kick retaken"
+      - "Penalty"
+    answers: ["Five-metre scrum to the non-kicking team"]
+    law_reference: "12.10"
+    tags: ["kick-off", "in-goal", "scrum"]
+    explanation: "Law 12.10: If kicked into kicking team's own in-goal and made dead, non-kicking team is awarded a five-metre scrum."
+    contributor: null
+
+  # Drop-outs
+  - id: L12-014
+    text: "When is a 22-metre drop-out taken?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "When an unsuccessful penalty or drop goal attempt is made dead in in-goal"
+      - "After any kick into in-goal"
+      - "After a try is scored"
+      - "When the ball is kicked dead from open play"
+    answers: ["When an unsuccessful penalty or drop goal attempt is made dead in in-goal"]
+    law_reference: "12.11"
+    tags: ["22-drop-out", "restart"]
+    explanation: "Law 12.11: Play is restarted with a 22-metre drop-out when an unsuccessful penalty or dropped goal attempt is made dead in in-goal."
+    contributor: null
+
+  - id: L12-015
+    text: "When is a try line drop-out taken?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "When attacking ball is held up, grounded by defender, or attacker knocks on in in-goal"
+      - "After every unsuccessful attack"
+      - "When the ball is kicked dead"
+      - "After a penalty goal attempt"
+    answers: ["When attacking ball is held up, grounded by defender, or attacker knocks on in in-goal"]
+    law_reference: "12.12"
+    tags: ["try-line-drop-out", "restart"]
+    explanation: "Law 12.12: Try line drop-out when attacking ball is held up, grounded by defender, attacking kick grounded by defender, or attacker knocks on in in-goal."
+    contributor: null
+
+  - id: L12-016
+    text: "Where is a 22-metre drop-out taken from?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "On or behind the defending team's 22-metre line"
+      - "On the 22-metre line exactly"
+      - "Within 5 metres of the 22"
+      - "Anywhere in the 22"
+    answers: ["On or behind the defending team's 22-metre line"]
+    law_reference: "12.13"
+    tags: ["22-drop-out", "location"]
+    explanation: "Law 12.13: A 22-metre drop-out is taken on or behind the defending team's 22-metre line."
+    contributor: null
+
+  - id: L12-017
+    text: "Where is a try line drop-out taken from?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "On or behind the defending team's try line"
+      - "On the 5-metre line"
+      - "In the in-goal area"
+      - "On the 22-metre line"
+    answers: ["On or behind the defending team's try line"]
+    law_reference: "12.13"
+    tags: ["try-line-drop-out", "location"]
+    explanation: "Law 12.13: A try line drop-out is taken on or behind the defending team's try line."
+    contributor: null
+
+  - id: L12-018
+    text: "What line must a 22-metre drop-out cross?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "The 22-metre line"
+      - "The 10-metre line"
+      - "The half-way line"
+      - "The 5-metre line"
+    answers: ["The 22-metre line"]
+    law_reference: "12.13"
+    tags: ["22-drop-out", "sanction-line"]
+    explanation: "Law 12.13: The sanction line for a 22-metre drop-out is the 22-metre line."
+    contributor: null
+
+  - id: L12-019
+    text: "What line must a try line drop-out cross?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "The 5-metre line"
+      - "The try line"
+      - "The 22-metre line"
+      - "The 10-metre line"
+    answers: ["The 5-metre line"]
+    law_reference: "12.13"
+    tags: ["try-line-drop-out", "sanction-line"]
+    explanation: "Law 12.13: The sanction line for a try line drop-out is the five-metre line."
+    contributor: null
+
+  - id: L12-020
+    text: "A drop-out is not taken without delay. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Free-kick"
+      - "Penalty"
+      - "Scrum"
+      - "Kick retaken"
+    answers: ["Free-kick"]
+    law_reference: "12.13b"
+    tags: ["drop-out", "delay", "sanction"]
+    explanation: "Law 12.13b: A drop-out must be taken without delay. Sanction: Free-kick."
+    contributor: null
+
+  - id: L12-021
+    text: "A drop-out does not cross the sanction line. What are the options?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Kick retaken or scrum"
+      - "Penalty"
+      - "Free-kick"
+      - "Play on"
+    answers: ["Kick retaken or scrum"]
+    law_reference: "12.13c"
+    tags: ["drop-out", "sanction"]
+    explanation: "Law 12.13c: If drop-out doesn't cross sanction line, non-kicking team can have kick retaken or scrum."
+    contributor: null
+
+  - id: L12-022
+    text: "A drop-out goes directly into touch. What options does the opposition have?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Drop-out retaken, scrum, lineout, or quick-throw"
+      - "Lineout only"
+      - "Scrum only"
+      - "Kick retaken only"
+    answers: ["Drop-out retaken, scrum, lineout, or quick-throw"]
+    law_reference: "12.13d"
+    tags: ["drop-out", "touch", "options"]
+    explanation: "Law 12.13d: If drop-out goes directly into touch, opposition can choose: retaken, scrum, lineout, or quick-throw."
+    contributor: null
+
+  - id: L12-023
+    text: "An opponent advances in front of the sanction line before the ball is kicked at a drop-out. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Free-kick"
+      - "Penalty"
+      - "Kick retaken"
+      - "Play on"
+    answers: ["Free-kick"]
+    law_reference: "12.14"
+    tags: ["drop-out", "offside", "sanction"]
+    explanation: "Law 12.14: An opponent must not advance in front of sanction line before ball is kicked. Sanction: Free-kick."
+    contributor: null
+
+  - id: L12-024
+    text: "An opponent who is in front of the sanction line obstructs the drop-out. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Penalty"
+      - "Free-kick"
+      - "Scrum"
+      - "Kick retaken"
+    answers: ["Penalty"]
+    law_reference: "12.15"
+    tags: ["drop-out", "obstruction", "sanction"]
+    explanation: "Law 12.15: An opponent in front of sanction line must not delay or obstruct the drop-out. Sanction: Penalty."
+    contributor: null
+
+  - id: L12-025
+    text: "A drop-out crosses the sanction line but is then blown back. What happens?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Play continues"
+      - "Kick is retaken"
+      - "Scrum"
+      - "Free-kick"
+    answers: ["Play continues"]
+    law_reference: "12.16"
+    tags: ["drop-out", "wind"]
+    explanation: "Law 12.16: If the drop-out crosses the sanction line but is then blown back, play continues."
+    contributor: null
+
+  - id: L12-026
+    text: "The kicker's team-mates are in front of the ball when a drop-out is kicked. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Scrum (if they don't retire and interfere)"
+      - "Penalty"
+      - "Free-kick"
+      - "Kick retaken"
+    answers: ["Scrum (if they don't retire and interfere)"]
+    law_reference: "12.19"
+    tags: ["drop-out", "offside", "sanction"]
+    explanation: "Law 12.19: Team-mates must be behind ball. Those in front can be sanctioned unless they retire and don't interfere. Sanction: Scrum."
+    contributor: null
+
+  - id: L12-027
+    text: "The ball is played into in-goal by an attacker and held up by a defender. What restart is used?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Try line drop-out"
+      - "22-metre drop-out"
+      - "Scrum 5 metres out"
+      - "Attacking scrum"
+    answers: ["Try line drop-out"]
+    law_reference: "12.12a"
+    tags: ["try-line-drop-out", "held-up"]
+    explanation: "Law 12.12a: Try line drop-out when attacking ball is played into in-goal and held up by the defender."
+    contributor: null
+
+  - id: L12-028
+    text: "An attacking player knocks forward in the opponents' in-goal. What is the restart?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Try line drop-out"
+      - "22-metre drop-out"
+      - "Scrum 5 metres out"
+      - "Scrum where knock-on occurred"
+    answers: ["Try line drop-out"]
+    law_reference: "12.12c"
+    tags: ["try-line-drop-out", "knock-on", "in-goal"]
+    explanation: "Law 12.12c: Try line drop-out when an attacking player knocks forward in the opponents' in-goal."
+    contributor: null
+
+  - id: L12-029
+    text: "A penalty kick at goal misses and is grounded in in-goal by the defender. What is the restart?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "22-metre drop-out"
+      - "Try line drop-out"
+      - "Scrum 22 metres out"
+      - "Play continues"
+    answers: ["22-metre drop-out"]
+    law_reference: "12.11"
+    tags: ["22-drop-out", "penalty-goal"]
+    explanation: "Law 12.11: Play restarts with 22-metre drop-out when unsuccessful penalty goal attempt is grounded or made dead in in-goal."
+    contributor: null
+
+  - id: L12-030
+    text: "A drop-out is taken from in front of the correct line. What is the sanction?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Scrum"
+      - "Penalty"
+      - "Free-kick"
+      - "Kick retaken"
+    answers: ["Scrum"]
+    law_reference: "12.13a"
+    tags: ["drop-out", "location", "sanction"]
+    explanation: "Law 12.13a: A drop-out is taken at the specified location. Sanction for wrong location: Scrum."
+    contributor: null
