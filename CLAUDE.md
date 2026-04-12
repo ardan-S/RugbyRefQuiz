@@ -1,14 +1,13 @@
 # CLAUDE.md
 ## Project Overview
 
-RugbyRefQuiz is a PyQt5 desktop application for testing rugby refereeing knowledge based on the Laws of the Game.
+RugbyRefQuiz is a Flask web application for testing rugby refereeing knowledge against the Laws of the Game.
 
 ## Commands
 
 **Run the application:**
 ```bash
-conda activate RefQuiz
-python quiz.py
+python run.py
 ```
 
 **Lint:**
@@ -23,18 +22,19 @@ conda activate RefQuiz
 ```
 
 ### Entry Point
-- `quiz.py` - Contains `QuizApp` class (PyQt5 QWidget) that runs the quiz
+- `run.py` - Starts the local Flask development server
+- `app/__init__.py` - Flask app factory
+- `app/routes.py` - Quiz selection, question, answer, and results routes
 
 ### Question System
-Questions are in `questions/` directory, organized by Law number:
-- Each law file (e.g., `Law1_TheGround.py`) exports `QuestionSet` objects named `standard_questions_LX` and optionally `sanction_questions_LX`
-- `questions/utils.py` defines:
-  - `Question(question, options, answers)` - Single question with text, list of options, and list of correct answers
-  - `QuestionSet(name, questions)` - Named collection of Question objects
-  - `answer_sets` - Reusable answer option lists for common question types
+Questions are stored as YAML in `questions/data/` and loaded by `questions/loader.py`.
+
+- `questions/schema.yaml` defines the structure for question files
+- `tools/validate_questions.py` checks YAML files against the schema
+- `app/quiz_service.py` provides the web app’s question-loading helpers
 
 ### Adding New Questions
-1. Create or edit a law file in `questions/`
-2. Import `Question`, `QuestionSet`, and optionally `answer_sets` from `questions.utils`
-3. Create a `QuestionSet` with your questions
-4. Import and add the `QuestionSet` to `all_questions` list in `quiz.py`
+1. Create or edit a YAML file in `questions/data/`
+2. Follow the schema in `questions/schema.yaml`
+3. Run `python tools/validate_questions.py`
+4. Start the app with `python run.py` and test the quiz flow in the browser

@@ -1,18 +1,16 @@
 """
-YAML Question Loader for RugbyRefQuiz
+YAML question loader for RugbyRefQuiz.
 
 Loads and validates question files from the questions/data/ directory.
-Returns Question objects compatible with the existing quiz system.
 """
 
-import os
 from pathlib import Path
 from typing import Optional
 
 import yaml
 import jsonschema
 
-from questions.utils import Question, QuestionSet
+from questions.utils import Question
 
 
 # Directory containing YAML question files

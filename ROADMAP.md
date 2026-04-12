@@ -1,10 +1,9 @@
 # RugbyRefQuiz Roadmap
 
-## Current State (January 2026)
-- 231 questions across 8 laws (of 22)
+## Current State
+- 583 questions across 21 laws
 - YAML-based question storage with schema validation
 - Flask web app with HTMX
-- PyQt5 desktop app
 - AI question generation tool (prototype)
 
 ---
@@ -32,10 +31,7 @@ After a quiz, show which questions were missed and allow users to:
 - Focus future quizzes on weak areas
 
 ### 5. Complete Law Coverage
-Missing 14 laws including critical ones:
-- **Law 9 (Foul Play)** - Most complex and important for referees
-- **Law 15-17 (Ruck, Maul, Scrum)** - Core breakdown/set piece laws
-- **Law 10 (Offside)** - Common mistakes for new referees
+Finish the remaining law coverage and continue deepening the existing question bank, especially in higher-complexity areas.
 
 ### 6. Sanction Decision Trees
 Many referee decisions follow: *"What happened?"* → *"What's the sanction?"* → *"Where's the restart?"*
@@ -77,4 +73,3 @@ Consider multi-part question sequences that mirror actual decision-making.
 - No persistent user accounts or history
 - No database (everything in YAML/sessions)
 - No API for external tools
-- Desktop app has session/state limitations

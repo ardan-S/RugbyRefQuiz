@@ -4,7 +4,5 @@ channels:
 dependencies:
   - python=3.10
   - pip
-  - pyqt
   - pip:
-      - PyQt5>=5.15.4
-
+      - -r requirements.txt
