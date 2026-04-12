@@ -4,6 +4,7 @@ YAML question loader for RugbyRefQuiz.
 Loads and validates question files from the questions/data/ directory.
 """
 
+from functools import lru_cache
 from pathlib import Path
 from typing import Optional
 
@@ -18,6 +19,16 @@ DATA_DIR = Path(__file__).parent / "data"
 SCHEMA_PATH = Path(__file__).parent / "schema.yaml"
 
 
+def _normalize_law_numbers(
+    law_numbers: Optional[list[int]] = None
+) -> Optional[tuple[int, ...]]:
+    """Normalize a law-number filter into a cacheable tuple."""
+    if law_numbers is None:
+        return None
+    return tuple(sorted(set(law_numbers)))
+
+
+@lru_cache(maxsize=1)
 def _load_schema() -> dict:
     """Load the JSON schema for question validation."""
     with open(SCHEMA_PATH, 'r', encoding='utf-8') as f:
@@ -61,6 +72,21 @@ def load_yaml_file(filepath: Path) -> dict:
         return yaml.safe_load(f)
 
 
+@lru_cache(maxsize=1)
+def _load_all_question_data() -> tuple[tuple[str, dict], ...]:
+    """Read all question YAML files once per process."""
+    if not DATA_DIR.exists():
+        return ()
+
+    all_data = []
+    for yaml_file in sorted(DATA_DIR.glob("*.yaml")):
+        data = load_yaml_file(yaml_file)
+        if data:
+            all_data.append((yaml_file.name, data))
+
+    return tuple(all_data)
+
+
 def _yaml_question_to_question(q: dict) -> Question:
     """Convert a YAML question dict to a Question object."""
     return Question(
@@ -68,6 +94,45 @@ def _yaml_question_to_question(q: dict) -> Question:
         options=q['options'],
         answers=q['answers']
     )
+
+
+@lru_cache(maxsize=None)
+def _load_questions_from_yaml_cached(
+    law_numbers: Optional[tuple[int, ...]],
+    validate: bool
+) -> tuple[tuple[Question, ...], tuple[tuple[int, str, Optional[str]], ...]]:
+    """Cached question and metadata loader backed by in-memory YAML data."""
+    questions = []
+    law_metadata = {}
+    validation_errors = []
+
+    for filename, data in _load_all_question_data():
+        law_num = data.get('metadata', {}).get('law')
+
+        if law_numbers is not None and law_num not in law_numbers:
+            continue
+
+        if validate:
+            errors = validate_question_file(data)
+            if errors:
+                validation_errors.extend([f"{filename}: {e}" for e in errors])
+
+        if law_num:
+            law_metadata[law_num] = (
+                law_num,
+                data['metadata'].get('title', f'Law {law_num}'),
+                data['metadata'].get('source'),
+            )
+
+        for q in data.get('questions', []):
+            questions.append(_yaml_question_to_question(q))
+
+    if validation_errors:
+        raise ValueError(
+            "Question file validation errors:\n" + "\n".join(validation_errors)
+        )
+
+    return tuple(questions), tuple(sorted(law_metadata.values()))
 
 
 def load_questions_from_yaml(
@@ -87,67 +152,25 @@ def load_questions_from_yaml(
     Raises:
         ValueError: If validation is enabled and files contain errors
     """
-    questions = []
-    law_metadata = {}
-    validation_errors = []
+    question_items, law_metadata_items = _load_questions_from_yaml_cached(
+        _normalize_law_numbers(law_numbers),
+        validate
+    )
 
-    if not DATA_DIR.exists():
-        return questions, law_metadata
-
-    for yaml_file in sorted(DATA_DIR.glob("*.yaml")):
-        data = load_yaml_file(yaml_file)
-
-        if not data:
-            continue
-
-        law_num = data.get('metadata', {}).get('law')
-
-        # Skip if filtering by law number and this isn't in the list
-        if law_numbers is not None and law_num not in law_numbers:
-            continue
-
-        # Validate if requested
-        if validate:
-            errors = validate_question_file(data)
-            if errors:
-                validation_errors.extend([f"{yaml_file.name}: {e}" for e in errors])
-
-        # Store metadata
-        if law_num:
-            law_metadata[law_num] = {
-                'number': law_num,
-                'name': data['metadata'].get('title', f'Law {law_num}'),
-                'source': data['metadata'].get('source'),
-            }
-
-        # Convert questions
-        for q in data.get('questions', []):
-            questions.append(_yaml_question_to_question(q))
-
-    if validation_errors:
-        raise ValueError(
-            "Question file validation errors:\n" + "\n".join(validation_errors)
-        )
-
-    return questions, law_metadata
+    law_metadata = {
+        number: {'number': number, 'name': name, 'source': source}
+        for number, name, source in law_metadata_items
+    }
+    return list(question_items), law_metadata
 
 
-def get_available_laws_from_yaml() -> dict[int, dict]:
-    """
-    Get list of available laws with their question counts from YAML files.
-
-    Returns:
-        Dict mapping law number to law info with question_count
-    """
+@lru_cache(maxsize=1)
+def _get_available_laws_cached() -> tuple[tuple[int, str, int], ...]:
+    """Cached list of laws with question counts."""
     laws = {}
 
-    if not DATA_DIR.exists():
-        return laws
-
-    for yaml_file in sorted(DATA_DIR.glob("*.yaml")):
-        data = load_yaml_file(yaml_file)
-
-        if not data or 'metadata' not in data:
+    for _, data in _load_all_question_data():
+        if 'metadata' not in data:
             continue
 
         law_num = data['metadata'].get('law')
@@ -157,15 +180,33 @@ def get_available_laws_from_yaml() -> dict[int, dict]:
         question_count = len(data.get('questions', []))
 
         if law_num not in laws:
-            laws[law_num] = {
-                'number': law_num,
-                'name': data['metadata'].get('title', f'Law {law_num}'),
-                'question_count': question_count
-            }
+            laws[law_num] = (
+                law_num,
+                data['metadata'].get('title', f'Law {law_num}'),
+                question_count,
+            )
         else:
-            laws[law_num]['question_count'] += question_count
+            _, title, existing_count = laws[law_num]
+            laws[law_num] = (law_num, title, existing_count + question_count)
 
-    return dict(sorted(laws.items()))
+    return tuple(sorted(laws.values()))
+
+
+def get_available_laws_from_yaml() -> dict[int, dict]:
+    """
+    Get list of available laws with their question counts from YAML files.
+
+    Returns:
+        Dict mapping law number to law info with question_count
+    """
+    return {
+        number: {
+            'number': number,
+            'name': name,
+            'question_count': question_count,
+        }
+        for number, name, question_count in _get_available_laws_cached()
+    }
 
 
 def load_questions_for_laws_yaml(selected_laws: Optional[list[int]] = None) -> list[Question]:
@@ -202,18 +243,12 @@ def get_questions_with_metadata(
     """
     results = []
 
-    if not DATA_DIR.exists():
-        return results
+    normalized_laws = _normalize_law_numbers(law_numbers)
 
-    for yaml_file in sorted(DATA_DIR.glob("*.yaml")):
-        data = load_yaml_file(yaml_file)
-
-        if not data:
-            continue
-
+    for _, data in _load_all_question_data():
         law_num = data.get('metadata', {}).get('law')
 
-        if law_numbers is not None and law_num not in law_numbers:
+        if normalized_laws is not None and law_num not in normalized_laws:
             continue
 
         for q in data.get('questions', []):
