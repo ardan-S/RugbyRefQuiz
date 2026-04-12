@@ -10,3 +10,6 @@ def create_app(config_class=Config):
     app.register_blueprint(routes.bp)
 
     return app
+
+
+app = create_app()
