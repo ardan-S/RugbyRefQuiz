@@ -175,7 +175,17 @@ def submit_answer():
 @bp.route('/quiz/results')
 def results():
     score = session.get('score', 0)
-    total = session.get('total', 0)
+    planned_total = session.get('total', 0)
+    answered_total = len(session.get('asked_idxs', []))
+    total = answered_total
+    ended_early = 0 < answered_total < planned_total
     # Clear session
     session.clear()
-    return render_template('results.html', score=score, total=total)
+    return render_template(
+        'results.html',
+        score=score,
+        total=total,
+        answered_total=answered_total,
+        planned_total=planned_total,
+        ended_early=ended_early
+    )

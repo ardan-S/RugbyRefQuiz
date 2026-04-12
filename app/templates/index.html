@@ -20,15 +20,17 @@
                 <strong>Select All</strong>
             </label>
             <hr>
-            {% for law_num, law in laws.items() %}
-            <label>
-                <input type="checkbox" name="laws" value="{{ law_num }}" class="law-checkbox">
-                <span class="law-info">
-                    <span class="law-name">Law {{ law_num }}: {{ law.name }}</span>
-                    <span class="question-count">({{ law.question_count }} questions)</span>
-                </span>
-            </label>
-            {% endfor %}
+            <div class="law-grid">
+                {% for law_num, law in laws.items() %}
+                <label class="law-card">
+                    <input type="checkbox" name="laws" value="{{ law_num }}" class="law-checkbox">
+                    <span class="law-info">
+                        <span class="law-name">Law {{ law_num }}: {{ law.name }}</span>
+                        <span class="question-count">({{ law.question_count }} questions)</span>
+                    </span>
+                </label>
+                {% endfor %}
+            </div>
         </fieldset>
         <button type="submit">Continue</button>
     </form>

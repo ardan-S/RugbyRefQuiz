@@ -5,11 +5,17 @@
 {% block content %}
 <article>
     <header>
-        <h2>Quiz Complete!</h2>
+        <h2>{% if ended_early %}Quiz Ended{% else %}Quiz Complete!{% endif %}</h2>
     </header>
 
     <p>Your final score:</p>
     <h1 style="text-align: center; font-size: 4rem;">{{ score }} / {{ total }}</h1>
+
+    {% if ended_early %}
+    <p style="text-align: center;">
+        You answered {{ answered_total }} of {{ planned_total }} selected questions.
+    </p>
+    {% endif %}
 
     {% if total > 0 %}
     <p style="text-align: center;">

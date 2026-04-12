@@ -11,40 +11,43 @@
     <p>Choose how many questions you want to answer:</p>
 
     <form action="{{ url_for('main.start_quiz') }}" method="POST">
-        <fieldset>
+        <fieldset class="count-fieldset">
+            <div class="count-grid">
             {% if max_questions >= 5 %}
-            <label>
+            <label class="count-card">
                 <input type="radio" name="count" value="5">
-                5 questions
+                <span>5 questions</span>
             </label>
             {% endif %}
             {% if max_questions >= 20 %}
-            <label>
+            <label class="count-card">
                 <input type="radio" name="count" value="20">
-                20 questions
+                <span>20 questions</span>
             </label>
             {% endif %}
             {% if max_questions >= 50 %}
-            <label>
+            <label class="count-card">
                 <input type="radio" name="count" value="50">
-                50 questions
+                <span>50 questions</span>
             </label>
             {% endif %}
-            <label>
+            <label class="count-card">
                 <input type="radio" name="count" value="all" checked>
-                All {{ max_questions }} questions
+                <span>All {{ max_questions }} questions</span>
             </label>
-            <label>
+            <label class="count-card count-card-custom">
                 <input type="radio" name="count" value="custom" id="custom-radio">
-                Custom:
-                <input type="number"
-                       name="custom_count"
-                       id="custom-input"
-                       min="1"
-                       max="{{ max_questions }}"
-                       placeholder="Enter number"
-                       style="width: 120px; display: inline-block; margin-left: 0.5rem;">
+                <span class="count-card-content">
+                    <span>Custom</span>
+                    <input type="number"
+                           name="custom_count"
+                           id="custom-input"
+                           min="1"
+                           max="{{ max_questions }}"
+                           placeholder="Enter number">
+                </span>
             </label>
+            </div>
         </fieldset>
         <div class="button-group">
             <a href="{{ url_for('main.index') }}" role="button" class="secondary">Back</a>

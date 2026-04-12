@@ -4,8 +4,11 @@
 
 {% block content %}
 <div class="progress-bar">
-    <span>Score: <strong id="score">{{ score }}</strong> / <span id="answered">{{ answered }}</span></span>
-    <span>Questions: {{ total }}</span>
+    <div class="progress-details">
+        <span>Score: <strong id="score">{{ score }}</strong> / <span id="answered">{{ answered }}</span></span>
+        <span>Questions: {{ total }}</span>
+    </div>
+    <a href="{{ url_for('main.results') }}" role="button" class="secondary end-now-button">End Now</a>
 </div>
 
 <div id="quiz-content"
