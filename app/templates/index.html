@@ -23,7 +23,8 @@
             <div class="law-grid">
                 {% for law_num, law in laws.items() %}
                 <label class="law-card">
-                    <input type="checkbox" name="laws" value="{{ law_num }}" class="law-checkbox">
+                    <input type="checkbox" name="laws" value="{{ law_num }}" class="law-checkbox"
+                           {% if selected_laws and law_num in selected_laws %}checked{% endif %}>
                     <span class="law-info">
                         <span class="law-name">Law {{ law_num }}: {{ law.name }}</span>
                         <span class="question-count">({{ law.question_count }} questions)</span>
@@ -32,6 +33,37 @@
                 {% endfor %}
             </div>
         </fieldset>
+
+        <fieldset class="filters-fieldset">
+            <legend><strong>Narrow it down (optional)</strong></legend>
+            <div class="filters-grid">
+                <label>
+                    Difficulty
+                    <select name="difficulty">
+                        <option value="">Any difficulty</option>
+                        {% for d in difficulties %}
+                        <option value="{{ d }}"
+                                {% if difficulty == d %}selected{% endif %}>
+                            {{ d | capitalize }}
+                        </option>
+                        {% endfor %}
+                    </select>
+                </label>
+                <label>
+                    Question type
+                    <select name="question_type">
+                        <option value="">Any type</option>
+                        {% for t in question_types %}
+                        <option value="{{ t }}"
+                                {% if question_type == t %}selected{% endif %}>
+                            {{ t | capitalize }}
+                        </option>
+                        {% endfor %}
+                    </select>
+                </label>
+            </div>
+        </fieldset>
+
         <button type="submit">Continue</button>
     </form>
 </article>

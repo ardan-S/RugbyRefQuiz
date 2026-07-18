@@ -38,34 +38,8 @@ import yaml
 # Path to the Laws PDF
 PDF_PATH = Path(__file__).parent.parent / "2026en-laws-of-the-game-compressed.pdf"
 
-# Approximate page ranges for each law (0-indexed, adjust as needed)
-# These are estimates - actual pages may vary by PDF version
-LAW_PAGE_RANGES = {
-    1: (28, 32),    # The Ground
-    2: (32, 33),    # The Ball
-    3: (33, 38),    # The Team
-    4: (38, 40),    # Players' Clothing
-    5: (40, 43),    # Time
-    6: (43, 52),    # Match Officials
-    7: (52, 54),    # Advantage
-    8: (54, 60),    # Scoring
-    9: (60, 72),    # Foul Play
-    10: (72, 75),   # Offside and Onside in Open Play
-    11: (75, 77),   # Knock-On or Throw Forward
-    12: (77, 88),   # Touch and Lineout
-    13: (88, 90),   # Mark
-    14: (90, 94),   # Tackle
-    15: (94, 98),   # Ruck
-    16: (98, 101),  # Maul
-    17: (101, 120), # Scrum
-    18: (120, 124), # Penalty and Free-Kick
-    19: (124, 130), # Scrum, Lineout, Restart, Free-Kick
-    20: (130, 132), # Goal
-    21: (132, 136), # In-Goal
-    22: (136, 140), # Touch In-Goal and Beyond
-}
-
-# Law titles for reference
+# Law titles matching the current World Rugby numbering (21 laws)
+# and the files in questions/data/
 LAW_TITLES = {
     1: "The Ground",
     2: "The Ball",
@@ -78,17 +52,16 @@ LAW_TITLES = {
     9: "Foul Play",
     10: "Offside and Onside in Open Play",
     11: "Knock-On or Throw Forward",
-    12: "Touch and Lineout",
-    13: "Mark",
+    12: "Kick-Off and Restart Kicks",
+    13: "Players on the Ground in Open Play",
     14: "Tackle",
     15: "Ruck",
     16: "Maul",
-    17: "Scrum",
-    18: "Penalty and Free-Kick",
-    19: "Scrum, Lineout, Restart, Free-Kick",
-    20: "Goal",
+    17: "Mark",
+    18: "Touch, Quick Throw and Lineout",
+    19: "Scrum",
+    20: "Penalty and Free-Kick",
     21: "In-Goal",
-    22: "Touch In-Goal and Beyond",
 }
 
 
@@ -216,8 +189,8 @@ def call_claude_api(prompt: str) -> str:
     client = anthropic.Anthropic(api_key=api_key)
 
     message = client.messages.create(
-        model="claude-sonnet-4-20250514",
-        max_tokens=4096,
+        model="claude-opus-4-8",
+        max_tokens=16000,
         messages=[
             {"role": "user", "content": prompt}
         ]
@@ -318,8 +291,8 @@ def main():
         '--law', '-l',
         type=int,
         required=True,
-        choices=range(1, 23),
-        help='Law number (1-22)'
+        choices=range(1, 22),
+        help='Law number (1-21)'
     )
     parser.add_argument(
         '--section', '-s',

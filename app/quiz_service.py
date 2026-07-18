@@ -2,9 +2,11 @@ import random
 
 from questions.loader import (
     get_available_laws_from_yaml,
-    load_questions_for_laws_yaml,
-    get_questions_with_metadata,
+    get_question_bank,
 )
+
+DIFFICULTIES = ['beginner', 'intermediate', 'advanced']
+QUESTION_TYPES = ['factual', 'sanction', 'scenario', 'procedural', 'hypothetical']
 
 
 def get_available_laws():
@@ -12,53 +14,45 @@ def get_available_laws():
     return get_available_laws_from_yaml()
 
 
-def load_questions_for_laws(selected_laws=None):
-    """Load questions for specified laws. If None, load all."""
-    return load_questions_for_laws_yaml(selected_laws)
+def get_question(question_id):
+    """Look up a single question (with law metadata) by its ID."""
+    return get_question_bank().get(question_id)
 
 
-def load_all_questions():
-    """Flatten all question sets into a single list of questions."""
-    return load_questions_for_laws_yaml(None)
+def get_questions(question_ids):
+    """Look up multiple questions by ID, skipping any that no longer exist."""
+    bank = get_question_bank()
+    return [bank[qid] for qid in question_ids if qid in bank]
 
 
-def load_questions_filtered(
-    selected_laws=None,
-    difficulty=None,
-    question_type=None,
-    tags=None
-):
+def select_question_ids(selected_laws=None, difficulty=None, question_type=None):
     """
-    Load questions with filtering support.
+    Get IDs of all questions matching the given filters.
 
     Args:
-        selected_laws: List of law numbers to include
+        selected_laws: List of law numbers to include (None = all)
         difficulty: Filter by difficulty ('beginner', 'intermediate', 'advanced')
-        question_type: Filter by type ('factual', 'sanction', 'scenario', etc.)
-        tags: Filter by tags (questions must have at least one matching tag)
+        question_type: Filter by type ('factual', 'sanction', 'scenario', ...)
 
     Returns:
-        List of question dicts with full metadata
+        List of question IDs
     """
-    return get_questions_with_metadata(
-        law_numbers=selected_laws,
-        difficulty=difficulty,
-        question_type=question_type,
-        tags=tags
-    )
-
-
-def get_next_question_idx(asked_idxs, total):
-    """Get a random unasked question index."""
-    if len(asked_idxs) >= total:
-        return None
-    available = [i for i in range(total) if i not in asked_idxs]
-    return random.choice(available)
+    laws = set(selected_laws) if selected_laws else None
+    ids = []
+    for qid, q in get_question_bank().items():
+        if laws is not None and q['law'] not in laws:
+            continue
+        if difficulty and q.get('difficulty') != difficulty:
+            continue
+        if question_type and q.get('type') != question_type:
+            continue
+        ids.append(qid)
+    return ids
 
 
 def check_answer(question, selected):
     """Check if the selected answer is correct."""
-    return selected in question.answers
+    return selected in question['answers']
 
 
 def shuffle_options(options):

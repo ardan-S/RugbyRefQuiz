@@ -222,6 +222,91 @@
             color: #6c757d;
             font-size: 0.85em;
         }
+        .question-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        .badges {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.15rem 0.6rem;
+            border-radius: 1rem;
+            font-size: 0.75em;
+            font-weight: 600;
+            text-transform: capitalize;
+            white-space: nowrap;
+        }
+        .badge-law {
+            background-color: #e2e8f5;
+            color: #2c3e6b;
+        }
+        .badge-type {
+            background-color: #e9ecef;
+            color: #495057;
+        }
+        .badge-beginner {
+            background-color: #d4edda;
+            color: #1e6b33;
+        }
+        .badge-intermediate {
+            background-color: #fff3cd;
+            color: #7a5c00;
+        }
+        .badge-advanced {
+            background-color: #f8d7da;
+            color: #842029;
+        }
+        .law-detail {
+            background-color: #f0f4fa;
+            border-left: 4px solid #2c3e6b;
+            padding: 0.75rem 1rem;
+            border-radius: 0 0.5rem 0.5rem 0;
+            margin-bottom: 1rem;
+        }
+        .law-detail p {
+            margin-bottom: 0.25rem;
+        }
+        .law-detail .law-ref {
+            color: #2c3e6b;
+        }
+        .filters-fieldset {
+            width: 100%;
+            max-width: 960px;
+            margin-top: 1rem;
+        }
+        .filters-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+            width: 100%;
+        }
+        .review-item {
+            margin-bottom: 1rem;
+        }
+        .review-badges {
+            margin-bottom: 0.5rem;
+        }
+        .review-your-answer {
+            color: #842029;
+            margin-bottom: 0.25rem;
+        }
+        .review-correct-answer {
+            color: #1e6b33;
+        }
+        .results-buttons form {
+            display: block;
+        }
+        .results-buttons form button {
+            width: 100%;
+            margin-bottom: 0;
+        }
         @media (max-width: 900px) {
             .law-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -237,6 +322,9 @@
             }
             .end-now-button {
                 text-align: center;
+            }
+            .filters-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>

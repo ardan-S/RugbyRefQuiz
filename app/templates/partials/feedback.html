@@ -1,23 +1,38 @@
-{% if is_correct %}
-<div class="feedback-correct">
-    <h3>Correct!</h3>
-    <p>Your answer "{{ selected }}" is correct.</p>
-</div>
-{% else %}
-<div class="feedback-wrong">
-    <h3>Incorrect</h3>
-    <p>Your answer: {{ selected }}</p>
-    <p>Correct answer(s): {{ correct_answers | join(', ') }}</p>
-</div>
-{% endif %}
+<article>
+    <p class="feedback-question-text"><strong>{{ question.text }}</strong></p>
 
-<p>Score: <strong>{{ score }}</strong> / {{ answered }} answered</p>
+    {% if is_correct %}
+    <div class="feedback-correct">
+        <h3>Correct!</h3>
+        <p>Your answer: "{{ selected }}"</p>
+    </div>
+    {% else %}
+    <div class="feedback-wrong">
+        <h3>Incorrect</h3>
+        <p>Your answer: {{ selected }}</p>
+        <p>Correct answer(s): <strong>{{ question.answers | join(', ') }}</strong></p>
+    </div>
+    {% endif %}
 
-<button hx-get="{{ url_for('main.get_question') }}"
-        hx-target="#quiz-content"
-        hx-swap="innerHTML">
-    Next Question
-</button>
+    <div class="law-detail">
+        <p class="law-ref">
+            <strong>Law {{ question.law_reference or question.law }}</strong>
+            &mdash; {{ question.law_title }}
+        </p>
+        {% if question.explanation %}
+        <p class="explanation">{{ question.explanation }}</p>
+        {% endif %}
+    </div>
+
+    <p>Score: <strong>{{ score }}</strong> / {{ answered }} answered</p>
+
+    <button hx-get="{{ url_for('main.get_question_route') }}"
+            hx-target="#quiz-content"
+            hx-swap="innerHTML"
+            autofocus>
+        Next Question
+    </button>
+</article>
 
 <script>
     // Update the score display in the progress bar

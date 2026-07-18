@@ -49,10 +49,12 @@ Consider multi-part question sequences that mirror actual decision-making.
 ## Implementation Priority
 
 ### Quick Wins
-- Display question explanations in feedback
-- Add difficulty filter to UI
-- Expose question type filtering
-- Implement quiz history/score tracking
+- ~~Display question explanations in feedback~~ (done: feedback shows law reference + explanation)
+- ~~Add difficulty filter to UI~~ (done)
+- ~~Expose question type filtering~~ (done)
+- ~~Review missed questions / retry the ones you got wrong~~ (done)
+- ~~Server-side sessions~~ (done: quiz state no longer limited by the 4KB cookie)
+- Implement quiz history/score tracking across sessions
 
 ### Medium-term
 - Complete all 22 laws' questions

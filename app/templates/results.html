@@ -25,7 +25,48 @@
     {% endif %}
 
     <footer>
-        <a href="{{ url_for('main.index') }}" role="button">Play Again</a>
+        <div class="button-group results-buttons">
+            {% if missed_questions %}
+            <form action="{{ url_for('main.retry_missed') }}" method="POST">
+                <button type="submit">
+                    Retry the {{ missed_questions | length }} you missed
+                </button>
+            </form>
+            {% endif %}
+            <a href="{{ url_for('main.index') }}" role="button"
+               {% if missed_questions %}class="secondary"{% endif %}>New Quiz</a>
+        </div>
     </footer>
 </article>
+
+{% if missed_questions %}
+<article>
+    <header>
+        <h3>Review What You Missed</h3>
+    </header>
+    {% for item in missed_questions %}
+    <div class="review-item">
+        <p class="review-badges">
+            <span class="badge badge-law">Law {{ item.question.law }}: {{ item.question.law_title }}</span>
+            <span class="badge badge-{{ item.question.difficulty }}">{{ item.question.difficulty }}</span>
+        </p>
+        <p><strong>{{ item.question.text }}</strong></p>
+        <p class="review-your-answer">Your answer: {{ item.selected }}</p>
+        <p class="review-correct-answer">
+            Correct: <strong>{{ item.question.answers | join(', ') }}</strong>
+        </p>
+        <div class="law-detail">
+            <p class="law-ref">
+                <strong>Law {{ item.question.law_reference or item.question.law }}</strong>
+                &mdash; {{ item.question.law_title }}
+            </p>
+            {% if item.question.explanation %}
+            <p class="explanation">{{ item.question.explanation }}</p>
+            {% endif %}
+        </div>
+    </div>
+    {% if not loop.last %}<hr>{% endif %}
+    {% endfor %}
+</article>
+{% endif %}
 {% endblock %}

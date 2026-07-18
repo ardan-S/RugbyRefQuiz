@@ -2,45 +2,93 @@ import random
 from flask import Blueprint, render_template, session, redirect, url_for, request
 
 from app.quiz_service import (
-    load_questions_for_laws,
+    DIFFICULTIES,
+    QUESTION_TYPES,
     get_available_laws,
-    get_next_question_idx,
+    get_question,
+    get_questions,
+    select_question_ids,
     check_answer,
-    shuffle_options
+    shuffle_options,
 )
 
 bp = Blueprint('main', __name__)
 
+QUIZ_SESSION_KEYS = (
+    'quiz_ids', 'position', 'score', 'wrong', 'total',
+    'current_id', 'current_options', 'selected_laws', 'filters',
+)
+
+
+def _clear_quiz_state():
+    """Remove in-progress quiz keys, leaving the last result intact."""
+    for key in QUIZ_SESSION_KEYS:
+        session.pop(key, None)
+
+
+def _start_quiz_with_ids(question_ids):
+    """Initialise quiz session state from a list of question IDs."""
+    session['quiz_ids'] = question_ids
+    session['position'] = 0
+    session['score'] = 0
+    session['wrong'] = []
+    session['total'] = len(question_ids)
+    session['current_id'] = None
+    session['current_options'] = []
+    session.pop('last_result', None)
+
+
+def _render_index(**kwargs):
+    return render_template(
+        'index.html',
+        laws=get_available_laws(),
+        difficulties=DIFFICULTIES,
+        question_types=QUESTION_TYPES,
+        **kwargs
+    )
+
 
 @bp.route('/')
 def index():
-    laws = get_available_laws()
-    return render_template('index.html', laws=laws)
+    return _render_index()
 
 
 @bp.route('/quiz/select-count', methods=['POST'])
 def select_count():
-    """Process law selection and show question count selection."""
+    """Process law selection and filters, then show question count selection."""
     selected_laws = request.form.getlist('laws')
 
     if not selected_laws:
-        laws = get_available_laws()
-        return render_template('index.html', laws=laws,
-                               error="Please select at least one law!")
+        return _render_index(error="Please select at least one law!")
 
-    # Convert to integers
     selected_laws = [int(law) for law in selected_laws]
+    difficulty = request.form.get('difficulty') or None
+    question_type = request.form.get('question_type') or None
 
-    # Store in session
+    matching_ids = select_question_ids(
+        selected_laws=selected_laws,
+        difficulty=difficulty,
+        question_type=question_type,
+    )
+
+    if not matching_ids:
+        return _render_index(
+            error="No questions match those filters - try widening them.",
+            selected_laws=selected_laws,
+            difficulty=difficulty,
+            question_type=question_type,
+        )
+
     session['selected_laws'] = selected_laws
-
-    # Get question count for selected laws
-    questions = load_questions_for_laws(selected_laws)
-    max_questions = len(questions)
+    session['filters'] = {
+        'difficulty': difficulty,
+        'question_type': question_type,
+    }
 
     return render_template('select_count.html',
-                           max_questions=max_questions,
-                           selected_laws=selected_laws)
+                           max_questions=len(matching_ids),
+                           difficulty=difficulty,
+                           question_type=question_type)
 
 
 @bp.route('/quiz/start', methods=['POST'])
@@ -51,14 +99,17 @@ def start_quiz():
     if not selected_laws:
         return redirect(url_for('main.index'))
 
-    # Get question count choice
+    filters = session.get('filters', {})
+    question_ids = select_question_ids(
+        selected_laws=selected_laws,
+        difficulty=filters.get('difficulty'),
+        question_type=filters.get('question_type'),
+    )
+    max_questions = len(question_ids)
+
     count_choice = request.form.get('count')
     custom_count = request.form.get('custom_count')
 
-    questions = load_questions_for_laws(selected_laws)
-    max_questions = len(questions)
-
-    # Determine number of questions
     if count_choice == 'custom' and custom_count:
         try:
             num_questions = int(custom_count)
@@ -74,118 +125,138 @@ def start_quiz():
         except (ValueError, TypeError):
             num_questions = max_questions
 
-    # Shuffle and select questions
-    random.shuffle(questions)
-    selected_questions = questions[:num_questions]
+    random.shuffle(question_ids)
+    _start_quiz_with_ids(question_ids[:num_questions])
 
-    # Store questions in session (serialize to dicts)
-    session['questions'] = [
-        {'question': q.question, 'options': q.options, 'answers': q.answers}
-        for q in selected_questions
-    ]
-    session['asked_idxs'] = []
-    session['current_idx'] = None
-    session['score'] = 0
-    session['total'] = num_questions
-    session['current_options'] = []
+    return redirect(url_for('main.quiz'))
+
+
+@bp.route('/quiz/retry-missed', methods=['POST'])
+def retry_missed():
+    """Start a new quiz containing only the questions missed last time."""
+    last_result = session.get('last_result')
+    missed_ids = [w['id'] for w in last_result['wrong']] if last_result else []
+
+    if not missed_ids:
+        return redirect(url_for('main.index'))
+
+    random.shuffle(missed_ids)
+    _start_quiz_with_ids(missed_ids)
 
     return redirect(url_for('main.quiz'))
 
 
 @bp.route('/quiz')
 def quiz():
-    if 'questions' not in session:
+    if 'quiz_ids' not in session:
         return redirect(url_for('main.index'))
     return render_template('quiz.html',
                            score=session.get('score', 0),
                            total=session.get('total', 0),
-                           answered=len(session.get('asked_idxs', [])))
+                           answered=session.get('position', 0))
 
 
 @bp.route('/quiz/question')
-def get_question():
-    if 'questions' not in session:
+def get_question_route():
+    if 'quiz_ids' not in session:
         return redirect(url_for('main.index'))
 
-    questions = session['questions']
-    asked_idxs = session.get('asked_idxs', [])
+    quiz_ids = session['quiz_ids']
+    position = session.get('position', 0)
 
-    # Check if we've answered all questions
-    if len(asked_idxs) >= session.get('total', len(questions)):
+    if position >= len(quiz_ids):
         return render_template('partials/complete.html')
 
-    # Get next question index
-    next_idx = get_next_question_idx(asked_idxs, len(questions))
+    question_id = quiz_ids[position]
+    question = get_question(question_id)
 
-    if next_idx is None:
-        return render_template('partials/complete.html')
+    if question is None:
+        # Question removed from the bank since the quiz started - skip it
+        session['position'] = position + 1
+        session['total'] = session.get('total', len(quiz_ids)) - 1
+        return get_question_route()
 
-    session['current_idx'] = next_idx
-    question = questions[next_idx]
+    session['current_id'] = question_id
     options = shuffle_options(question['options'])
     session['current_options'] = options
 
     return render_template('partials/question.html',
-                           question=question['question'],
+                           question=question,
                            options=options,
-                           question_num=len(asked_idxs) + 1,
-                           total=session.get('total', len(questions)))
+                           question_num=position + 1,
+                           total=session.get('total', len(quiz_ids)))
 
 
 @bp.route('/quiz/answer', methods=['POST'])
 def submit_answer():
-    if 'questions' not in session or session.get('current_idx') is None:
+    if 'quiz_ids' not in session or not session.get('current_id'):
         return redirect(url_for('main.index'))
 
-    questions = session['questions']
-    current_idx = session['current_idx']
-    question = questions[current_idx]
-
+    question_id = session['current_id']
+    question = get_question(question_id)
+    position = session.get('position', 0)
     selected = request.form.get('answer')
 
     if not selected:
-        # No answer selected
-        options = session.get('current_options', [])
         return render_template('partials/question.html',
-                               question=question['question'],
-                               options=options,
-                               question_num=len(session['asked_idxs']) + 1,
-                               total=session.get('total', len(questions)),
+                               question=question,
+                               options=session.get('current_options', []),
+                               question_num=position + 1,
+                               total=session.get('total', 0),
                                error="Please select an answer!")
 
-    is_correct = selected in question['answers']
+    is_correct = check_answer(question, selected)
 
     if is_correct:
         session['score'] = session.get('score', 0) + 1
+    else:
+        wrong = session.get('wrong', [])
+        wrong.append({'id': question_id, 'selected': selected})
+        session['wrong'] = wrong
 
-    # Mark question as asked
-    asked_idxs = session.get('asked_idxs', [])
-    asked_idxs.append(current_idx)
-    session['asked_idxs'] = asked_idxs
+    session['position'] = position + 1
+    session['current_id'] = None
 
     return render_template('partials/feedback.html',
                            is_correct=is_correct,
                            selected=selected,
-                           correct_answers=question['answers'],
+                           question=question,
                            score=session.get('score', 0),
-                           answered=len(asked_idxs),
-                           total=session.get('total', len(questions)))
+                           answered=session['position'],
+                           total=session.get('total', 0))
 
 
 @bp.route('/quiz/results')
 def results():
-    score = session.get('score', 0)
-    planned_total = session.get('total', 0)
-    answered_total = len(session.get('asked_idxs', []))
-    total = answered_total
-    ended_early = 0 < answered_total < planned_total
-    # Clear session
-    session.clear()
+    if 'quiz_ids' in session:
+        # Arriving from a quiz (finished or ended early): record the result
+        session['last_result'] = {
+            'score': session.get('score', 0),
+            'answered': session.get('position', 0),
+            'planned': session.get('total', 0),
+            'wrong': session.get('wrong', []),
+        }
+        _clear_quiz_state()
+
+    last_result = session.get('last_result')
+    if last_result is None:
+        return redirect(url_for('main.index'))
+
+    wrong_by_id = {w['id']: w['selected'] for w in last_result['wrong']}
+    missed_questions = [
+        {'question': q, 'selected': wrong_by_id[q['id']]}
+        for q in get_questions(list(wrong_by_id))
+    ]
+
+    answered = last_result['answered']
+    planned = last_result['planned']
+
     return render_template(
         'results.html',
-        score=score,
-        total=total,
-        answered_total=answered_total,
-        planned_total=planned_total,
-        ended_early=ended_early
+        score=last_result['score'],
+        total=answered,
+        answered_total=answered,
+        planned_total=planned,
+        ended_early=0 < answered < planned,
+        missed_questions=missed_questions,
     )

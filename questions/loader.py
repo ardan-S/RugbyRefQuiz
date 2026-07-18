@@ -223,6 +223,31 @@ def load_questions_for_laws_yaml(selected_laws: Optional[list[int]] = None) -> l
     return questions
 
 
+@lru_cache(maxsize=1)
+def get_question_bank() -> dict[str, dict]:
+    """
+    Get all questions keyed by their unique ID, with law metadata merged in.
+
+    Each value is the full question dict from YAML plus:
+        law: law number
+        law_title: human-readable law title
+
+    Returns:
+        Dict mapping question ID to question dict
+    """
+    bank = {}
+
+    for _, data in _load_all_question_data():
+        metadata = data.get('metadata', {})
+        law_num = metadata.get('law')
+        law_title = metadata.get('title', f'Law {law_num}')
+
+        for q in data.get('questions', []):
+            bank[q['id']] = {**q, 'law': law_num, 'law_title': law_title}
+
+    return bank
+
+
 def get_questions_with_metadata(
     law_numbers: Optional[list[int]] = None,
     difficulty: Optional[str] = None,

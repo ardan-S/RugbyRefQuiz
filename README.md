@@ -9,15 +9,17 @@ Live site: https://rugbyrefquiz.onrender.com
 The app lets you:
 
 - choose one or more laws to study
+- filter by difficulty and question type
 - choose how many questions to answer
 - work through a multiple-choice quiz in the browser
-- get immediate feedback and a final score
+- get immediate feedback with the law reference and an explanation
+- review the questions you missed and retry just those
 
 Question content is stored in YAML under `questions/data/` and validated against `questions/schema.yaml`.
 
 ## Stack
 
-- Flask
+- Flask (with Flask-Session for server-side quiz state)
 - HTMX
 - Pico CSS
 - YAML question bank with JSON Schema validation

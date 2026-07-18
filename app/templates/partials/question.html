@@ -1,13 +1,20 @@
 <article>
     <header>
-        <small>Question {{ question_num }} of {{ total }}</small>
+        <div class="question-meta">
+            <small>Question {{ question_num }} of {{ total }}</small>
+            <span class="badges">
+                <span class="badge badge-law">Law {{ question.law }}: {{ question.law_title }}</span>
+                <span class="badge badge-{{ question.difficulty }}">{{ question.difficulty }}</span>
+                <span class="badge badge-type">{{ question.type }}</span>
+            </span>
+        </div>
     </header>
 
     {% if error %}
     <p class="error-message">{{ error }}</p>
     {% endif %}
 
-    <p><strong>{{ question }}</strong></p>
+    <p><strong>{{ question.text }}</strong></p>
 
     <form hx-post="{{ url_for('main.submit_answer') }}"
           hx-target="#quiz-content"

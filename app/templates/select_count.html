@@ -7,7 +7,12 @@
     <header>
         <h2>How Many Questions?</h2>
     </header>
-    <p>You have <strong>{{ max_questions }}</strong> questions available from your selected laws.</p>
+    <p>
+        You have <strong>{{ max_questions }}</strong> questions available from your selected laws{%
+        if difficulty or question_type %} (filtered to
+        {%- if difficulty %} {{ difficulty }}{% endif %}
+        {%- if question_type %} {{ question_type }}{% endif %} questions){% endif %}.
+    </p>
     <p>Choose how many questions you want to answer:</p>
 
     <form action="{{ url_for('main.start_quiz') }}" method="POST">

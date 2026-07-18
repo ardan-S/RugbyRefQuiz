@@ -1,4 +1,6 @@
 Flask>=3.0
+Flask-Session>=0.8
+cachelib>=0.10
 PyYAML>=6.0
 jsonschema>=4.0
 PyMuPDF>=1.23
