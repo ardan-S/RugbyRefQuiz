@@ -1,9 +1,15 @@
 # RugbyRefQuiz Roadmap
 
 ## Current State
-- 583 questions across 21 laws
+- 579 questions across 21 laws — fully audited against the World Rugby Laws 2026
+  (every question carries a verbatim law_quote, clause-level law_reference, and
+  practical explanations; style per questions/STYLE_GUIDE.md)
+- 15 pilot scenario chains (questions/scenarios/) — multi-step decision
+  sequences with materiality calls, mixed into quizzes as single all-or-nothing
+  questions; canonical-path continuation after a wrong step
 - YAML-based question storage with schema validation
-- Flask web app with HTMX
+- Flask web app with HTMX + Tailwind/daisyUI
+- Curated practice topics (questions/topics.yaml) and shareable seeded quiz links
 - AI question generation tool (prototype)
 
 ---
@@ -54,6 +60,8 @@ Consider multi-part question sequences that mirror actual decision-making.
 - ~~Expose question type filtering~~ (done)
 - ~~Review missed questions / retry the ones you got wrong~~ (done)
 - ~~Server-side sessions~~ (done: quiz state no longer limited by the 4KB cookie)
+- ~~Topic-driven practice~~ (done: curated topics in questions/topics.yaml)
+- ~~Shareable quiz links~~ (done: seeded preset URLs give everyone identical quizzes)
 - Implement quiz history/score tracking across sessions
 
 ### Medium-term

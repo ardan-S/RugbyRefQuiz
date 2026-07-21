@@ -3,63 +3,110 @@
 {% block title %}Rugby Ref Quiz - Question Count{% endblock %}
 
 {% block content %}
-<article>
-    <header>
-        <h2>How Many Questions?</h2>
-    </header>
-    <p>
-        You have <strong>{{ max_questions }}</strong> questions available from your selected laws{%
-        if difficulty or question_type %} (filtered to
-        {%- if difficulty %} {{ difficulty }}{% endif %}
-        {%- if question_type %} {{ question_type }}{% endif %} questions){% endif %}.
-    </p>
-    <p>Choose how many questions you want to answer:</p>
+<div class="max-w-2xl mx-auto space-y-6">
 
-    <form action="{{ url_for('main.start_quiz') }}" method="POST">
-        <fieldset class="count-fieldset">
-            <div class="count-grid">
-            {% if max_questions >= 5 %}
-            <label class="count-card">
-                <input type="radio" name="count" value="5">
-                <span>5 questions</span>
-            </label>
-            {% endif %}
-            {% if max_questions >= 20 %}
-            <label class="count-card">
-                <input type="radio" name="count" value="20">
-                <span>20 questions</span>
-            </label>
-            {% endif %}
-            {% if max_questions >= 50 %}
-            <label class="count-card">
-                <input type="radio" name="count" value="50">
-                <span>50 questions</span>
-            </label>
-            {% endif %}
-            <label class="count-card">
-                <input type="radio" name="count" value="all" checked>
-                <span>All {{ max_questions }} questions</span>
-            </label>
-            <label class="count-card count-card-custom">
-                <input type="radio" name="count" value="custom" id="custom-radio">
-                <span class="count-card-content">
-                    <span>Custom</span>
-                    <input type="number"
-                           name="custom_count"
-                           id="custom-input"
-                           min="1"
-                           max="{{ max_questions }}"
-                           placeholder="Enter number">
-                </span>
-            </label>
+    <section class="card bg-base-100 shadow-sm">
+        <div class="card-body">
+            <h2 class="card-title text-xl font-extrabold">How many questions?</h2>
+
+            {% if selected_topic_names or selected_law_names %}
+            <div class="flex flex-wrap gap-1.5 items-center mt-1">
+                <span class="text-sm opacity-70 mr-1">Practising:</span>
+                {% for name in selected_topic_names %}
+                <span class="badge badge-primary badge-outline">{{ name }}</span>
+                {% endfor %}
+                {% for name in selected_law_names %}
+                <span class="badge badge-ghost">{{ name }}</span>
+                {% endfor %}
+                {% for difficulty in selected_difficulties %}
+                <span class="badge badge-secondary badge-outline">{{ difficulty }}</span>
+                {% endfor %}
+                {% for question_type in selected_question_types %}
+                <span class="badge badge-secondary badge-outline">{{ question_type | replace('_', ' ') }}</span>
+                {% endfor %}
             </div>
-        </fieldset>
-        <div class="button-group">
-            <a href="{{ url_for('main.index') }}" role="button" class="secondary">Back</a>
-            <button type="submit">Start Quiz</button>
+            {% endif %}
+
+            <p class="text-sm opacity-70">
+                <strong class="text-base-content">{{ max_questions }}</strong> matching questions available.
+            </p>
+
+            <form action="{{ url_for('main.start_quiz') }}" method="POST" class="mt-2 space-y-4">
+                <div class="grid gap-3">
+                    {% if max_questions >= 5 %}
+                    <label>
+                        <input type="radio" name="count" value="5" class="count-radio hidden">
+                        <span class="pick-card flex items-center justify-between">
+                            <span class="font-bold">5 questions</span>
+                            <span class="pick-check">✓</span>
+                        </span>
+                    </label>
+                    {% endif %}
+                    {% if max_questions >= 20 %}
+                    <label>
+                        <input type="radio" name="count" value="20" class="count-radio hidden">
+                        <span class="pick-card flex items-center justify-between">
+                            <span class="font-bold">20 questions</span>
+                            <span class="pick-check">✓</span>
+                        </span>
+                    </label>
+                    {% endif %}
+                    {% if max_questions >= 50 %}
+                    <label>
+                        <input type="radio" name="count" value="50" class="count-radio hidden">
+                        <span class="pick-card flex items-center justify-between">
+                            <span class="font-bold">50 questions</span>
+                            <span class="pick-check">✓</span>
+                        </span>
+                    </label>
+                    {% endif %}
+                    <label>
+                        <input type="radio" name="count" value="all" class="count-radio hidden" checked>
+                        <span class="pick-card flex items-center justify-between">
+                            <span class="font-bold">All {{ max_questions }} questions</span>
+                            <span class="pick-check">✓</span>
+                        </span>
+                    </label>
+                    <label>
+                        <input type="radio" name="count" value="custom" id="custom-radio" class="count-radio hidden">
+                        <span class="pick-card flex items-center justify-between gap-4">
+                            <span class="font-bold">Custom</span>
+                            <span class="flex items-center gap-3">
+                                <input type="number"
+                                       name="custom_count"
+                                       id="custom-input"
+                                       min="1"
+                                       max="{{ max_questions }}"
+                                       placeholder="Number"
+                                       class="input input-bordered input-sm w-28">
+                                <span class="pick-check">✓</span>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+                <div class="flex gap-3">
+                    <a href="{{ url_for('main.index') }}" class="btn btn-ghost flex-1">Back</a>
+                    <button type="submit" class="btn btn-primary flex-[2]">Start Quiz</button>
+                </div>
+            </form>
         </div>
-    </form>
-</article>
+    </section>
+
+    <section class="card bg-base-100 shadow-sm">
+        <div class="card-body">
+            <h3 class="font-extrabold">Share this quiz</h3>
+            <p class="text-sm opacity-70 -mt-1">
+                Send this link to your group and everyone gets exactly the same
+                questions in the same order &mdash; handy for society sessions.
+            </p>
+            <div class="join w-full mt-1">
+                <input type="text" id="share-url" readonly value=""
+                       class="input input-bordered join-item flex-1 text-sm">
+                <button type="button" id="copy-share" class="btn btn-secondary join-item">Copy</button>
+            </div>
+        </div>
+    </section>
+</div>
 
 <script>
     const customInput = document.getElementById('custom-input');
@@ -67,10 +114,42 @@
 
     customInput.addEventListener('focus', function() {
         customRadio.checked = true;
+        updateShareUrl();
     });
 
     customInput.addEventListener('input', function() {
         customRadio.checked = true;
+    });
+
+    // Shareable link: base preset URL plus the currently selected count
+    const shareBase = {{ share_url_base | tojson }};
+    const shareUrlInput = document.getElementById('share-url');
+    const countRadios = document.querySelectorAll('.count-radio');
+
+    function updateShareUrl() {
+        const checked = document.querySelector('.count-radio:checked');
+        let count = checked ? checked.value : 'all';
+        if (count === 'custom') {
+            count = customInput.value || 'all';
+        }
+        shareUrlInput.value = shareBase + '&count=' + encodeURIComponent(count);
+    }
+
+    countRadios.forEach(r => r.addEventListener('change', updateShareUrl));
+    customInput.addEventListener('input', updateShareUrl);
+    updateShareUrl();
+
+    document.getElementById('copy-share').addEventListener('click', function() {
+        shareUrlInput.select();
+        navigator.clipboard.writeText(shareUrlInput.value).then(() => {
+            this.textContent = 'Copied!';
+            setTimeout(() => { this.textContent = 'Copy'; }, 2000);
+        }).catch(() => {
+            // Fallback for older browsers / non-HTTPS
+            document.execCommand('copy');
+            this.textContent = 'Copied!';
+            setTimeout(() => { this.textContent = 'Copy'; }, 2000);
+        });
     });
 </script>
 {% endblock %}

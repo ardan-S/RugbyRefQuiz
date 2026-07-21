@@ -4,290 +4,334 @@ metadata:
   source: World Rugby Laws 2026
 questions:
 - id: L04-001
-  text: |-
-    A player wears an item of clothing deemed illegal by the referee during the match. Sanction:
-  type: sanction
+  text: During play you notice a Red player wearing an item you consider dangerous.
+    There was no pre-match warning about it. What do you do?
+  type: procedural
   difficulty: intermediate
   options:
-  - Penalty
-  - Free kick
-  - Scrum
-  - Play advantage
-  - Other
+  - Order the player to remove it - they may not take part until it is removed or
+    rendered harmless
+  - Award a penalty against Red
+  - Send the player off for misconduct
+  - Nothing until the next stoppage report
   answers:
-  - Penalty
-  law_reference: '4'
+  - Order the player to remove it - they may not take part until it is removed or
+    rendered harmless
+  law_reference: '4.5'
   tags:
   - referee
   - clothing
-  - sanction
-  explanation: null
+  law_quote: The referee has the power to decide at any time that part of a player's
+    clothing is dangerous or illegal. In this case, the referee must order the player
+    to remove the item. The player must not take part in the match until the item
+    is removed or rendered harmless.
+  explanation: No sanction attaches to simply being found with the item - the penalty
+    and send-off only apply when the player was warned at a pre-match inspection
+    and wore it anyway (Law 4.6).
   contributor: null
 - id: L04-002
-  text: |-
-    A player is found wearing a prohibited item after being warned by the match official. Sanction:
+  text: At the pre-match inspection a match official tells Blue 4 to remove a banned
+    item. Blue 4 is later found wearing it on the playing area. What happens?
   type: sanction
   difficulty: intermediate
   options:
-  - Penalty
-  - Free kick
-  - Scrum
-  - Play advantage
-  - Other
+  - Blue 4 is sent off for misconduct and a penalty is awarded
+  - Penalty only - the player stays on
+  - Blue 4 is ordered to remove the item, no sanction
+  - Yellow card and a free-kick
   answers:
-  - Penalty
-  law_reference: '4'
+  - Blue 4 is sent off for misconduct and a penalty is awarded
+  law_reference: '4.6'
   tags:
   - sanction
-  explanation: null
+  - clothing
+  - sending-off
+  law_quote: 'If, at an inspection before the match, a match official tells a player
+    that an item banned under this law is being worn and the player is subsequently
+    found to be wearing that item on the playing area, that player is sent off for
+    misconduct. Sanction: Penalty.'
+  explanation: The warning at inspection is what escalates this to a send-off -
+    it is defiance of a match official, not just an equipment issue.
   contributor: null
 - id: L04-003
-  text: |-
-    A player leaves the playing area to change a non-bloodstained item of clothing. Sanction:
-  type: sanction
+  text: A Red player asks to leave the playing area to change a torn (not bloodstained)
+    jersey. What do you do?
+  type: procedural
   difficulty: intermediate
   options:
-  - Penalty
-  - Free kick
-  - Scrum
-  - Play advantage
-  - Other
+  - Refuse - players may only leave to change bloodstained clothing
+  - Allow it at the next stoppage
+  - Allow it, but Red play on with 14 until the change is complete
+  - Award a free-kick against Red for time-wasting
   answers:
-  - Penalty
-  law_reference: '4'
+  - Refuse - players may only leave to change bloodstained clothing
+  law_reference: '4.7'
   tags:
-  - blood-injury
   - clothing
-  - sanction
-  explanation: null
+  - referee
+  law_quote: The referee must not allow any player to leave the playing area to
+    change items of clothing, unless they are bloodstained.
+  explanation: A replacement jersey can be brought to the player on the field. Only
+    bloodstained kit justifies leaving the playing area.
   contributor: null
 - id: L04-004
   text: All items of clothing must comply with which regulation?
   type: factual
   difficulty: intermediate
   options:
-  - World Rugby Regulation 10
-  - World Rugby Regulation 11
   - World Rugby Regulation 12
-  - World Rugby Regulation 13
+  - World Rugby Regulation 10
+  - World Rugby Regulation 15
+  - World Rugby Regulation 22
   answers:
   - World Rugby Regulation 12
-  law_reference: '4'
+  law_reference: '4.1'
   tags:
   - clothing
-  explanation: null
+  law_quote: All items of clothing must comply with World Rugby Regulation 12.
+  explanation: Regulation 22, a common distractor, governs artificial playing surfaces.
   contributor: null
 - id: L04-005
-  text: What must a player wear during a match?
+  text: What does a player wear under Law 4?
   type: factual
-  difficulty: intermediate
+  difficulty: beginner
   options:
-  - Jersey, shorts, underwear, socks, and boots
-  - Jersey, shorts, socks, and boots
-  - Jersey, shorts, and socks
-  - Jersey, shorts, and boots
+  - Jersey, shorts and underwear, socks and boots
+  - Jersey, shorts, socks and boots
+  - Jersey, shorts and boots
+  - Whatever the team's kit supplier provides
   answers:
-  - Jersey, shorts, underwear, socks, and boots
-  law_reference: '4'
-  tags: []
+  - Jersey, shorts and underwear, socks and boots
+  law_reference: '4.2'
+  tags:
+  - clothing
+  law_quote: A player wears a jersey, shorts and underwear, socks and boots.
   explanation: null
   contributor: null
 - id: L04-006
   text: How far must the sleeve of a jersey extend?
   type: factual
-  difficulty: intermediate
+  difficulty: advanced
   options:
-  - To the wrist
+  - At least half-way from the shoulder point to the elbow
   - To the elbow
-  - At least halfway from the shoulder point to the elbow
-  - To the shoulder point
+  - To the wrist
+  - There is no sleeve requirement
   answers:
-  - At least halfway from the shoulder point to the elbow
-  law_reference: '4'
+  - At least half-way from the shoulder point to the elbow
+  law_reference: '4.2'
   tags:
   - clothing
-  explanation: null
+  law_quote: The sleeve of a jersey must extend at least half-way from the shoulder
+    point to the elbow.
+  explanation: Cut-off or sleeveless jerseys are not permitted in fifteens.
   contributor: null
 - id: L04-007
-  text: 'True or false: a player can wear ankle supports extending halfway up the
-    shin?'
+  text: Which of these ankle supports is permitted?
+  type: factual
+  difficulty: advanced
+  options:
+  - Worn under socks, no higher than one third of the shin, rigid parts non-metal
+  - Worn over socks, up to half the shin
+  - Any support, provided it is washable
+  - Rigid metal supports if professionally fitted
+  answers:
+  - Worn under socks, no higher than one third of the shin, rigid parts non-metal
+  law_reference: 4.3c
+  tags:
+  - clothing
+  law_quote: Ankle supports worn under socks, not extending higher than one third
+    of the length of the shin and, if rigid, from material other than metal.
+  explanation: Three conditions - under the socks, one-third shin height maximum,
+    and no metal if rigid.
+  contributor: null
+- id: L04-008
+  text: Which of the following items is NOT allowed?
   type: factual
   difficulty: beginner
   options:
-  - 'True'
-  - 'False'
-  answers:
-  - 'False'
-  law_reference: '4'
-  tags: []
-  explanation: null
-  contributor: null
-- id: L04-008
-  text: Which of the following items is not allowed?
-  type: factual
-  difficulty: intermediate
-  options:
-  - Fingerless gloves
   - Jewellery
+  - Mitts (fingerless gloves)
   - Mouth guard
   - Goggles
   answers:
   - Jewellery
-  law_reference: '4'
-  tags: []
-  explanation: null
+  law_reference: 4.4d
+  tags:
+  - clothing
+  law_quote: 'A player may not wear: ... jewellery.'
+  explanation: Check for jewellery (and other banned items) at your pre-match inspection
+    - taped-over rings are still rings.
   contributor: null
 - id: L04-009
-  text: What must a headscarf or covering ensure?
+  text: On what condition are headscarves or coverings permitted?
   type: factual
   difficulty: intermediate
   options:
-  - It looks good
-  - It does not cause a danger to the wearer or other players
-  - It matches the team color
-  - It is made of cotton
+  - They must not cause a danger to the wearer or other players
+  - They must be approved by the match organiser
+  - They must match the team colours
+  - They must be removed at the scrum
   answers:
-  - It does not cause a danger to the wearer or other players
-  law_reference: '4'
-  tags: []
-  explanation: null
+  - They must not cause a danger to the wearer or other players
+  law_reference: 4.3l
+  tags:
+  - clothing
+  law_quote: Headscarves or coverings, providing they do not cause a danger to the
+    wearer or other players.
+  explanation: Safety is the only test - the referee makes that judgement.
   contributor: null
 - id: L04-010
-  text: 'A player may not wear any item contaminated by:'
-  type: factual
-  difficulty: intermediate
-  options:
-  - Water
-  - Mud
-  - Blood
-  - Sweat
-  answers:
-  - Blood
-  law_reference: '4'
-  tags: []
-  explanation: null
-  contributor: null
-- id: L04-011
-  text: Can a player wear gloves?
-  type: factual
-  difficulty: intermediate
-  options:
-  - 'Yes'
-  - 'No'
-  answers:
-  - 'No'
-  law_reference: '4'
-  tags: []
-  explanation: null
-  contributor: null
-- id: L04-012
-  text: What type of boots studs are permitted?
-  type: factual
-  difficulty: intermediate
-  options:
-  - Metal studs only
-  - Plastic studs only
-  - Studs made of moulded rubber
-  - Studs of any material
-  answers:
-  - Studs made of moulded rubber
-  law_reference: '4'
-  tags:
-  - boots
-  explanation: null
-  contributor: null
-- id: L04-013
-  text: 'True or false: a player may wear shorts or leggings with padding sewn into
-    them?'
+  text: A player may not wear any item contaminated by what?
   type: factual
   difficulty: beginner
   options:
-  - 'True'
-  - 'False'
+  - Blood
+  - Mud
+  - Water
+  - Grass stains
   answers:
-  - 'False'
-  law_reference: '4'
-  tags: []
-  explanation: null
-  contributor: null
-- id: L04-014
-  text: Can a player wear communication devices?
-  type: factual
-  difficulty: intermediate
-  options:
-  - 'Yes'
-  - 'No'
-  answers:
-  - 'No'
-  law_reference: '4'
-  tags: []
-  explanation: null
-  contributor: null
-- id: L04-015
-  text: |-
-    Who has the power to decide if a player's clothing is dangerous or illegal during a match?
-  type: factual
-  difficulty: intermediate
-  options:
-  - The match organiser
-  - The governing body
-  - The referee
-  - World Rugby
-  answers:
-  - The referee
-  law_reference: '4'
+  - Blood
+  law_reference: 4.4a
   tags:
   - clothing
-  explanation: null
+  - blood-injury
+  law_quote: 'A player may not wear: any item contaminated by blood.'
+  explanation: This is why bloodstained kit is the one exception allowing a player
+    to leave the playing area to change (Law 4.7).
   contributor: null
-- id: L04-016
-  text: What must a player do if the referee orders the removal of an item of clothing?
+- id: L04-011
+  text: What is the rule on gloves?
   type: factual
   difficulty: intermediate
   options:
-  - Ignore the referee
-  - Remove the item and continue playing
-  - Remove the item or render it harmless
-  - Complain to the referee
+  - Full gloves are banned; mitts (fingerless gloves) are permitted
+  - All gloves are banned
+  - All gloves are permitted in cold weather
+  - Gloves are permitted for backs only
   answers:
-  - Remove the item or render it harmless
-  law_reference: '4'
+  - Full gloves are banned; mitts (fingerless gloves) are permitted
+  law_reference: 4.4e
+  tags:
+  - clothing
+  law_quote: 'Additional items are permitted... mitts (fingerless gloves). A player
+    may not wear: ... gloves.'
+  explanation: The distinction is the fingers - fingerless mitts yes, full gloves
+    no.
+  contributor: null
+- id: L04-012
+  text: What is the rule on boot studs?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Studs are permitted, including moulded rubber, subject to Regulation 12
+  - Only moulded rubber studs are permitted
+  - Only metal studs are permitted
+  - Studs are banned on artificial surfaces
+  answers:
+  - Studs are permitted, including moulded rubber, subject to Regulation 12
+  law_reference: 4.3j
+  tags:
+  - clothing
+  law_quote: Studs, including those of moulded rubber, on the soles of their boots.
+  explanation: Regulation 12 sets the detailed stud specifications - sharp or abrasive
+    studs fail the general ban in Law 4.4b regardless.
+  contributor: null
+- id: L04-013
+  text: Which of these padded items is NOT permitted?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Shorts or leggings with padding sewn into them
+  - Shoulder pads (approved)
+  - Approved chest pads
+  - Washable elasticated supports
+  answers:
+  - Shorts or leggings with padding sewn into them
+  law_reference: 4.4f
+  tags:
+  - clothing
+  law_quote: 'A player may not wear: ... shorts or leggings with padding sewn into
+    them.'
+  explanation: Approved shoulder and chest pads are fine; sewn-in padding in shorts
+    or leggings is not.
+  contributor: null
+- id: L04-014
+  text: Which of these devices may a player wear?
+  type: factual
+  difficulty: advanced
+  options:
+  - A player monitoring device (e.g. a GPS unit)
+  - A communication device
+  - A smartwatch
+  - An earpiece connected to the coaching box
+  answers:
+  - A player monitoring device (e.g. a GPS unit)
+  law_reference: 4.3m
+  tags:
+  - clothing
+  law_quote: 'Additional items are permitted... player monitoring devices. A player
+    may not wear: ... communication devices.'
+  explanation: The line is one-way data collection (permitted) versus two-way communication
+    (banned).
+  contributor: null
+- id: L04-015
+  text: Who has the power to decide during a match that part of a player's clothing
+    is dangerous or illegal?
+  type: factual
+  difficulty: beginner
+  options:
+  - The referee
+  - The match organiser
+  - The assistant referees only
+  - The team's own medical staff
+  answers:
+  - The referee
+  law_reference: '4.5'
   tags:
   - referee
   - clothing
+  law_quote: The referee has the power to decide at any time that part of a player's
+    clothing is dangerous or illegal.
   explanation: null
   contributor: null
-- id: L04-017
-  text: |-
-    What is the sanction for a player found wearing a banned item during play after being warned?
-  type: factual
+- id: L04-016
+  text: The referee orders a player to remove an item of clothing. What must happen
+    before the player can take part again?
+  type: procedural
   difficulty: intermediate
   options:
-  - Penalty
-  - Free kick
-  - Scrum
-  - Play advantage
-  - Other
+  - The item must be removed or rendered harmless
+  - The player must apologise to the referee
+  - The item must be inspected by the match organiser
+  - Nothing - the order is only advisory
   answers:
-  - Penalty
-  law_reference: '4'
-  tags: []
-  explanation: null
+  - The item must be removed or rendered harmless
+  law_reference: '4.5'
+  tags:
+  - referee
+  - clothing
+  law_quote: The player must not take part in the match until the item is removed
+    or rendered harmless.
+  explanation: '"Rendered harmless" gives you flexibility - taping over a rigid
+    edge may be enough without removing the item entirely.'
   contributor: null
 - id: L04-018
-  text: |-
-    Under what condition can a player leave the playing area to change items of clothing?
+  text: Under what condition may a player leave the playing area to change items
+    of clothing?
   type: factual
   difficulty: intermediate
   options:
-  - Any time during the match
-  - Only if approved by the referee
-  - If they are bloodstained
-  - At half-time
+  - Only if the items are bloodstained
+  - At any stoppage with the referee's permission
+  - Only at half-time
+  - If the captain requests it
   answers:
-  - If they are bloodstained
-  law_reference: '4'
+  - Only if the items are bloodstained
+  law_reference: '4.7'
   tags:
   - clothing
+  law_quote: The referee must not allow any player to leave the playing area to
+    change items of clothing, unless they are bloodstained.
   explanation: null
   contributor: null

@@ -1,41 +1,48 @@
-<article>
-    <p class="feedback-question-text"><strong>{{ question.text }}</strong></p>
+<div class="card bg-base-100 shadow-sm">
+    <div class="card-body">
+        <p class="font-bold leading-snug opacity-80">{{ question.text }}</p>
 
-    {% if is_correct %}
-    <div class="feedback-correct">
-        <h3>Correct!</h3>
-        <p>Your answer: "{{ selected }}"</p>
-    </div>
-    {% else %}
-    <div class="feedback-wrong">
-        <h3>Incorrect</h3>
-        <p>Your answer: {{ selected }}</p>
-        <p>Correct answer(s): <strong>{{ question.answers | join(', ') }}</strong></p>
-    </div>
-    {% endif %}
-
-    <div class="law-detail">
-        <p class="law-ref">
-            <strong>Law {{ question.law_reference or question.law }}</strong>
-            &mdash; {{ question.law_title }}
-        </p>
-        {% if question.explanation %}
-        <p class="explanation">{{ question.explanation }}</p>
+        {% if is_correct %}
+        <div role="alert" class="alert alert-success mt-1">
+            <span class="text-lg">✓</span>
+            <span><strong>Correct!</strong> {{ selected }}</span>
+        </div>
+        {% else %}
+        <div role="alert" class="alert alert-error mt-1">
+            <span class="text-lg">✗</span>
+            <span>
+                <strong>Incorrect.</strong> You said: {{ selected }}<br>
+                Correct answer{% if question.answers | length > 1 %}s{% endif %}:
+                <strong>{{ question.answers | join(', ') }}</strong>
+            </span>
+        </div>
         {% endif %}
+
+        <div class="border-l-4 border-primary bg-primary/5 rounded-r-lg px-4 py-3 mt-2">
+            <p class="font-bold text-primary text-sm">
+                Law {{ question.law_reference or question.law }} &mdash; {{ question.law_title }}
+            </p>
+            {% if question.law_quote %}
+            <p class="text-sm italic mt-1 leading-relaxed">&ldquo;{{ question.law_quote }}&rdquo;</p>
+            {% endif %}
+            {% if question.explanation %}
+            <p class="text-sm mt-1.5 leading-relaxed">{{ question.explanation }}</p>
+            {% endif %}
+        </div>
+
+        <button hx-get="{{ url_for('main.get_question_route') }}"
+                hx-target="#quiz-content"
+                hx-swap="innerHTML"
+                class="btn btn-primary btn-block mt-2"
+                autofocus>
+            Next Question
+        </button>
     </div>
-
-    <p>Score: <strong>{{ score }}</strong> / {{ answered }} answered</p>
-
-    <button hx-get="{{ url_for('main.get_question_route') }}"
-            hx-target="#quiz-content"
-            hx-swap="innerHTML"
-            autofocus>
-        Next Question
-    </button>
-</article>
+</div>
 
 <script>
     // Update the score display in the progress bar
     document.getElementById('score').textContent = '{{ score }}';
     document.getElementById('answered').textContent = '{{ answered }}';
+    document.getElementById('quiz-progress').value = {{ answered }};
 </script>

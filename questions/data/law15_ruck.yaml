@@ -10,13 +10,14 @@ questions:
     difficulty: beginner
     options:
       - "To allow players to compete for the ball which is on the ground"
-      - "To restart play after a tackle"
-      - "To allow the ball-carrier to go to ground safely"
-      - "To create space for the backs"
+      - "To end the tackle contest"
+      - "To protect the tackled player"
+      - "To reset the offside lines"
     answers: ["To allow players to compete for the ball which is on the ground"]
     law_reference: "15"
     tags: ["ruck", "principle"]
-    explanation: "The purpose of a ruck is to allow players to compete for the ball which is on the ground."
+    law_quote: "The purpose of a ruck is to allow players to compete for the ball which is on the ground."
+    explanation: "Keep the contest fair and the ball available - that principle guides your calls when the letter of the law is finely balanced."
     contributor: null
 
   - id: L15-002
@@ -25,356 +26,444 @@ questions:
     difficulty: beginner
     options:
       - "Only in the field of play"
-      - "Anywhere in the playing area"
-      - "Only in the opposition half"
-      - "Only within the 22"
+      - "Anywhere in the playing area, including in-goal"
+      - "Only outside the 22s"
+      - "Anywhere between the try lines and touchlines, including in-goal"
     answers: ["Only in the field of play"]
     law_reference: "15.1"
-    tags: ["ruck", "location"]
-    explanation: "Law 15.1: A ruck can take place only in the field of play."
+    tags: ["ruck"]
+    law_quote: "A ruck can take place only in the field of play."
+    explanation: "No rucks in in-goal - once the ball is over the try line, different laws govern the contest."
     contributor: null
 
   - id: L15-003
-    text: "What is required to form a ruck?"
+    text: "When is a ruck formed?"
     type: factual
     difficulty: beginner
     options:
-      - "At least one player from each team in contact, on feet, over ball on ground"
-      - "Two players from one team over the ball"
-      - "Three players total"
-      - "The ball-carrier going to ground"
-    answers: ["At least one player from each team in contact, on feet, over ball on ground"]
+      - "When at least one player from each team is in contact, on their feet, over the ball on the ground"
+      - "When two team-mates stand over a tackled player"
+      - "When three or more players are in contact"
+      - "Whenever a tackle is completed"
+    answers: ["When at least one player from each team is in contact, on their feet, over the ball on the ground"]
     law_reference: "15.2"
-    tags: ["ruck", "formation"]
-    explanation: "Law 15.2: A ruck is formed when at least one player from each team are in contact, on their feet and over the ball which is on the ground."
+    tags: ["ruck"]
+    law_quote: "A ruck is formed when at least one player from each team are in contact, on their feet and over the ball which is on the ground."
+    explanation: "One from EACH team - a lone defender over the ball, or two attackers with no opponent, is not a ruck and the handling rules differ."
     contributor: null
 
   - id: L15-004
-    text: "In a ruck, players must have their heads and shoulders:"
+    text: "What body position must players hold throughout a ruck?"
     type: factual
     difficulty: intermediate
     options:
-      - "No lower than their hips"
-      - "Below their hips"
-      - "At any height"
-      - "Above shoulder level"
-    answers: ["No lower than their hips"]
+      - "Heads and shoulders no lower than the hips"
+      - "Back parallel to the ground"
+      - "Any position that keeps them on their feet"
+      - "Both hands off the ground at all times"
+    answers: ["Heads and shoulders no lower than the hips"]
     law_reference: "15.3"
     tags: ["ruck", "body-position"]
-    explanation: "Law 15.3: Players in all stages of the ruck must have their heads and shoulders no lower than their hips."
+    law_quote: "Players involved in all stages of the ruck must have their heads and shoulders no lower than their hips. Sanction: Free-kick."
+    explanation: null
     contributor: null
 
   - id: L15-005
-    text: "A player's head and shoulders are lower than their hips in a ruck. What is the sanction?"
+    text: "A Red player rucks with head and shoulders lower than their hips. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Free-kick"
-      - "Penalty"
-      - "Scrum"
-      - "Play on"
-    answers: ["Free-kick"]
+      - "Free-kick to Blue"
+      - "Penalty to Blue"
+      - "Scrum to Blue"
+      - "Play on - body height is coaching, not law"
+    answers: ["Free-kick to Blue"]
     law_reference: "15.3"
     tags: ["ruck", "body-position", "sanction"]
-    explanation: "Law 15.3: Players must have heads and shoulders no lower than hips. Sanction: Free-kick."
+    law_quote: "Players involved in all stages of the ruck must have their heads and shoulders no lower than their hips. Sanction: Free-kick."
+    explanation: "One of the ruck's free-kick offences - a safety-driven technicality, not foul play."
     contributor: null
 
   - id: L15-006
-    text: "Where is the offside line at a ruck?"
+    text: "Where is each team's offside line at a ruck?"
     type: factual
     difficulty: intermediate
     options:
-      - "Through the hindmost point of any ruck participant"
-      - "One metre behind the ball"
-      - "At the tackle point"
-      - "Five metres from the ruck"
-    answers: ["Through the hindmost point of any ruck participant"]
+      - "Parallel to the try line, through the hindmost point of any ruck participant"
+      - "One metre behind the ruck"
+      - "Through the centre of the ruck"
+      - "Level with the ball"
+    answers: ["Parallel to the try line, through the hindmost point of any ruck participant"]
     law_reference: "15.4"
     tags: ["ruck", "offside"]
-    explanation: "Law 15.4: The offside line runs parallel to the try line through the hindmost point of any ruck participant."
+    law_quote: "Each team has an offside line that runs parallel to the try line through the hindmost point of any ruck participant. If that point is on or behind the try line, the offside line for that team is the try line."
+    explanation: "Hindmost POINT - usually the last foot. Near the line, the offside line becomes the try line itself."
     contributor: null
 
   - id: L15-007
-    text: "From which direction must a player join a ruck?"
+    text: "How must an arriving player join a ruck?"
     type: factual
     difficulty: beginner
     options:
-      - "From behind their offside line"
-      - "From any direction"
-      - "From the side"
-      - "From in front of the ball"
-    answers: ["From behind their offside line"]
+      - "On their feet, from behind their offside line"
+      - "From any position level with the ball"
+      - "From wherever they were standing when the ruck formed"
+      - "Behind the hindmost player only, never alongside"
+    answers: ["On their feet, from behind their offside line"]
     law_reference: "15.5"
-    tags: ["ruck", "joining"]
-    explanation: "Law 15.5: An arriving player must be on their feet and join from behind their offside line."
+    tags: ["ruck"]
+    law_quote: "An arriving player must be on their feet and join from behind their offside line."
+    explanation: "They may join ALONGSIDE the hindmost player, but not in front of them (Law 15.6)."
     contributor: null
 
   - id: L15-008
-    text: "A player joins a ruck from the side. What is the sanction?"
+    text: "Blue 6 joins the ruck from the side, ahead of the hindmost team-mate. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
-    law_reference: "15.5"
-    tags: ["ruck", "joining", "sanction"]
-    explanation: "Law 15.5: A player must join from behind the offside line, not from the side. Sanction: Penalty."
+      - "Penalty to Red"
+      - "Free-kick to Red"
+      - "Scrum to Red"
+      - "Play on if Blue 6 binds"
+    answers: ["Penalty to Red"]
+    law_reference: "15.6"
+    tags: ["ruck", "sanction"]
+    law_quote: "A player may join alongside but not in front of the hindmost player. ... Sanction: Penalty."
+    explanation: "The joining offences (15.5-15.9) all carry a penalty - side entry is the most common."
     contributor: null
 
   - id: L15-009
-    text: "When joining a ruck, a player must bind onto:"
+    text: "What must a player joining a ruck bind onto, and when?"
     type: factual
     difficulty: intermediate
     options:
-      - "A team-mate or an opposition player"
-      - "Only a team-mate"
-      - "Only an opposition player"
-      - "The ball"
-    answers: ["A team-mate or an opposition player"]
+      - "A team-mate or opponent - and the bind must precede or be simultaneous with any other contact"
+      - "A team-mate only, after making contact"
+      - "The ball-carrier"
+      - "Nothing - binding is optional at a ruck"
+    answers: ["A team-mate or opponent - and the bind must precede or be simultaneous with any other contact"]
     law_reference: "15.7"
-    tags: ["ruck", "binding"]
-    explanation: "Law 15.7: A player must bind onto a team-mate or an opposition player. The bind must precede or be simultaneous with contact."
+    tags: ["ruck"]
+    law_quote: "A player must bind onto a team-mate or an opposition player. The bind must precede or be simultaneous with contact with any other part of the body."
+    explanation: "Shoulder first, bind later is a charge (Law 9.20a) - the bind must come first or together with contact."
     contributor: null
 
   - id: L15-010
-    text: "Once a ruck has formed, when can a player handle the ball?"
+    text: "Once a ruck has formed, who may handle the ball in it?"
     type: factual
     difficulty: advanced
     options:
-      - "Only if they had hands on ball before ruck formed and stayed on feet"
-      - "Never"
-      - "When the ruck ends"
-      - "If they are the scrum-half"
-    answers: ["Only if they had hands on ball before ruck formed and stayed on feet"]
+      - "Only a player who had their hands on the ball before the ruck formed and stays on their feet"
+      - "The scrum-half of the team winning the ruck"
+      - "Nobody, under any circumstances"
+      - "Any player bound to the ruck"
+    answers: ["Only a player who had their hands on the ball before the ruck formed and stays on their feet"]
     law_reference: "15.11"
-    tags: ["ruck", "handling"]
-    explanation: "Law 15.11: Once a ruck has formed, no player may handle the ball unless they had hands on it before the ruck formed and stayed on feet."
+    tags: ["ruck"]
+    law_quote: "Once a ruck has formed, no player may handle the ball unless they were able to get their hands on the ball before the ruck formed and stay on their feet."
+    explanation: "The jackler's protection - hands on before the ruck forms may stay on. Everyone else plays it with feet or waits for it to emerge."
     contributor: null
 
   - id: L15-011
-    text: "A player handles the ball in a ruck. What is the sanction?"
+    text: "A Red player reaches into a formed ruck and pulls the ball out by hand. What do you award?"
     type: sanction
     difficulty: beginner
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Penalty to Blue - handling in the ruck"
+      - "Free-kick to Blue"
+      - "Play on if Red won the ruck"
+      - "Scrum to Blue"
+    answers: ["Penalty to Blue - handling in the ruck"]
     law_reference: "15.11"
-    tags: ["ruck", "handling", "sanction"]
-    explanation: "Law 15.11: No handling in the ruck unless hands were on ball before it formed. Sanction: Penalty."
+    tags: ["ruck", "sanction"]
+    law_quote: "Once a ruck has formed, no player may handle the ball unless they were able to get their hands on the ball before the ruck formed and stay on their feet."
+    explanation: "'Hands in the ruck.' The exception is only for the player whose hands were already legally on the ball."
     contributor: null
 
   - id: L15-012
-    text: "Can players use their feet to play the ball in a ruck?"
+    text: "May players use their feet to win the ball in a ruck?"
     type: factual
     difficulty: intermediate
     options:
-      - "Yes, provided it is done in a safe manner"
-      - "No, never"
-      - "Only the scrum-half"
-      - "Only forwards"
-    answers: ["Yes, provided it is done in a safe manner"]
+      - "Yes, provided they do so in a safe manner"
+      - "No - the ball may not be touched inside a ruck"
+      - "Only the front-most player"
+      - "Only to hook it backwards"
+    answers: ["Yes, provided they do so in a safe manner"]
     law_reference: "15.14"
-    tags: ["ruck", "rucking", "feet"]
-    explanation: "Law 15.14: Players may play the ball with their feet, provided they do so in a safe manner."
+    tags: ["ruck"]
+    law_quote: "Players may play the ball with their feet, provided they do so in a safe manner."
+    explanation: "Rucking the ball with feet is legal; stepping on bodies (Law 15.16c) is not."
     contributor: null
 
   - id: L15-013
-    text: "A player on the ground plays the ball in the ruck. What is the sanction?"
+    text: "A Blue player on the ground plays the ball as it emerges from the ruck. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Penalty to Red"
+      - "Free-kick to Red"
+      - "Scrum to Red"
+      - "Play on - the ball had emerged"
+    answers: ["Penalty to Red"]
     law_reference: "15.15"
-    tags: ["ruck", "ground", "sanction"]
-    explanation: "Law 15.15: Players on the ground must not play the ball in the ruck or as it emerges. Sanction: Penalty."
+    tags: ["ruck", "sanction"]
+    law_quote: "Players on the ground must attempt to move away from the ball and must not play the ball in the ruck or as it emerges."
+    explanation: "'Or as it emerges' closes the loophole - the grounded player cannot touch it even at the back of the ruck."
     contributor: null
 
   - id: L15-014
-    text: "A player intentionally collapses a ruck. What is the sanction?"
+    text: "A Red player intentionally collapses a ruck. What do you award?"
     type: sanction
     difficulty: beginner
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Yellow card only"
-    answers: ["Penalty"]
+      - "Penalty to Blue (with a card to consider)"
+      - "Free-kick to Blue"
+      - "Scrum to Blue"
+      - "Reset - play on"
+    answers: ["Penalty to Blue (with a card to consider)"]
     law_reference: "15.16b"
     tags: ["ruck", "collapse", "sanction"]
-    explanation: "Law 15.16b: Players must not intentionally collapse a ruck. Sanction: Penalty."
+    law_quote: "Players must not: intentionally collapse a ruck or jump on top of it. Sanction: Penalty."
+    explanation: "Also dangerous play under Law 9.20c - the safety dimension is why cards are in play."
     contributor: null
 
   - id: L15-015
-    text: "A player kicks the ball out of a ruck. What is the sanction?"
+    text: "A Blue player deliberately kicks the ball out of a ruck. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on - legal"
-    answers: ["Penalty"]
+      - "Penalty to Red"
+      - "Free-kick to Red"
+      - "Play on - feet are legal in a ruck"
+      - "Scrum to Red"
+    answers: ["Penalty to Red"]
     law_reference: "15.16e"
-    tags: ["ruck", "kicking", "sanction"]
-    explanation: "Law 15.16e: Players must not kick, or attempt to kick, the ball out of a ruck. Sanction: Penalty."
+    tags: ["ruck", "sanction"]
+    law_quote: "Players must not: kick, or attempt to kick, the ball out of a ruck. Sanction: Penalty."
+    explanation: "Rucking the ball backwards with feet is legal; booting it OUT of the ruck is a penalty - even the attempt."
     contributor: null
 
   - id: L15-016
-    text: "A player returns the ball into the ruck. What is the sanction?"
+    text: "The ball emerges from the ruck and a Red player deliberately puts it back in. What do you award?"
     type: sanction
-    difficulty: intermediate
+    difficulty: advanced
     options:
-      - "Free-kick"
-      - "Penalty"
-      - "Scrum"
+      - "Free-kick to Blue"
+      - "Penalty to Blue"
+      - "Scrum to Blue"
       - "Play on"
-    answers: ["Free-kick"]
+    answers: ["Free-kick to Blue"]
     law_reference: "15.16f"
-    tags: ["ruck", "ball-return", "sanction"]
-    explanation: "Law 15.16f: Players must not return the ball into the ruck. Sanction: Free-kick."
+    tags: ["ruck", "sanction"]
+    law_quote: "Players must not: return the ball into the ruck. Sanction: Free-kick."
+    explanation: "A free-kick, not a penalty - one of the odd ones out in Law 15.16 alongside the deception offence."
     contributor: null
 
   - id: L15-017
-    text: "The ball is clearly won at a ruck. The referee calls 'use it'. How long does the team have?"
+    text: "The ball is won and available at the back of the ruck. You call 'use it'. How long does the team have?"
     type: factual
     difficulty: intermediate
     options:
       - "Five seconds"
       - "Three seconds"
       - "Ten seconds"
-      - "No time limit"
+      - "As long as the ball remains at the back"
     answers: ["Five seconds"]
     law_reference: "15.17"
     tags: ["ruck", "use-it"]
-    explanation: "Law 15.17: When 'use it' is called, the ball must be played away from the ruck within five seconds."
+    law_quote: "When the ball has been clearly won by a team at the ruck, and is available to be played, the referee calls 'use it', after which the ball must be played away from the ruck within five seconds. Sanction: Scrum."
+    explanation: null
     contributor: null
 
   - id: L15-018
-    text: "The 'use it' call is made but the ball is not played within five seconds. What is the sanction?"
+    text: "You call 'use it' and Red fail to play the ball away within five seconds. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Scrum"
-      - "Penalty"
-      - "Free-kick"
-      - "Turnover"
-    answers: ["Scrum"]
+      - "Scrum to Blue"
+      - "Penalty to Blue"
+      - "Free-kick to Blue"
+      - "Another 'use it' warning"
+    answers: ["Scrum to Blue"]
     law_reference: "15.17"
     tags: ["ruck", "use-it", "sanction"]
-    explanation: "Law 15.17: If ball is not played within five seconds after 'use it'. Sanction: Scrum."
+    law_quote: "The ball must be played away from the ruck within five seconds. Sanction: Scrum."
+    explanation: "The scrum goes to the opposition - the throw-in switches because Red failed to use won ball."
     contributor: null
 
   - id: L15-019
-    text: "A player who was in the ruck tackles an opponent within 1 metre who is trying to play the ball away. What is the sanction?"
+    text: "Blue 9 steps to the base to clear the ball. Red 6, just out of the ruck they were part of, dives at Blue 9 within a metre of it. What do you award?"
     type: sanction
     difficulty: advanced
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Play on - legal"
-      - "Scrum"
-    answers: ["Penalty"]
+      - "Penalty to Blue"
+      - "Play on - the ball was out"
+      - "Free-kick to Blue"
+      - "Scrum to Blue"
+    answers: ["Penalty to Blue"]
     law_reference: "15.18"
-    tags: ["ruck", "tackle", "sanction"]
-    explanation: "Law 15.18: A player in or from the ruck may not play an opponent within 1m who is attempting to play ball away. Sanction: Penalty."
+    tags: ["ruck", "sanction"]
+    law_quote: "A player who is, or was part of the ruck may not play an opponent who is near it (within 1m), and who is attempting to play the ball away. Sanction: Penalty."
+    explanation: "The scrum-half's protection zone - ruck participants cannot swim out and play the 9 within a metre of the ruck."
     contributor: null
 
   - id: L15-020
-    text: "When does the ruck end?"
+    text: "When does a ruck end with play continuing?"
     type: factual
     difficulty: intermediate
     options:
-      - "When the ball leaves the ruck or is on/over the try line"
-      - "When the referee blows the whistle"
-      - "When a player picks up the ball"
+      - "When the ball leaves the ruck, or the ball in the ruck is on or over the try line"
+      - "When the referee calls 'use it'"
+      - "When one team stops pushing"
       - "When the scrum-half touches the ball"
-    answers: ["When the ball leaves the ruck or is on/over the try line"]
+    answers: ["When the ball leaves the ruck, or the ball in the ruck is on or over the try line"]
     law_reference: "15.19"
-    tags: ["ruck", "ending"]
-    explanation: "Law 15.19: The ruck ends when the ball leaves the ruck or when the ball in the ruck is on or over the try line."
+    tags: ["ruck"]
+    law_quote: "The ruck ends and play continues when the ball leaves the ruck or when the ball in the ruck is on or over the try line."
+    explanation: "The 9 touching the ball doesn't end it - the ball must LEAVE. Defenders who fly up at the first touch are offside."
     contributor: null
 
   - id: L15-021
-    text: "The ball becomes unplayable in a ruck. What is the decision?"
-    type: factual
+    text: "The ball is trapped and clearly not going to emerge from the ruck. What do you award?"
+    type: sanction
     difficulty: intermediate
     options:
-      - "Scrum"
-      - "Penalty to attacking team"
-      - "Free-kick"
-      - "Drop ball"
-    answers: ["Scrum"]
+      - "Scrum (to the team you judge entitled to the throw)"
+      - "Penalty against the team that took the ball in"
+      - "Free-kick to the team going forward"
+      - "Drop-out"
+    answers: ["Scrum (to the team you judge entitled to the throw)"]
     law_reference: "15.20"
-    tags: ["ruck", "unplayable"]
-    explanation: "Law 15.20: The ruck ends when ball becomes unplayable; a scrum is awarded."
+    tags: ["ruck", "sanction"]
+    law_quote: "The ruck ends when the ball becomes unplayable. If the referee decides that the ball will probably not emerge within a reasonable time, a scrum is awarded."
+    explanation: "But scan first for the CAUSE - a body sealing, a hand in, a player off feet. Unplayable through offence is a penalty, not a scrum."
     contributor: null
 
   - id: L15-022
-    text: "A player picks up the ball with their legs in a ruck. What is the sanction?"
-    type: sanction
-    difficulty: intermediate
-    options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
-    law_reference: "15.16a"
-    tags: ["ruck", "legs", "sanction"]
-    explanation: "Law 15.16a: Players must not pick the ball up with their legs. Sanction: Penalty."
-    contributor: null
-
-  - id: L15-023
-    text: "A player jumps on top of a ruck. What is the sanction?"
-    type: sanction
-    difficulty: beginner
-    options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
-    law_reference: "15.16b"
-    tags: ["ruck", "dangerous-play", "sanction"]
-    explanation: "Law 15.16b: Players must not jump on top of a ruck. Sanction: Penalty."
-    contributor: null
-
-  - id: L15-024
-    text: "A player intentionally steps on another player in a ruck. What is the sanction?"
-    type: sanction
-    difficulty: beginner
-    options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Yellow card only"
-    answers: ["Penalty"]
-    law_reference: "15.16c"
-    tags: ["ruck", "stamping", "sanction"]
-    explanation: "Law 15.16c: Players must not intentionally step on another player. Sanction: Penalty."
-    contributor: null
-
-  - id: L15-025
-    text: "A player takes action to make opponents believe the ruck has ended when it hasn't. What is the sanction?"
+    text: "A Blue player grips the ball between their legs and works it backwards out of the ruck. What do you award?"
     type: sanction
     difficulty: advanced
     options:
-      - "Free-kick"
-      - "Penalty"
-      - "Scrum"
-      - "Play on"
-    answers: ["Free-kick"]
+      - "Penalty to Red - the ball must not be picked up with the legs"
+      - "Play on - feet and legs are legal"
+      - "Free-kick to Red"
+      - "Scrum to Red"
+    answers: ["Penalty to Red - the ball must not be picked up with the legs"]
+    law_reference: "15.16a"
+    tags: ["ruck", "sanction"]
+    law_quote: "Players must not: pick the ball up with their legs. Sanction: Penalty."
+    explanation: "Feet may PLAY the ball (Law 15.14); clamping and lifting it with the legs is an offence."
+    contributor: null
+
+  - id: L15-023
+    text: "A Red player jumps on top of a collapsing ruck. What do you award?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty to Blue (with a card to consider)"
+      - "Free-kick to Blue"
+      - "Scrum to Blue"
+      - "Play on if no one is hurt"
+    answers: ["Penalty to Blue (with a card to consider)"]
+    law_reference: "15.16b"
+    tags: ["ruck", "sanction"]
+    law_quote: "Players must not: intentionally collapse a ruck or jump on top of it. Sanction: Penalty."
+    explanation: null
+    contributor: null
+
+  - id: L15-024
+    text: "A Blue player intentionally steps on a Red player lying in the ruck. What do you award?"
+    type: sanction
+    difficulty: beginner
+    options:
+      - "Penalty to Red, and deal with it as foul play (card likely)"
+      - "Free-kick to Red"
+      - "Play on - rucking is legal"
+      - "Scrum to Red"
+    answers: ["Penalty to Red, and deal with it as foul play (card likely)"]
+    law_reference: "15.16c"
+    tags: ["ruck", "sanction"]
+    law_quote: "Players must not: intentionally step on another player. Sanction: Penalty."
+    explanation: "Intentional stamping is also physical abuse under Law 9.12 - treat it through the foul play framework."
+    contributor: null
+
+  - id: L15-025
+    text: "A Red player pretends to pick the ball up, tricking Blue into believing the ruck is over. What do you award?"
+    type: sanction
+    difficulty: advanced
+    options:
+      - "Free-kick to Blue"
+      - "Penalty to Blue"
+      - "Play on - gamesmanship is legal"
+      - "Scrum to Blue"
+    answers: ["Free-kick to Blue"]
     law_reference: "15.16g"
-    tags: ["ruck", "deception", "sanction"]
-    explanation: "Law 15.16g: Players must not take action to make opponents believe the ruck has ended when it has not. Sanction: Free-kick."
+    tags: ["ruck", "sanction"]
+    law_quote: "Players must not: take any action to make opponents believe that the ruck has ended when it has not. Sanction: Free-kick."
+    explanation: "Deceptions like the fake pick-up draw a free-kick - note it is not a penalty."
+    contributor: null
+
+  - id: L15-026
+    text: "Red 6 arrives at a ruck and hovers alongside it, neither joining nor retiring. What does the law require?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "Join the ruck or retire behind the offside line immediately"
+      - "Nothing - standing beside a ruck is legal"
+      - "Retire 5 metres"
+      - "Bind with one arm at least"
+    answers: ["Join the ruck or retire behind the offside line immediately"]
+    law_reference: "15.8"
+    tags: ["ruck", "offside"]
+    law_quote: "Players must join the ruck or retire behind their offside line immediately. Sanction: Penalty."
+    explanation: "No loitering in the space beside the ruck - it's join or get back, immediately."
+    contributor: null
+
+  - id: L15-027
+    text: "How may possession be won at a ruck?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "By rucking the ball with feet, or by pushing the opposing team off the ball"
+      - "Only by the scrum-half digging it out"
+      - "Only by rucking with the feet"
+      - "By any player handling it once bound"
+    answers: ["By rucking the ball with feet, or by pushing the opposing team off the ball"]
+    law_reference: "15.10"
+    tags: ["ruck"]
+    law_quote: "Possession may be won either by rucking or by pushing the opposing team off the ball."
+    explanation: "The counter-ruck is the legal turnover route - drive them off it rather than reaching in."
+    contributor: null
+
+  - id: L15-028
+    text: "A player leans on the ruck from the side without being caught in or bound to it. Are they part of the ruck?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "No - all players in a ruck must be caught in or bound to it, not just alongside"
+      - "Yes - proximity is enough"
+      - "Yes, if they entered through the gate"
+      - "Only if they touch the ball"
+    answers: ["No - all players in a ruck must be caught in or bound to it, not just alongside"]
+    law_reference: "15.13"
+    tags: ["ruck"]
+    law_quote: "All players in a ruck must be caught in or bound to it and not just alongside it."
+    explanation: "The 'flanker leaning' picture - unbound players alongside are obstructing and playing offside, not rucking."
+    contributor: null
+
+  - id: L15-029
+    text: "The ball squirts out of the back of the ruck onto the ground. Blue 4, on their feet nearby, dives on it. What do you award?"
+    type: sanction
+    difficulty: advanced
+    options:
+      - "Penalty to Red - falling over the emerging ball near the ruck"
+      - "Play on - the ruck had ended"
+      - "Scrum to Red"
+      - "Free-kick to Red"
+    answers: ["Penalty to Red - falling over the emerging ball near the ruck"]
+    law_reference: "15.16d"
+    tags: ["ruck", "sanction"]
+    law_quote: "Players must not: fall onto, or over, the emerging ball while it is on the ground near to the ruck. Sanction: Penalty."
+    explanation: "Diving on emerging ruck ball kills the quick play the law protects - stay on your feet and pick it up."
     contributor: null

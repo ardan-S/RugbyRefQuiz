@@ -1,7 +1,8 @@
-<article>
-    <header>
-        <h2>Quiz Complete!</h2>
-    </header>
-    <p>You have answered all questions.</p>
-    <a href="{{ url_for('main.results') }}" role="button">View Results</a>
-</article>
+<div class="card bg-base-100 shadow-sm">
+    <div class="card-body items-center text-center py-10">
+        <span class="text-4xl">🏉</span>
+        <h2 class="text-2xl font-extrabold">Quiz complete!</h2>
+        <p class="opacity-70">You have answered all questions.</p>
+        <a href="{{ url_for('main.results') }}" class="btn btn-primary btn-wide mt-2">View Results</a>
+    </div>
+</div>

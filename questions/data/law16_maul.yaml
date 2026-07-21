@@ -9,14 +9,15 @@ questions:
     type: factual
     difficulty: beginner
     options:
-      - "To allow players to compete for the ball which is held off the ground"
+      - "To allow players to compete for the ball, which is held off the ground"
       - "To allow players to compete for the ball on the ground"
-      - "To restart play"
-      - "To protect the ball-carrier"
-    answers: ["To allow players to compete for the ball which is held off the ground"]
+      - "To protect the ball-carrier from tackles"
+      - "To commit defenders before releasing the backs"
+    answers: ["To allow players to compete for the ball, which is held off the ground"]
     law_reference: "16"
     tags: ["maul", "principle"]
-    explanation: "The purpose of a maul is to allow players to compete for the ball, which is held off the ground."
+    law_quote: "The purpose of a maul is to allow players to compete for the ball, which is held off the ground."
+    explanation: "Ball off the ground - that's the line between maul and ruck."
     contributor: null
 
   - id: L16-002
@@ -25,137 +26,146 @@ questions:
     difficulty: beginner
     options:
       - "Only in the field of play"
-      - "Anywhere in the playing area"
-      - "Only in the opposition half"
-      - "Only outside the 22"
+      - "Anywhere in the playing area including in-goal"
+      - "Only within 22 metres of a try line"
+      - "Only from a lineout"
     answers: ["Only in the field of play"]
     law_reference: "16.1"
-    tags: ["maul", "location"]
-    explanation: "Law 16.1: A maul can take place only in the field of play."
+    tags: ["maul"]
+    law_quote: "A maul can take place only in the field of play."
+    explanation: null
     contributor: null
 
   - id: L16-003
-    text: "What is required to form a maul?"
+    text: "What does a maul consist of at formation?"
     type: factual
     difficulty: beginner
     options:
-      - "Ball carrier plus at least one player from each team, bound and on feet"
-      - "Three players from one team"
-      - "Two players holding the ball"
-      - "Any group of players around the ball"
-    answers: ["Ball carrier plus at least one player from each team, bound and on feet"]
+      - "A ball-carrier and at least one player from each team, bound together and on their feet"
+      - "A ball-carrier and any two team-mates"
+      - "At least three players from each team"
+      - "Any group of players around a held ball"
+    answers: ["A ball-carrier and at least one player from each team, bound together and on their feet"]
     law_reference: "16.2"
-    tags: ["maul", "formation"]
-    explanation: "Law 16.2: A maul consists of a ball carrier and at least one player from each team, bound together and on their feet."
+    tags: ["maul"]
+    law_quote: "It consists of a ball carrier and at least one player from each team, bound together and on their feet."
+    explanation: "Minimum three: carrier, one team-mate, one opponent. Carrier plus opponent only is a tackle-in-waiting, not a maul."
     contributor: null
 
   - id: L16-004
-    text: "Once a maul is formed, which direction must it move?"
+    text: "Once formed, in which direction must a maul move?"
     type: factual
     difficulty: intermediate
     options:
       - "Towards a try line"
       - "Any direction"
-      - "Sideways only"
-      - "Away from the try line"
+      - "Forwards only for the team in possession"
+      - "It may remain stationary indefinitely"
     answers: ["Towards a try line"]
     law_reference: "16.3"
-    tags: ["maul", "movement"]
-    explanation: "Law 16.3: Once formed, a maul must move towards a try line."
+    tags: ["maul"]
+    law_quote: "Once formed, a maul must move towards a try line."
+    explanation: "Towards A try line - either one. Sideways drift or a standstill starts the five-second clocks (Laws 16.14-15, 16.17c)."
     contributor: null
 
   - id: L16-005
-    text: "A player rips the ball from the ball carrier in a maul. What must they do?"
+    text: "In a maul, a Red player rips the ball from the Blue carrier. What must the ripper do?"
     type: factual
     difficulty: advanced
     options:
-      - "Stay in contact with the ball carrier until ball is transferred"
-      - "Immediately leave the maul"
-      - "Pass the ball immediately"
-      - "Go to ground"
-    answers: ["Stay in contact with the ball carrier until ball is transferred"]
+      - "Stay in contact with the carrier until the ball has been transferred"
+      - "Leave the maul immediately with the ball"
+      - "Go to ground to secure it"
+      - "Hand it straight to the scrum-half"
+    answers: ["Stay in contact with the carrier until the ball has been transferred"]
     law_reference: "16.2"
     tags: ["maul", "rip"]
-    explanation: "Law 16.2: A player ripping the ball must stay in contact with the ball carrier until they have transferred the ball."
+    law_quote: "A player ripping the ball from the ball carrier must stay in contact with that player until they have transferred the ball. Sanction: Penalty."
+    explanation: "Ripping and instantly detaching creates an obstruction picture - stay connected until the transfer is complete."
     contributor: null
 
   - id: L16-006
-    text: "A player rips the ball and immediately leaves contact without transferring. What is the sanction?"
+    text: "The ripper detaches from the carrier before transferring the ball. What do you award?"
     type: sanction
     difficulty: advanced
     options:
-      - "Penalty"
+      - "Penalty against the ripper's team"
       - "Free-kick"
       - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Play on - the rip was clean"
+    answers: ["Penalty against the ripper's team"]
     law_reference: "16.2"
     tags: ["maul", "rip", "sanction"]
-    explanation: "Law 16.2: A player ripping must stay in contact until ball is transferred. Sanction: Penalty."
+    law_quote: "A player ripping the ball from the ball carrier must stay in contact with that player until they have transferred the ball. Sanction: Penalty."
+    explanation: null
     contributor: null
 
   - id: L16-007
-    text: "Where is the offside line at a maul?"
+    text: "Where is each team's offside line at a maul?"
     type: factual
     difficulty: intermediate
     options:
-      - "Through the hindmost foot of maul participants nearest each team's try line"
+      - "Through the maul participants' hindmost foot nearest that team's try line"
       - "One metre behind the maul"
-      - "At the ball position"
-      - "Five metres from the maul"
-    answers: ["Through the hindmost foot of maul participants nearest each team's try line"]
+      - "Level with the ball"
+      - "Through the middle of the maul"
+    answers: ["Through the maul participants' hindmost foot nearest that team's try line"]
     law_reference: "16.4"
     tags: ["maul", "offside"]
-    explanation: "Law 16.4: The offside line runs through the maul participants' hindmost foot nearest to that team's try line."
+    law_quote: "Each team has an offside line that runs parallel to the try line through the maul participants' hindmost foot that is nearest to that team's try line. If that foot is on or behind the try line, the offside line for that team is the try line."
+    explanation: "Hindmost FOOT at the maul (contrast the tackle/ruck's hindmost point of any player)."
     contributor: null
 
   - id: L16-008
-    text: "A player joins a maul from an offside position. What is the sanction?"
+    text: "Blue 7 joins the maul from an offside position. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Penalty to Red"
+      - "Free-kick to Red"
+      - "Scrum to Red"
+      - "Play on if Blue 7 binds fully"
+    answers: ["Penalty to Red"]
     law_reference: "16.5"
     tags: ["maul", "offside", "sanction"]
-    explanation: "Law 16.5: A player must join from an onside position or retire behind the offside line. Sanction: Penalty."
+    law_quote: "A player must either join a maul from an onside position or retire behind their offside line immediately. Sanction: Penalty."
+    explanation: null
     contributor: null
 
   - id: L16-009
-    text: "Where must players joining a maul bind?"
+    text: "Where must a player joining a maul bind?"
     type: factual
     difficulty: intermediate
     options:
-      - "On to the hindmost player in the maul"
+      - "Onto the hindmost player in the maul"
       - "Anywhere on the maul"
-      - "On to an opponent"
-      - "On to the ball carrier"
-    answers: ["On to the hindmost player in the maul"]
+      - "Onto the ball-carrier directly"
+      - "Onto an opponent"
+    answers: ["Onto the hindmost player in the maul"]
     law_reference: "16.7b"
-    tags: ["maul", "binding"]
-    explanation: "Law 16.7b: Players joining a maul must bind on to the hindmost player in the maul."
+    tags: ["maul", "sanction"]
+    law_quote: "Players joining a maul must: do so from an onside position; bind on to the hindmost player in the maul. Sanction: Penalty."
+    explanation: "Joining ahead of the hindmost player - 'skipping the queue' - is a penalty."
     contributor: null
 
   - id: L16-010
-    text: "In a maul, players' heads and shoulders must be:"
+    text: "What body height must players joining a maul keep?"
     type: factual
     difficulty: intermediate
     options:
-      - "No lower than their hips"
-      - "Below their hips"
-      - "At any height"
-      - "Above shoulder level"
-    answers: ["No lower than their hips"]
+      - "Heads and shoulders no lower than their hips"
+      - "Lower than the opposing jumper"
+      - "Any height that maintains the bind"
+      - "Upright at all times"
+    answers: ["Heads and shoulders no lower than their hips"]
     law_reference: "16.7c"
     tags: ["maul", "body-position"]
-    explanation: "Law 16.7c: Players must have their heads and shoulders no lower than their hips."
+    law_quote: "[Players joining a maul must] have their heads and shoulders no lower than their hips. Sanction: Free-kick."
+    explanation: null
     contributor: null
 
   - id: L16-011
-    text: "A player's head and shoulders are lower than hips when joining a maul. What is the sanction?"
+    text: "A player joins the maul with head and shoulders lower than their hips. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
@@ -166,215 +176,294 @@ questions:
     answers: ["Free-kick"]
     law_reference: "16.7c"
     tags: ["maul", "body-position", "sanction"]
-    explanation: "Law 16.7c: Heads and shoulders must be no lower than hips. Sanction: Free-kick."
+    law_quote: "[Players joining a maul must] have their heads and shoulders no lower than their hips. Sanction: Free-kick."
+    explanation: "Same free-kick body-height rule as the ruck (Law 15.3)."
     contributor: null
 
   - id: L16-012
-    text: "The ball-carrier in a maul goes to ground. What must they do?"
+    text: "May the ball-carrier in a maul go to ground?"
     type: factual
     difficulty: intermediate
     options:
-      - "Make the ball available immediately"
-      - "Hold the ball until support arrives"
-      - "Release the ball completely"
-      - "Wait for the referee"
-    answers: ["Make the ball available immediately"]
+      - "Yes, provided they make the ball available immediately"
+      - "No - going to ground in a maul is a penalty"
+      - "Only if the maul is moving forward"
+      - "Only within 5 metres of the try line"
+    answers: ["Yes, provided they make the ball available immediately"]
     law_reference: "16.8"
-    tags: ["maul", "ball-carrier", "ground"]
-    explanation: "Law 16.8: The ball-carrier in a maul may go to ground provided they make the ball available immediately."
+    tags: ["maul"]
+    law_quote: "The ball-carrier in a maul may go to ground provided that player makes the ball available immediately. Sanction: Scrum."
+    explanation: "Note the sanction is a SCRUM, not a penalty - failing to make it available ends the maul unsuccessfully."
     contributor: null
 
   - id: L16-013
-    text: "The ball-carrier goes to ground in a maul but does not make the ball available. What is the sanction?"
+    text: "The ball-carrier goes to ground in the maul and the ball is not immediately available. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Scrum"
-      - "Penalty"
+      - "Scrum to the team not in possession at the start of the maul"
+      - "Penalty against the carrier"
       - "Free-kick"
-      - "Play on"
-    answers: ["Scrum"]
-    law_reference: "16.8"
-    tags: ["maul", "ball-carrier", "sanction"]
-    explanation: "Law 16.8: Ball-carrier may go to ground but must make ball available immediately. Sanction: Scrum."
+      - "Play on until unplayable"
+    answers: ["Scrum to the team not in possession at the start of the maul"]
+    law_reference: "16.17d"
+    tags: ["maul", "sanction"]
+    law_quote: "A maul ends unsuccessfully when: ...the ball-carrier goes to ground and the ball is not immediately available. Sanction: Scrum."
+    explanation: "An unsuccessful maul means a turnover scrum - the team NOT in possession when the maul began throws in (subject to the kick-catch exception, Law 16.19)."
     contributor: null
 
   - id: L16-014
-    text: "A player intentionally collapses a maul. What is the sanction?"
+    text: "A Red player intentionally collapses the driving Blue maul. What do you award?"
     type: sanction
     difficulty: beginner
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Yellow card only"
-    answers: ["Penalty"]
+      - "Penalty to Blue (with a card to consider)"
+      - "Free-kick to Blue"
+      - "Scrum to Blue"
+      - "Play on - mauls may be pulled down"
+    answers: ["Penalty to Blue (with a card to consider)"]
     law_reference: "16.11a"
     tags: ["maul", "collapse", "sanction"]
-    explanation: "Law 16.11a: Players must not intentionally collapse a maul. Sanction: Penalty."
+    law_quote: "Players must not: intentionally collapse a maul or jump on top of it. Sanction: Penalty."
+    explanation: "Also dangerous play (Law 9.20c). The legal defences to a maul are stopping it, driving it back, or simply not engaging."
     contributor: null
 
   - id: L16-015
-    text: "A player attempts to drag an opponent out of a maul. What is the sanction?"
+    text: "Blue 6 grabs Red 4 and tries to drag them out of the maul. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Penalty to Red"
+      - "Free-kick to Red"
+      - "Play on - a legal defensive tactic"
+      - "Scrum to Red"
+    answers: ["Penalty to Red"]
     law_reference: "16.11b"
-    tags: ["maul", "dragging", "sanction"]
-    explanation: "Law 16.11b: Players must not attempt to drag an opponent out of a maul. Sanction: Penalty."
+    tags: ["maul", "sanction"]
+    law_quote: "Players must not: attempt to drag an opponent out of a maul. Sanction: Penalty."
+    explanation: null
     contributor: null
 
   - id: L16-016
-    text: "A maul has stopped moving towards the try line for 5 seconds but the ball is visible and moving. What happens?"
-    type: factual
+    text: "A maul stops moving for more than five seconds, but you can see the ball being moved. What do you do?"
+    type: procedural
     difficulty: advanced
     options:
-      - "Referee instructs team to use the ball"
-      - "Scrum immediately"
-      - "Play continues indefinitely"
-      - "Free-kick"
-    answers: ["Referee instructs team to use the ball"]
+      - "Instruct the team to use the ball - they must then use it within a reasonable time"
+      - "Award a scrum immediately"
+      - "Award a free-kick to the defending team"
+      - "Let it continue as long as the ball is moving"
+    answers: ["Instruct the team to use the ball - they must then use it within a reasonable time"]
     law_reference: "16.14"
-    tags: ["maul", "use-it", "stationary"]
-    explanation: "Law 16.14: If maul stops for 5 seconds but ball is moving and visible, referee instructs to use the ball."
+    tags: ["maul", "use-it"]
+    law_quote: "When a maul has stopped moving towards a try line for more than five seconds but the ball is being moved and the referee can see it, the referee instructs the players to use the ball. The team in possession must then use the ball within a reasonable time. Sanction: Scrum."
+    explanation: "The visible, moving ball buys the possession team a 'use it' - a hidden, static ball goes straight to the turnover scrum (Law 16.17c)."
     contributor: null
 
   - id: L16-017
-    text: "A maul stops moving, restarts, then stops again with ball visible. What happens?"
-    type: factual
+    text: "A maul stops, restarts within five seconds, then stops a second time with the ball visible and moving. What do you do?"
+    type: procedural
     difficulty: advanced
     options:
-      - "Referee instructs team to use the ball"
-      - "Scrum immediately"
-      - "Maul can restart again"
-      - "Penalty"
-    answers: ["Referee instructs team to use the ball"]
+      - "Instruct the team to use the ball - no third drive is allowed"
+      - "Allow one more restart"
+      - "Award the turnover scrum immediately"
+      - "Award a penalty for time-wasting"
+    answers: ["Instruct the team to use the ball - no third drive is allowed"]
     law_reference: "16.15"
-    tags: ["maul", "use-it", "restart"]
-    explanation: "Law 16.15: If maul stops a second time with ball visible, referee instructs to use the ball."
+    tags: ["maul", "use-it"]
+    law_quote: "When a maul has stopped moving towards a try line, it may restart moving towards a try line providing it does so within five seconds. If it stops a second time but the ball is being moved and the referee can see it, the referee instructs the team to use the ball."
+    explanation: "One restart is the allowance - stop, drive again, stop = 'use it'."
     contributor: null
 
   - id: L16-018
-    text: "When does a maul end successfully?"
+    text: "When does a maul end with play continuing?"
     type: factual
     difficulty: intermediate
     options:
-      - "When ball or ball-carrier leaves, ball is on ground, or on/over try line"
-      - "Only when the ball is passed"
-      - "When the referee blows the whistle"
-      - "When one team releases"
-    answers: ["When ball or ball-carrier leaves, ball is on ground, or on/over try line"]
+      - "The ball or ball-carrier leaves the maul, the ball is on the ground, or the ball is on or over the try line"
+      - "When either team stops pushing"
+      - "When the referee calls 'use it'"
+      - "When the defending players detach"
+    answers: ["The ball or ball-carrier leaves the maul, the ball is on the ground, or the ball is on or over the try line"]
     law_reference: "16.16"
-    tags: ["maul", "ending"]
-    explanation: "Law 16.16: A maul ends when ball or ball-carrier leaves, ball is on ground, or ball is on/over try line."
+    tags: ["maul"]
+    law_quote: "A maul ends and play continues when: the ball or ball-carrier leaves the maul; the ball is on the ground; the ball is on or over the try line."
+    explanation: null
     contributor: null
 
   - id: L16-019
-    text: "A maul becomes unplayable. What is the decision?"
+    text: "The ball becomes unplayable in a maul, with no offence. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Scrum"
-      - "Penalty"
+      - "Scrum - throw-in to the team not in possession at the start of the maul"
+      - "Penalty against the team in possession"
       - "Free-kick"
-      - "Drop ball"
-    answers: ["Scrum"]
+      - "Drop-out"
+    answers: ["Scrum - throw-in to the team not in possession at the start of the maul"]
     law_reference: "16.17a"
-    tags: ["maul", "unplayable", "sanction"]
-    explanation: "Law 16.17a: A maul ends unsuccessfully when the ball becomes unplayable. Sanction: Scrum."
+    tags: ["maul", "sanction"]
+    law_quote: "A maul ends unsuccessfully when: the ball becomes unplayable... Sanction: Scrum."
+    explanation: "The maul turnover - the attacking team that took the ball in loses the feed. Exception: a maul formed on catching an opponent's kick (Law 16.19)."
     contributor: null
 
   - id: L16-020
-    text: "A maul collapses (not due to foul play). What is the decision?"
+    text: "A maul collapses accidentally - no foul play. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
       - "Scrum"
-      - "Penalty"
+      - "Penalty against whoever was lowest"
       - "Free-kick"
-      - "Play on"
+      - "Play on if the ball is visible"
     answers: ["Scrum"]
     law_reference: "16.17b"
     tags: ["maul", "collapse", "sanction"]
-    explanation: "Law 16.17b: If maul collapses (not from foul play), it ends unsuccessfully. Sanction: Scrum."
+    law_quote: "A maul ends unsuccessfully when: ...the maul collapses (not as a result of foul play). Sanction: Scrum."
+    explanation: "Your judgement between 16.11a (intentional collapse - penalty) and 16.17b (accidental - scrum) decides possession."
     contributor: null
 
   - id: L16-021
-    text: "A maul does not move towards a try line for 5 seconds and the ball does not emerge. What is the decision?"
+    text: "A maul is stationary for more than five seconds and the ball is not emerging or visible. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
       - "Scrum"
       - "Penalty"
       - "Free-kick"
-      - "Play on"
+      - "Instruct 'use it' and wait"
     answers: ["Scrum"]
     law_reference: "16.17c"
-    tags: ["maul", "stationary", "sanction"]
-    explanation: "Law 16.17c: If maul doesn't move towards try line for 5 seconds and ball doesn't emerge. Sanction: Scrum."
+    tags: ["maul", "sanction"]
+    law_quote: "A maul ends unsuccessfully when: ...the maul does not move towards a try line for longer than five seconds and the ball does not emerge. Sanction: Scrum."
+    explanation: "No visible moving ball = no 'use it' lifeline - straight to the turnover scrum."
     contributor: null
 
   - id: L16-022
-    text: "A player from the maul tackles an opponent within 1 metre who is trying to play the ball away. What is the sanction?"
+    text: "As Blue 9 moves the ball away from a maul, Red 5 (part of the maul) reaches out and plays Blue 9 within a metre of it. What do you award?"
     type: sanction
     difficulty: advanced
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Play on"
-      - "Scrum"
-    answers: ["Penalty"]
+      - "Penalty to Blue"
+      - "Play on - the maul had ended"
+      - "Free-kick to Blue"
+      - "Scrum to Blue"
+    answers: ["Penalty to Blue"]
     law_reference: "16.18"
-    tags: ["maul", "tackle", "sanction"]
-    explanation: "Law 16.18: A player in or from the maul may not play an opponent within 1m attempting to play ball away. Sanction: Penalty."
+    tags: ["maul", "sanction"]
+    law_quote: "A player who is, or was part of the maul may not play an opponent near it (within 1m), and who is attempting to play the ball away. Sanction: Penalty."
+    explanation: "The one-metre protection zone, mirroring the ruck's (Law 15.18)."
     contributor: null
 
   - id: L16-023
-    text: "A maul forms immediately after a player catches an opponent's kick. The maul becomes unplayable. Who gets the scrum?"
+    text: "Blue 15 catches Red's kick in open play and is immediately mauled. The maul becomes unplayable. Who throws in at the scrum?"
     type: scenario
     difficulty: advanced
     options:
-      - "The team of the ball catcher"
-      - "The team that kicked"
-      - "The team going forward"
+      - "Blue - the team of the ball catcher"
+      - "Red - the team not in possession"
+      - "The team moving forward"
       - "The attacking team"
-    answers: ["The team of the ball catcher"]
+    answers: ["Blue - the team of the ball catcher"]
     law_reference: "16.19"
-    tags: ["maul", "kick-catch", "scrum"]
-    explanation: "Law 16.19: If maul forms after catching an opponent's kick, any resulting scrum goes to the ball catcher's team."
+    tags: ["maul", "sanction"]
+    law_quote: "If a maul is formed immediately after a player has directly caught an opponent's kick in open play, a scrum that is awarded for any of the above reasons will be to the team of the ball catcher."
+    explanation: "The catcher's protection - being swallowed by the chase doesn't cost the catching team the feed."
     contributor: null
 
   - id: L16-024
-    text: "All defending players intentionally leave a maul. What happens to the maul?"
+    text: "Every Red (defending) player intentionally leaves the maul. What happens?"
     type: factual
     difficulty: advanced
     options:
       - "The maul continues"
-      - "The maul ends"
-      - "Penalty to the attacking team"
-      - "Scrum to the attacking team"
+      - "The maul ends - obstruction if Blue keep driving"
+      - "A scrum is awarded"
+      - "Blue must release the ball immediately"
     answers: ["The maul continues"]
     law_reference: "16.12"
-    tags: ["maul", "withdrawal"]
-    explanation: "Law 16.12: When players not in possession intentionally leave such that none remain, the maul continues."
+    tags: ["maul"]
+    law_quote: "When players of the team who are not in possession of the ball intentionally leave the maul such that there are no players of that team left in the maul, the maul continues."
+    explanation: "Defenders cannot manufacture an obstruction penalty by all stepping off - the maul rolls on legally."
     contributor: null
 
   - id: L16-025
-    text: "Defending players leave a maul then want to re-join. Where must the first player bind?"
+    text: "Having all left the maul, Red want to re-engage. Where must the first returning player bind?"
     type: factual
     difficulty: advanced
     options:
-      - "On the frontmost player of the team in possession"
-      - "On the hindmost player"
+      - "Onto the frontmost player of the team in possession"
+      - "Onto the hindmost player of the maul"
       - "Anywhere on the maul"
-      - "They cannot re-join"
-    answers: ["On the frontmost player of the team in possession"]
+      - "They may not re-join"
+    answers: ["Onto the frontmost player of the team in possession"]
     law_reference: "16.13"
-    tags: ["maul", "rejoining"]
-    explanation: "Law 16.13: When re-joining after all have left, the first player must bind on the frontmost player of the team in possession."
+    tags: ["maul"]
+    law_quote: "When all players of the team who are not in possession of the ball intentionally leave the maul, they may re-join provided that the first player binds on the frontmost player of the team in possession of the ball. Sanction: Penalty."
+    explanation: "Re-entry is at the FRONT - swinging in at the side or back of the drive is a penalty."
+    contributor: null
+
+  - id: L16-026
+    text: "In a driving maul, the Blue ball-carrier detaches from the front and slides to the back of their own players while staying bound. What do you award?"
+    type: sanction
+    difficulty: advanced
+    options:
+      - "Penalty to Red - the ball-carrier must not slide or move backwards in the maul"
+      - "Play on - standard maul technique"
+      - "Free-kick to Red"
+      - "Scrum to Red"
+    answers: ["Penalty to Red - the ball-carrier must not slide or move backwards in the maul"]
+    law_reference: "16.10"
+    tags: ["maul", "sanction"]
+    law_quote: "All players in a maul must be caught in or bound to it and not just alongside it. A player in possession of the ball must not slide or move backwards in the maul. Sanction: Penalty."
+    explanation: "The carrier repositioning backwards through their own maul creates an unfair, obstructed target - the ball may be transferred hand-to-hand, but the carrier can't slide."
+    contributor: null
+
+  - id: L16-027
+    text: "A Red player dips as if the maul has ended, tricking Blue into detaching. The maul had not ended. What do you award?"
+    type: sanction
+    difficulty: advanced
+    options:
+      - "Free-kick to Blue"
+      - "Penalty to Blue"
+      - "Play on - deception is part of the game"
+      - "Scrum to Blue"
+    answers: ["Free-kick to Blue"]
+    law_reference: "16.11c"
+    tags: ["maul", "sanction"]
+    law_quote: "Players must not: take any action to make opponents believe that the maul has ended when it has not. Sanction: Free-kick."
+    explanation: "Free-kick, matching the ruck deception offence (Law 15.16g)."
+    contributor: null
+
+  - id: L16-028
+    text: "Red 6 leaves the maul. What must Red 6 do?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "Immediately retire behind the offside line (and may then re-join)"
+      - "Stand beside the maul awaiting the ball"
+      - "Stay within a metre in case it collapses"
+      - "Leave the field of play temporarily"
+    answers: ["Immediately retire behind the offside line (and may then re-join)"]
+    law_reference: "16.6"
+    tags: ["maul", "offside"]
+    law_quote: "Players who leave a maul must immediately retire behind the offside line. These players may re-join the maul. Sanction: Penalty."
+    explanation: "Detach and drift alongside is a penalty - out means all the way back onside."
+    contributor: null
+
+  - id: L16-029
+    text: "You call 'use it' at a stationary maul with visible ball. Blue do not play it within five seconds. What do you award?"
+    type: sanction
+    difficulty: advanced
+    options:
+      - "Scrum to Red"
+      - "Penalty to Red"
+      - "Free-kick to Red"
+      - "A second 'use it' call"
+    answers: ["Scrum to Red"]
+    law_reference: "16.17e"
+    tags: ["maul", "use-it", "sanction"]
+    law_quote: "A maul ends unsuccessfully when: ...the ball is available to be played, the referee has called 'use it' and it has not been played within five seconds of the call. Sanction: Scrum."
+    explanation: "Same five-second discipline as the ruck's 'use it' (Law 15.17)."
     contributor: null

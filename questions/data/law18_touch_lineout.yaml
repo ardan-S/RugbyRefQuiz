@@ -4,535 +4,626 @@ metadata:
   source: "World Rugby Laws 2026"
 
 questions:
-  # Touch
   - id: L18-001
     text: "When is the ball in touch?"
     type: factual
     difficulty: beginner
     options:
-      - "When ball or ball-carrier touches touchline or anything beyond"
+      - "When the ball or ball-carrier touches the touchline or anything beyond it"
       - "When the ball crosses the touchline in the air"
-      - "When a player with one foot in touch catches the ball"
-      - "When the ball is within 5 metres of the touchline"
-    answers: ["When ball or ball-carrier touches touchline or anything beyond"]
+      - "When the ball is caught by anyone standing near the touchline"
+      - "When the ball bounces within a metre of the touchline"
+    answers: ["When the ball or ball-carrier touches the touchline or anything beyond it"]
     law_reference: "18.1a"
-    tags: ["touch", "definition"]
-    explanation: "Law 18.1a: The ball is in touch when the ball or ball-carrier touches the touchline or anything beyond."
+    tags: ["touch"]
+    law_quote: "The ball is in touch or touch-in-goal when: the ball or ball-carrier touches the touchline, touch-in-goal line or anything beyond."
+    explanation: "The touchline itself is touch - a foot ON the line is out. A ball crossing the plane in the AIR is not out until it touches something."
     contributor: null
 
   - id: L18-002
-    text: "A player in touch catches a ball that has reached the plane of touch. What is the result?"
+    text: "Red 11, standing in touch, catches a ball that HAS reached the plane of touch. Who took the ball into touch?"
     type: factual
     difficulty: advanced
     options:
-      - "The catcher is not deemed to have taken the ball into touch"
-      - "Ball is in touch - lineout to opposition"
-      - "Ball is in touch - lineout to catcher's team"
-      - "Play continues"
-    answers: ["The catcher is not deemed to have taken the ball into touch"]
-    law_reference: "18.1b.i"
-    tags: ["touch", "plane-of-touch"]
-    explanation: "Law 18.1b.i: If ball has reached the plane of touch when caught, the catcher is not deemed to have taken it into touch."
+      - "Nobody new - the catcher is not deemed to have taken it into touch; the throw belongs to Red"
+      - "Red 11 - lineout to Blue"
+      - "The kicker's team"
+      - "Play on - the ball never touched the ground"
+    answers: ["Nobody new - the catcher is not deemed to have taken it into touch; the throw belongs to Red"]
+    law_reference: "18.1b"
+    tags: ["touch"]
+    law_quote: "If the ball has reached the plane of touch when it is caught, the catcher is not deemed to have taken the ball into touch."
+    explanation: "Once the ball crosses the plane, it was going out anyway - the catcher's team gets the throw (Law 18.8a table)."
     contributor: null
 
   - id: L18-003
-    text: "A player jumps from within the field, catches the ball in the air, and lands in touch. What is the result?"
+    text: "Blue 14 jumps from inside the field, catches the ball in the air, and lands back in the playing area. Is the ball in touch?"
     type: factual
     difficulty: intermediate
     options:
-      - "Ball is not in touch - play continues"
-      - "Ball is in touch"
-      - "Depends on where the ball was caught"
-      - "Scrum"
-    answers: ["Ball is not in touch - play continues"]
+      - "No - a player who jumps and lands in the playing area keeps the ball in play, wherever the ball was"
+      - "Yes, if the ball had crossed the plane of touch"
+      - "Yes - any aerial catch near touch is out"
+      - "Only the referee's opinion decides"
+    answers: ["No - a player who jumps and lands in the playing area keeps the ball in play, wherever the ball was"]
     law_reference: "18.2b"
-    tags: ["touch", "jumping"]
-    explanation: "Law 18.2b: Ball is not in touch if player jumps from playing area, catches ball, then lands in playing area."
+    tags: ["touch"]
+    law_quote: "The ball is not in touch or touch-in-goal if: a player jumps, from within or outside the playing area, and catches the ball, and then lands in the playing area, regardless of whether the ball reached the plane of touch."
+    explanation: "The landing decides it - they can even take off from OUTSIDE the field, catch, and land inside: still in play."
     contributor: null
 
   - id: L18-004
-    text: "A player jumps from the playing area and knocks the ball back into play before landing in touch. Is the ball in touch?"
+    text: "Red 14 jumps from the playing area, bats the ball back infield, then lands in touch. Is the ball in touch?"
     type: factual
     difficulty: advanced
     options:
-      - "No"
-      - "Yes"
-      - "Only if ball reached plane of touch"
-      - "Depends on opponent's position"
-    answers: ["No"]
+      - "No - knocking the ball back before landing keeps it in play"
+      - "Yes - the player landed in touch"
+      - "Yes, if the ball had reached the plane of touch"
+      - "It is a knock-on"
+    answers: ["No - knocking the ball back before landing keeps it in play"]
     law_reference: "18.2c"
-    tags: ["touch", "jumping", "knock-back"]
-    explanation: "Law 18.2c: Ball is not in touch if player jumps from playing area and knocks ball back before landing in touch."
+    tags: ["touch"]
+    law_quote: "A player may jump from the playing area and knock (or catch and release) the ball back into the playing area, before landing in touch or touch-in-goal, regardless of whether the ball reached the plane of touch."
+    explanation: "The spectacular touchline save is legal - the act on the ball must be complete before the player lands out."
     contributor: null
 
-  # Quick Throw
   - id: L18-005
-    text: "A player carries the ball into touch. What must they do?"
+    text: "Red 11 is bundled into touch with the ball. What must Red 11 do?"
     type: factual
     difficulty: intermediate
     options:
       - "Release the ball immediately so a quick throw may be taken"
-      - "Wait for the lineout to form"
-      - "Give the ball to the referee"
-      - "Take the throw themselves"
+      - "Hand the ball to the nearest opponent"
+      - "Place the ball on the mark of touch"
+      - "Keep the ball until the lineout forms"
     answers: ["Release the ball immediately so a quick throw may be taken"]
     law_reference: "18.3"
     tags: ["quick-throw", "touch"]
-    explanation: "Law 18.3: A player who carries the ball into touch must release the ball immediately so a quick throw may be taken."
+    law_quote: "A player who carries the ball into touch must release the ball immediately so that a quick throw may be taken. Sanction: Penalty."
+    explanation: "Holding onto the ball to kill the quick throw is a PENALTY - one of the few penalty offences around touch."
     contributor: null
 
   - id: L18-006
-    text: "From where can a quick throw be taken?"
+    text: "Where may a quick throw be taken from?"
     type: factual
     difficulty: intermediate
     options:
-      - "Between the mark of touch and the thrower's own try line"
-      - "At the mark of touch only"
+      - "Anywhere between the mark of touch and the thrower's own try line"
+      - "Only at the mark of touch"
       - "Anywhere along the touchline"
-      - "Within 5 metres of the mark of touch"
-    answers: ["Between the mark of touch and the thrower's own try line"]
+      - "Within 10 metres of the mark of touch"
+    answers: ["Anywhere between the mark of touch and the thrower's own try line"]
     law_reference: "18.4a"
-    tags: ["quick-throw", "location"]
-    explanation: "Law 18.4a: At a quick throw, the ball is thrown in between the mark of touch and the thrower's own try line."
+    tags: ["quick-throw"]
+    law_quote: "At a quick throw, the ball is thrown in: between the mark of touch and the thrower's own try line."
+    explanation: "Backwards only - never in front of the mark."
     contributor: null
 
   - id: L18-007
-    text: "In which direction must a quick throw be made?"
+    text: "In what direction must a quick throw travel?"
     type: factual
     difficulty: intermediate
     options:
       - "Parallel to or towards the thrower's own try line"
       - "Straight along the mark of touch"
-      - "Any direction"
-      - "Towards the opposition try line"
+      - "In any direction"
+      - "Infield at right angles"
     answers: ["Parallel to or towards the thrower's own try line"]
     law_reference: "18.4b"
-    tags: ["quick-throw", "direction"]
-    explanation: "Law 18.4b: The ball must be thrown parallel to or towards the thrower's own try line."
+    tags: ["quick-throw"]
+    law_quote: "At a quick throw, the ball is thrown in: parallel to or towards the thrower's own try line."
+    explanation: "Unlike a formed lineout throw (straight along the mark), a quick throw may go backwards - it just can't go forward."
     contributor: null
 
   - id: L18-008
-    text: "A quick throw is made but the ball does not reach the 5-metre line. What is the sanction?"
+    text: "A quick throw fails to travel 5 metres before hitting a player. What is the sanction?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Option of lineout or scrum"
-      - "Lineout to opposition"
-      - "Scrum only"
-      - "Retake the throw"
-    answers: ["Option of lineout or scrum"]
+      - "The opposition choose: lineout or scrum"
+      - "Free-kick"
+      - "Penalty"
+      - "The throw is retaken"
+    answers: ["The opposition choose: lineout or scrum"]
     law_reference: "18.4c"
-    tags: ["quick-throw", "5-metre", "sanction"]
-    explanation: "Law 18.4c: The ball must reach the 5-metre line before touching ground or player. Sanction: Option of lineout or scrum."
+    tags: ["quick-throw", "sanction"]
+    law_quote: "[The ball is thrown in] so that it reaches the five-metre line before it touches the ground or hits a player... Sanction: Option of lineout or scrum."
+    explanation: "The thrower's feet must also both be outside the field of play (18.4d) - same sanction if not."
     contributor: null
 
   - id: L18-009
-    text: "When is a quick throw disallowed and a lineout awarded instead?"
+    text: "Which of these does NOT disallow a quick throw?"
     type: factual
     difficulty: advanced
     options:
-      - "If lineout already formed, ball touched by another, or different ball used"
-      - "If opposition is ready"
-      - "If taken too slowly"
-      - "If referee hasn't signalled"
-    answers: ["If lineout already formed, ball touched by another, or different ball used"]
+      - "The defending team getting back quickly"
+      - "A lineout having already formed"
+      - "The ball being touched, after going into touch, by anyone other than the thrower or the carrier who took it in"
+      - "A different ball being used"
+    answers: ["The defending team getting back quickly"]
     law_reference: "18.5"
-    tags: ["quick-throw", "disallowed"]
-    explanation: "Law 18.5: Quick throw disallowed if lineout formed, ball touched by others, or different ball used."
+    tags: ["quick-throw"]
+    law_quote: "A quick throw is disallowed and a lineout is awarded to the same team if: a lineout had already been formed; or the ball had been touched after it went into touch by anyone other than the player throwing in or the player who carried the ball into touch; or a different ball is used from the one that originally went into touch."
+    explanation: "Note the touched-ball detail - the player who CARRIED it into touch handling it doesn't kill the quick throw."
     contributor: null
 
-  # Lineout - Formation
   - id: L18-010
-    text: "What is the minimum number of players required to form a lineout from each team?"
+    text: "What is the minimum number of players from each team needed to form a lineout?"
     type: factual
     difficulty: beginner
     options:
       - "Two"
       - "Three"
-      - "Four"
-      - "One"
+      - "Five"
+      - "One plus a receiver"
     answers: ["Two"]
     law_reference: "18.11"
-    tags: ["lineout", "formation"]
-    explanation: "Law 18.11: A minimum of two players from each team are required to form a lineout."
+    tags: ["lineout"]
+    law_quote: "A minimum of two players from each team are required to form a lineout."
+    explanation: null
     contributor: null
 
   - id: L18-011
-    text: "How long do teams have to form the lineout after a mark is made?"
+    text: "How long do teams have to form the lineout once the mark is made?"
     type: factual
     difficulty: intermediate
     options:
       - "30 seconds"
-      - "20 seconds"
+      - "15 seconds"
       - "60 seconds"
-      - "No time limit"
+      - "There is no time limit"
     answers: ["30 seconds"]
     law_reference: "18.12"
-    tags: ["lineout", "time"]
-    explanation: "Law 18.12: Teams form the lineout within 30 seconds of a mark being made."
-    contributor: null
-
-  - id: L18-012
-    text: "The lineout is not formed within 30 seconds. What is the sanction?"
-    type: sanction
-    difficulty: intermediate
-    options:
-      - "Free-kick"
-      - "Penalty"
-      - "Scrum"
-      - "Lineout to opposition"
-    answers: ["Free-kick"]
-    law_reference: "18.12"
-    tags: ["lineout", "time", "sanction"]
-    explanation: "Law 18.12: Teams must form the lineout within 30 seconds. Sanction: Free-kick."
+    tags: ["lineout"]
+    law_quote: "Teams form the lineout within 30 seconds of a mark being made. Sanction: Free-kick."
+    explanation: "In sevens the window is 15 seconds."
     contributor: null
 
   - id: L18-013
-    text: "Which team determines the maximum number of players in the lineout?"
+    text: "Who determines the maximum number of players in the lineout?"
     type: factual
     difficulty: beginner
     options:
       - "The team throwing in"
-      - "The team not throwing in"
+      - "The non-throwing team"
       - "The referee"
-      - "It's always 7 per side"
+      - "It is fixed at seven per side"
     answers: ["The team throwing in"]
     law_reference: "18.13"
-    tags: ["lineout", "numbers"]
-    explanation: "Law 18.13: The team throwing in determines the maximum number of players that each team may have."
+    tags: ["lineout"]
+    law_quote: "The team throwing in determines the maximum number of players that each team may have in the lineout."
+    explanation: "The defending team may match or go fewer, never more (Law 18.14) - unless the throw is taken as soon as the lineout forms."
     contributor: null
 
   - id: L18-014
-    text: "Can the non-throwing team have more players in the lineout than the throwing team?"
-    type: factual
+    text: "Blue set a 5-man lineout. Red load 6 into the line as Blue prepare a slow throw. What do you award?"
+    type: sanction
     difficulty: intermediate
     options:
-      - "No (unless throw is taken immediately when lineout forms)"
-      - "Yes, always"
-      - "Only in international matches"
-      - "Only if they have more forwards"
-    answers: ["No (unless throw is taken immediately when lineout forms)"]
+      - "Free-kick to Blue - the non-throwing team may not have more players"
+      - "Penalty to Blue"
+      - "Nothing - each team picks its own numbers"
+      - "Scrum to Blue"
+    answers: ["Free-kick to Blue - the non-throwing team may not have more players"]
     law_reference: "18.14"
-    tags: ["lineout", "numbers"]
-    explanation: "Law 18.14: Unless throw is taken immediately, non-throwing team may not have more players than throwing team."
+    tags: ["lineout", "sanction"]
+    law_quote: "Unless the throw is taken as soon as the lineout is formed, the non-throwing team may not have more players (but may have fewer players) in the lineout than the throwing team. Sanction: Free-kick."
+    explanation: null
     contributor: null
 
   - id: L18-015
-    text: "How far from the mark of touch must players in the lineout stand?"
+    text: "How far from the mark of touch does each team's line stand?"
     type: factual
     difficulty: intermediate
     options:
-      - "Half a metre on their side"
-      - "One metre on their side"
-      - "On the mark of touch"
-      - "Two metres on their side"
-    answers: ["Half a metre on their side"]
+      - "Half a metre, on their own side"
+      - "One metre, on their own side"
+      - "Directly on the mark"
+      - "Two metres apart in total ... anywhere"
+    answers: ["Half a metre, on their own side"]
     law_reference: "18.10"
-    tags: ["lineout", "gap"]
-    explanation: "Law 18.10: Each team forms a single line half a metre from the mark of touch on their side."
+    tags: ["lineout"]
+    law_quote: "Each team forms a single line parallel to and half a metre from the mark of touch on their side of the lineout between the five-metre and 15-metre lines. The gap between the lines must be maintained until the ball is thrown in. Sanction: Free-kick."
+    explanation: "A one-metre corridor in total - closing the gap before the throw is a free-kick."
     contributor: null
 
   - id: L18-016
-    text: "Where must the receiver stand at a lineout?"
+    text: "Where does the receiver stand?"
     type: factual
     difficulty: intermediate
     options:
-      - "Between 5m and 15m lines, 2 metres from team-mates"
-      - "At the 5-metre line"
-      - "Behind the lineout"
-      - "Next to the touchline"
-    answers: ["Between 5m and 15m lines, 2 metres from team-mates"]
+      - "Between the 5m and 15m lines, two metres from their team-mates in the lineout"
+      - "Anywhere behind the lineout"
+      - "Between the touchline and the 5m line"
+      - "Ten metres behind the mark of touch"
+    answers: ["Between the 5m and 15m lines, two metres from their team-mates in the lineout"]
     law_reference: "18.16"
-    tags: ["lineout", "receiver"]
-    explanation: "Law 18.16: The receiver stands between 5m and 15m lines, 2 metres away from team-mates in the lineout."
+    tags: ["lineout"]
+    law_quote: "If a team elects to have a receiver, the receiver stands between the five-metre and the 15-metre lines, two metres away from their team-mates in the lineout. Each team may have only one receiver. Sanction: Free-kick."
+    explanation: "One receiver maximum per team - a second one is a free-kick."
     contributor: null
 
   - id: L18-017
-    text: "Players jump before the ball has left the thrower's hands. What is the sanction?"
+    text: "A Red jumper is lifted before the ball leaves the thrower's hands. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Free-kick"
-      - "Penalty"
-      - "Retake the throw"
-      - "Scrum"
-    answers: ["Free-kick"]
+      - "Free-kick to Blue"
+      - "Penalty to Blue"
+      - "The throw is retaken"
+      - "Nothing - anticipation is legal"
+    answers: ["Free-kick to Blue"]
     law_reference: "18.20"
-    tags: ["lineout", "jumping", "sanction"]
-    explanation: "Law 18.20: Players must not jump or be lifted before the ball has left the thrower's hands. Sanction: Free-kick."
+    tags: ["lineout", "sanction"]
+    law_quote: "Players must not jump or be lifted or supported before the ball has left the hands of the player throwing in. Sanction: Free-kick."
+    explanation: "Pre-gripping IS legal (Law 18.19, within the grip limits) - it is leaving the ground early that's the offence."
     contributor: null
 
   - id: L18-018
-    text: "Players make contact with an opponent before the ball is thrown in. What is the sanction?"
+    text: "Before the throw, a Blue lineout player shoves their Red opposite. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Retake the throw"
-      - "Scrum"
-    answers: ["Penalty"]
+      - "Penalty to Red"
+      - "Free-kick to Red"
+      - "The throw is retaken"
+      - "A warning at the first offence"
+    answers: ["Penalty to Red"]
     law_reference: "18.21"
-    tags: ["lineout", "contact", "sanction"]
-    explanation: "Law 18.21: Players must not make any contact with an opponent before the ball is thrown in. Sanction: Penalty."
+    tags: ["lineout", "sanction"]
+    law_quote: "Players must not make any contact with an opponent before the ball is thrown in. Sanction: Penalty."
+    explanation: "Contact before the throw is the penalty offence in the formation phase - most other formation errors are free-kicks."
     contributor: null
 
-  # Throwing
   - id: L18-019
-    text: "Where must the thrower stand when throwing in at a lineout?"
+    text: "Where does the thrower stand?"
     type: factual
     difficulty: beginner
     options:
-      - "On the mark of touch with both feet outside the field of play"
-      - "Anywhere on the touchline"
-      - "One foot inside the field of play"
-      - "Behind the mark of touch"
-    answers: ["On the mark of touch with both feet outside the field of play"]
+      - "On the mark of touch, both feet outside the field of play"
+      - "On the mark, one foot in the field of play"
+      - "Anywhere behind the touchline"
+      - "Five metres behind the mark"
+    answers: ["On the mark of touch, both feet outside the field of play"]
     law_reference: "18.22"
-    tags: ["lineout", "throwing", "position"]
-    explanation: "Law 18.22: The thrower stands on the mark of touch with both feet outside the field of play."
+    tags: ["lineout"]
+    law_quote: "The player throwing in the ball stands on the mark of touch with both feet outside the field of play. The thrower must not step into the field of play until the ball has been thrown. Sanction: Option of lineout or scrum."
+    explanation: null
     contributor: null
 
   - id: L18-020
-    text: "The ball is not thrown straight at a lineout and the non-throwing team does not lift to compete. What happens?"
-    type: factual
+    text: "The throw is not straight, and Red (not throwing) do NOT lift anyone to compete. What is the ruling?"
+    type: sanction
     difficulty: advanced
     options:
       - "Play continues"
-      - "Lineout to opposition"
-      - "Scrum"
-      - "Free-kick"
+      - "Scrum to Red"
+      - "Red choose lineout or scrum"
+      - "Free-kick to Red"
     answers: ["Play continues"]
     law_reference: "18.23a"
-    tags: ["lineout", "not-straight"]
-    explanation: "Law 18.23a: If non-throwing team does not lift to compete when throw is not straight, play continues."
+    tags: ["lineout", "sanction"]
+    law_quote: "Sanction: If the non-throwing team does not lift a teammate to compete for the ball, then play shall continue. If the non-throwing team lift a teammate to compete for the ball, then they shall be offered the option as per b."
+    explanation: "The 2026 not-straight rule - an uncontested crooked throw is played on. Only a genuine lifted contest earns the option."
     contributor: null
 
   - id: L18-021
-    text: "The ball does not reach the 5-metre line at a lineout. What are the options?"
-    type: sanction
-    difficulty: intermediate
-    options:
-      - "Option of lineout or scrum"
-      - "Lineout to opposition"
-      - "Scrum only"
-      - "Retake the throw"
-    answers: ["Option of lineout or scrum"]
-    law_reference: "18.23b"
-    tags: ["lineout", "5-metre", "sanction"]
-    explanation: "Law 18.23b: Ball must reach 5-metre line. Sanction: Option of lineout or scrum."
-    contributor: null
-
-  - id: L18-022
-    text: "The thrower pretends to throw the ball. What is the sanction?"
-    type: sanction
-    difficulty: intermediate
-    options:
-      - "Free-kick"
-      - "Penalty"
-      - "Lineout to opposition"
-      - "Play on"
-    answers: ["Free-kick"]
-    law_reference: "18.24"
-    tags: ["lineout", "dummy-throw", "sanction"]
-    explanation: "Law 18.24: The thrower must not pretend to throw the ball. Sanction: Free-kick."
-    contributor: null
-
-  # During lineout
-  - id: L18-023
-    text: "A jumper catches the ball with one hand only (other hand not above head). What is the sanction?"
+    text: "The throw is not straight and Red DID lift a jumper to compete. What is the ruling?"
     type: sanction
     difficulty: advanced
     options:
-      - "Free-kick"
-      - "Penalty"
-      - "Play on - legal"
-      - "Scrum"
-    answers: ["Free-kick"]
+      - "Red choose: lineout or scrum"
+      - "Play continues"
+      - "Free-kick to Red"
+      - "Penalty to Red"
+    answers: ["Red choose: lineout or scrum"]
+    law_reference: "18.23a"
+    tags: ["lineout", "sanction"]
+    law_quote: "If the non-throwing team lift a teammate to compete for the ball, then they shall be offered the option as per b [option of lineout or scrum]. If the lineout is chosen and the ball is again not thrown straight, a scrum is awarded to the team that originally threw in the ball."
+    explanation: "And if they take the lineout and the second throw is crooked too, the scrum goes to the ORIGINAL throwing team - a quirk worth knowing."
+    contributor: null
+
+  - id: L18-022
+    text: "The thrower dummies the throw. What do you award?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "Free-kick to the opposition"
+      - "Penalty to the opposition"
+      - "The lineout is reset"
+      - "Play on - dummies are legal"
+    answers: ["Free-kick to the opposition"]
+    law_reference: "18.24"
+    tags: ["lineout", "sanction"]
+    law_quote: "The thrower must not pretend to throw the ball. Sanction: Free-kick."
+    explanation: null
+    contributor: null
+
+  - id: L18-023
+    text: "A jumper with only one hand above their head deflects the throw with the outside arm. What do you award?"
+    type: sanction
+    difficulty: advanced
+    options:
+      - "Free-kick to the opposition"
+      - "Play on - any deflection is legal"
+      - "Penalty to the opposition"
+      - "Scrum to the opposition"
+    answers: ["Free-kick to the opposition"]
     law_reference: "18.29b"
-    tags: ["lineout", "catching", "sanction"]
-    explanation: "Law 18.29b: A jumper may catch with outside arm only if both hands are above their head. Sanction: Free-kick."
+    tags: ["lineout", "sanction"]
+    law_quote: "A jumper may catch or deflect the ball with the outside arm only if they have both hands above their head. Sanction: Free-kick."
+    explanation: "The one-armed outside swat pulls the ball down unfairly across the opponent - both hands up makes it a fair reach."
     contributor: null
 
   - id: L18-024
-    text: "Players lifting a team-mate fail to lower them safely. What is the sanction?"
+    text: "Red lift their jumper, win the ball, then drop the jumper from height. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Free-kick"
-      - "Penalty"
-      - "Play on"
-      - "Scrum"
-    answers: ["Free-kick"]
+      - "Free-kick to Blue - lifters must lower the player safely"
+      - "Penalty to Blue always"
+      - "Play on - the ball was won"
+      - "Scrum to Blue"
+    answers: ["Free-kick to Blue - lifters must lower the player safely"]
     law_reference: "18.29c"
-    tags: ["lineout", "lifting", "safety", "sanction"]
-    explanation: "Law 18.29c: Players who lift must lower the team-mate to ground safely. Sanction: Free-kick."
+    tags: ["lineout", "sanction"]
+    law_quote: "Lift or support a team-mate. Players who do so must lower that player to the ground safely as soon as the ball is won by either team. Sanction: Free-kick."
+    explanation: "Your OWN lifters failing their jumper is a free-kick; an OPPONENT taking the jumper out in the air is a penalty and likely card (Law 9.17)."
     contributor: null
 
   - id: L18-025
-    text: "A player brings an opponent to ground while the opponent is in the air. What is the sanction?"
+    text: "Blue 4 grasps the Red ball-winner and brings them to ground while Red's jumper is still in the air. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Yellow card minimum"
-      - "Play on if ball won"
-    answers: ["Penalty"]
+      - "Penalty to Red (with a card to consider)"
+      - "Free-kick to Red"
+      - "Play on - the ball had been won"
+      - "Scrum to Red"
+    answers: ["Penalty to Red (with a card to consider)"]
     law_reference: "18.29e"
-    tags: ["lineout", "in-air", "sanction"]
-    explanation: "Law 18.29e: Players may grasp and bring opponent to ground, but not while in the air. Sanction: Penalty."
+    tags: ["lineout", "sanction"]
+    law_quote: "Grasp and bring an opponent in possession of the ball to ground, provided that the player is not in the air. Sanction: Penalty."
+    explanation: "Once the winner's feet are back on the ground they may be grasped and brought down - in the air they are protected."
     contributor: null
 
-  # Offside at lineout
   - id: L18-026
-    text: "What is the offside line for lineout players before the ball is thrown?"
+    text: "What is the offside line for LINEOUT players before the ball is thrown and touched?"
     type: factual
     difficulty: intermediate
     options:
       - "The mark of touch"
-      - "The 5-metre line"
-      - "The 10-metre line"
+      - "A line through the ball"
+      - "Ten metres back"
       - "The 15-metre line"
     answers: ["The mark of touch"]
     law_reference: "18.32"
     tags: ["lineout", "offside"]
-    explanation: "Law 18.32: Until the ball is thrown and touched, the offside line for lineout players is the mark of touch."
+    law_quote: "Until the ball is thrown in, and has touched the player or the ground, the offside line for lineout players is the mark of touch. After that, their offside line is a line through the ball."
+    explanation: "Two phases - mark of touch until the ball is touched, then a line through the ball itself."
     contributor: null
 
   - id: L18-027
-    text: "Where is the offside line for non-participating players at a lineout?"
+    text: "Where must NON-participating players stand at a lineout?"
     type: factual
     difficulty: intermediate
     options:
-      - "10 metres from the mark of touch"
-      - "15 metres from the mark of touch"
-      - "5 metres from the mark of touch"
-      - "At the 22-metre line"
-    answers: ["10 metres from the mark of touch"]
+      - "At least 10 metres from the mark of touch on their side (or behind the try line if nearer)"
+      - "At least 5 metres back"
+      - "Behind the hindmost lineout player"
+      - "Anywhere outside the 15-metre line"
+    answers: ["At least 10 metres from the mark of touch on their side (or behind the try line if nearer)"]
     law_reference: "18.35"
-    tags: ["lineout", "offside", "non-participants"]
-    explanation: "Law 18.35: Non-participating players must remain at least 10 metres from the mark of touch."
+    tags: ["lineout", "offside"]
+    law_quote: "Players not participating in the lineout must remain at least 10 metres from the mark of touch on their own team's side or behind the try line if this is nearer."
+    explanation: "The backs' 10-metre line - they may only advance once the ball is thrown in by a team-mate (Law 18.36), or when the lineout ends."
     contributor: null
 
   - id: L18-028
-    text: "A non-participating player is within 10 metres of the mark of touch. What is the sanction?"
+    text: "A non-participating Blue back creeps to 7 metres from the mark before the throw and stays there. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Lineout retaken"
-      - "Play on if they retire"
-    answers: ["Penalty"]
-    law_reference: "18.35-36"
+      - "Penalty to Red"
+      - "Free-kick to Red"
+      - "Nothing if the ball goes the other way"
+      - "The lineout is retaken"
+    answers: ["Penalty to Red"]
+    law_reference: "18.35"
     tags: ["lineout", "offside", "sanction"]
-    explanation: "Law 18.35-36: Non-participants must stay 10m from mark of touch. Sanction: Penalty."
+    law_quote: "Players not participating in the lineout must remain at least 10 metres from the mark of touch... Sanction: Penalty."
+    explanation: "If the throw beats an honestly-retiring player, they escape sanction by retiring immediately - but no other player can put them onside."
     contributor: null
 
-  # Ending lineout
   - id: L18-029
-    text: "When does the lineout end?"
-    type: factual
-    difficulty: intermediate
-    options:
-      - "When ball or player leaves, enters area to 5m line, or goes beyond 15m line"
-      - "When the ball is passed to the scrum-half"
-      - "When the referee blows the whistle"
-      - "When all players leave the lineout"
-    answers: ["When ball or player leaves, enters area to 5m line, or goes beyond 15m line"]
-    law_reference: "18.37"
-    tags: ["lineout", "ending"]
-    explanation: "Law 18.37: Lineout ends when ball/player leaves, enters area between touchline and 5m line, or goes beyond 15m line."
-    contributor: null
-
-  # Touch - who throws in
-  - id: L18-030
-    text: "The ball-carrier goes into touch. Who throws in at the lineout?"
-    type: factual
-    difficulty: beginner
-    options:
-      - "The opposition"
-      - "The team of the ball-carrier"
-      - "The team going forward"
-      - "The attacking team"
-    answers: ["The opposition"]
-    law_reference: "18.8a"
-    tags: ["lineout", "throw-in"]
-    explanation: "Law 18.8a: When ball-carrier goes into touch, the opposition throws in."
-    contributor: null
-
-  - id: L18-031
-    text: "A player kicks the ball from their own 22 directly into touch in the opposition half. Who throws in?"
-    type: factual
-    difficulty: intermediate
-    options:
-      - "The non-kicking team (opposition)"
-      - "The kicking team"
-      - "No gain in ground applies"
-      - "Depends on tackle position"
-    answers: ["The non-kicking team (opposition)"]
-    law_reference: "18.8a"
-    tags: ["lineout", "22-kick", "throw-in"]
-    explanation: "A kick from own 22 directly into touch in opposition half gains ground; non-kicking team throws in."
-    contributor: null
-
-  - id: L18-032
-    text: "A player kicks from outside the 22 directly into touch. Where is the lineout?"
-    type: factual
-    difficulty: intermediate
-    options:
-      - "Level with where the ball was kicked (no gain in ground)"
-      - "Where the ball crossed the touchline"
-      - "At the 22-metre line"
-      - "At the halfway line"
-    answers: ["Level with where the ball was kicked (no gain in ground)"]
-    law_reference: "18.8e"
-    tags: ["lineout", "no-gain", "kick"]
-    explanation: "Law 18.8e: Direct kick into touch from outside 22 results in no gain in ground - lineout level with kick."
-    contributor: null
-
-  - id: L18-033
-    text: "A player takes the ball back into their 22, then kicks directly into touch. What happens?"
+    text: "Which of these does NOT end the lineout?"
     type: factual
     difficulty: advanced
     options:
-      - "No gain in ground - lineout level with kick or where ball crossed, whichever nearer to kicker's try line"
-      - "Lineout where ball crossed touchline"
-      - "Lineout at the 22"
-      - "Opposition free-kick"
-    answers: ["No gain in ground - lineout level with kick or where ball crossed, whichever nearer to kicker's try line"]
-    law_reference: "18.8d"
-    tags: ["lineout", "no-gain", "22"]
-    explanation: "Law 18.8d: When ball is taken back into 22 then kicked directly into touch, no gain in ground applies."
+      - "The ball being caught cleanly by the jumper"
+      - "The ball or carrier leaving the lineout"
+      - "The ball or carrier going beyond the 15-metre line"
+      - "A ruck or maul forming and all its players' feet moving beyond the mark of touch"
+    answers: ["The ball being caught cleanly by the jumper"]
+    law_reference: "18.37"
+    tags: ["lineout"]
+    law_quote: "The lineout ends when: the ball or a player in possession of the ball leaves the lineout; or enters the area between the touchline and the five-metre line; or goes beyond the 15-metre line; a ruck or maul forms and all of the feet of all of the players in the ruck or maul move beyond the mark of touch; the ball becomes unplayable."
+    explanation: "A caught ball is still IN the lineout - the maul forming on the catch must fully cross the mark of touch before backs can advance."
     contributor: null
 
-  - id: L18-034
-    text: "A penalty kick is kicked into touch. Who throws in?"
+  - id: L18-030
+    text: "The Red ball-carrier is tackled into touch. Who throws in?"
     type: factual
     difficulty: beginner
     options:
-      - "The kicking team"
-      - "The opposition"
-      - "Depends on where it lands"
-      - "Alternating teams"
-    answers: ["The kicking team"]
-    law_reference: "18.8c"
-    tags: ["lineout", "penalty", "throw-in"]
-    explanation: "Law 18.8c: When ball is kicked into touch from a penalty, the kicking team throws in."
+      - "Blue - the opposition of the carrier"
+      - "Red - they were tackled, not kicking"
+      - "The team going forward"
+      - "The team whose half it is"
+    answers: ["Blue - the opposition of the carrier"]
+    law_reference: "18.8a"
+    tags: ["lineout"]
+    law_quote: "The ball-carrier goes into touch or kicks the ball indirectly into touch... Who throws in: The opposition."
+    explanation: null
     contributor: null
 
-  - id: L18-035
-    text: "At an incorrect lineout throw, who gets the lineout?"
+  - id: L18-031
+    text: "Red 15 kicks directly into touch from inside Red's own 22 (ball not taken back in). Who throws in and where?"
     type: factual
     difficulty: intermediate
     options:
-      - "The opposition throws at the same place"
-      - "Scrum to opposition"
-      - "Same team retakes"
-      - "Free-kick to opposition"
-    answers: ["The opposition throws at the same place"]
+      - "Blue throw in where the ball crossed the touchline - the kick gains ground"
+      - "Blue throw in level with where the kick was made"
+      - "Red throw in where it crossed"
+      - "Blue choose a scrum instead"
+    answers: ["Blue throw in where the ball crossed the touchline - the kick gains ground"]
+    law_reference: "18.8d"
+    tags: ["lineout", "kick", "touch"]
+    law_quote: "GAIN IN GROUND: Either the defending team did not take the ball into their 22 or a tackle, ruck or maul took place within the 22 or an opponent touched the ball within the 22. A player kicks the ball directly into touch... Location: Where the ball reaches the touchline. Who throws in: The non-kicking team."
+    explanation: "Clean possession received in the 22 clears to touch with full gain in ground - the opposition still throw in."
+    contributor: null
+
+  - id: L18-032
+    text: "Red 10 kicks directly into touch from OUTSIDE the 22 in open play. Where is the lineout?"
+    type: factual
+    difficulty: intermediate
+    options:
+      - "In line with where the kick was made (or where it crossed, if nearer the kicker's line) - no gain in ground"
+      - "Where the ball crossed the touchline"
+      - "At the nearest 22-metre line"
+      - "Where the ball landed before rolling out"
+    answers: ["In line with where the kick was made (or where it crossed, if nearer the kicker's line) - no gain in ground"]
+    law_reference: "18.8e"
+    tags: ["lineout", "kick", "touch"]
+    law_quote: "A player kicks the ball directly into touch from open play or from a free-kick. Location: Where the ball reaches the touchline or on the touchline in line with where the ball was kicked, whichever is nearer to that player's try line. No gain in ground. Who throws in: The non-kicking team."
+    explanation: "Directly = on the full. A bounce in the field of play first means full gain in ground."
+    contributor: null
+
+  - id: L18-033
+    text: "Red pass the ball back into their own 22 and Red 15 kicks it directly into touch. What is the ruling?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "No gain in ground - Blue throw in level with the kick (or where it crossed, if nearer Red's line)"
+      - "Full gain in ground - the kick was from the 22"
+      - "Scrum where the pass was made"
+      - "Free-kick to Blue at the 22"
+    answers: ["No gain in ground - Blue throw in level with the kick (or where it crossed, if nearer Red's line)"]
+    law_reference: "18.8d"
+    tags: ["lineout", "kick", "22"]
+    law_quote: "NO GAIN IN GROUND: The defending team took the ball into their 22, no tackle, ruck or maul took place and no opponent touched the ball within the 22... Location: Where the ball reaches the touchline or on the touchline in line with where the ball was kicked, whichever is nearer to the kicker's try line."
+    explanation: "Taken back = no protection. A tackle, ruck, maul or opponent touch inside the 22 resets it and restores the gain in ground."
+    contributor: null
+
+  - id: L18-034
+    text: "Red kick a penalty into touch on the bounce. Who throws in?"
+    type: factual
+    difficulty: beginner
+    options:
+      - "Red - the kicking team throws in at a penalty kick to touch"
+      - "Blue - as with any kick into touch"
+      - "Whoever is nearer the mark"
+      - "Red, but only if the kick was direct"
+    answers: ["Red - the kicking team throws in at a penalty kick to touch"]
+    law_reference: "18.8c"
+    tags: ["lineout", "penalty"]
+    law_quote: "Ball is kicked from a penalty: A player kicks the ball into touch (either directly or first bouncing in the field of play or hitting an opponent or the referee). Location: Where the ball reaches the touchline. Who throws in: The kicking team."
+    explanation: "The 'kick to the corner' reward - direct or bounced, the kicking team keeps the throw from a penalty."
+    contributor: null
+
+  - id: L18-035
+    text: "The throw at a lineout is incorrect (e.g. not from the mark). What happens?"
+    type: sanction
+    difficulty: intermediate
+    options:
+      - "The opposition throw in at the same place"
+      - "The same team retakes the throw"
+      - "A scrum is set automatically"
+      - "Free-kick to the opposition"
+    answers: ["The opposition throw in at the same place"]
     law_reference: "18.8f"
-    tags: ["lineout", "incorrect-throw"]
-    explanation: "Law 18.8f: Following an incorrect throw, the opposition throws in at the same place."
+    tags: ["lineout", "sanction"]
+    law_quote: "Lineout options: Following an incorrect throw. Location: Where the original lineout took place. Who throws in: The opposition."
+    explanation: null
+    contributor: null
+
+  - id: L18-036
+    text: "From inside Red's own half, Red 9 box-kicks; the ball bounces in the field of play and rolls into touch inside Blue's 22. Who throws in?"
+    type: scenario
+    difficulty: advanced
+    options:
+      - "Red - the kicking team (the '50:22')"
+      - "Blue - the opposition always throws in"
+      - "Blue - because the kick was indirect"
+      - "Red, but only from a penalty"
+    answers: ["Red - the kicking team (the '50:22')"]
+    law_reference: "18.8a"
+    tags: ["lineout", "kick", "touch"]
+    law_quote: "A player, in their own half, kicks the ball indirectly into touch in the opposition's 22. Either the team did not take the ball into their half, or a tackle, ruck or maul took place within the half, or an opponent touched the ball within the half... Who throws in: The kicking team."
+    explanation: "The 50:22. Conditions: kicked from the kicker's own half, INDIRECTLY (bouncing) into touch in the opposition 22, and the ball wasn't simply carried back into the half first. Not available from kick-offs or restarts."
+    contributor: null
+
+  - id: L18-037
+    text: "Red attempt a 50:22, but they had passed the ball back into their own half with no tackle or opponent touch before kicking. The kick bounces into touch in Blue's 22. Who throws in?"
+    type: scenario
+    difficulty: advanced
+    options:
+      - "Blue - taking the ball back into your own half cancels the 50:22"
+      - "Red - the bounce satisfied the 50:22"
+      - "Blue choose lineout or scrum"
+      - "Red - any indirect kick to the 22 qualifies"
+    answers: ["Blue - taking the ball back into your own half cancels the 50:22"]
+    law_reference: "18.8a"
+    tags: ["lineout", "kick", "touch"]
+    law_quote: "Either the team did not take the ball into their half, or a tackle, ruck or maul took place within the half, or an opponent touched the ball within the half."
+    explanation: "Mirrors the 22 rule - carried back possession must be 'reset' by a tackle, ruck, maul or opponent touch before the 50:22 applies."
+    contributor: null
+
+  - id: L18-038
+    text: "After the throw goes in, a lineout player peels off to receive the ball. What must they do to stay legal?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "Stay within 10 metres of the mark of touch and keep moving until the lineout ends"
+      - "Return to the line within 5 seconds"
+      - "Stay behind the 15-metre line"
+      - "Nothing - leaving the lineout is always legal after the throw"
+    answers: ["Stay within 10 metres of the mark of touch and keep moving until the lineout ends"]
+    law_reference: "18.29d"
+    tags: ["lineout"]
+    law_quote: "Leave the lineout so as to be in a position to receive the ball, provided they remain within 10 metres of the mark of touch and they keep moving until the lineout is over. Sanction: Free-kick."
+    explanation: "The peel - legal for a player moving to take the tap-down, provided they keep moving and stay within 10m."
+    contributor: null
+
+  - id: L18-039
+    text: "Where may the thrower's immediate opponent stand during the lineout?"
+    type: factual
+    difficulty: advanced
+    options:
+      - "Within 5m of the touchline, in the lineout, at the non-participants' offside line, or in the receiver slot if empty"
+      - "Anywhere within 10 metres of the mark"
+      - "Only between the touchline and 5m line"
+      - "They must retire 10 metres like other non-participants"
+    answers: ["Within 5m of the touchline, in the lineout, at the non-participants' offside line, or in the receiver slot if empty"]
+    law_reference: "18.27"
+    tags: ["lineout", "offside"]
+    law_quote: "Once the lineout has commenced, the thrower and the thrower's immediate opponent may: join the lineout; retire to the offside line of the non-participating players of their own team; stay within five metres of the touchline; move to the receiver position if that position is empty. If those players move anywhere else, they are offside. Sanction: Penalty."
+    explanation: "Four legal homes for the hooker's opposite number - anywhere else is offside and a penalty."
+    contributor: null
+
+  - id: L18-040
+    text: "Red lift their jumper pre-gripped below the shorts from behind. What do you award?"
+    type: sanction
+    difficulty: advanced
+    options:
+      - "Free-kick to Blue - pre-gripping below the shorts from behind is illegal"
+      - "Penalty to Blue - dangerous lifting"
+      - "Play on - pre-gripping is always legal"
+      - "The lineout is retaken"
+    answers: ["Free-kick to Blue - pre-gripping below the shorts from behind is illegal"]
+    law_reference: "18.19"
+    tags: ["lineout", "sanction"]
+    law_quote: "Players in the lineout who are going to lift or support a team-mate jumping for the ball may pre-grip that team-mate providing they do not grip below the shorts from behind or below the thighs from the front. Sanction: Free-kick."
+    explanation: "Pre-grip limits: not below the shorts (behind), not below the thighs (front)."
     contributor: null

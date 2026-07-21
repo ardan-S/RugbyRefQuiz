@@ -3,70 +3,141 @@
 {% block title %}Rugby Ref Quiz - Results{% endblock %}
 
 {% block content %}
-<article>
-    <header>
-        <h2>{% if ended_early %}Quiz Ended{% else %}Quiz Complete!{% endif %}</h2>
-    </header>
+<div class="max-w-2xl mx-auto space-y-6">
 
-    <p>Your final score:</p>
-    <h1 style="text-align: center; font-size: 4rem;">{{ score }} / {{ total }}</h1>
+    <section class="card bg-base-100 shadow-sm">
+        <div class="card-body items-center text-center">
+            <h2 class="text-2xl font-extrabold">
+                {% if ended_early %}Quiz ended{% else %}Quiz complete!{% endif %}
+            </h2>
 
-    {% if ended_early %}
-    <p style="text-align: center;">
-        You answered {{ answered_total }} of {{ planned_total }} selected questions.
-    </p>
-    {% endif %}
-
-    {% if total > 0 %}
-    <p style="text-align: center;">
-        {% set percentage = (score / total * 100) | round | int %}
-        {{ percentage }}% correct
-    </p>
-    {% endif %}
-
-    <footer>
-        <div class="button-group results-buttons">
-            {% if missed_questions %}
-            <form action="{{ url_for('main.retry_missed') }}" method="POST">
-                <button type="submit">
-                    Retry the {{ missed_questions | length }} you missed
-                </button>
-            </form>
+            {% if total > 0 %}
+            {% set percentage = (score / total * 100) | round | int %}
+            <div class="radial-progress {% if percentage >= 80 %}text-success{% elif percentage >= 50 %}text-warning{% else %}text-error{% endif %}"
+                 style="--value:{{ percentage }}; --size:9rem; --thickness: 0.75rem;"
+                 role="progressbar" aria-valuenow="{{ percentage }}">
+                <span class="text-base-content">
+                    <span class="block text-2xl font-extrabold">{{ score }}/{{ total }}</span>
+                    <span class="block text-sm opacity-70">{{ percentage }}%</span>
+                </span>
+            </div>
+            {% else %}
+            <p class="opacity-70">You didn't answer any questions.</p>
             {% endif %}
-            <a href="{{ url_for('main.index') }}" role="button"
-               {% if missed_questions %}class="secondary"{% endif %}>New Quiz</a>
-        </div>
-    </footer>
-</article>
 
-{% if missed_questions %}
-<article>
-    <header>
-        <h3>Review What You Missed</h3>
-    </header>
-    {% for item in missed_questions %}
-    <div class="review-item">
-        <p class="review-badges">
-            <span class="badge badge-law">Law {{ item.question.law }}: {{ item.question.law_title }}</span>
-            <span class="badge badge-{{ item.question.difficulty }}">{{ item.question.difficulty }}</span>
-        </p>
-        <p><strong>{{ item.question.text }}</strong></p>
-        <p class="review-your-answer">Your answer: {{ item.selected }}</p>
-        <p class="review-correct-answer">
-            Correct: <strong>{{ item.question.answers | join(', ') }}</strong>
-        </p>
-        <div class="law-detail">
-            <p class="law-ref">
-                <strong>Law {{ item.question.law_reference or item.question.law }}</strong>
-                &mdash; {{ item.question.law_title }}
+            {% if ended_early %}
+            <p class="text-sm opacity-70">
+                You answered {{ answered_total }} of {{ planned_total }} selected questions.
             </p>
-            {% if item.question.explanation %}
-            <p class="explanation">{{ item.question.explanation }}</p>
             {% endif %}
+
+            <div class="flex gap-3 w-full max-w-md mt-3">
+                {% if missed_questions or missed_chains %}
+                <form action="{{ url_for('main.retry_missed') }}" method="POST" class="flex-[2]">
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Retry the {{ (missed_questions | length) + (missed_chains | length) }} you missed
+                    </button>
+                </form>
+                <a href="{{ url_for('main.index') }}" class="btn btn-ghost flex-1">New Quiz</a>
+                {% else %}
+                <a href="{{ url_for('main.index') }}" class="btn btn-primary btn-block">New Quiz</a>
+                {% endif %}
+            </div>
         </div>
-    </div>
-    {% if not loop.last %}<hr>{% endif %}
-    {% endfor %}
-</article>
-{% endif %}
+    </section>
+
+    {% if missed_questions or missed_chains %}
+    <section class="card bg-base-100 shadow-sm">
+        <div class="card-body">
+            <h3 class="text-xl font-extrabold">Review what you missed</h3>
+            <div class="space-y-5 mt-2">
+                {% for item in missed_questions %}
+                <div class="{% if not loop.last or missed_chains %}border-b border-base-300 pb-5{% endif %}">
+                    <div class="flex gap-1.5 flex-wrap mb-2">
+                        <span class="badge badge-primary badge-outline">Law {{ item.question.law }}: {{ item.question.law_title }}</span>
+                        {% if item.question.difficulty == 'beginner' %}
+                        <span class="badge badge-success badge-outline">beginner</span>
+                        {% elif item.question.difficulty == 'intermediate' %}
+                        <span class="badge badge-warning badge-outline">intermediate</span>
+                        {% else %}
+                        <span class="badge badge-error badge-outline">{{ item.question.difficulty }}</span>
+                        {% endif %}
+                    </div>
+                    <p class="font-bold leading-snug">{{ item.question.text }}</p>
+                    <p class="text-sm text-error mt-1.5">✗ Your answer: {{ item.selected }}</p>
+                    <p class="text-sm text-success">✓ Correct: <strong>{{ item.question.answers | join(', ') }}</strong></p>
+                    <div class="border-l-4 border-primary bg-primary/5 rounded-r-lg px-4 py-3 mt-2">
+                        <p class="font-bold text-primary text-sm">
+                            Law {{ item.question.law_reference or item.question.law }} &mdash; {{ item.question.law_title }}
+                        </p>
+                        {% if item.question.law_quote %}
+                        <p class="text-sm italic mt-1 leading-relaxed">&ldquo;{{ item.question.law_quote }}&rdquo;</p>
+                        {% endif %}
+                        {% if item.question.explanation %}
+                        <p class="text-sm mt-1.5 leading-relaxed">{{ item.question.explanation }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+
+                {% for item in missed_chains %}
+                <div class="{% if not loop.last %}border-b border-base-300 pb-5{% endif %}">
+                    <div class="flex gap-1.5 flex-wrap mb-2">
+                        <span class="dropdown dropdown-hover dropdown-start">
+                            <button type="button"
+                                    tabindex="0"
+                                    class="badge badge-primary badge-outline cursor-help"
+                                    aria-describedby="result-chain-law-names-{{ item.chain.id }}">
+                                Law{% if item.chain.laws | length > 1 %}s{% endif %} {{ item.chain.laws | join(' & ') }}
+                            </button>
+                            <span id="result-chain-law-names-{{ item.chain.id }}"
+                                  role="tooltip"
+                                  class="dropdown-content z-10 mt-1 whitespace-nowrap rounded-box bg-base-content px-3 py-2 text-xs font-semibold text-base-100 shadow-md">
+                                {% for law in item.chain.law_details %}
+                                <span class="block">Law {{ law.number }}: {{ law.name }}</span>
+                                {% endfor %}
+                            </span>
+                        </span>
+                        {% if item.chain.difficulty == 'beginner' %}
+                        <span class="badge badge-success badge-outline">beginner</span>
+                        {% elif item.chain.difficulty == 'intermediate' %}
+                        <span class="badge badge-warning badge-outline">intermediate</span>
+                        {% else %}
+                        <span class="badge badge-error badge-outline">{{ item.chain.difficulty }}</span>
+                        {% endif %}
+                        <span class="badge badge-ghost">scenario chain</span>
+                    </div>
+                    <div class="border-l-4 border-secondary bg-secondary/5 rounded-r-lg px-4 py-3 mb-2">
+                        <p class="text-xs font-bold uppercase tracking-wide opacity-60">Match situation</p>
+                        <p class="text-sm leading-relaxed mt-1">{{ item.chain.setup }}</p>
+                    </div>
+                    <div class="space-y-3">
+                        {% for s in item.steps %}
+                        <div>
+                            <p class="font-bold text-sm leading-snug">{{ loop.index }}. {{ s.step.text }}</p>
+                            {% if s.correct %}
+                            <p class="text-sm text-success mt-0.5">✓ Your call: {{ s.selected }}</p>
+                            {% else %}
+                            <p class="text-sm text-error mt-0.5">✗ Your call: {{ s.selected }}</p>
+                            <p class="text-sm text-success">✓ Correct: <strong>{{ s.step.answers | join(', ') }}</strong></p>
+                            <div class="border-l-4 border-primary bg-primary/5 rounded-r-lg px-4 py-2.5 mt-1.5">
+                                <p class="font-bold text-primary text-sm">Law {{ s.step.law_reference }}</p>
+                                {% if s.step.law_quote %}
+                                <p class="text-sm italic mt-1 leading-relaxed">&ldquo;{{ s.step.law_quote }}&rdquo;</p>
+                                {% endif %}
+                                {% if s.step.explanation %}
+                                <p class="text-sm mt-1.5 leading-relaxed">{{ s.step.explanation }}</p>
+                                {% endif %}
+                            </div>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+</div>
 {% endblock %}

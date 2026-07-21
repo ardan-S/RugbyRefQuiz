@@ -12,11 +12,12 @@ questions:
       - "Oval"
       - "Round"
       - "Cylindrical"
-      - "Hexagonal"
+      - "Egg-shaped with six panels"
     answers: ["Oval"]
     law_reference: "2.1"
     tags: ["ball", "shape"]
-    explanation: "Law 2.1: The ball is oval and made of four panels."
+    law_quote: "The ball is oval and made of four panels."
+    explanation: null
     contributor: null
 
   - id: L02-002
@@ -31,7 +32,8 @@ questions:
     answers: ["Four"]
     law_reference: "2.1"
     tags: ["ball", "construction"]
-    explanation: "Law 2.1: The ball is oval and made of four panels."
+    law_quote: "The ball is oval and made of four panels."
+    explanation: null
     contributor: null
 
   - id: L02-003
@@ -46,7 +48,8 @@ questions:
     answers: ["280-300 mm"]
     law_reference: "2.2"
     tags: ["ball", "dimensions"]
-    explanation: "Law 2.2: The ball has a length of 280-300 mm."
+    law_quote: "It has dimensions as shown here: 280-300 mm (length), 740-770 mm (end-to-end circumference), 580-620 mm (widest circumference)."
+    explanation: "The three specification numbers are length, end-to-end circumference and circumference at the widest point."
     contributor: null
 
   - id: L02-004
@@ -61,7 +64,8 @@ questions:
     answers: ["740-770 mm"]
     law_reference: "2.2"
     tags: ["ball", "dimensions", "circumference"]
-    explanation: "Law 2.2: The end-to-end circumference is 740-770 mm."
+    law_quote: "It has dimensions as shown here: 280-300 mm (length), 740-770 mm (end-to-end circumference), 580-620 mm (widest circumference)."
+    explanation: null
     contributor: null
 
   - id: L02-005
@@ -76,7 +80,8 @@ questions:
     answers: ["580-620 mm"]
     law_reference: "2.2"
     tags: ["ball", "dimensions", "circumference"]
-    explanation: "Law 2.2: The circumference around the widest part is 580-620 mm."
+    law_quote: "It has dimensions as shown here: 280-300 mm (length), 740-770 mm (end-to-end circumference), 580-620 mm (widest circumference)."
+    explanation: null
     contributor: null
 
   - id: L02-006
@@ -91,7 +96,8 @@ questions:
     answers: ["410-460 grams"]
     law_reference: "2.3"
     tags: ["ball", "weight"]
-    explanation: "Law 2.3: The ball weighs 410-460 grams."
+    law_quote: "It weighs 410-460 grams."
+    explanation: null
     contributor: null
 
   - id: L02-007
@@ -106,7 +112,8 @@ questions:
     answers: ["Yes"]
     law_reference: "2.4"
     tags: ["ball", "youth"]
-    explanation: "Law 2.4: Smaller balls may be used for matches between young players."
+    law_quote: "Smaller balls may be used for matches between young players."
+    explanation: "Age-grade regulations in each union set which ball size applies to which age group (e.g. size 4 in minis)."
     contributor: null
 
   - id: L02-008
@@ -121,7 +128,8 @@ questions:
     answers: ["Leather or a suitable synthetic material"]
     law_reference: "2.5"
     tags: ["ball", "material"]
-    explanation: "Law 2.5: The ball is made of leather or a suitable synthetic material."
+    law_quote: "The ball is made of leather or a suitable synthetic material. It may be treated to make it water resistant and easier to grip."
+    explanation: null
     contributor: null
 
   - id: L02-009
@@ -136,7 +144,8 @@ questions:
     answers: ["Yes"]
     law_reference: "2.5"
     tags: ["ball", "treatment"]
-    explanation: "Law 2.5: The ball may be treated to make it water resistant and easier to grip."
+    law_quote: "It may be treated to make it water resistant and easier to grip."
+    explanation: null
     contributor: null
 
   - id: L02-010
@@ -151,13 +160,14 @@ questions:
     answers: ["65.71-68.75 kilopascals"]
     law_reference: "2.6"
     tags: ["ball", "pressure"]
-    explanation: "Law 2.6: The air pressure at the start of play is 65.71-68.75 kilopascals."
+    law_quote: "Its air pressure at the start of play is 65.71-68.75 kilopascals, 0.67-0.70 kilograms per square centimetre or 9.5-10.0 pounds per square inch."
+    explanation: "The easier figure to remember on matchday is the psi equivalent: 9.5-10.0 psi."
     contributor: null
 
   - id: L02-011
     text: "What is the air pressure range of a rugby ball in pounds per square inch?"
     type: factual
-    difficulty: advanced
+    difficulty: intermediate
     options:
       - "9.5-10.0 psi"
       - "8.0-9.0 psi"
@@ -166,7 +176,8 @@ questions:
     answers: ["9.5-10.0 psi"]
     law_reference: "2.6"
     tags: ["ball", "pressure"]
-    explanation: "Law 2.6: The air pressure at the start of play is 9.5-10.0 pounds per square inch."
+    law_quote: "Its air pressure at the start of play is 65.71-68.75 kilopascals, 0.67-0.70 kilograms per square centimetre or 9.5-10.0 pounds per square inch."
+    explanation: "9.5-10.0 psi is the figure most match balls and pumps are marked with - worth committing to memory."
     contributor: null
 
   - id: L02-012
@@ -181,12 +192,13 @@ questions:
     answers: ["Yes"]
     law_reference: "2.7"
     tags: ["ball", "spare"]
-    explanation: "Law 2.7: Spare balls may be available during a match."
+    law_quote: "Spare balls may be available during a match."
+    explanation: "Spare balls keep the game moving but must not be used to gain an unfair advantage - that principle sits with the match officials."
     contributor: null
 
   - id: L02-013
     text: "A ball is found to weigh 405 grams before kick-off. Is this ball legal?"
-    type: scenario
+    type: factual
     difficulty: intermediate
     options:
       - "No, it is too light"
@@ -195,13 +207,14 @@ questions:
       - "Only if both teams agree"
     answers: ["No, it is too light"]
     law_reference: "2.3"
-    tags: ["ball", "weight", "scenario"]
-    explanation: "Law 2.3: The ball must weigh 410-460 grams. 405 grams is below the minimum."
+    tags: ["ball", "weight"]
+    law_quote: "It weighs 410-460 grams."
+    explanation: "405 grams is below the 410-gram minimum, so the ball should be swapped before play."
     contributor: null
 
   - id: L02-014
     text: "A ball measures 305 mm in length. Is this ball legal for senior rugby?"
-    type: scenario
+    type: factual
     difficulty: intermediate
     options:
       - "No, it is too long"
@@ -210,23 +223,9 @@ questions:
       - "Only for training purposes"
     answers: ["No, it is too long"]
     law_reference: "2.2"
-    tags: ["ball", "dimensions", "scenario"]
-    explanation: "Law 2.2: The ball must be 280-300 mm in length. 305 mm exceeds the maximum."
-    contributor: null
-
-  - id: L02-015
-    text: "What is the air pressure range of a rugby ball in kilograms per square centimetre?"
-    type: factual
-    difficulty: advanced
-    options:
-      - "0.67-0.70 kg/cm²"
-      - "0.60-0.65 kg/cm²"
-      - "0.75-0.80 kg/cm²"
-      - "0.55-0.60 kg/cm²"
-    answers: ["0.67-0.70 kg/cm²"]
-    law_reference: "2.6"
-    tags: ["ball", "pressure"]
-    explanation: "Law 2.6: The air pressure at the start of play is 0.67-0.70 kilograms per square centimetre."
+    tags: ["ball", "dimensions"]
+    law_quote: "It has dimensions as shown here: 280-300 mm (length), 740-770 mm (end-to-end circumference), 580-620 mm (widest circumference)."
+    explanation: "305 mm exceeds the 300 mm maximum length."
     contributor: null
 
   - id: L02-016
@@ -240,13 +239,14 @@ questions:
       - "Award a scrum to the attacking team"
     answers: ["Replace it with a spare ball"]
     law_reference: "2.7"
-    tags: ["ball", "damaged", "procedure"]
-    explanation: "Law 2.7 allows spare balls to be available during a match for situations like this."
+    tags: ["ball", "spare"]
+    law_quote: "Spare balls may be available during a match."
+    explanation: "Stop play at the next appropriate moment, swap the ball and restart in a way that doesn't disadvantage either team."
     contributor: null
 
   - id: L02-017
     text: "A team wants to use a rubber ball for their match. Is this permitted?"
-    type: scenario
+    type: factual
     difficulty: intermediate
     options:
       - "Only if it is a suitable synthetic material meeting specifications"
@@ -255,13 +255,14 @@ questions:
       - "Only for youth matches"
     answers: ["Only if it is a suitable synthetic material meeting specifications"]
     law_reference: "2.5"
-    tags: ["ball", "material", "scenario"]
-    explanation: "Law 2.5: The ball is made of leather or a suitable synthetic material. Any synthetic material must meet all specifications."
+    tags: ["ball", "material"]
+    law_quote: "The ball is made of leather or a suitable synthetic material."
+    explanation: "The material test is suitability plus meeting the size, weight and pressure specifications - not the material name."
     contributor: null
 
   - id: L02-018
     text: "Before an under-12s match, a smaller ball is proposed. Is this allowed?"
-    type: scenario
+    type: factual
     difficulty: beginner
     options:
       - "Yes, smaller balls may be used for young players"
@@ -270,13 +271,14 @@ questions:
       - "Only for training"
     answers: ["Yes, smaller balls may be used for young players"]
     law_reference: "2.4"
-    tags: ["ball", "youth", "scenario"]
-    explanation: "Law 2.4: Smaller balls may be used for matches between young players."
+    tags: ["ball", "youth"]
+    law_quote: "Smaller balls may be used for matches between young players."
+    explanation: null
     contributor: null
 
   - id: L02-019
     text: "A ball has an air pressure of 9.3 psi at kick-off. Is this legal?"
-    type: scenario
+    type: factual
     difficulty: advanced
     options:
       - "No, the pressure is too low"
@@ -285,8 +287,9 @@ questions:
       - "It depends on the weather"
     answers: ["No, the pressure is too low"]
     law_reference: "2.6"
-    tags: ["ball", "pressure", "scenario"]
-    explanation: "Law 2.6: The air pressure at the start of play must be 9.5-10.0 psi. 9.3 psi is below the minimum."
+    tags: ["ball", "pressure"]
+    law_quote: "Its air pressure at the start of play is... 9.5-10.0 pounds per square inch."
+    explanation: "9.3 psi is below the 9.5 minimum. The law specifies pressure at the start of play - check before kick-off."
     contributor: null
 
   - id: L02-020
@@ -301,5 +304,6 @@ questions:
     answers: ["To make it water resistant and easier to grip"]
     law_reference: "2.5"
     tags: ["ball", "treatment"]
-    explanation: "Law 2.5: The ball may be treated to make it water resistant and easier to grip."
+    law_quote: "It may be treated to make it water resistant and easier to grip."
+    explanation: null
     contributor: null

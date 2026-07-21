@@ -109,6 +109,12 @@ $defs:
           minLength: 2
         description: "Lowercase hyphenated tags for categorization"
 
+      law_quote:
+        type:
+          - string
+          - "null"
+        description: "Verbatim wording from the Laws that settles the answer"
+
       explanation:
         type:
           - string

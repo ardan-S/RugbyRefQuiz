@@ -3,83 +3,166 @@
 {% block title %}Rugby Ref Quiz - Start{% endblock %}
 
 {% block content %}
-<article>
-    <header>
-        <h2>Test Your Rugby Refereeing Knowledge</h2>
-    </header>
-    <p>Select the laws you want to be quizzed on:</p>
+{% if error %}
+<div role="alert" class="alert alert-error mb-6">
+    <span>{{ error }}</span>
+</div>
+{% endif %}
 
-    {% if error %}
-    <p class="error-message">{{ error }}</p>
-    {% endif %}
+<form action="{{ url_for('main.select_count') }}" method="POST" class="space-y-6">
 
-    <form action="{{ url_for('main.select_count') }}" method="POST">
-        <fieldset>
-            <label class="select-all-label">
-                <input type="checkbox" id="select-all">
-                <strong>Select All</strong>
-            </label>
-            <hr>
-            <div class="law-grid">
-                {% for law_num, law in laws.items() %}
-                <label class="law-card">
-                    <input type="checkbox" name="laws" value="{{ law_num }}" class="law-checkbox"
-                           {% if selected_laws and law_num in selected_laws %}checked{% endif %}>
-                    <span class="law-info">
-                        <span class="law-name">Law {{ law_num }}: {{ law.name }}</span>
-                        <span class="question-count">({{ law.question_count }} questions)</span>
+    <details class="collapse collapse-arrow bg-base-100 shadow-sm">
+        <summary class="collapse-title">
+            <span class="flex items-center gap-2 flex-wrap">
+                <span class="text-xl font-extrabold">Practise by topic</span>
+                <span id="topic-badge" class="badge badge-primary hidden"></span>
+            </span>
+            <span class="block text-sm opacity-70 font-normal mt-0.5">
+                Came off a game or preparing for a session? Pick the areas you want to drill.
+            </span>
+        </summary>
+        <div class="collapse-content">
+            <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {% for slug, topic in topics.items() %}
+                <label>
+                    <input type="checkbox" name="topics" value="{{ slug }}" class="topic-checkbox hidden"
+                           {% if selected_topics and slug in selected_topics %}checked{% endif %}>
+                    <span class="pick-card">
+                        <span class="flex items-start justify-between gap-2">
+                            <span class="font-bold leading-snug">{{ topic.name }}</span>
+                            <span class="pick-check">✓</span>
+                        </span>
+                        <span class="block text-sm opacity-70 leading-snug mt-0.5">{{ topic.description }}</span>
+                        <span class="block text-xs opacity-50 mt-1.5">{{ topic.question_count }} questions</span>
                     </span>
                 </label>
                 {% endfor %}
             </div>
-        </fieldset>
+        </div>
+    </details>
 
-        <fieldset class="filters-fieldset">
-            <legend><strong>Narrow it down (optional)</strong></legend>
-            <div class="filters-grid">
+    <details class="collapse collapse-arrow bg-base-100 shadow-sm">
+        <summary class="collapse-title">
+            <span class="flex items-center gap-2 flex-wrap">
+                <span class="text-xl font-extrabold">Practise by law</span>
+                <span id="law-badge" class="badge badge-primary hidden"></span>
+            </span>
+            <span class="block text-sm opacity-70 font-normal mt-0.5">
+                Work through the laws one by one, or mix several together.
+            </span>
+        </summary>
+        <div class="collapse-content">
+            <label class="label cursor-pointer gap-2 text-sm justify-end pt-0">
+                <span>Select all</span>
+                <input type="checkbox" id="select-all" class="checkbox checkbox-primary checkbox-sm">
+            </label>
+            <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 mt-1">
+                {% for law_num, law in laws.items() %}
                 <label>
-                    Difficulty
-                    <select name="difficulty">
-                        <option value="">Any difficulty</option>
-                        {% for d in difficulties %}
-                        <option value="{{ d }}"
-                                {% if difficulty == d %}selected{% endif %}>
-                            {{ d | capitalize }}
-                        </option>
-                        {% endfor %}
-                    </select>
+                    <input type="checkbox" name="laws" value="{{ law_num }}" class="law-checkbox hidden"
+                           {% if selected_laws and law_num in selected_laws %}checked{% endif %}>
+                    <span class="pick-card">
+                        <span class="flex items-start justify-between gap-2">
+                            <span class="font-bold leading-snug">Law {{ law_num }}: {{ law.name }}</span>
+                            <span class="pick-check">✓</span>
+                        </span>
+                        <span class="block text-xs opacity-50 mt-1.5">{{ law.question_count }} questions</span>
+                    </span>
                 </label>
-                <label>
-                    Question type
-                    <select name="question_type">
-                        <option value="">Any type</option>
-                        {% for t in question_types %}
-                        <option value="{{ t }}"
-                                {% if question_type == t %}selected{% endif %}>
-                            {{ t | capitalize }}
-                        </option>
-                        {% endfor %}
-                    </select>
-                </label>
+                {% endfor %}
             </div>
-        </fieldset>
+        </div>
+    </details>
 
-        <button type="submit">Continue</button>
-    </form>
-</article>
+    <details class="collapse collapse-arrow bg-base-100 shadow-sm">
+        <summary class="collapse-title">
+            <span class="flex items-center gap-2 flex-wrap">
+                <span class="text-lg font-extrabold">Narrow it down</span>
+                <span class="text-sm font-normal opacity-60">(optional)</span>
+                <span id="filter-badge" class="badge badge-secondary hidden"></span>
+            </span>
+        </summary>
+        <div class="collapse-content">
+            <p class="text-sm opacity-70 mb-3">Choose as many as you like. Leave a group blank to include all options.</p>
+            <div class="grid gap-5 sm:grid-cols-2">
+                <fieldset>
+                    <legend class="font-semibold mb-2">Difficulty</legend>
+                    <div class="grid gap-2">
+                        {% for d in difficulties %}
+                        <label>
+                            <input type="checkbox"
+                                   name="difficulties"
+                                   value="{{ d }}"
+                                   class="filter-checkbox hidden"
+                                   {% if selected_difficulties and d in selected_difficulties %}checked{% endif %}>
+                            <span class="pick-card flex items-center justify-between gap-2">
+                                <span class="font-semibold">{{ d | capitalize }}</span>
+                                <span class="pick-check">✓</span>
+                            </span>
+                        </label>
+                        {% endfor %}
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="font-semibold mb-2">Question type</legend>
+                    <div class="grid gap-2">
+                        {% for t in question_types %}
+                        <label>
+                            <input type="checkbox"
+                                   name="question_types"
+                                   value="{{ t }}"
+                                   class="filter-checkbox hidden"
+                                   {% if selected_question_types and t in selected_question_types %}checked{% endif %}>
+                            <span class="pick-card flex items-center justify-between gap-2">
+                                <span class="font-semibold">{{ t | replace('_', ' ') | capitalize }}</span>
+                                <span class="pick-check">✓</span>
+                            </span>
+                        </label>
+                        {% endfor %}
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </details>
+
+    <div class="flex justify-center">
+        <button type="submit" class="btn btn-primary btn-lg w-full max-w-md text-lg">Continue</button>
+    </div>
+</form>
 
 <script>
     const selectAll = document.getElementById('select-all');
     const lawCheckboxes = document.querySelectorAll('.law-checkbox');
+    const topicCheckboxes = document.querySelectorAll('.topic-checkbox');
+    const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
+
+    // Show what's selected in each section, even when it's collapsed
+    function updateBadge(badgeId, count) {
+        const badge = document.getElementById(badgeId);
+        badge.textContent = count + ' selected';
+        badge.classList.toggle('hidden', count === 0);
+    }
+
+    function refreshBadges() {
+        updateBadge('topic-badge', [...topicCheckboxes].filter(cb => cb.checked).length);
+        updateBadge('law-badge', [...lawCheckboxes].filter(cb => cb.checked).length);
+        updateBadge('filter-badge', [...filterCheckboxes].filter(cb => cb.checked).length);
+    }
 
     selectAll.addEventListener('change', function() {
         lawCheckboxes.forEach(cb => cb.checked = this.checked);
+        refreshBadges();
     });
 
     lawCheckboxes.forEach(cb => {
         cb.addEventListener('change', function() {
             selectAll.checked = [...lawCheckboxes].every(c => c.checked);
+            refreshBadges();
         });
     });
+
+    topicCheckboxes.forEach(cb => cb.addEventListener('change', refreshBadges));
+    filterCheckboxes.forEach(cb => cb.addEventListener('change', refreshBadges));
+    refreshBadges();
 </script>
 {% endblock %}

@@ -1,0 +1,435 @@
+metadata:
+  title: "Breakdown & Maul scenarios"
+  source: "World Rugby Laws 2026"
+
+chains:
+  - id: CH-BRK-001
+    setup: >-
+      Ten minutes in, no score. Red 7 tackles Blue 12 in midfield and both go
+      to ground. Red 7 keeps hold of Blue 12 as Blue 9 arrives to play the
+      ball.
+    laws: [14, 7]
+    difficulty: intermediate
+    tags: [tackle, tackler, release, advantage]
+    steps:
+      - text: "What's the offence, if any?"
+        options:
+          - "Penalty offence by Red 7 - the tackler must release the ball and the ball-carrier immediately"
+          - "Penalty offence by Blue 12 - the tackled player is holding on"
+          - "No offence - the tackler may hold on until a ruck forms"
+          - "Free-kick offence by Red 7 - a technical tackle infringement"
+        answers:
+          - "Penalty offence by Red 7 - the tackler must release the ball and the ball-carrier immediately"
+        law_reference: 14.5a
+        law_quote: "Tacklers must: immediately release the ball and the ball-carrier after both players go to ground. Sanction: Penalty."
+        explanation: >-
+          Release means ball AND carrier, and it must happen as soon as both
+          players hit the ground. Holding the carrier down even briefly slows
+          the ball - that is exactly what this law protects against.
+      - text: >-
+          Despite the hold, Blue 9 gets the ball away cleanly and Blue's
+          backline moves it wide with space on the right. Advantage or
+          whistle?
+        options:
+          - "Play advantage - let Blue attack the space"
+          - "Whistle immediately - foul at the tackle"
+          - "Play on - the clean recycle means there was no offence after all"
+          - "Whistle and award a scrum to Blue"
+        answers:
+          - "Play advantage - let Blue attack the space"
+        law_reference: "7.1"
+        law_quote: "Advantage: may be tactical. The non-offending team is free to play the ball as they wish."
+        explanation: >-
+          The offence still happened - the recycle doesn't erase it - but Blue
+          are better served attacking the space than kicking a midfield
+          penalty. Signal advantage and let it run.
+      - text: >-
+          Two phases into the advantage, with no clear gain yet, Blue 13
+          knocks on in midfield. What now?
+        options:
+          - "Come back - penalty to Blue at the original tackle"
+          - "Scrum to Red for the knock-on"
+          - "Scrum to Blue - advantage cancels the knock-on"
+          - "Play on - the two infringements cancel each other out"
+        answers:
+          - "Come back - penalty to Blue at the original tackle"
+        law_reference: 7.2c
+        law_quote: "Advantage ends when: the non-offending team commits an infringement before they have gained an advantage. The referee stops the game and applies the sanction for the first infringement."
+        explanation: >-
+          Advantage was never gained, so Blue keep the penalty they were owed.
+          If Blue HAD clearly gained (a line break, big territory), advantage
+          would be over and the knock-on would be a scrum to Red.
+    contributor: null
+
+  - id: CH-BRK-002
+    setup: >-
+      Red lead 10-3 midway through the first half. Blue 6 tackles Red 13 in
+      midfield and both go to ground. Red 13 places the ball back instantly;
+      Blue 6 is slow to roll away but is on the far side of the tackle, away
+      from the ball. Red 9 moves the ball on without breaking stride.
+    laws: [14, 7]
+    difficulty: intermediate
+    tags: [tackle, tackler, materiality]
+    steps:
+      - text: "What do you do?"
+        options:
+          - "Play on - the slow roll had no effect on the ball"
+          - "Penalty to Red - tacklers must move away immediately"
+          - "Free-kick to Red - a minor tackle offence"
+          - "Stop play and formally warn Blue 6"
+        answers:
+          - "Play on - the slow roll had no effect on the ball"
+        law_reference: 14.5b
+        law_quote: "Tacklers must: immediately move away from the tackled player and from the ball or get up. Sanction: Penalty."
+        explanation: >-
+          On paper it's an offence - but Red got the quickest ball they could
+          have wished for. Blowing here takes away Red's momentum to punish an
+          offence that changed nothing. Whistle what's material, not
+          everything that's technically there.
+      - text: >-
+          Two phases later Blue 6 is slow away again - but this time he's
+          lying in Red 9's passing lane and Red 9 has to step around him to
+          reach the ball. What now?
+        options:
+          - "Penalty to Red - this time the offence affects play"
+          - "Play on - be consistent with your earlier decision"
+          - "Free-kick to Red - repeated technical offence"
+          - "Scrum to Red - the ball is effectively unplayable"
+        answers:
+          - "Penalty to Red - this time the offence affects play"
+        law_reference: 14.5b
+        law_quote: "Tacklers must: immediately move away from the tackled player and from the ball or get up. Sanction: Penalty."
+        explanation: >-
+          Same action, different effect. Materiality is about the effect on
+          play, not the action itself - the moment the slow roll interferes
+          with the ball, it's a penalty. That IS consistency: same standard,
+          applied to what the offence actually did.
+    contributor: null
+
+  - id: CH-BRK-003
+    setup: >-
+      Scores level, 50 minutes gone. Blue 8 tackles Red 12 in midfield; both
+      go to ground and both comply. Blue 7 arrives first, stays on his feet
+      and gets both hands on the ball. As Red 1 binds onto Blue 7, a ruck
+      forms.
+    laws: [15, 14, 9]
+    difficulty: advanced
+    tags: [ruck, clearout, tackle, foul-play]
+    steps:
+      - text: >-
+          Blue 7 keeps his hands on the ball and keeps driving for the steal
+          after the ruck has formed. Legal?
+        options:
+          - "Yes - he had his hands on before the ruck formed and has stayed on his feet"
+          - "No - once a ruck forms, nobody may handle the ball"
+          - "No - only the tackler may compete for the ball on the ground"
+          - "Yes - but he must release the moment Red 1 makes contact"
+        answers:
+          - "Yes - he had his hands on before the ruck formed and has stayed on his feet"
+        law_reference: "15.11"
+        law_quote: "Once a ruck has formed, no player may handle the ball unless they were able to get their hands on the ball before the ruck formed and stay on their feet."
+        explanation: >-
+          The jackler who beats the ruck keeps his rights as long as he stays
+          on his feet. Your job is to have a clear picture of WHEN his hands
+          arrived - before or after the ruck formed decides everything.
+      - text: >-
+          Red 1 grabs Blue 7's knee and drives him backwards off the ball.
+          Legal?
+        options:
+          - "Yes - driving the jackler backwards, including by the knee or leg, is legal"
+          - "No - grabbing the leg is always dangerous play"
+          - "No - Red 1 must bind onto the upper body, not the leg"
+          - "Yes - any method of removing the jackler is legal"
+        answers:
+          - "Yes - driving the jackler backwards, including by the knee or leg, is legal"
+        law_reference: 9.20d
+        law_quote: "A player may remove the jackler/stealer from the tackle area by pushing/driving them backwards (including by grabbing the knee/leg), but must not roll, pull or twist an opponent."
+        explanation: >-
+          The 2026 wording is explicit: driving backwards - even by the leg -
+          is a fair contest. The direction of force is what you're judging:
+          backwards is fine, sideways rotation is not.
+      - text: >-
+          Next phase, Blue 7 is over the ball again. This time Red 3 grips
+          him around the chest and rolls him sideways to the ground. What's
+          your call?
+        options:
+          - "Penalty to Blue - opponents must not be rolled, pulled or twisted"
+          - "Play on - a legal, dominant clear-out"
+          - "Penalty to Red - Blue 7 went off his feet"
+          - "Free-kick to Blue - technical clear-out offence"
+        answers:
+          - "Penalty to Blue - opponents must not be rolled, pulled or twisted"
+        law_reference: 9.20d
+        law_quote: "A player may remove the jackler/stealer from the tackle area by pushing/driving them backwards (including by grabbing the knee/leg), but must not roll, pull or twist an opponent."
+        explanation: >-
+          The same law that allows the drive forbids the roll. Watch for the
+          rotation: if the jackler is turned sideways rather than driven
+          straight, it's a penalty - and if the roll traps a limb or is
+          forceful, escalate towards a card.
+    contributor: null
+
+  - id: CH-BRK-004
+    setup: >-
+      Blue lead 18-15 on the hour. A ruck forms near halfway with Red in
+      possession and recycling quickly. Blue 4 has just got off the floor on
+      the wrong side and is standing a metre in front of his offside line as
+      Red 9 reaches for the ball.
+    laws: [15, 7]
+    difficulty: intermediate
+    tags: [ruck, offside, advantage, materiality]
+    steps:
+      - text: "What's the offence, if any?"
+        options:
+          - "Blue 4 is offside - players must join the ruck or retire behind the offside line immediately"
+          - "No offence unless Blue 4 touches the ball or a player"
+          - "Obstruction by Blue 4"
+          - "No offence - the offside line only matters once the ball is out"
+        answers:
+          - "Blue 4 is offside - players must join the ruck or retire behind the offside line immediately"
+        law_reference: "15.8"
+        law_quote: "Players must join the ruck or retire behind their offside line immediately. Sanction: Penalty."
+        explanation: >-
+          There's no third option at a ruck: join it or get behind the
+          hindmost foot, immediately. Loitering in the middle is an offence
+          even before the loiterer touches anything.
+      - text: >-
+          Red 9 ignores him and snipes down the blindside, away from Blue 4,
+          making 15 metres before being tackled. Quick ball follows. What do
+          you do?
+        options:
+          - "Advantage played and over - let the game flow on"
+          - "Come back - penalty to Red at the ruck"
+          - "Play on - Blue 4's position was never an offence"
+          - "Stop play and warn Blue 4"
+        answers:
+          - "Advantage played and over - let the game flow on"
+        law_reference: 7.2a
+        law_quote: "Advantage ends when: the referee deems that the non-offending team has gained an advantage. The referee allows play to continue."
+        explanation: >-
+          A 15-metre break with quick ball is a clear, real advantage - better
+          than the penalty for most attacking teams. Call "advantage over" so
+          everyone knows you saw the offence and it's spent.
+      - text: >-
+          Later in the half, the same picture - but this time Blue 4 is
+          standing exactly where Red 9 wants to pass, and the attack dies.
+          Your call?
+        options:
+          - "Penalty to Red - an offside player interfering with play"
+          - "Play on - Blue 4 never touched the ball"
+          - "Free-kick to Red - accidental offside"
+          - "Scrum to Red - the attack broke down"
+        answers:
+          - "Penalty to Red - an offside player interfering with play"
+        law_reference: "15.8"
+        law_quote: "Players must join the ruck or retire behind their offside line immediately. Sanction: Penalty."
+        explanation: >-
+          Same offence as step one - but this time it bites. The loiterer
+          killed Red's best option just by standing there, so there's no
+          advantage to play and every reason to blow.
+    contributor: null
+
+  - id: CH-BRK-005
+    setup: >-
+      Red lead 3-0 with five minutes left and are holding the ball at a ruck
+      40 metres from their own line, running the clock down. The ball is
+      clearly won and sitting at Red 9's feet. You call "use it".
+    laws: [15, 19]
+    difficulty: intermediate
+    tags: [ruck, scrum]
+    steps:
+      - text: "Red 9 leaves the ball there for a further six seconds. What's your call?"
+        options:
+          - "Scrum, thrown in by Blue - the ball must be played within five seconds of 'use it'"
+          - "Penalty to Blue for time-wasting"
+          - "Free-kick to Blue for time-wasting"
+          - "Play on - the five seconds only starts when Red 9 touches the ball"
+        answers:
+          - "Scrum, thrown in by Blue - the ball must be played within five seconds of 'use it'"
+        law_reference: "15.17"
+        law_quote: "When the ball has been clearly won by a team at the ruck, and is available to be played, the referee calls 'use it', after which the ball must be played away from the ruck within five seconds. Sanction: Scrum."
+        explanation: >-
+          The specific sanction is a scrum, and the Law 19 award table gives
+          the throw-in to the team NOT in possession - so the clock-killing
+          costs Red the ball. That turnover threat is what makes "use it"
+          mean something.
+      - text: >-
+          A minute later, another Red ruck: this time the ball is trapped
+          under bodies, clearly never coming out, and you can't tell who
+          killed it. What's the restart?
+        options:
+          - "Scrum, thrown in by the team that was moving forward before the stoppage"
+          - "Scrum, always thrown in by the defending team"
+          - "Penalty to Blue - Red must be guilty of holding on"
+          - "Free-kick to Blue"
+        answers:
+          - "Scrum, thrown in by the team that was moving forward before the stoppage"
+        law_reference: "15.20"
+        law_quote: "The ruck ends when the ball becomes unplayable. If the referee decides that the ball will probably not emerge within a reasonable time, a scrum is awarded."
+        explanation: >-
+          No identified offender means no penalty - the scrum goes to whoever
+          was moving forward before the stoppage, and to the attacking team
+          if nobody was. Don't invent a "holding on" penalty when your
+          picture isn't clear.
+    contributor: null
+
+  - id: CH-BRK-006
+    setup: >-
+      Midway through the second half, Blue 14 dives at Red 11 in open field
+      and gets a hand to his ankle. Red 11 stumbles - one hand touches the
+      ground - then regains his balance and keeps running. Blue's bench
+      shouts for "release".
+    laws: [14]
+    difficulty: beginner
+    tags: [tackle, tackled-player]
+    steps:
+      - text: "Has a tackle occurred?"
+        options:
+          - "No - Red 11 was never held, so there is no tackle"
+          - "Yes - Red 11 went to ground, so he must release the ball"
+          - "Yes - any contact that puts a hand on the ground is a tackle"
+          - "No - but Red 11 must pass immediately after touching the ground"
+        answers:
+          - "No - Red 11 was never held, so there is no tackle"
+        law_reference: "14.1"
+        law_quote: "For a tackle to occur, the ball-carrier is held and brought to ground by one or more opponents."
+        explanation: >-
+          A tackle needs BOTH elements: held and brought to ground. An
+          ankle-tap brings nobody into a hold, so no tackle law applies -
+          Red 11 can keep running and the bench can keep shouting.
+      - text: >-
+          Ten metres on, Red 11 is properly held and brought to ground by
+          Blue 12, who releases and gets up. Red 11 then crawls another two
+          metres forward with the ball. What's your call?
+        options:
+          - "Penalty to Blue - the tackled player must make the ball available immediately, not crawl on"
+          - "Play on - forward momentum is allowed"
+          - "Free-kick to Blue - a minor offence"
+          - "Play on - he may keep going until an opponent contests the ball"
+        answers:
+          - "Penalty to Blue - the tackled player must make the ball available immediately, not crawl on"
+        law_reference: 14.7a
+        law_quote: "Tackled players must immediately: make the ball available so that play can continue by releasing, passing or pushing the ball in any direction except forward. They may place the ball in any direction. Sanction: Penalty."
+        explanation: >-
+          Momentum sliding is one thing; crawling is a second action after
+          the tackle is complete. Once held and grounded, his only jobs are
+          to make the ball available and move away.
+    contributor: null
+
+  - id: CH-BRK-007
+    setup: >-
+      It's 12-12 early in the second half. Red 13 is tackled by Blue 12 five
+      metres inside Blue's half; tackler and tackled player both comply.
+      Red 6 arrives from the side of the tackle - clearly not from his own
+      side - and picks the ball straight up.
+    laws: [14, 7]
+    difficulty: intermediate
+    tags: [tackle, arriving-player, on-feet, advantage]
+    steps:
+      - text: "What's the offence?"
+        options:
+          - "Penalty offence by Red 6 - arriving players must come from the direction of their own try line"
+          - "No offence - the first arriving player may enter from anywhere"
+          - "Penalty offence by Red 6 - hands in the ruck"
+          - "Free-kick offence by Red 6 - wrong entry point"
+        answers:
+          - "Penalty offence by Red 6 - arriving players must come from the direction of their own try line"
+        law_reference: 14.8c
+        law_quote: "Other players must: arrive at the tackle from the direction of their own try line before playing the ball. Sanction: Penalty."
+        explanation: >-
+          "Through the gate" in commentary language. No ruck has formed - the
+          hands-in offence doesn't exist yet - but the entry line does, for
+          every arriving player including the first.
+      - text: >-
+          You signal advantage to Blue. Blue 9 immediately strips the ball
+          from Red 6, breaks 20 metres upfield and Blue recycle quick ball.
+          What now?
+        options:
+          - "Advantage over - play on"
+          - "Come back - penalty to Blue at the tackle"
+          - "Stop play and give Blue the scrum instead"
+          - "Keep advantage running until Blue score"
+        answers:
+          - "Advantage over - play on"
+        law_reference: 7.2a
+        law_quote: "Advantage ends when: the referee deems that the non-offending team has gained an advantage. The referee allows play to continue."
+        explanation: >-
+          Possession won plus a 20-metre break is far more than the penalty
+          was worth. Advantage isn't open-ended - once it's clearly gained,
+          it's over, and a later mistake by Blue is just rugby.
+      - text: >-
+          At the next tackle, Blue 7 dives off his feet over the ball to
+          stop Red's counter-ruck. What's your call?
+        options:
+          - "Penalty to Red - players must stay on their feet when playing the ball"
+          - "Play on - Blue 7 is protecting his own ball"
+          - "Free-kick to Red - off feet at the tackle"
+          - "Scrum to Red - the ball is unplayable"
+        answers:
+          - "Penalty to Red - players must stay on their feet when playing the ball"
+        law_reference: 14.8b
+        law_quote: "Other players must: remain on their feet when they play the ball. Sanction: Penalty."
+        explanation: >-
+          Sealing off. It usually looks like good ball protection, which is
+          exactly why teams do it - but it denies the contest the law
+          guarantees the defending team.
+    contributor: null
+
+  - id: CH-MAUL-001
+    setup: >-
+      Blue win a lineout 15 metres from Red's try line and form a driving
+      maul with the ball secured at the back. Scores level at 6-6, 55
+      minutes played.
+    laws: [16, 9]
+    difficulty: intermediate
+    tags: [maul, foul-play]
+    steps:
+      - text: >-
+          The maul stops moving forward for roughly three seconds, then
+          surges towards the line again. What do you do?
+        options:
+          - "Play on - a stopped maul may start moving again within five seconds"
+          - "Call 'use it' as soon as it stops"
+          - "Scrum to Red the moment forward movement stops"
+          - "Whistle - a maul may not stop and restart"
+        answers:
+          - "Play on - a stopped maul may start moving again within five seconds"
+        law_reference: "16.15"
+        law_quote: "When a maul has stopped moving towards a try line, it may restart moving towards a try line providing it does so within five seconds."
+        explanation: >-
+          One stop is allowed if the maul gets moving again within five
+          seconds. Count it in your head and communicate - "once, moving!"
+          tells both packs where they stand.
+      - text: >-
+          The maul stops a second time. You can see the ball being moved
+          towards the back. What's your call?
+        options:
+          - "Tell Blue to use it - they must then play the ball in a reasonable time"
+          - "Scrum to Red immediately"
+          - "Play on - the maul may restart a second time"
+          - "Penalty to Blue for obstruction"
+        answers:
+          - "Tell Blue to use it - they must then play the ball in a reasonable time"
+        law_reference: "16.15"
+        law_quote: "If it stops a second time but the ball is being moved and the referee can see it, the referee instructs the team to use the ball. The team in possession must then use the ball in a reasonable time. Sanction: Scrum."
+        explanation: >-
+          Second stop with the ball visible and moving = "use it", not an
+          instant scrum. The scrum only comes if Blue then fail to play it
+          in a reasonable time.
+      - text: >-
+          Before Blue can use it, Red 5 - bound in the maul - deliberately
+          drags the whole thing to the ground. What do you award?
+        options:
+          - "Penalty to Blue - intentionally collapsing a maul"
+          - "Scrum to Blue - the maul ended unsuccessfully"
+          - "Play on - the ball was still available at the back"
+          - "Free-kick to Blue"
+        answers:
+          - "Penalty to Blue - intentionally collapsing a maul"
+        law_reference: 16.11a
+        law_quote: "Players must not: intentionally collapse a maul or jump on top of it. Sanction: Penalty."
+        explanation: >-
+          A deliberate collapse is a penalty and a safety issue. This close
+          to the line, also ask yourself whether the collapse prevented a
+          probable try - if it did, that's a penalty try and a card under
+          Law 8.3.
+    contributor: null

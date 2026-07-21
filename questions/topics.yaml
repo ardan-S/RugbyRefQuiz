@@ -1,0 +1,88 @@
+# Curated practice topics for RugbyRefQuiz.
+#
+# A topic groups questions the way referees talk about the game, cutting
+# across law boundaries. A question belongs to a topic if:
+#   - its law number is in the topic's `laws` list, OR
+#   - any of its tags appear in the topic's `tags` list.
+#
+# Keep this list short and meaningful - topics are a curated layer, not a
+# dump of every tag in the question bank.
+
+topics:
+  - slug: breakdown
+    name: The Breakdown
+    description: Tackle, ruck and players on the ground
+    laws: [13, 14, 15]
+    tags: [tackle, ruck, clearout, release, tackler, tackled-player, arriving-player, on-feet]
+
+  - slug: scrum
+    name: The Scrum
+    description: Engagement, binding, offences and restarts
+    laws: [19]
+    tags: [scrum, front-row]
+
+  - slug: lineout-touch
+    name: Lineout & Touch
+    description: Touch decisions, throws and lineout play
+    laws: [18]
+    tags: [lineout, touch, quick-throw, throw-in]
+
+  - slug: maul
+    name: The Maul
+    description: Formation, joining and ending the maul
+    laws: [16]
+    tags: [maul]
+
+  - slug: foul-play
+    name: Foul Play & Discipline
+    description: Dangerous play, cards and misconduct
+    laws: [9]
+    tags: [foul-play, dangerous-play, late-tackle, red-card, sending-off, misconduct, suspension, repeated-infringement, obstruction]
+
+  - slug: offside
+    name: Offside & Onside
+    description: Offside lines and being put onside in open play
+    laws: [10]
+    tags: [offside, onside, 10-metre-law]
+
+  - slug: kicks-restarts
+    name: Kicks, Restarts & the Mark
+    description: Kick-offs, drop-outs and calling a mark
+    laws: [12, 17]
+    tags: [kick-off, drop-out, 22-drop-out, try-line-drop-out, restart, mark, kick]
+
+  - slug: scoring-in-goal
+    name: Scoring & In-Goal
+    description: Tries, conversions, goals and in-goal decisions
+    laws: [8, 21]
+    tags: [try, conversion, grounding, touchdown, in-goal, goal]
+
+  - slug: penalties
+    name: Penalties & Free-Kicks
+    description: Options, taking the kick and sanctions
+    laws: [20]
+    tags: [penalty, free-kick]
+
+  - slug: advantage
+    name: Advantage
+    description: When to play it and when to come back
+    laws: [7]
+    tags: [advantage]
+
+  - slug: knock-on
+    name: Knock-On & Throw Forward
+    description: Handling errors and the options that follow
+    laws: [11]
+    tags: [knock-on, throw-forward, intentional]
+
+  - slug: match-management
+    name: Match Management & Officials
+    description: Teams, replacements, time and the officials
+    laws: [3, 5, 6]
+    tags: [referee, assistant-referee, touch-judge, replacement, time, water-break, injury, blood-injury, half-time]
+
+  - slug: basics
+    name: Pitch, Ball & Kit
+    description: The ground, the ball and players' clothing
+    laws: [1, 2, 4]
+    tags: [clothing, dimensions]

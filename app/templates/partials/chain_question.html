@@ -3,31 +3,38 @@
         <div class="flex items-center justify-between gap-2 flex-wrap">
             <span class="flex items-baseline gap-2">
                 <span class="text-sm font-semibold opacity-60">Question {{ question_num }} of {{ total }}</span>
-                <span class="font-mono text-xs opacity-40">Ref {{ question.id }}</span>
+                <span class="font-mono text-xs opacity-40">Ref {{ chain.id }}</span>
             </span>
             <span class="flex gap-1.5 flex-wrap">
                 <span class="dropdown dropdown-hover dropdown-end">
                     <button type="button"
                             tabindex="0"
                             class="badge badge-primary badge-outline cursor-help"
-                            aria-describedby="law-name-{{ question.id }}">
-                        Law {{ question.law }}
+                            aria-describedby="chain-law-names-{{ chain.id }}">
+                        Law{% if chain.laws | length > 1 %}s{% endif %} {{ chain.laws | join(' & ') }}
                     </button>
-                    <span id="law-name-{{ question.id }}"
+                    <span id="chain-law-names-{{ chain.id }}"
                           role="tooltip"
                           class="dropdown-content z-10 mt-1 whitespace-nowrap rounded-box bg-base-content px-3 py-2 text-xs font-semibold text-base-100 shadow-md">
-                        {{ question.law_title }}
+                        {% for law in chain.law_details %}
+                        <span class="block">Law {{ law.number }}: {{ law.name }}</span>
+                        {% endfor %}
                     </span>
                 </span>
-                {% if question.difficulty == 'beginner' %}
+                {% if chain.difficulty == 'beginner' %}
                 <span class="badge badge-success badge-outline">beginner</span>
-                {% elif question.difficulty == 'intermediate' %}
+                {% elif chain.difficulty == 'intermediate' %}
                 <span class="badge badge-warning badge-outline">intermediate</span>
                 {% else %}
-                <span class="badge badge-error badge-outline">{{ question.difficulty }}</span>
+                <span class="badge badge-error badge-outline">{{ chain.difficulty }}</span>
                 {% endif %}
-                <span class="badge badge-ghost">{{ question.type }}</span>
+                <span class="badge badge-ghost">scenario chain</span>
             </span>
+        </div>
+
+        <div class="border-l-4 border-secondary bg-secondary/5 rounded-r-lg px-4 py-3 mt-2">
+            <p class="text-xs font-bold uppercase tracking-wide opacity-60">Match situation</p>
+            <p class="text-sm leading-relaxed mt-1">{{ chain.setup }}</p>
         </div>
 
         {% if error %}
@@ -36,7 +43,10 @@
         </div>
         {% endif %}
 
-        <p class="text-lg font-bold leading-snug mt-2">{{ question.text }}</p>
+        <div class="mt-2">
+            <span class="badge badge-secondary">Decision {{ step_num }} of {{ step_total }}</span>
+        </div>
+        <p class="text-lg font-bold leading-snug mt-1">{{ step.text }}</p>
 
         <form hx-post="{{ url_for('main.submit_answer') }}"
               hx-target="#quiz-content"
@@ -55,7 +65,7 @@
             </div>
             <button type="submit" class="btn btn-primary btn-block">
                 <span class="htmx-indicator loading loading-spinner loading-sm"></span>
-                Submit Answer
+                Submit Decision
             </button>
         </form>
     </div>

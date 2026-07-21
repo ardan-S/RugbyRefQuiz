@@ -17,6 +17,9 @@ from questions.utils import Question
 # Directory containing YAML question files
 DATA_DIR = Path(__file__).parent / "data"
 SCHEMA_PATH = Path(__file__).parent / "schema.yaml"
+TOPICS_PATH = Path(__file__).parent / "topics.yaml"
+SCENARIOS_DIR = Path(__file__).parent / "scenarios"
+SCENARIO_SCHEMA_PATH = Path(__file__).parent / "scenario_schema.yaml"
 
 
 def _normalize_law_numbers(
@@ -246,6 +249,162 @@ def get_question_bank() -> dict[str, dict]:
             bank[q['id']] = {**q, 'law': law_num, 'law_title': law_title}
 
     return bank
+
+
+@lru_cache(maxsize=1)
+def _load_scenario_schema() -> dict:
+    """Load the JSON schema for scenario chain validation."""
+    with open(SCENARIO_SCHEMA_PATH, 'r', encoding='utf-8') as f:
+        return yaml.safe_load(f)
+
+
+def validate_scenario_file(data: dict) -> list[str]:
+    """
+    Validate a scenario chain file against the scenario schema.
+
+    Returns:
+        List of validation error messages (empty if valid)
+    """
+    schema = _load_scenario_schema()
+    errors = []
+
+    validator = jsonschema.Draft202012Validator(schema)
+    for error in validator.iter_errors(data):
+        path = " -> ".join(str(p) for p in error.absolute_path) or "root"
+        errors.append(f"{path}: {error.message}")
+
+    # Additional validation: each step's answers must be a subset of options
+    for i, chain in enumerate(data.get('chains', [])):
+        for j, step in enumerate(chain.get('steps', [])):
+            if 'options' in step and 'answers' in step:
+                invalid = set(step['answers']) - set(step['options'])
+                if invalid:
+                    errors.append(
+                        f"chains[{i}].steps[{j}].answers: {invalid} not in options"
+                    )
+
+    return errors
+
+
+@lru_cache(maxsize=1)
+def _load_all_scenario_data() -> tuple[tuple[str, dict], ...]:
+    """Read all scenario chain YAML files once per process."""
+    if not SCENARIOS_DIR.exists():
+        return ()
+
+    all_data = []
+    for yaml_file in sorted(SCENARIOS_DIR.glob("*.yaml")):
+        data = load_yaml_file(yaml_file)
+        if data:
+            all_data.append((yaml_file.name, data))
+
+    return tuple(all_data)
+
+
+@lru_cache(maxsize=1)
+def get_chain_bank() -> dict[str, dict]:
+    """
+    Get all scenario chains keyed by their unique ID.
+
+    Each value is the full chain dict from YAML plus:
+        kind: 'chain' (distinguishes chains from single questions)
+        law_details: law numbers paired with their human-readable names
+
+    Returns:
+        Dict mapping chain ID to chain dict
+    """
+    bank = {}
+    law_titles = {
+        number: name
+        for number, name, _ in _get_available_laws_cached()
+    }
+
+    for _, data in _load_all_scenario_data():
+        for chain in data.get('chains', []):
+            law_details = [
+                {
+                    'number': law_number,
+                    'name': law_titles.get(law_number, f'Law {law_number}'),
+                }
+                for law_number in chain.get('laws', [])
+            ]
+            bank[chain['id']] = {
+                **chain,
+                'kind': 'chain',
+                'law_details': law_details,
+            }
+
+    return bank
+
+
+@lru_cache(maxsize=1)
+def _load_topics() -> tuple[dict, ...]:
+    """
+    Load curated topics from topics.yaml and resolve their question IDs.
+
+    A question belongs to a topic if its law is in the topic's `laws` list
+    or any of its tags appear in the topic's `tags` list.
+    """
+    if not TOPICS_PATH.exists():
+        return ()
+
+    data = load_yaml_file(TOPICS_PATH) or {}
+    bank = get_question_bank()
+    chain_bank = get_chain_bank()
+
+    topics = []
+    for topic in data.get('topics', []):
+        slug = topic.get('slug')
+        if not slug:
+            continue
+
+        laws = set(topic.get('laws') or [])
+        tags = set(topic.get('tags') or [])
+
+        question_ids = tuple(
+            qid for qid, q in bank.items()
+            if q['law'] in laws or tags.intersection(q.get('tags') or [])
+        )
+        chain_ids = tuple(
+            cid for cid, c in chain_bank.items()
+            if laws.intersection(c.get('laws') or [])
+            or tags.intersection(c.get('tags') or [])
+        )
+
+        topics.append({
+            'slug': slug,
+            'name': topic.get('name', slug),
+            'description': topic.get('description', ''),
+            'question_ids': question_ids,
+            'chain_ids': chain_ids,
+            'question_count': len(question_ids) + len(chain_ids),
+        })
+
+    return tuple(topics)
+
+
+def get_topics() -> dict[str, dict]:
+    """Get curated topics keyed by slug (without their question ID lists)."""
+    return {
+        t['slug']: {k: t[k] for k in ('slug', 'name', 'description', 'question_count')}
+        for t in _load_topics()
+    }
+
+
+def get_topic_question_ids(slug: str) -> tuple[str, ...]:
+    """Get the question IDs belonging to a topic (empty if unknown slug)."""
+    for t in _load_topics():
+        if t['slug'] == slug:
+            return t['question_ids']
+    return ()
+
+
+def get_topic_chain_ids(slug: str) -> tuple[str, ...]:
+    """Get the scenario chain IDs belonging to a topic (empty if unknown)."""
+    for t in _load_topics():
+        if t['slug'] == slug:
+            return t['chain_ids']
+    return ()
 
 
 def get_questions_with_metadata(

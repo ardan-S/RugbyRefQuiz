@@ -4,353 +4,367 @@ metadata:
   source: World Rugby Laws 2026
 questions:
 - id: L01-001
-  text: Which of the following is NOT permitted surface types?
+  text: Which of these is NOT a permitted playing surface?
   type: factual
-  difficulty: advanced
+  difficulty: beginner
   options:
-  - Grass
-  - Artificial turf
-  - Sand
   - Concrete
-  - Clay
+  - Artificial turf
   - Snow
+  - Clay
   answers:
   - Concrete
-  law_reference: '1'
-  tags: []
-  explanation: null
+  law_reference: '1.2'
+  tags:
+  - surface
+  law_quote: The permitted surface types are grass, sand, clay, snow or artificial
+    turf (conforming to World Rugby Regulation 22).
+  explanation: The surface must also be safe (Law 1.1) - even a permitted surface
+    type can be rejected on the day if it isn't.
   contributor: null
 - id: L01-002
   text: What is the maximum length of the field of play?
   type: factual
-  difficulty: advanced
+  difficulty: beginner
   options:
   - 100m
-  - 96m
-  - 104m
-  - 106m
   - 94m
-  - 90m
+  - 104m
+  - 110m
   answers:
   - 100m
-  law_reference: '1'
-  tags: []
-  explanation: null
+  law_reference: '1.3'
+  tags:
+  - dimensions
+  law_quote: 'Dimensions table: field of play length - minimum 94, maximum 100 metres.'
+  explanation: The field of play is try line to try line - the in-goal areas are
+    on top of this.
   contributor: null
 - id: L01-003
-  text: What is the maximum width of the field of play?
+  text: What is the maximum width of the playing area?
   type: factual
-  difficulty: advanced
+  difficulty: beginner
   options:
-  - 64m
-  - 66m
   - 70m
-  - 72m
   - 68m
-  - 74m
+  - 72m
+  - 75m
   answers:
   - 70m
-  law_reference: '1'
-  tags: []
-  explanation: null
+  law_reference: '1.3'
+  tags:
+  - dimensions
+  law_quote: 'Dimensions table: width - minimum 68, maximum 70 metres.'
+  explanation: Width is measured touchline to touchline.
   contributor: null
 - id: L01-004
   text: What is the maximum length of the in-goal area?
   type: factual
-  difficulty: advanced
+  difficulty: intermediate
   options:
-  - 12m
+  - 22m
   - 15m
   - 20m
-  - 22m
   - 25m
-  - 30m
   answers:
   - 22m
-  law_reference: '1'
+  law_reference: '1.3'
   tags:
-  - goal
-  explanation: null
+  - dimensions
+  - in-goal
+  law_quote: 'Dimensions table: in-goal length - minimum 6, maximum 22 metres.'
+  explanation: In-goal depth varies enormously between grounds - it affects your
+    positioning for grounding decisions and 22/try-line drop-out calls.
   contributor: null
 - id: L01-005
   text: What is the minimum length of the field of play?
   type: factual
-  difficulty: advanced
+  difficulty: intermediate
   options:
-  - 92m
   - 94m
   - 96m
-  - 100m
-  - 88m
   - 90m
+  - 100m
   answers:
   - 94m
-  law_reference: '1'
-  tags: []
-  explanation: null
+  law_reference: '1.3'
+  tags:
+  - dimensions
+  law_quote: 'Dimensions table: field of play length - minimum 94, maximum 100 metres.'
+  explanation: Variations below the minimum need approval from the union (domestic)
+    or World Rugby (international) under Law 1.3b.
   contributor: null
 - id: L01-006
-  text: What is the minimum width of the field of play?
+  text: What is the minimum width of the playing area?
   type: factual
-  difficulty: advanced
+  difficulty: intermediate
   options:
-  - 64m
+  - 68m
   - 66m
   - 70m
-  - 72m
-  - 68m
-  - 74m
+  - 64m
   answers:
   - 68m
-  law_reference: '1'
-  tags: []
-  explanation: null
+  law_reference: '1.3'
+  tags:
+  - dimensions
+  law_quote: 'Dimensions table: width - minimum 68, maximum 70 metres.'
+  explanation: If the playing area is narrower than 70m, the 15-metre lines move
+    in accordingly (Law 1.3d).
   contributor: null
 - id: L01-007
   text: What is the minimum length of the in-goal area?
   type: factual
-  difficulty: advanced
+  difficulty: intermediate
   options:
   - 6m
+  - 5m
   - 8m
   - 10m
-  - 12m
-  - 14m
-  - 16m
   answers:
   - 6m
-  law_reference: '1'
+  law_reference: '1.3'
   tags:
-  - goal
-  explanation: null
+  - dimensions
+  - in-goal
+  law_quote: 'Dimensions table: in-goal length - minimum 6, maximum 22 metres.'
+  explanation: A short in-goal changes the picture for held-up and momentum
+    decisions - know the depth before kick-off.
   contributor: null
 - id: L01-008
-  text: |-
-    Where the length of the field of play is less than 100m, which section of the pitch is reduced accordingly?
+  text: The field of play is shorter than 100 metres. Which distance is reduced
+    to make the markings fit?
   type: factual
   difficulty: intermediate
   options:
-  - Goal line - 22m
-  - 22m - 10m
-  - 10m - Halfway
-  - In-goal area
+  - Between the 10-metre lines and the 22-metre lines
+  - Between the try lines and the 22-metre lines
+  - Between the 10-metre lines and the half-way line
+  - The in-goal length
   answers:
-  - 22m - 10m
-  law_reference: '1'
-  tags: []
-  explanation: null
+  - Between the 10-metre lines and the 22-metre lines
+  law_reference: 1.3c
+  tags:
+  - dimensions
+  - lines
+  law_quote: Where the length of the field of play is less than 100 metres, the
+    distance between the 10-metre lines and 22-metre lines is reduced accordingly.
+  explanation: The 22-metre and 10-metre lines keep their defined distances from
+    the try line and half-way line respectively - the gap between them absorbs
+    the difference.
   contributor: null
 - id: L01-009
-  text: |-
-    Where the width of the field of play is less than 70m, which section of the pitch is reduced accordingly?
+  text: The playing area is narrower than 70 metres. Which distance is reduced
+    to make the markings fit?
   type: factual
   difficulty: intermediate
   options:
-  - Touch line - 5m
-  - 5m - 15m
-  - 15m - 15m
+  - Between the two 15-metre lines
+  - Between the touchline and the 5-metre line
+  - Between the 5-metre and 15-metre lines
+  - The perimeter area
   answers:
-  - 15m - 15m
-  law_reference: '1'
-  tags: []
-  explanation: null
+  - Between the two 15-metre lines
+  law_reference: 1.3d
+  tags:
+  - dimensions
+  - lines
+  law_quote: Where the width of the playing area is less than 70 metres, the distance
+    between the 15-metre lines is reduced accordingly.
+  explanation: The 5-metre and 15-metre dash lines keep their distances from the
+    touchlines - the middle of the pitch absorbs the difference.
   contributor: null
 - id: L01-010
-  text: Where practicable, what is the minimum length of the perimiter area?
+  text: Where practicable, how wide should the perimeter area be?
   type: factual
   difficulty: advanced
   options:
-  - 2m
+  - 5m
   - 3m
   - 4m
-  - 5m
   - 6m
-  - 7m
   answers:
   - 5m
-  law_reference: '1'
-  tags: []
-  explanation: null
+  law_reference: 1.3e
+  tags:
+  - dimensions
+  law_quote: The perimeter area should, where practicable, be five metres wide but
+    no less than 3.5m for the men's game, 3.0m for the women's game.
+  explanation: Five metres is the target; the absolute minimums are 3.5m (men's
+    game) and 3.0m (women's game). Perimeter space is a safety check before
+    kick-off.
   contributor: null
 - id: L01-011
-  text: Which configuration of lines are on the dead-ball and touch-in-goal lines?
+  text: Which of these lines is a DASH line rather than a solid line?
   type: factual
-  difficulty: intermediate
+  difficulty: beginner
   options:
-  - Solid
-  - Dashed
+  - The 10-metre lines
+  - The half-way line
+  - The 22-metre lines
+  - The touchlines
   answers:
-  - Solid
-  law_reference: '1'
+  - The 10-metre lines
+  law_reference: '1.5'
   tags:
-  - goal
-  explanation: null
+  - lines
+  law_quote: 'There are dash lines... 10 metres from, and parallel to, each side
+    of the half-way line.'
+  explanation: Solid lines are the dead-ball, touch-in-goal, try, 22-metre,
+    half-way and touch lines. Dash lines are the 5m, 15m, 10-metre and 5m-from-try-line
+    lines.
   contributor: null
 - id: L01-012
-  text: Which configuration of lines are on the goal lines?
+  text: Which of these lines is a SOLID line rather than a dash line?
   type: factual
-  difficulty: intermediate
+  difficulty: beginner
   options:
-  - Solid
-  - Dashed
+  - The 22-metre lines
+  - The 5-metre lines parallel to the touchlines
+  - The 15-metre lines
+  - The lines 5 metres from the try lines
   answers:
-  - Solid
-  law_reference: '1'
+  - The 22-metre lines
+  law_reference: '1.4'
   tags:
-  - goal
-  explanation: null
-  contributor: null
-- id: L01-013
-  text: Which configuration of lines are on the 22m lines?
-  type: factual
-  difficulty: intermediate
-  options:
-  - Solid
-  - Dashed
-  answers:
-  - Solid
-  law_reference: '1'
-  tags: []
-  explanation: null
-  contributor: null
-- id: L01-014
-  text: Which configuration of line is on the half-way line?
-  type: factual
-  difficulty: intermediate
-  options:
-  - Solid
-  - Dashed
-  answers:
-  - Solid
-  law_reference: '1'
-  tags: []
-  explanation: null
-  contributor: null
-- id: L01-015
-  text: Which configuration of lines are on the touchlines?
-  type: factual
-  difficulty: intermediate
-  options:
-  - Solid
-  - Dashed
-  answers:
-  - Solid
-  law_reference: '1'
-  tags: []
-  explanation: null
-  contributor: null
-- id: L01-016
-  text: Which configuration of lines are 5m from, and parallel to each touchline?
-  type: factual
-  difficulty: intermediate
-  options:
-  - Solid
-  - Dashed
-  answers:
-  - Dashed
-  law_reference: '1'
-  tags: []
-  explanation: null
-  contributor: null
-- id: L01-017
-  text: Which configuration of lines are 15m from, and parallel to each touchline?
-  type: factual
-  difficulty: intermediate
-  options:
-  - Solid
-  - Dashed
-  answers:
-  - Dashed
-  law_reference: '1'
-  tags: []
-  explanation: null
-  contributor: null
-- id: L01-018
-  text: |-
-    Which configuration of lines are 10m from, and parallel to each side of the half-way?
-  type: factual
-  difficulty: intermediate
-  options:
-  - Solid
-  - Dashed
-  answers:
-  - Dashed
-  law_reference: '1'
-  tags: []
-  explanation: null
-  contributor: null
-- id: L01-019
-  text: Which configuration of lines are 5m from, and parallel to each goal line?
-  type: factual
-  difficulty: intermediate
-  options:
-  - Solid
-  - Dashed
-  answers:
-  - Dashed
-  law_reference: '1'
-  tags:
-  - goal
-  explanation: null
+  - lines
+  law_quote: 'The solid lines are on: the dead-ball lines and touch-in-goal lines,
+    the try lines, the 22-metre lines, the half-way line, the touchlines.'
+  explanation: A useful rule of thumb - lines that mark touch, in-goal or a place
+    where play restarts are solid; guideline distances are dashed.
   contributor: null
 - id: L01-020
-  text: How long is the single line which intersects the centre of the half-way line?
+  text: How long is the line that intersects the centre of the half-way line?
   type: factual
   difficulty: advanced
   options:
-  - 0.2m
-  - 0.3m
-  - 0.4m
   - 0.5m
-  - 0.6m
-  - 0.7m
+  - 0.3m
+  - 1m
+  - 2m
   answers:
   - 0.5m
-  law_reference: '1'
-  tags: []
-  explanation: null
+  law_reference: '1.6'
+  tags:
+  - lines
+  law_quote: There is one line 0.5 metres long that intersects the centre of the
+    half-way line.
+  explanation: This is the mark for kick-offs and restarts at the centre of the
+    field.
   contributor: null
 - id: L01-021
-  text: How may flag posts are on the pitch?
+  text: How many flag posts are there in total?
+  type: factual
+  difficulty: intermediate
+  options:
+  - '14'
+  - '8'
+  - '12'
+  - '16'
+  answers:
+  - '14'
+  law_reference: '1.8'
+  tags:
+  - flag-posts
+  law_quote: There are 14 flag posts with flags, each with a minimum height of 1.2
+    metres.
+  explanation: Eight stand around the in-goal areas; six stand two metres outside
+    the touchlines, level with the 22-metre lines and the half-way line.
+  contributor: null
+- id: L01-022
+  text: Eight flag posts stand at the corners of the in-goal areas. Where are the
+    other six positioned?
   type: factual
   difficulty: advanced
   options:
-  - '8'
-  - '10'
-  - '12'
-  - '14'
-  - '16'
-  - '6'
+  - In line with the 22-metre lines and half-way line, two metres outside the touchlines
+  - In line with the 10-metre lines and half-way line, on the touchlines
+  - In line with the 22-metre lines only, one metre outside the touchlines
+  - At the intersections of the 15-metre lines and the try lines
   answers:
-  - '14'
-  law_reference: '1'
-  tags: []
-  explanation: null
-  contributor: null
-- id: L01-022
-  text: Where are each of the 14 flag posts located?
-  type: factual
-  difficulty: intermediate
-  options:
-  - I know where each one is
-  answers:
-  - I know where each one is
-  law_reference: '1'
-  tags: []
-  explanation: null
+  - In line with the 22-metre lines and half-way line, two metres outside the touchlines
+  law_reference: '1.10'
+  tags:
+  - flag-posts
+  law_quote: One flag post is positioned in line with the 22-metre line and the
+    half-way line on each side of the pitch, two metres outside the touchlines and
+    within the playing enclosure.
+  explanation: Two lines of three flags per side - they help match officials judge
+    the 22-metre and half-way lines from distance.
   contributor: null
 - id: L01-023
-  text: |-
-    Can the team inform the referee of any objections to the ground after the match starts?
-  type: factual
-  difficulty: intermediate
+  text: When must a team inform the referee of any objections to the ground?
+  type: procedural
+  difficulty: beginner
   options:
-  - 'Yes'
-  - 'No'
+  - Before the match starts
+  - At any point during the match
+  - Before half-time
+  - At the next stoppage after noticing the issue
   answers:
-  - 'No'
-  law_reference: '1'
+  - Before the match starts
+  law_reference: '1.11'
   tags:
   - referee
-  explanation: null
+  law_quote: Teams must inform the referee of any objections before the match starts.
+  explanation: The referee attempts to resolve the issues and will not start the
+    match if any part of the ground is considered unsafe (Law 1.12).
+  contributor: null
+- id: L01-024
+  text: How long is each dash within a dash line?
+  type: factual
+  difficulty: advanced
+  options:
+  - 5m
+  - 1m
+  - 2m
+  - 10m
+  answers:
+  - 5m
+  law_reference: '1.5'
+  tags:
+  - lines
+  law_quote: Each dash within a dash line is five metres in length.
+  explanation: A handy on-field measuring aid - one dash of the 5-metre line is
+    itself five metres long.
+  contributor: null
+- id: L01-025
+  text: When padding is attached to the goal posts, what is the maximum distance
+    the padding may extend from the try line?
+  type: factual
+  difficulty: advanced
+  options:
+  - 0.3m
+  - 0.5m
+  - 0.2m
+  - 1m
+  answers:
+  - 0.3m
+  law_reference: '1.7'
+  tags:
+  - goal
+  law_quote: When padding is attached to the goal posts the distance from the try
+    line to the external edge of the padding must not exceed 0.3 metres.
+  explanation: Relevant to grounding decisions at the posts - the padding is in
+    in-goal, and a ball grounded against the post padding is a try.
+  contributor: null
+- id: L01-026
+  text: What are the required dimensions of the goal posts and crossbar?
+  type: factual
+  difficulty: beginner
+  options:
+  - Posts 5.6m apart; top edge of the crossbar 3m from the ground
+  - Posts 5.6m apart; bottom edge of the crossbar 3m from the ground
+  - Posts 5m apart; top edge of the crossbar 3.4m from the ground
+  - Posts 6m apart; crossbar 3m from the ground
+  answers:
+  - Posts 5.6m apart; top edge of the crossbar 3m from the ground
+  law_reference: '1.7'
+  tags:
+  - goal
+  - dimensions
+  law_quote: 'Goal posts diagram: 5.6m apart, 3m to top edge of bar, minimum height
+    3.4m.'
+  explanation: The 3 metres is measured to the TOP edge of the crossbar, and each
+    post must be at least 3.4m tall.
   contributor: null

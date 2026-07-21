@@ -3,19 +3,33 @@
 {% block title %}Rugby Ref Quiz - Question{% endblock %}
 
 {% block content %}
-<div class="progress-bar">
-    <div class="progress-details">
-        <span>Score: <strong id="score">{{ score }}</strong> / <span id="answered">{{ answered }}</span></span>
-        <span>Questions: {{ total }}</span>
+<div class="max-w-2xl mx-auto space-y-4">
+    <div class="card bg-base-100 shadow-sm">
+        <div class="card-body py-4 flex-row items-center justify-between gap-4 flex-wrap">
+            <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold">
+                    Score: <span id="score" class="text-primary">{{ score }}</span>
+                    / <span id="answered">{{ answered }}</span>
+                </span>
+                <progress id="quiz-progress" class="progress progress-primary w-28 sm:w-40"
+                          value="{{ answered }}" max="{{ total }}"></progress>
+                <span class="text-xs opacity-60">{{ total }} questions</span>
+            </div>
+            <a href="{{ url_for('main.results') }}" class="btn btn-outline btn-sm">End Now</a>
+        </div>
     </div>
-    <a href="{{ url_for('main.results') }}" role="button" class="secondary end-now-button">End Now</a>
-</div>
 
-<div id="quiz-content"
-     class="quiz-container"
-     hx-get="{{ url_for('main.get_question_route') }}"
-     hx-trigger="load"
-     hx-swap="innerHTML">
-    <p aria-busy="true">Loading question...</p>
+    <div id="quiz-content"
+         class="min-h-[300px]"
+         hx-get="{{ url_for('main.get_question_route') }}"
+         hx-trigger="load"
+         hx-swap="innerHTML">
+        <div class="card bg-base-100 shadow-sm">
+            <div class="card-body items-center py-12">
+                <span class="loading loading-spinner loading-lg text-primary"></span>
+                <p class="text-sm opacity-60">Loading question...</p>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}

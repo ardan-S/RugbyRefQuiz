@@ -4,219 +4,267 @@ metadata:
   source: World Rugby Laws 2026
 questions:
 - id: L07-001
-  text: |-
-    If a team gains an advantage following an infringement by their opponents, what may the referee do to keep the game flowing?
+  text: Why does the referee play advantage after an infringement?
   type: factual
-  difficulty: intermediate
+  difficulty: beginner
   options:
-  - Stop play
-  - Award a penalty
-  - Allow play to continue
-  - Award a free-kick
+  - To keep the game flowing when the non-offending team can gain an advantage
+  - To give the offending team a chance to recover
+  - To avoid awarding too many penalties
+  - Because the assistant referee has not yet confirmed the offence
   answers:
-  - Allow play to continue
+  - To keep the game flowing when the non-offending team can gain an advantage
   law_reference: '7'
   tags:
   - advantage
-  - referee
-  explanation: null
+  law_quote: If a team gains an advantage following an infringement by their opponents,
+    the referee may allow play to continue in an effort to keep the game flowing.
+  explanation: Advantage is discretionary - "may allow" - and always belongs to
+    the non-offending team.
   contributor: null
 - id: L07-002
-  text: What types of advantage may be allowed?
+  text: What forms can advantage take?
   type: factual
-  difficulty: intermediate
+  difficulty: beginner
   options:
-  - Tactical
-  - Territorial
-  - Both tactical and territorial
-  - All of the above
+  - Tactical, territorial, or a combination of both
+  - Territorial only
+  - Tactical only
+  - Whatever the non-offending captain requests
   answers:
-  - All of the above
-  law_reference: '7'
+  - Tactical, territorial, or a combination of both
+  law_reference: '7.1'
   tags:
   - advantage
+  law_quote: 'Advantage: may be tactical... may be territorial... may be a combination
+    of tactical and territorial.'
   explanation: null
   contributor: null
 - id: L07-003
-  text: What does a tactical advantage allow?
+  text: What is a TACTICAL advantage?
   type: factual
   difficulty: intermediate
   options:
   - The non-offending team is free to play the ball as they wish
   - Play has moved towards the offending team's dead-ball line
-  - A combination of tactical and territorial advantage
-  - A mere opportunity to gain an advantage
+  - The non-offending team has a penalty in the bank
+  - The offending team is down a player
   answers:
   - The non-offending team is free to play the ball as they wish
-  law_reference: '7'
+  law_reference: 7.1a
   tags:
   - advantage
-  explanation: null
+  law_quote: May be tactical. The non-offending team is free to play the ball as
+    they wish.
+  explanation: Freedom to play as they wish - a clean strike from a scrum, an unpressured
+    pass, a chosen kick.
   contributor: null
 - id: L07-004
-  text: What does a territorial advantage allow?
+  text: What is a TERRITORIAL advantage?
   type: factual
   difficulty: intermediate
   options:
-  - The non-offending team is free to play the ball as they wish
   - Play has moved towards the offending team's dead-ball line
-  - A combination of tactical and territorial advantage
-  - A mere opportunity to gain an advantage
+  - The non-offending team is free to play the ball as they wish
+  - The ball has crossed the half-way line
+  - The non-offending team wins the next set-piece
   answers:
   - Play has moved towards the offending team's dead-ball line
-  law_reference: '7'
+  law_reference: 7.1b
   tags:
   - advantage
+  law_quote: May be territorial. Play has moved towards the offending team's dead-ball
+    line.
   explanation: null
   contributor: null
 - id: L07-005
-  text: What must the advantage be in order to be applied?
-  type: factual
+  text: Blue knock on. Red catch the loose ball but are immediately swallowed up
+    in a tackle with no options. Was that an advantage?
+  type: scenario
   difficulty: intermediate
   options:
-  - A mere opportunity to gain an advantage
-  - Clear and real
-  - Only tactical
-  - Only territorial
+  - No - advantage must be clear and real; a mere opportunity is not sufficient
+  - Yes - Red touched the ball, so advantage is over
+  - Yes - any possession counts as advantage
+  - No - advantage cannot be played after a knock-on
   answers:
-  - Clear and real
-  law_reference: '7'
+  - No - advantage must be clear and real; a mere opportunity is not sufficient
+  law_reference: 7.1d
   tags:
   - advantage
-  explanation: null
+  law_quote: Must be clear and real. A mere opportunity to gain an advantage is
+    not sufficient.
+  explanation: Touching the ball is not gaining an advantage. If nothing comes of
+    it, come back for the scrum.
   contributor: null
 - id: L07-006
-  text: When does advantage end?
+  text: You are playing advantage. When do you stop play and come back for the original
+    infringement?
   type: factual
   difficulty: intermediate
   options:
-  - When the referee deems that the non-offending team has gained an advantage
-  - |-
-    When the referee deems that the non-offending team is unlikely to gain an advantage
-  - When the non-offending team commits an infringement before gaining an advantage
-  - All of the above
+  - When you deem the non-offending team unlikely to gain an advantage
+  - As soon as the non-offending team touches the ball
+  - After exactly two phases
+  - Only if the non-offending captain requests it
   answers:
-  - All of the above
-  law_reference: '7'
+  - When you deem the non-offending team unlikely to gain an advantage
+  law_reference: 7.2b
   tags:
   - advantage
-  explanation: null
+  law_quote: The referee deems that the non-offending team is unlikely to gain an
+    advantage. The referee stops the game and applies the sanction for the infringement
+    from which advantage was being played.
+  explanation: The other ending is the good one - advantage gained, play simply
+    continues (Law 7.2a). There is no fixed phase count; it is your judgement.
   contributor: null
 - id: L07-007
-  text: |-
-    What happens if the non-offending team commits an infringement before they have gained an advantage?
-  type: scenario
-  difficulty: intermediate
-  options:
-  - The game continues
-  - The referee stops the game and applies the sanction for the first infringement
-  - The referee allows play to continue
-  - The referee awards a try
-  answers:
-  - The referee stops the game and applies the sanction for the first infringement
-  law_reference: '7'
-  tags:
-  - advantage
-  explanation: null
-  contributor: null
-- id: L07-008
-  text: |-
-    What happens if the offending team commits a second or subsequent infringement from which no advantage can be gained?
-  type: scenario
-  difficulty: intermediate
-  options:
-  - The game continues
-  - |-
-    The referee allows the captain of the non-offending team to choose the most advantageous sanction
-  - The referee sanctions the first infringement
-  - The referee sanctions the second infringement
-  answers:
-  - |-
-    The referee allows the captain of the non-offending team to choose the most advantageous sanction
-  law_reference: '7'
-  tags:
-  - advantage
-  explanation: null
-  contributor: null
-- id: L07-009
-  text: |-
-    When must advantage not be applied and the referee must blow the whistle immediately?
-  type: factual
-  difficulty: intermediate
-  options:
-  - |-
-    The ball or a player in possession of the ball, touches the referee and an advantage is gained by either side
-  - The ball comes out of either end of the tunnel at a scrum
-  - A scrum is wheeled through more than 90 degrees
-  - All of the above
-  answers:
-  - All of the above
-  law_reference: '7'
-  tags:
-  - advantage
-  - referee
-  explanation: null
-  contributor: null
-- id: L07-010
-  text: The ball comes out of either end of the tunnel at a scrum. Sanction?
-  type: factual
-  difficulty: intermediate
-  options:
-  - Penalty
-  - Free kick
-  - Scrum
-  - Play advantage
-  - Other
-  answers:
-  - Scrum
-  law_reference: '7'
-  tags:
-  - scrum
-  explanation: null
-  contributor: null
-- id: L07-011
-  text: A scrum is wheeled through more than 90 degrees. Can advantage be applied?
-  type: factual
-  difficulty: intermediate
-  options:
-  - 'Yes'
-  - 'No'
-  answers:
-  - 'No'
-  law_reference: '7'
-  tags:
-  - scrum
-  - advantage
-  explanation: null
-  contributor: null
-- id: L07-012
-  text: |-
-    A quick throw, free-kick or penalty is taken incorrectly. Can advantage be applied?
+  text: While you play advantage to Red, Red knock on before gaining any advantage.
+    What do you award?
   type: sanction
   difficulty: intermediate
   options:
-  - 'Yes'
-  - 'No'
+  - The sanction for the FIRST infringement (Blue's offence)
+  - A scrum to Blue for Red's knock-on
+  - The captains toss for possession
+  - Play on - the infringements cancel out
   answers:
-  - 'No'
-  law_reference: '7'
+  - The sanction for the FIRST infringement (Blue's offence)
+  law_reference: 7.2c
   tags:
-  - kick
-  - penalty
   - advantage
-  explanation: null
+  law_quote: The non-offending team commits an infringement before they have gained
+    an advantage. The referee stops the game and applies the sanction for the first
+    infringement. If either or both infringements are for foul play, the referee
+    applies the appropriate sanction(s) for the offence(s).
+  explanation: First offence wins - unless foul play is involved, in which case
+    every foul play act gets its appropriate sanction.
   contributor: null
-- id: L07-013
-  text: Can advantage be applied if it is suspected that a player is injured?
+- id: L07-008
+  text: While you play advantage, the offending team commits a second infringement
+    from which no advantage can be gained. What happens?
+  type: sanction
+  difficulty: advanced
+  options:
+  - The non-offending captain chooses the most advantageous sanction
+  - You sanction only the first infringement
+  - You sanction only the second infringement
+  - The sanctions are combined into a penalty 10 metres further upfield
+  answers:
+  - The non-offending captain chooses the most advantageous sanction
+  law_reference: 7.2d
+  tags:
+  - advantage
+  - captain
+  law_quote: The offending team commits a second or subsequent infringement from
+    which no advantage can be gained. The referee stops play and allows the captain
+    of the non-offending team to choose the most advantageous sanction.
+  explanation: Give the captain the options clearly - e.g. "penalty here, or the
+    earlier free-kick 20 metres back".
+  contributor: null
+- id: L07-009
+  text: In which of these situations MAY advantage be played?
   type: factual
   difficulty: intermediate
   options:
-  - 'Yes'
-  - 'No'
+  - A knock-on in open play
+  - The ball comes out of either end of the tunnel at a scrum
+  - A scrum is wheeled through more than 90 degrees
+  - A player in the scrum is lifted off the ground
   answers:
-  - 'No'
-  law_reference: '7'
+  - A knock-on in open play
+  law_reference: '7.3'
   tags:
   - advantage
+  - scrum
+  law_quote: 'Advantage must not be applied and the referee must blow the whistle
+    immediately when: the ball comes out of either end of the tunnel at a scrum;
+    a scrum is wheeled through more than 90 degrees; a player in a scrum is lifted
+    or forced upwards...'
+  explanation: The no-advantage list is mostly about scrum safety and dead-ball
+    situations. Ordinary handling errors are prime advantage material.
+  contributor: null
+- id: L07-010
+  text: At a scrum, the ball comes straight out of the end of the tunnel. What do
+    you do?
+  type: procedural
+  difficulty: intermediate
+  options:
+  - Blow the whistle immediately - advantage must not be applied - and reset the
+    scrum
+  - Play advantage to the team that hooked it
+  - Award a free-kick against the throwing team
+  - Let play continue if a scrum-half can reach it
+  answers:
+  - Blow the whistle immediately - advantage must not be applied - and reset the
+    scrum
+  law_reference: 7.3b
+  tags:
+  - scrum
+  - advantage
+  law_quote: 'Advantage must not be applied and the referee must blow the whistle
+    immediately when: the ball comes out of either end of the tunnel at a scrum.'
   explanation: null
+  contributor: null
+- id: L07-011
+  text: A scrum wheels through more than 90 degrees. May you play advantage?
+  type: factual
+  difficulty: intermediate
+  options:
+  - No - blow the whistle immediately
+  - Yes, if the ball is at the number 8's feet
+  - Yes, territorial advantage only
+  - Only if neither team caused the wheel deliberately
+  answers:
+  - No - blow the whistle immediately
+  law_reference: 7.3c
+  tags:
+  - scrum
+  - advantage
+  law_quote: 'Advantage must not be applied and the referee must blow the whistle
+    immediately when: a scrum is wheeled through more than 90 degrees.'
+  explanation: Same for a player lifted or forced upwards in the scrum - these are
+    safety stops, so the whistle is immediate.
+  contributor: null
+- id: L07-012
+  text: A penalty is taken incorrectly. May you play advantage?
+  type: factual
+  difficulty: intermediate
+  options:
+  - No - blow the whistle immediately
+  - Yes, if the non-offending team gains ground
+  - Yes, this is normal advantage
+  - Only at a free-kick, not a penalty
+  answers:
+  - No - blow the whistle immediately
+  law_reference: 7.3e
+  tags:
+  - penalty
+  - advantage
+  law_quote: 'Advantage must not be applied and the referee must blow the whistle
+    immediately when: a quick throw, free-kick or penalty is taken incorrectly.'
+  explanation: Incorrectly taken restarts (quick throw, free-kick, penalty) are
+    all whistled immediately and retaken or sanctioned as law provides.
+  contributor: null
+- id: L07-013
+  text: You suspect a player has been seriously injured while an advantage is developing.
+    What do you do?
+  type: procedural
+  difficulty: beginner
+  options:
+  - Blow the whistle immediately - advantage must not be applied
+  - Play the advantage to its conclusion first
+  - Wait for the medics to signal
+  - Ask the captain whether to stop
+  answers:
+  - Blow the whistle immediately - advantage must not be applied
+  law_reference: 7.3h
+  tags:
+  - advantage
+  - injury
+  law_quote: 'Advantage must not be applied and the referee must blow the whistle
+    immediately when: it would be dangerous to let play continue; it is suspected
+    that a player is seriously injured.'
+  explanation: Safety beats everything, including a certain try. The bar is SERIOUS
+    injury - routine knocks are managed at the next natural break.
   contributor: null

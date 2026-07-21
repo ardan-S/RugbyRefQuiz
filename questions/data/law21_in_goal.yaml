@@ -5,63 +5,67 @@ metadata:
 
 questions:
   - id: L21-001
-    text: "How can the ball be grounded in in-goal by holding it?"
+    text: "How is the ball grounded in in-goal while holding it?"
     type: factual
     difficulty: beginner
     options:
-      - "By touching the ground with it while holding it"
-      - "By placing it on the ground"
-      - "By pressing it into the ground"
-      - "By rolling it on the ground"
-    answers: ["By touching the ground with it while holding it"]
-    law_reference: "21.1a"
-    tags: ["grounding", "in-goal"]
-    explanation: "Law 21.1a: The ball can be grounded by holding it and touching the ground with it."
+      - "By holding it and touching the ground with it"
+      - "It must be pressed down with downward force"
+      - "It must be placed and released"
+      - "Holding grounding is not permitted"
+    answers: ["By holding it and touching the ground with it"]
+    law_reference: 21.1a
+    tags: ["in-goal", "grounding"]
+    law_quote: "The ball can be grounded in in-goal: by holding it and touching the ground with it."
+    explanation: "No downward pressure needed when held - the merest touch to the ground scores."
     contributor: null
 
   - id: L21-002
-    text: "How can the ball be grounded without holding it?"
+    text: "How is a LOOSE ball grounded in in-goal?"
     type: factual
     difficulty: intermediate
     options:
-      - "By pressing down on it with hand, arm, or front of body from waist to neck"
-      - "By kicking it into the ground"
+      - "By pressing down on it with hand(s), arm(s), or the front of the body from waist to neck"
+      - "By any body part touching it"
       - "By standing on it"
-      - "By rolling over it"
-    answers: ["By pressing down on it with hand, arm, or front of body from waist to neck"]
-    law_reference: "21.1b"
-    tags: ["grounding", "in-goal"]
-    explanation: "Law 21.1b: By pressing down on ball with hand/hands, arm/arms, or front of body from waist to neck."
+      - "By falling on it with the legs"
+    answers: ["By pressing down on it with hand(s), arm(s), or the front of the body from waist to neck"]
+    law_reference: 21.1b
+    tags: ["in-goal", "grounding"]
+    law_quote: "By pressing down on it with a hand or hands, arm or arms, or the front of the player's body from waist to neck."
+    explanation: "A loose ball needs downward PRESSURE from the qualifying areas - legs and back don't count."
     contributor: null
 
   - id: L21-003
-    text: "Is picking up the ball in in-goal considered grounding it?"
+    text: "Is picking the ball up in in-goal a grounding?"
     type: factual
     difficulty: intermediate
     options:
-      - "No"
-      - "Yes"
-      - "Only if done with one hand"
-      - "Only if in own in-goal"
-    answers: ["No"]
+      - "No - and the player may pick it up and ground it elsewhere in in-goal"
+      - "Yes - possession in in-goal is a grounding"
+      - "Yes, for defenders only"
+      - "Only if picked up cleanly"
+    answers: ["No - and the player may pick it up and ground it elsewhere in in-goal"]
     law_reference: "21.2"
-    tags: ["grounding", "in-goal"]
-    explanation: "Law 21.2: Picking up a ball is not grounding it. A player may pick it up and ground it elsewhere in in-goal."
+    tags: ["in-goal", "grounding"]
+    law_quote: "Picking up a ball is not grounding it. A player may pick up the ball in in-goal and ground it elsewhere in in-goal."
+    explanation: "An attacker can pick up and run closer to the posts before dotting down - useful for the conversion angle."
     contributor: null
 
   - id: L21-004
-    text: "An attacking player grounds the ball in in-goal. What is scored?"
+    text: "An attacking player grounds the ball in the opponents' in-goal. What is the result?"
     type: factual
     difficulty: beginner
     options:
       - "A try"
-      - "A touchdown"
-      - "A goal"
-      - "Nothing yet"
+      - "A touch down"
+      - "Five points only if under the posts"
+      - "Play continues until the referee whistles"
     answers: ["A try"]
     law_reference: "21.3"
-    tags: ["try", "grounding"]
-    explanation: "Law 21.3: An attacking player grounding the ball in in-goal scores a try."
+    tags: ["in-goal", "try"]
+    law_quote: "An attacking player grounding the ball in in-goal scores a try."
+    explanation: null
     contributor: null
 
   - id: L21-005
@@ -71,235 +75,251 @@ questions:
     options:
       - "A touch down"
       - "A try to the attackers"
-      - "A 22-metre drop-out"
-      - "A scrum to the attackers"
+      - "A 5-metre scrum automatically"
+      - "A 22-metre drop-out automatically"
     answers: ["A touch down"]
     law_reference: "21.6"
-    tags: ["touchdown", "grounding"]
-    explanation: "Law 21.6: A defending player grounding the ball in in-goal results in a touch down."
+    tags: ["in-goal", "grounding"]
+    law_quote: "A defending player grounding the ball in in-goal results in a touch down."
+    explanation: "The restart then depends on how the ball got there - who took or kicked it in decides between 5m scrum, drop-out variants (Laws 12.11-12.12, 19.1)."
     contributor: null
 
   - id: L21-006
-    text: "An attacking player grounds the ball but simultaneously touches the touch-in-goal line. What is the decision?"
-    type: factual
+    text: "Diving for the corner, Red 11 grounds the ball and simultaneously touches the touch-in-goal line. What do you award?"
+    type: scenario
     difficulty: intermediate
     options:
       - "22-metre drop-out to the defending team"
       - "Try"
-      - "Lineout"
-      - "Scrum 5 metres out"
+      - "Lineout to the defending team"
+      - "5-metre scrum to Red"
     answers: ["22-metre drop-out to the defending team"]
     law_reference: "21.4"
-    tags: ["grounding", "touch-in-goal"]
-    explanation: "Law 21.4: If attacker grounds ball but touches touch-in-goal line or dead-ball line, 22-metre drop-out."
+    tags: ["in-goal", "grounding", "touch-in-goal"]
+    law_quote: "When an attacking player holding the ball grounds the ball in in-goal and simultaneously makes contact with the touch-in-goal line or the dead-ball line (or anywhere beyond either), a 22-metre drop-out is awarded to the defending team."
+    explanation: "Simultaneous grounding-and-touch-in-goal is no try - the corner-flag dive must be clean."
     contributor: null
 
   - id: L21-007
-    text: "An attacking ball-carrier grounds the ball but simultaneously touches the touchline. What is the decision?"
-    type: factual
+    text: "Red 11 grounds the ball in in-goal but is simultaneously touching the TOUCHLINE (before the try line). What do you award?"
+    type: scenario
     difficulty: intermediate
     options:
-      - "Lineout to the opposition"
+      - "Lineout to the opposition - the ball is in touch in the field of play"
       - "Try"
       - "22-metre drop-out"
-      - "Scrum 5 metres out"
-    answers: ["Lineout to the opposition"]
+      - "5-metre scrum"
+    answers: ["Lineout to the opposition - the ball is in touch in the field of play"]
     law_reference: "21.5"
-    tags: ["grounding", "touch"]
-    explanation: "Law 21.5: If ball-carrier touches touchline simultaneously, ball is in touch in field of play - lineout to opposition."
+    tags: ["in-goal", "touch"]
+    law_quote: "When the ball-carrier grounds the ball in in-goal and simultaneously makes contact with the touch line (or the ground beyond), the ball is in touch in the field of play and a lineout is awarded to the opposition."
+    explanation: "Contact with the TOUCHLINE means the player went out before in-goal - lineout, not drop-out."
     contributor: null
 
   - id: L21-008
-    text: "A tackled player has momentum that carries them into their own in-goal. Can they make a touch down?"
-    type: factual
+    text: "Blue 15 is tackled just short of their own line but momentum slides them into their own in-goal, where they ground the ball. What is the ruling?"
+    type: scenario
     difficulty: intermediate
     options:
-      - "Yes"
-      - "No - try to opposition"
-      - "Only if tackled before the try line"
-      - "Only with referee permission"
-    answers: ["Yes"]
+      - "Touch down - a tackled player carried in by momentum may ground the ball"
+      - "Try to Red - the tackle was completed in the field of play"
+      - "Penalty to Red - double movement"
+      - "5-metre scrum to Red"
+    answers: ["Touch down - a tackled player carried in by momentum may ground the ball"]
     law_reference: "21.7"
-    tags: ["touchdown", "momentum"]
-    explanation: "Law 21.7: If a tackled player has momentum that carries them into their own in-goal, they can make a touch down."
+    tags: ["in-goal", "tackle"]
+    law_quote: "If a tackled player has momentum that carries them into their own in-goal area, they can make a touch down."
+    explanation: "The defensive mirror of the momentum try (Law 8.2c)."
     contributor: null
 
   - id: L21-009
-    text: "A tackled player near their own try line reaches out to ground the ball for a touch down. Is this permitted?"
+    text: "Blue 9 is tackled just outside their own in-goal and immediately reaches back to ground the ball over the line. Legal?"
     type: factual
     difficulty: intermediate
     options:
-      - "Yes, if done immediately"
-      - "No, they must release the ball"
-      - "Only in the final 5 minutes"
-      - "Only if no defenders are near"
-    answers: ["Yes, if done immediately"]
+      - "Yes - provided it is done immediately"
+      - "No - a tackled player may never move the ball"
+      - "Only if no attacker is contesting"
+      - "Only from a double movement"
+    answers: ["Yes - provided it is done immediately"]
     law_reference: "21.8"
-    tags: ["touchdown", "reaching"]
-    explanation: "Law 21.8: A tackled player near their try line may reach out and ground the ball for a touch down if done immediately."
+    tags: ["in-goal", "tackle"]
+    law_quote: "A tackled player near their own try line may reach out and ground the ball in in-goal to make a touch down, provided it is done immediately. Sanction: Penalty."
+    explanation: "Immediate is the test - hesitation converts this into holding on."
     contributor: null
 
   - id: L21-010
-    text: "A player is in touch but not holding the ball. Can they ground the ball in in-goal?"
-    type: factual
+    text: "Standing in touch-in-goal, Red 14 presses down a loose ball sitting in the opponents' in-goal. What is the ruling?"
+    type: scenario
     difficulty: advanced
     options:
-      - "Yes"
-      - "No"
-      - "Only for a touch down"
-      - "Only with one hand"
-    answers: ["Yes"]
+      - "Try - a player in touch may ground a ball they are not holding"
+      - "No try - Red 14 was out of play"
+      - "22-metre drop-out"
+      - "5-metre scrum to Red"
+    answers: ["Try - a player in touch may ground a ball they are not holding"]
     law_reference: "21.9"
-    tags: ["grounding", "touch"]
-    explanation: "Law 21.9: A player in touch or touch-in-goal can score a try or make a touch down by grounding the ball in in-goal if not holding it."
+    tags: ["in-goal", "grounding", "touch-in-goal"]
+    law_quote: "If a player is in touch or touch-in-goal, they can make a touch down or score a try by grounding the ball in in-goal provided they are not holding the ball."
+    explanation: "Same rule as Law 8.2e - not holding it is what keeps the grounding legal."
     contributor: null
 
   - id: L21-011
-    text: "A defender kicks the ball from an attacker who is reaching out to score a try. What is the sanction?"
+    text: "As Red 8 reaches out to ground for a try, Blue 15 kicks the ball out of Red 8's grasp. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Try awarded"
-      - "Play on - legal"
-      - "Free-kick"
-    answers: ["Penalty"]
+      - "Penalty to Red - and consider whether it prevented a probable try"
+      - "Play on - the ball was contestable"
+      - "5-metre scrum to Red"
+      - "Drop-out to Blue"
+    answers: ["Penalty to Red - and consider whether it prevented a probable try"]
     law_reference: "21.10"
-    tags: ["grounding", "foul-play", "sanction"]
-    explanation: "Law 21.10: Defenders may knock or pull ball away but must not kick or attempt to kick the ball. Sanction: Penalty."
+    tags: ["in-goal", "sanction"]
+    law_quote: "If a tackled player is in the act of reaching out to ground the ball for a try or touch down, defending players may knock the ball backwards, or pull the ball from the player's possession but must not kick or attempt to kick the ball. Sanction: Penalty."
+    explanation: "Knocking it backwards or ripping it is a legal save; kicking is not - and if the kick prevented a probable try, that's a penalty try conversation."
     contributor: null
 
   - id: L21-012
-    text: "A team kicks the ball from the field of play into touch-in-goal. What options does the defending team have?"
+    text: "Red kick from open play through Blue's in-goal and the ball rolls over the dead-ball line untouched. What are Blue's options?"
     type: factual
     difficulty: advanced
     options:
-      - "22-metre drop-out or scrum where ball was kicked"
-      - "22-metre drop-out only"
-      - "Try line drop-out"
-      - "Scrum 5 metres out"
-    answers: ["22-metre drop-out or scrum where ball was kicked"]
+      - "A drop-out anywhere on or behind the 22, OR a scrum where the ball was kicked"
+      - "A 22-metre drop-out only"
+      - "A try-line drop-out"
+      - "A 5-metre scrum"
+    answers: ["A drop-out anywhere on or behind the 22, OR a scrum where the ball was kicked"]
     law_reference: "21.11"
-    tags: ["in-goal", "kick-dead"]
-    explanation: "Law 21.11: If kicked dead through in-goal, defenders can choose 22-metre drop-out or scrum where ball was kicked."
+    tags: ["in-goal", "kick"]
+    law_quote: "If a team kicks the ball through their opponents' in-goal from the field of play into touch-in-goal or on or over the dead-ball line, the defending team can choose: to have a drop-out anywhere on or behind the 22-metre line; or to have a scrum at the place where the ball was kicked."
+    explanation: "The scrum-back option punishes aimless deep kicks - the defenders can take play all the way back to where the kick was made."
     contributor: null
 
   - id: L21-013
-    text: "An unsuccessful penalty goal attempt goes into in-goal and is made dead. What is the restart?"
+    text: "A missed penalty at goal rolls over the dead-ball line. What is the restart?"
     type: factual
     difficulty: intermediate
     options:
-      - "22-metre drop-out"
-      - "Try line drop-out"
-      - "Scrum where penalty was taken"
-      - "Scrum 5 metres out"
-    answers: ["22-metre drop-out"]
+      - "22-metre drop-out - no scrum-back option for missed shots at goal"
+      - "Scrum where the kick was taken"
+      - "Blue choose drop-out or scrum-back"
+      - "Try-line drop-out"
+    answers: ["22-metre drop-out - no scrum-back option for missed shots at goal"]
     law_reference: "21.11"
-    tags: ["penalty-goal", "22-drop-out"]
-    explanation: "Law 21.11: Exception for unsuccessful penalty or drop goal attempt - 22-metre drop-out."
+    tags: ["in-goal", "penalty", "22-drop-out"]
+    law_quote: "Exception: An unsuccessful kick at goal or attempted dropped goal. In these cases, the defending team restarts with a 22-metre drop-out."
+    explanation: "Missed shots at goal never trigger the scrum-back choice."
     contributor: null
 
   - id: L21-014
-    text: "If any part of a defending player is in in-goal, where is that player considered to be?"
+    text: "When is a defending player considered to be 'in in-goal'?"
     type: factual
     difficulty: intermediate
     options:
-      - "In in-goal (unless also in touch or on/over dead-ball line)"
-      - "In the field of play"
-      - "Depends on where feet are"
-      - "Depends on where ball is"
-    answers: ["In in-goal (unless also in touch or on/over dead-ball line)"]
+      - "When any part of them is in in-goal - provided they are not also in touch or on/over the dead-ball line"
+      - "Only when both feet are in in-goal"
+      - "Only when they are behind the ball"
+      - "Whenever they are behind the try line, even in touch-in-goal"
+    answers: ["When any part of them is in in-goal - provided they are not also in touch or on/over the dead-ball line"]
     law_reference: "21.12"
-    tags: ["in-goal", "position"]
-    explanation: "Law 21.12: If any part of a defending player is in in-goal, they are in in-goal (unless also in touch or on/over dead-ball line)."
+    tags: ["in-goal"]
+    law_quote: "If any part of a defending player is in in-goal, that player is considered to be in in-goal, provided they are not also in touch or on or over the dead-ball line."
+    explanation: "One foot back in in-goal is enough - this matters for who 'took the ball in'."
     contributor: null
 
   - id: L21-015
-    text: "A player in in-goal catches a ball that is still in the field of play. What happens?"
-    type: factual
+    text: "Blue 15, standing with a foot in in-goal, catches a ball that is still in the field of play. What is the ruling?"
+    type: scenario
     difficulty: advanced
     options:
-      - "The player has taken the ball into in-goal"
-      - "Play continues in the field of play"
-      - "Try line drop-out"
+      - "Blue 15 has taken the ball into in-goal"
+      - "The ball stays 'in the field of play' where it was"
+      - "The ball is automatically dead"
       - "22-metre drop-out"
-    answers: ["The player has taken the ball into in-goal"]
+    answers: ["Blue 15 has taken the ball into in-goal"]
     law_reference: "21.13"
-    tags: ["in-goal", "carrying-in"]
-    explanation: "Law 21.13: If a player in in-goal catches or picks up a ball still in the field of play, they have taken it into in-goal."
+    tags: ["in-goal"]
+    law_quote: "If a player, who is in in-goal, catches or picks up a ball that is still in the field of play, that player has taken the ball into in-goal."
+    explanation: "Critical for the restart - if Blue then ground it, Blue carried it in, so it's an attacking 5m scrum (Law 19.1), not a drop-out."
     contributor: null
 
   - id: L21-016
-    text: "A player on the dead-ball line picks up a ball within in-goal. What is the result?"
-    type: factual
+    text: "Standing on the dead-ball line, Blue 15 picks up a ball rolling in in-goal. What is the ruling?"
+    type: scenario
     difficulty: advanced
     options:
-      - "The ball is dead"
-      - "Try line drop-out"
-      - "Play continues"
-      - "22-metre drop-out"
-    answers: ["The ball is dead"]
+      - "Blue 15 has made the ball dead"
+      - "Blue 15 has taken the ball into touch-in-goal"
+      - "Play continues - the ball was in in-goal"
+      - "Touch down to Blue"
+    answers: ["Blue 15 has made the ball dead"]
     law_reference: "21.14"
-    tags: ["in-goal", "dead-ball-line"]
-    explanation: "Law 21.14: If a player on/beyond the dead-ball line picks up ball within in-goal, they have made the ball dead."
+    tags: ["in-goal", "grounding"]
+    law_quote: "If a player who is on or beyond the dead-ball-line, or who is in touch-in-goal, catches or picks up a ball within in-goal, that player has made the ball dead."
+    explanation: "A defender straddling the dead-ball line kills the ball by touching it - then apply the appropriate restart for how the ball entered in-goal."
     contributor: null
 
   - id: L21-017
-    text: "The ball or ball-carrier touches a corner flag post. What happens (if not otherwise in touch)?"
+    text: "The ball-carrier brushes the corner flag post while diving to score, without touching the touch-in-goal line. What is the ruling?"
     type: factual
     difficulty: intermediate
     options:
-      - "Play continues unless ball is grounded against the post"
-      - "Ball is in touch"
-      - "Lineout awarded"
-      - "Try is awarded"
-    answers: ["Play continues unless ball is grounded against the post"]
+      - "Play continues - unless the ball is grounded against the post itself"
+      - "The ball is in touch-in-goal"
+      - "22-metre drop-out"
+      - "The try is automatically disallowed"
+    answers: ["Play continues - unless the ball is grounded against the post itself"]
     law_reference: "21.15"
-    tags: ["corner-flag", "in-goal"]
-    explanation: "Law 21.15: If ball or carrier touches corner post without being in touch, play continues unless ball is grounded against it."
+    tags: ["in-goal", "flag-posts"]
+    law_quote: "If the ball or ball-carrier touches a corner flag or corner flag post without otherwise being in touch or touch-in-goal, play continues unless the ball is grounded against the post."
+    explanation: "The corner post is no longer 'touch' - clattering the flag doesn't kill the try."
     contributor: null
 
   - id: L21-018
-    text: "A ball-carrier is held up in in-goal. What is the decision?"
+    text: "The ball-carrier is held up in in-goal, unable to ground or play the ball. What happens?"
     type: factual
     difficulty: beginner
     options:
-      - "Ball is dead - try line drop-out or 5m scrum depending on how ball entered"
-      - "Try is awarded"
-      - "22-metre drop-out"
-      - "Scrum 5 metres out to attacking team"
-    answers: ["Ball is dead - try line drop-out or 5m scrum depending on how ball entered"]
+      - "The ball is dead - restart with try-line drop-out or 5m scrum depending on how the ball entered in-goal"
+      - "A try is awarded for positive intent"
+      - "A 22-metre drop-out always"
+      - "Play continues until the maul collapses"
+    answers: ["The ball is dead - restart with try-line drop-out or 5m scrum depending on how the ball entered in-goal"]
     law_reference: "21.16"
-    tags: ["held-up", "in-goal"]
-    explanation: "Law 21.16: When ball-carrier is held up in-goal, ball is dead. Restart depends on how ball entered in-goal."
+    tags: ["in-goal"]
+    law_quote: "When a player carrying the ball is held up in-goal, so that the player cannot ground the ball or play the ball, the ball is dead. Play restarts with a try line drop-out or a 5m scrum, depending on how the ball entered in-goal."
+    explanation: "Attack carried it in and got held: try-line drop-out (Law 12.12a). Defence carried it back in: attacking 5m scrum (Law 19.1)."
     contributor: null
 
   - id: L21-019
-    text: "There is doubt about which team first grounded the ball in in-goal. What happens?"
-    type: factual
+    text: "Bodies everywhere over the line and you cannot tell which team grounded first. What do you award?"
+    type: sanction
     difficulty: intermediate
     options:
-      - "5-metre scrum with attacking team throwing in"
-      - "22-metre drop-out"
-      - "Try line drop-out"
-      - "Penalty to attacking team"
-    answers: ["5-metre scrum with attacking team throwing in"]
+      - "5-metre scrum, attacking team's throw, in line with where the ball was grounded"
+      - "A try - benefit of the doubt to the attack"
+      - "A touch down - benefit to the defence"
+      - "Try-line drop-out"
+    answers: ["5-metre scrum, attacking team's throw, in line with where the ball was grounded"]
     law_reference: "21.17"
-    tags: ["doubt", "grounding", "scrum"]
-    explanation: "Law 21.17: If doubt about which team grounded first, 5-metre scrum in line with grounding, attacking team throws in."
+    tags: ["in-goal", "grounding"]
+    law_quote: "If there is doubt about which team first grounded the ball in in-goal, play is restarted with a five-metre scrum, in line with the place where the ball was grounded. The attacking team throws in."
+    explanation: "Genuine doubt = attacking scrum. With a TMO, get the answer instead; without one, this is your honest fallback."
     contributor: null
 
   - id: L21-020
-    text: "A tackled player delays reaching out to ground the ball in their own in-goal for a touch down. What is the sanction?"
+    text: "A tackled Blue player pauses, then reaches out to make a touch down in their own in-goal. What do you award?"
     type: sanction
     difficulty: advanced
     options:
-      - "Penalty"
-      - "Try to opposition"
+      - "Penalty to Red - the reach must be immediate"
+      - "Touch down - the grounding stands"
       - "Play on"
-      - "Free-kick"
-    answers: ["Penalty"]
+      - "5-metre scrum to Red"
+    answers: ["Penalty to Red - the reach must be immediate"]
     law_reference: "21.8"
-    tags: ["touchdown", "delay", "sanction"]
-    explanation: "Law 21.8: Reaching out for touch down must be done immediately. Sanction if delayed: Penalty."
+    tags: ["in-goal", "tackle", "sanction"]
+    law_quote: "A tackled player near their own try line may reach out and ground the ball in in-goal to make a touch down, provided it is done immediately. Sanction: Penalty."
+    explanation: "Delay converts the privilege into holding on - penalty 5m from the try line."
     contributor: null

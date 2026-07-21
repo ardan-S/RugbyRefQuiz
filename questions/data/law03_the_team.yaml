@@ -4,81 +4,84 @@ metadata:
   source: World Rugby Laws 2026
 questions:
 - id: L03-001
-  text: |-
-    A team has too many players in the playing area during play. The referee orders the captain to reduce the number of players. Sanction:
+  text: Blue object that Red have 16 players in the playing area. The objection
+    is upheld. What do you award?
   type: sanction
   difficulty: intermediate
   options:
-  - Penalty
-  - Free kick
-  - Scrum
-  - Play advantage
-  - Other
+  - Penalty to Blue, and Red's captain must reduce the number
+  - Free-kick to Blue, and Red's captain must reduce the number
+  - No sanction - Red simply remove a player
+  - Scrum to Blue at the place of the objection
   answers:
-  - Penalty
-  law_reference: '3'
+  - Penalty to Blue, and Red's captain must reduce the number
+  law_reference: '3.3'
   tags:
-  - referee
-  - captain
   - sanction
-  explanation: null
+  - captain
+  law_quote: 'If a team has too many players, the referee orders the captain of
+    that team to reduce the number appropriately. The score at the time of the objection
+    remains unaltered. Sanction: Penalty.'
+  explanation: Two parts to remember - it is a penalty offence, AND any points
+    already scored stand.
   contributor: null
 - id: L03-002
-  text: |-
-    A team has too many players in the playing area during play. The referee orders the captain to reduce the number of players. Adjustment to the score:
-  type: sanction
+  text: A team is found to have had too many players on the field. What happens
+    to points they scored while over-manned?
+  type: factual
   difficulty: intermediate
   options:
-  - Reduced by a try (5 pts)
-  - Reduced by a penalty (3 pts)
-  - No change
-  - Reduced by a conversion (2 pts)
+  - The score is unaltered
+  - Tries scored in that period are disallowed
+  - The referee decides how many points to remove
+  - The match is forfeited
   answers:
-  - No change
-  law_reference: '3'
+  - The score is unaltered
+  law_reference: '3.3'
   tags:
-  - referee
   - captain
-  - sanction
-  explanation: null
+  law_quote: The score at the time of the objection remains unaltered.
+  explanation: The remedy is the penalty and correcting the numbers - not rewriting
+    the scoreboard.
   contributor: null
 - id: L03-003
-  text: |-
-    A player or replacement rejoins the match without the referee's permission. The referee believes the player did so to gain an advantage. Sanction:
+  text: A replaced player rejoins the match without your permission, and you believe
+    they did so to gain an advantage. What do you award?
   type: sanction
   difficulty: intermediate
   options:
-  - Penalty
-  - Free kick
-  - Scrum
-  - Play advantage
-  - Other
+  - Penalty - the player is guilty of misconduct
+  - Free-kick
+  - Scrum to the opposition
+  - No sanction, but the player must leave again
   answers:
-  - Penalty
-  law_reference: '3'
+  - Penalty - the player is guilty of misconduct
+  law_reference: '3.7'
   tags:
-  - advantage
-  - replacement
-  - referee
   - sanction
-  explanation: null
+  - replacement
+  law_quote: 'If a player re-joins or a replacement joins the match without the
+    referee''s permission and the referee believes the player did so to gain an advantage,
+    the player is guilty of misconduct. Sanction: Penalty.'
+  explanation: The advantage-seeking element is what makes it misconduct - an innocent
+    miscommunication is normally managed with a word rather than a whistle.
   contributor: null
 - id: L03-004
-  text: How many players can each team have in the playing area during play?
+  text: What is the maximum number of players each team may have in the playing
+    area during play?
   type: factual
-  difficulty: advanced
+  difficulty: beginner
   options:
   - '15'
+  - '13'
   - '16'
-  - '17'
-  - '18'
-  - '19'
-  - '20'
+  - '23'
   answers:
   - '15'
-  law_reference: '3'
+  law_reference: '3.1'
   tags: []
-  explanation: null
+  law_quote: Each team has no more than 15 players in the playing area during play.
+  explanation: The matchday squad may be up to 23, but only 15 per team on the field.
   contributor: null
 - id: L03-005
   text: Who can authorise matches to be played with fewer than 15 players in each
@@ -87,609 +90,675 @@ questions:
   difficulty: intermediate
   options:
   - The match organiser
-  - The governing body
   - The referee
   - World Rugby
+  - The two captains, by agreement
   answers:
   - The match organiser
-  law_reference: '3'
+  law_reference: '3.2'
   tags: []
+  law_quote: A match organiser may authorise matches to be played with fewer than
+    15 players in each team.
   explanation: null
   contributor: null
 - id: L03-006
-  text: Number of replacements for international matches?
+  text: How many replacements may a union nominate for an international match?
   type: factual
-  difficulty: advanced
+  difficulty: beginner
   options:
-  - '6'
-  - '7'
-  - '8'
-  - '14'
-  - '10'
-  - '12'
+  - Up to 8
+  - Up to 7
+  - Up to 6
+  - Up to 10
   answers:
-  - '8'
-  law_reference: '3'
+  - Up to 8
+  law_reference: '3.4'
   tags:
   - replacement
+  law_quote: For international matches, a union may nominate up to eight replacements.
   explanation: null
   contributor: null
 - id: L03-007
-  text: |-
-    For non international matches, who decides the number of replacements (to a maximum of eight)?
+  text: For non-international matches, who decides how many replacements may be
+    nominated (up to the maximum of eight)?
   type: factual
   difficulty: intermediate
   options:
   - The match organiser
-  - The governing body
   - The referee
   - World Rugby
+  - The home team
   answers:
   - The match organiser
-  law_reference: '3'
+  law_reference: '3.5'
   tags:
   - replacement
+  law_quote: For other matches, the match organiser decides how many replacements
+    may be nominated, up to a maximum of eight.
   explanation: null
   contributor: null
 - id: L03-008
-  text: Can replacements be made if the ball is not dead?
-  type: factual
-  difficulty: intermediate
+  text: When may replacements be made?
+  type: procedural
+  difficulty: beginner
   options:
-  - 'Yes'
-  - 'No'
+  - Only when the ball is dead, and only with the referee's permission
+  - At any stoppage, without needing permission
+  - Whenever the ball is dead, no permission needed
+  - Only at half-time or after a score
   answers:
-  - 'No'
-  law_reference: '3'
-  tags:
-  - replacement
-  explanation: null
-  contributor: null
-- id: L03-009
-  text: Can replacements be made without the permission of the referee?
-  type: factual
-  difficulty: intermediate
-  options:
-  - 'Yes'
-  - 'No'
-  answers:
-  - 'No'
-  law_reference: '3'
+  - Only when the ball is dead, and only with the referee's permission
+  law_reference: '3.6'
   tags:
   - replacement
   - referee
-  explanation: null
+  law_quote: Replacements are made only when the ball is dead and only with the
+    permission of the referee.
+  explanation: In practice this is usually managed by the fourth official or assistant,
+    but the authority is the referee's.
   contributor: null
 - id: L03-010
-  text: |-
-    What is the minimum number of front row players required for a squad size of 15 or fewer?
+  text: What is the minimum number of front-row players required in a squad of 15
+    or fewer?
   type: factual
   difficulty: advanced
   options:
-  - '1'
-  - '2'
   - '3'
   - '4'
   - '5'
   - '6'
   answers:
   - '3'
-  law_reference: '3'
+  law_reference: '3.8'
   tags:
   - front-row
-  explanation: null
+  law_quote: 'Front-row table (Law 3.8): squad of 15 or fewer - 3 front-row players;
+    16-18 - 4; 19-22 - 5; 23 - 6.'
+  explanation: The ladder is worth memorising as a block - 3, 4, 5, 6 front-rowers
+    as the squad grows through 15, 16-18, 19-22 and 23.
   contributor: null
 - id: L03-011
-  text: |-
-    What is the minimum number of front row players required for a squad size of 16, 17 or 18?
+  text: What is the minimum number of front-row players required in a squad of 16,
+    17 or 18?
   type: factual
   difficulty: advanced
   options:
-  - '1'
-  - '2'
-  - '3'
   - '4'
+  - '3'
   - '5'
   - '6'
   answers:
   - '4'
-  law_reference: '3'
+  law_reference: '3.8'
   tags:
   - front-row
-  explanation: null
+  law_quote: 'Front-row table (Law 3.8): squad of 15 or fewer - 3 front-row players;
+    16-18 - 4; 19-22 - 5; 23 - 6.'
+  explanation: With 4 front-rowers, the squad must be able to replace either a prop
+    or a hooker at the first time of asking.
   contributor: null
 - id: L03-012
-  text: |-
-    What is the minimum number of front row players required for a squad size of 19 to 22?
+  text: What is the minimum number of front-row players required in a squad of 19
+    to 22?
   type: factual
   difficulty: advanced
   options:
-  - '1'
-  - '2'
-  - '3'
-  - '4'
   - '5'
+  - '4'
   - '6'
+  - '3'
   answers:
   - '5'
-  law_reference: '3'
+  law_reference: '3.8'
   tags:
   - front-row
-  explanation: null
+  law_quote: 'Front-row table (Law 3.8): squad of 15 or fewer - 3 front-row players;
+    16-18 - 4; 19-22 - 5; 23 - 6.'
+  explanation: With 5 front-rowers, the squad must be able to replace both a prop
+    and a hooker at the first time of asking.
   contributor: null
 - id: L03-013
-  text: What is the minimum number of front row players required for a squad size
-    of 23?
+  text: What is the minimum number of front-row players required in a squad of 23?
   type: factual
   difficulty: advanced
   options:
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
   - '6'
+  - '5'
+  - '4'
+  - '7'
   answers:
   - '6'
-  law_reference: '3'
+  law_reference: '3.8'
   tags:
   - front-row
-  explanation: null
+  law_quote: 'Front-row table (Law 3.8): squad of 15 or fewer - 3 front-row players;
+    16-18 - 4; 19-22 - 5; 23 - 6.'
+  explanation: A 23-player squad must be able to replace the loose-head prop, tight-head
+    prop and hooker, each at the first time of asking.
   contributor: null
 - id: L03-014
-  text: |-
-    Who must a squad size of 16, 17 or 18 be able to replace at the first time of asking?
+  text: At the first time of asking, who must a squad of 16, 17 or 18 be able to
+    replace?
   type: factual
   difficulty: intermediate
   options:
   - Either a prop or a hooker
   - Both a prop and a hooker
-  - Loose-head, tight-head and hooker
+  - Loose-head prop, tight-head prop and hooker
+  - There is no replacement obligation
   answers:
   - Either a prop or a hooker
-  law_reference: '3'
+  law_reference: '3.8'
   tags:
-  - time
+  - front-row
+  - replacement
+  law_quote: 'Front-row table (Law 3.8): squad of 16, 17 or 18 - must be able to
+    replace either a prop or a hooker at the first time of asking.'
   explanation: null
   contributor: null
 - id: L03-015
-  text: |-
-    Who must a squad size of 19 to 22 be able to replace at the first time of asking?
+  text: At the first time of asking, who must a squad of 19 to 22 be able to replace?
   type: factual
   difficulty: intermediate
   options:
-  - Either a prop or a hooker
   - Both a prop and a hooker
-  - Loose-head, tight-head and hooker
+  - Either a prop or a hooker
+  - Loose-head prop, tight-head prop and hooker
+  - There is no replacement obligation
   answers:
   - Both a prop and a hooker
-  law_reference: '3'
+  law_reference: '3.8'
   tags:
-  - time
+  - front-row
+  - replacement
+  law_quote: 'Front-row table (Law 3.8): squad of 19, 20, 21 or 22 - must be able
+    to replace both a prop and a hooker at the first time of asking.'
   explanation: null
   contributor: null
 - id: L03-016
-  text: Who must a squad size of 23 be able to replace at the first time of asking?
+  text: At the first time of asking, who must a squad of 23 be able to replace?
   type: factual
   difficulty: intermediate
   options:
-  - Either a prop or a hooker
+  - Loose-head prop, tight-head prop and hooker
   - Both a prop and a hooker
-  - Loose-head, tight-head and hooker
+  - Either a prop or a hooker
+  - Any two front-row players
   answers:
-  - Loose-head, tight-head and hooker
-  law_reference: '3'
+  - Loose-head prop, tight-head prop and hooker
+  law_reference: '3.8'
   tags:
-  - time
-  explanation: null
+  - front-row
+  - replacement
+  law_quote: 'Front-row table (Law 3.8): squad of 23 - must be able to replace loose-head
+    prop, tight-head prop and hooker at the first time of asking.'
+  explanation: The three positions are distinct - a loose-head cover cannot count
+    as tight-head cover.
   contributor: null
 - id: L03-017
-  text: |-
-    Where the match organiser has determined squad sizes of 23 and a team is able to nominate only two front-row replacements, how many players may be nominated to their squad?
+  text: The match organiser has set squad sizes of 23, but a team can nominate only
+    two front-row replacements. How many players may that team have in its squad?
   type: factual
   difficulty: intermediate
   options:
-  - '21'
   - '22'
   - '23'
+  - '21'
+  - '20'
   answers:
   - '22'
-  law_reference: '3'
+  law_reference: '3.9'
   tags:
   - replacement
   - front-row
-  explanation: null
+  law_quote: Where the match organiser has determined squad sizes of 23 and a team
+    is able to nominate only two front-row replacements, then that team may nominate
+    only 22 players in their squad.
+  explanation: The squad shrinks with the front-row cover - you can't keep the 23rd
+    player and skip the third front-row replacement.
   contributor: null
 - id: L03-018
-  text: |-
-    True or false: prior to the match, each time must advise the appropriate match official of their front-row and possible front-row replacements?
-  type: factual
-  difficulty: beginner
+  text: Before the match, what must each team advise the match officials about their
+    front row?
+  type: procedural
+  difficulty: intermediate
   options:
-  - 'True'
-  - 'False'
+  - The front-row players and possible replacements, and which positions each can
+    play
+  - Only the starting front row
+  - Only the names of any uncapped front-rowers
+  - Nothing - front-row details are checked at the first scrum
   answers:
-  - 'True'
-  law_reference: '3'
+  - The front-row players and possible replacements, and which positions each can
+    play
+  law_reference: '3.10'
   tags:
-  - replacement
   - front-row
-  - time
-  explanation: null
+  - referee
+  law_quote: Prior to the match, each team must advise the appropriate match official
+    of their front-row players and possible front-row replacements and which position(s)
+    in the front row they can play.
+  explanation: Only those players, in their designated positions, may play in the
+    front row when the scrum is contested - get this list before kick-off.
   contributor: null
 - id: L03-019
-  text: |-
-    True or false: a player not originally advertised as a front-row replacement may replace a front-row player in the case of injury?
-  type: factual
-  difficulty: beginner
-  options:
-  - 'True'
-  - 'False'
-  answers:
-  - 'False'
-  law_reference: '3'
-  tags:
-  - injury
-  - replacement
-  - front-row
-  explanation: null
-  contributor: null
-- id: L03-020
-  text: |-
-    True or false: a replacement front-row player may start the match in another position?
-  type: factual
-  difficulty: beginner
-  options:
-  - 'True'
-  - 'False'
-  answers:
-  - 'True'
-  law_reference: '3'
-  tags:
-  - replacement
-  - front-row
-  explanation: null
-  contributor: null
-- id: L03-021
-  text: Under what circumstances do scrums become uncontested? (2 correct answers)
+  text: When is a player who is NOT a designated front-row player permitted to play
+    in the front row?
   type: factual
   difficulty: advanced
   options:
-  - Either team cannot field a suitably trained front row
-  - The referee orders so
-  - Both teams agree
-  - All of the above
+  - Only when no replacement front-row player is available
+  - Never, under any circumstances
+  - Whenever the coach nominates them mid-match
+  - Only in the final 10 minutes
   answers:
-  - Either team cannot field a suitably trained front row
-  - The referee orders so
-  law_reference: '3'
+  - Only when no replacement front-row player is available
+  law_reference: '3.18'
+  tags:
+  - front-row
+  law_quote: Only when no replacement front-row player is available is any other
+    player permitted to play in the front row.
+  explanation: This is the last resort - and it is the team's responsibility that
+    anyone packing down is suitably trained and experienced (Law 3.12).
+  contributor: null
+- id: L03-020
+  text: A team's designated replacement hooker starts the match at flanker. Is this
+    permitted?
+  type: factual
+  difficulty: intermediate
+  options:
+  - Yes - a replacement front-row player may start in another position
+  - No - designated front-rowers may only play in the front row
+  - Only with the match organiser's approval
+  - Only if the team has a 23-player squad
+  answers:
+  - Yes - a replacement front-row player may start in another position
+  law_reference: '3.11'
+  tags:
+  - front-row
+  - replacement
+  law_quote: A replacement front-row player may start the match in another position.
+  explanation: Common at community level - the cover hooker often starts at openside.
+    What matters is that they're available to pack down when needed.
+  contributor: null
+- id: L03-021
+  text: When do scrums become uncontested?
+  type: factual
+  difficulty: intermediate
+  options:
+  - When a team cannot field a suitably trained front row, or the referee so orders
+  - Only when both teams agree
+  - Automatically whenever a front-row player is yellow-carded
+  - When the score difference exceeds 50 points
+  answers:
+  - When a team cannot field a suitably trained front row, or the referee so orders
+  law_reference: '3.13'
   tags:
   - scrum
-  explanation: null
+  - front-row
+  law_quote: Scrums will become uncontested if either team cannot field a suitably
+    trained front row or if the referee so orders.
+  explanation: A yellow card to a front-rower doesn't automatically mean uncontested
+    - the enquiry happens at the next scrum (Law 3.16).
   contributor: null
 - id: L03-022
-  text: |-
-    True or false: a match organiser may stipulate conditions under which a game may start with uncontensted scrums?
+  text: Who may stipulate the conditions under which a game may START with uncontested
+    scrums?
   type: factual
-  difficulty: beginner
+  difficulty: intermediate
   options:
-  - 'True'
-  - 'False'
+  - The match organiser
+  - The referee
+  - World Rugby only
+  - The two head coaches, by agreement
   answers:
-  - 'True'
-  law_reference: '3'
+  - The match organiser
+  law_reference: '3.14'
   tags:
   - scrum
+  law_quote: A match organiser may stipulate the conditions under which a game may
+    start with uncontested scrums.
   explanation: null
   contributor: null
 - id: L03-023
-  text: |-
-    How many players per side must play in an uncontested scrum which resulted from a sending off, temporary suspension or injury?
+  text: How many players per side must pack down in an uncontested scrum resulting
+    from a sending-off, yellow card or injury?
   type: factual
   difficulty: intermediate
   options:
-  - '3'
-  - '5'
-  - '6'
-  - '7'
   - '8'
+  - '7'
+  - '6'
+  - '5'
   answers:
   - '8'
-  law_reference: '3'
+  law_reference: '3.15'
   tags:
   - scrum
-  - injury
   - suspension
   - sending-off
-  explanation: null
+  law_quote: Uncontested scrums as a result of a sending off, yellow card or injury
+    must be played with eight players per side.
+  explanation: The team doesn't gain a loose forward in open play by going uncontested
+    - eight must still bind.
   contributor: null
 - id: L03-024
-  text: |-
-    Weather through injury, temporary or permanent suspension, a front-row player leaves the playing area. At the next scrum, the referee is informed the team will not be able to contest the scrum. What must the referee do?
-  type: factual
-  difficulty: advanced
+  text: A front-row player leaves the field injured. At the next scrum you ask, and
+    Red confirm they cannot contest. What do you do?
+  type: procedural
+  difficulty: intermediate
   options:
-  - Ask for another player to join the scrum
   - Order uncontested scrums
-  - Play with that position in the scrum vacant
+  - Ask Red to nominate any player to prop
+  - Play the scrum with the position vacant
+  - Award a free-kick against Red
   answers:
   - Order uncontested scrums
-  law_reference: '3'
+  law_reference: '3.16'
   tags:
   - scrum
-  - injury
   - front-row
   - referee
-  - suspension
-  explanation: null
+  law_quote: When a front-row player leaves the playing area, whether through injury
+    or by a yellow or red card, the referee enquires at the next scrum whether the
+    team can continue with contested scrums.
+  explanation: The enquiry is at the next scrum, not immediately - and if a front-rower
+    later returns or comes on, contested scrums may resume.
   contributor: null
 - id: L03-025
-  text: |-
-    If uncontested scrums have been ordered but a front-row player comes on, may contested scrums continue?
+  text: Uncontested scrums were ordered after a front-row injury. A replacement front-row
+    player now comes on. May scrums be contested again?
   type: factual
   difficulty: intermediate
   options:
-  - 'Yes'
-  - 'No'
+  - Yes - contested scrums may resume
+  - No - once uncontested, always uncontested
+  - Only at the start of the next half
+  - Only if both captains agree
   answers:
-  - 'Yes'
-  law_reference: '3'
+  - Yes - contested scrums may resume
+  law_reference: '3.16'
   tags:
   - scrum
   - front-row
+  law_quote: If the player returns or another front-row player comes on, then contested
+    scrums may resume.
   explanation: null
   contributor: null
 - id: L03-026
-  text: |-
-    In a squad of 23, or at the discretion of the match organiser, can a player whose departure has caused the referee to order uncontested scrums be replaced?
+  text: In a squad of 23, can a player whose departure caused uncontested scrums
+    be replaced?
   type: factual
-  difficulty: intermediate
+  difficulty: advanced
   options:
-  - 'Yes'
-  - 'No'
+  - No - that player cannot be replaced
+  - Yes - like any injured player
+  - Only by another front-row player
+  - Only with the opposition's consent
   answers:
-  - 'No'
-  law_reference: '3'
+  - No - that player cannot be replaced
+  law_reference: '3.17'
   tags:
   - scrum
-  - referee
-  explanation: null
-  contributor: null
-- id: L03-027
-  text: |-
-    Can a non-front-row player play in the front row if a front-row player is available?
-  type: factual
-  difficulty: intermediate
-  options:
-  - 'Yes'
-  - 'No'
-  answers:
-  - 'No'
-  law_reference: '3'
-  tags:
-  - front-row
-  explanation: null
+  - replacement
+  law_quote: In a squad of 23 players or at the discretion of the match organiser,
+    a player whose departure has caused the referee to order uncontested scrums cannot
+    be replaced.
+  explanation: This removes any incentive to engineer uncontested scrums - the team
+    plays a player short.
   contributor: null
 - id: L03-028
-  text: |-
-    True or false: if a front-row player is temporarily suspended, and the team cannot continue with contested scrums with the players on the field, the team nominates a player to leave the playing area to enable an available front-row player to come on. The nominated player may not return until the suspension period ends?
-  type: factual
-  difficulty: beginner
+  text: Red's loose-head is yellow-carded and Red cannot contest scrums with the
+    players on the field. What happens?
+  type: scenario
+  difficulty: advanced
   options:
-  - 'True'
-  - 'False'
+  - Red nominate a player to leave so a front-row player can come on; the nominated
+    player may not return until the suspension ends
+  - Scrums are uncontested for the 10 minutes, no other change
+  - Red must play the scrums a player short
+  - The yellow card transfers to a front-row replacement
   answers:
-  - 'True'
-  law_reference: '3'
+  - Red nominate a player to leave so a front-row player can come on; the nominated
+    player may not return until the suspension ends
+  law_reference: '3.19'
   tags:
   - scrum
   - front-row
   - suspension
-  explanation: null
+  law_quote: If a front-row player is shown a yellow card, and the team cannot continue
+    with contested scrums with players already on the field, then the team nominates
+    another player to leave the playing area to enable an available front-row player
+    to come on. The nominated player may not return until the period of suspension
+    ends, or to act as a replacement.
+  explanation: The team still pays the numerical price of the card - they lose a
+    different player while the front-rower packs down.
   contributor: null
 - id: L03-029
-  text: |-
-    True or false: if a front-row player is sent off, and the team cannot continue with contested scrums with the players on the field, the team nominates a player to leave the playing area to enable an available front-row player to come on. The nominated player may return until the end of the match?
-  type: factual
-  difficulty: beginner
+  text: Red's tight-head is sent off and Red cannot contest scrums with the players
+    on the field. Red nominate a player to leave so a front-rower can come on. May
+    the nominated player later return?
+  type: scenario
+  difficulty: advanced
   options:
-  - 'True'
-  - 'False'
+  - Yes - the nominated player may act as a replacement
+  - No - the nominated player's match is over
+  - Only at the start of the second half
+  - Only if Red suffer another injury in the front row
   answers:
-  - 'True'
-  law_reference: '3'
+  - Yes - the nominated player may act as a replacement
+  law_reference: '3.20'
   tags:
   - scrum
   - front-row
   - sending-off
-  explanation: null
+  law_quote: If a front-row player is sent off... the team nominates another player
+    to leave the playing area to enable an available front-row player to come on.
+    The nominated player may act as a replacement.
+  explanation: 'Contrast with the yellow-card case (Law 3.19): after a red card
+    the nominated player is free to return as a replacement; after a yellow they
+    must wait out the suspension.'
   contributor: null
 - id: L03-030
-  text: 'True or false: an injured player may return having been replaced?'
+  text: A player is replaced due to injury. When may that player return to the match?
   type: factual
   difficulty: beginner
   options:
-  - 'True'
-  - 'False'
+  - Not at all - an injured player may not return once replaced
+  - After 15 minutes if fully recovered
+  - At the start of the second half
+  - Once a doctor clears them
   answers:
-  - 'False'
-  law_reference: '3'
-  tags: []
-  explanation: null
+  - Not at all - an injured player may not return once replaced
+  law_reference: '3.21'
+  tags:
+  - injury
+  - replacement
+  law_quote: A player may be replaced if injured. An injured player may not return
+    once replaced.
+  explanation: 'Permanent replacement is the default. The exceptions are the temporary
+    ones: blood injuries and HIAs, which have their own clocks.'
   contributor: null
 - id: L03-031
   text: Under which of these conditions is a player NOT deemed to be injured?
   type: factual
   difficulty: intermediate
   options:
-  - |-
-    At national level, it is the opinion of a doctor that it would be inadvisable for the player to continue
-  - |-
-    In other matches, where a match organiser has given explicit permission, it is the opinion of a medically trained person that it would be inadvisable for the player to continue. If none is present, the player may be replaced if the referee agrees
-  - |-
-    The referee decides (with or without medical advice) that it would be inadvisable for the player to continue
-  - |-
-    It is the opinion of the team captain that it would be inadvisable for the player to continue
+  - It is the opinion of the team captain that it would be inadvisable to continue
+  - At national representative level, a doctor considers it inadvisable to continue
+  - Where the match organiser permits, a medically trained person considers it inadvisable
+    to continue
+  - The referee decides (with or without medical advice) it is inadvisable to continue
   answers:
-  - |-
-    It is the opinion of the team captain that it would be inadvisable for the player to continue
-  law_reference: '3'
-  tags: []
-  explanation: null
+  - It is the opinion of the team captain that it would be inadvisable to continue
+  law_reference: '3.22'
+  tags:
+  - injury
+  - referee
+  law_quote: The referee decides (with or without medical advice) that it would
+    be inadvisable for the player to continue. The referee orders that player to
+    leave the playing area.
+  explanation: Doctors, medically trained persons (where permitted) and the referee
+    can deem a player injured - captains and coaches cannot.
   contributor: null
 - id: L03-032
-  text: |-
-    True or false: a referee may order an injured player to leave the playing area to be medically examined?
+  text: May the referee order an injured player off the field to be medically examined?
   type: factual
   difficulty: beginner
   options:
-  - 'True'
-  - 'False'
+  - 'Yes'
+  - No - only medical staff may order this
+  - Only at international level
+  - Only with the captain's agreement
   answers:
-  - 'True'
-  law_reference: '3'
+  - 'Yes'
+  law_reference: '3.23'
   tags:
+  - injury
   - referee
-  explanation: null
+  law_quote: The referee may also order an injured player to leave the playing area
+    to be medically examined.
+  explanation: Player welfare overrides play - if in doubt, get them assessed.
   contributor: null
 - id: L03-033
   text: What is the process known as "Recognise and Remove"?
   type: procedural
   difficulty: intermediate
   options:
-  - Immediate and permanent removal of a blood injury
-  - |-
-    Immediate and permanent removal of a player who has committed an act of foul play
-  - |-
-    Immediate and permanent removal of a player who is concussed or has suspected concussion
-  - |-
-    Immediate and permanent removal of a player not deemed to be of sufficient standard
+  - Immediate and permanent removal of a player who is concussed or has suspected
+    concussion
+  - Immediate and permanent removal of a player with a blood injury
+  - Immediate and permanent removal of a player who committed foul play
+  - Temporary removal of a player for a head injury assessment
   answers:
-  - |-
-    Immediate and permanent removal of a player who is concussed or has suspected concussion
-  law_reference: '3'
-  tags: []
-  explanation: null
-  contributor: null
-- id: L03-034
-  text: 'True or false: a player with a blood injury may be temporarily replaced?'
-  type: factual
-  difficulty: beginner
-  options:
-  - 'True'
-  - 'False'
-  answers:
-  - 'True'
-  law_reference: '3'
+  - Immediate and permanent removal of a player who is concussed or has suspected
+    concussion
+  law_reference: '3.24'
   tags:
   - injury
-  - blood-injury
-  explanation: null
+  law_quote: If, at any point during a match, a player is concussed or has suspected
+    concussion, that player must be immediately and permanently removed from the
+    playing area. This process is known as "Recognise and Remove".
+  explanation: This applies at ALL levels of the game. The HIA process (temporary
+    replacement) exists only in competitions specifically approved by World Rugby
+    - everywhere else, suspected concussion means permanent removal.
   contributor: null
 - id: L03-035
-  text: |-
-    A player with a blood injury is replaced. How long does the replacement have to return to the field before the replacement becomes permenant?
+  text: A player leaves the field with a blood injury and is temporarily replaced.
+    How long do they have to return before the replacement becomes permanent?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 15 minutes (actual time)
+  - 10 minutes (actual time)
+  - 12 minutes (actual time)
+  - 20 minutes (playing time)
+  answers:
+  - 15 minutes (actual time)
+  law_reference: '3.25'
+  tags:
+  - blood-injury
+  - replacement
+  law_quote: If the player is not available to return to the field of play within
+    15 minutes (actual time) of leaving the playing area, the replacement becomes
+    permanent.
+  explanation: Blood = 15 minutes; HIA = 12 minutes. Both are actual time, not playing
+    time.
+  contributor: null
+- id: L03-036
+  text: All of Red's replacements have been used. A Red player now requires an HIA.
+    What happens?
+  type: scenario
+  difficulty: advanced
+  options:
+  - The player is temporarily replaced anyway - HIA replacement is allowed even
+    with all replacements used
+  - Red must play on with 14 players
+  - The player must stay on until a replacement is freed up
+  - The match cannot restart until Red forfeit a different player
+  answers:
+  - The player is temporarily replaced anyway - HIA replacement is allowed even
+    with all replacements used
+  law_reference: '3.27'
+  tags:
+  - injury
+  - replacement
+  law_quote: A player who requires an HIA... is temporarily replaced (even if all
+    the replacements have been used). The game cannot restart until the player who
+    requires an HIA has been temporarily replaced.
+  explanation: Player welfare replacements don't count against the replacement allowance.
+    A temporary replacement can even be temporarily replaced themselves (Law 3.28).
+  contributor: null
+- id: L03-038
+  text: A temporary replacement is sent off. May the originally replaced player return
+    to the playing area?
   type: factual
   difficulty: advanced
   options:
-  - 5 minutes
-  - 10 minutes
-  - 15 minutes
-  - 20 minutes
-  - 25 minutes
-  - 30 minutes
+  - No, except to comply with Law 3.19 or 3.20 (front-row cover), if medically cleared
+    and within the required time
+  - Yes, immediately
+  - Yes, but only after 10 minutes
+  - No, under any circumstances
   answers:
-  - 15 minutes
-  law_reference: '3'
-  tags:
-  - injury
-  - blood-injury
-  - replacement
-  explanation: null
-  contributor: null
-- id: L03-036
-  text: |-
-    True or false: a temporary replacement can be temporarily replaced, even if all replacements have been used?
-  type: factual
-  difficulty: beginner
-  options:
-  - 'True'
-  - 'False'
-  answers:
-  - 'True'
-  law_reference: '3'
-  tags:
-  - replacement
-  explanation: null
-  contributor: null
-- id: L03-037
-  text: If a temporary replacement is injured, can they be replaced?
-  type: factual
-  difficulty: intermediate
-  options:
-  - 'Yes'
-  - 'No'
-  answers:
-  - 'Yes'
-  law_reference: '3'
-  tags:
-  - replacement
-  explanation: null
-  contributor: null
-- id: L03-038
-  text: |-
-    If a temporary replacement is sent off can the originally replaced player return to the playing area?
-  type: factual
-  difficulty: intermediate
-  options:
-  - 'Yes'
-  - 'No'
-  - No with 2 lawful exceptions
-  - Yes with 2 lawful exceptions
-  answers:
-  - No with 2 lawful exceptions
-  law_reference: '3'
+  - No, except to comply with Law 3.19 or 3.20 (front-row cover), if medically cleared
+    and within the required time
+  law_reference: '3.30'
   tags:
   - replacement
   - sending-off
-  explanation: null
+  law_quote: If a temporary replacement is sent off, the originally replaced player
+    is not permitted to return to the playing area, except to comply with Law 3.19
+    or 3.20, and only if the player has been medically cleared to do so and does
+    so within the required time of leaving the field of play.
+  explanation: The two exceptions both relate to restoring a contested front row.
+    The same structure applies if the temporary replacement is yellow-carded (Law
+    3.31).
   contributor: null
 - id: L03-039
-  text: |-
-    If the time allowed for a temporary replacement elapses during half-time, can the replaced player return?
-  type: factual
-  difficulty: intermediate
-  options:
-  - 'No'
-  - The time continues after the second half begins
-  - Only if replaced player returns immediately at the start of the second half
-  - The replacement is replaced, then the original player may return
-  answers:
-  - Only if replaced player returns immediately at the start of the second half
-  law_reference: '3'
-  tags:
-  - replacement
-  - time
-  - half-time
-  explanation: null
-  contributor: null
-- id: L03-040
-  text: |-
-    Which is NOT a valid reason for a tactically replaced player to return to the playing area? When replacing:
+  text: The time allowed for a temporary replacement elapses during half-time. What
+    happens?
   type: factual
   difficulty: advanced
   options:
-  - An injured front-row player
-  - A player with a blood injury
-  - A player with a head injury
-  - A player who has been injured as a result of foul play
-  - A nominated player described in Law 3.19 or 3.20
-  - The captain to come on as captain
+  - The replacement becomes permanent unless the replaced player returns immediately
+    at the start of the second half
+  - The clock pauses and resumes in the second half
+  - The replacement automatically becomes permanent
+  - The replaced player gets an extra 5 minutes
   answers:
-  - The captain to come on as captain
-  law_reference: '3'
-  tags: []
+  - The replacement becomes permanent unless the replaced player returns immediately
+    at the start of the second half
+  law_reference: '3.32'
+  tags:
+  - replacement
+  - half-time
+  law_quote: If the time allowed for a temporary replacement elapses during half-time,
+    the replacement shall become permanent unless the replaced player returns to
+    the field of play immediately at the start of the second half.
   explanation: null
+  contributor: null
+- id: L03-040
+  text: Which of these is NOT a valid reason for a tactically replaced player to
+    return to the playing area?
+  type: factual
+  difficulty: advanced
+  options:
+  - Returning as captain because the team wants their leadership back on
+  - Replacing an injured front-row player
+  - Replacing a player with a blood injury
+  - Replacing a player injured by verified foul play
+  answers:
+  - Returning as captain because the team wants their leadership back on
+  law_reference: '3.33'
+  tags:
+  - replacement
+  law_quote: 'Tactically replaced players may return to play only when replacing:
+    an injured front-row player; a player with a blood injury; a player with a head
+    injury; a player who has just been injured as a result of foul play (as verified
+    by the match officials); the nominated player described in Law 3.19 or 3.20.'
+  explanation: In elite rugby only, a tactically replaced player may also come on
+    for a teammate's qualifying red card after 20 minutes of playing time.
   contributor: null
 - id: L03-041
   text: Who is responsible for implementing rolling tactical replacements?
@@ -697,31 +766,56 @@ questions:
   difficulty: intermediate
   options:
   - The match organiser
-  - The governing body
   - The referee
   - World Rugby
+  - Each team's head coach
   answers:
   - The match organiser
-  law_reference: '3'
+  law_reference: '3.34'
   tags:
   - replacement
+  law_quote: A match organiser may implement rolling tactical replacements at defined
+    levels of the game within its jurisdiction.
   explanation: null
   contributor: null
 - id: L03-042
-  text: What is the maximum number of rolling tactical replacements allowed?
+  text: Where rolling replacements are in use, what is the maximum number of interchanges?
   type: factual
   difficulty: advanced
   options:
+  - '12'
   - '8'
   - '10'
-  - '12'
-  - '14'
-  - '16'
-  - '18'
+  - Unlimited
   answers:
   - '12'
-  law_reference: '3'
+  law_reference: '3.34'
   tags:
   - replacement
-  explanation: null
+  law_quote: The number of interchanges must not exceed 12.
+  explanation: Under the game-on global variations for community rugby, a match
+    organiser may instead allow unlimited interchanges - but the standard law caps
+    rolling replacements at 12.
+  contributor: null
+- id: L03-043
+  text: A player leaves the field for a Head Injury Assessment (HIA). How long before
+    the temporary replacement becomes permanent?
+  type: factual
+  difficulty: intermediate
+  options:
+  - 12 minutes (actual time)
+  - 15 minutes (actual time)
+  - 10 minutes (playing time)
+  - 20 minutes (actual time)
+  answers:
+  - 12 minutes (actual time)
+  law_reference: '3.27'
+  tags:
+  - injury
+  - replacement
+  law_quote: If the player is not available to return to the field of play after
+    12 minutes (actual time) of leaving the playing area, the replacement becomes
+    permanent.
+  explanation: Remember the pair - HIA is 12 minutes, blood injury is 15. HIA applies
+    only in competitions approved by World Rugby for the HIA process.
   contributor: null

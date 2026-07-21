@@ -4,337 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Rugby Ref Quiz{% endblock %}</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/daisyui.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/htmx.org@1.9.10"></script>
     <style>
-        :root {
-            --pico-font-size: 100%;
+        /* Pitch-green theme: overrides daisyUI's light theme variables */
+        :root, [data-theme="light"] {
+            --color-base-100: #ffffff;
+            --color-base-200: #f3f4ee;
+            --color-base-300: #e2e5db;
+            --color-base-content: #1d2a23;
+            --color-primary: #1b5e3b;
+            --color-primary-content: #ffffff;
+            --color-secondary: #37584a;
+            --color-secondary-content: #ffffff;
+            --color-accent: #2e8b57;
+            --color-accent-content: #ffffff;
+            --color-success: #1e7f4f;
+            --color-success-content: #ffffff;
+            --color-error: #b3372f;
+            --color-error-content: #ffffff;
+            --color-warning: #a8720a;
+            --color-warning-content: #ffffff;
+            --color-info: #2b6cb0;
+            --color-info-content: #ffffff;
+            --radius-box: 0.75rem;
+            --radius-field: 0.5rem;
         }
         body {
-            background-color: #e6f3ff;
+            font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        .quiz-container {
-            min-height: 400px;
-        }
-        .feedback-correct {
-            background-color: #d4edda;
-            border: 1px solid #c3e6cb;
-            padding: 1rem;
-            border-radius: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        .feedback-wrong {
-            background-color: #f8d7da;
-            border: 1px solid #f5c6cb;
-            padding: 1rem;
-            border-radius: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        .error-message {
-            color: #dc3545;
-            margin-bottom: 1rem;
-        }
-        .progress-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-            padding: 0.5rem 1rem;
-            background-color: #f8f9fa;
-            border-radius: 0.5rem;
-        }
-        .progress-details {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .end-now-button {
-            margin-bottom: 0;
-            white-space: nowrap;
-        }
-        .htmx-indicator {
-            display: none;
-        }
-        .htmx-request .htmx-indicator {
-            display: inline-block;
-        }
-        .htmx-request.htmx-indicator {
-            display: inline-block;
-        }
-        fieldset {
-            border: none;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        fieldset label {
-            display: flex;
-            align-items: flex-start;
-            padding: 0.75rem 1rem;
-            margin-bottom: 0.5rem;
-            border: 1px solid #dee2e6;
-            border-radius: 0.5rem;
+
+        /* Selectable cards (topics, laws, counts): highlight when checked */
+        .pick-card {
+            display: block;
+            height: 100%;
+            border: 1.5px solid var(--color-base-300);
+            border-radius: var(--radius-box);
+            background: var(--color-base-100);
+            padding: 0.85rem 1rem;
             cursor: pointer;
-            transition: background-color 0.2s;
-            width: 100%;
-            max-width: 500px;
+            transition: border-color .15s, background-color .15s, box-shadow .15s;
         }
-        fieldset label input[type="checkbox"] {
-            margin-top: 0.2rem;
+        .pick-card:hover {
+            border-color: var(--color-accent);
         }
-        fieldset label:hover {
-            background-color: #f8f9fa;
+        label:has(> input:checked) > .pick-card {
+            border-color: var(--color-primary);
+            background: color-mix(in oklab, var(--color-primary) 7%, white);
+            box-shadow: 0 0 0 1px var(--color-primary);
         }
-        fieldset input[type="radio"],
-        fieldset input[type="checkbox"] {
-            margin-right: 0.75rem;
+        .pick-check {
+            visibility: hidden;
+            color: var(--color-primary);
+            font-weight: 800;
         }
-        .select-all-label {
-            background-color: #e9ecef;
+        label:has(> input:checked) .pick-check {
+            visibility: visible;
         }
-        .button-group {
-            display: flex;
-            gap: 1rem;
-            justify-content: flex-end;
-            width: 100%;
-            max-width: 500px;
-        }
-        .button-group a {
-            margin: 0;
-        }
-        .button-group > * {
-            flex: 1 1 0;
-            margin-bottom: 0;
-            text-align: center;
-        }
-        fieldset hr {
-            margin: 0.5rem 0;
-            width: 100%;
-            max-width: 500px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        form > button {
-            max-width: 500px;
-        }
-        fieldset .law-info {
-            display: flex;
-            flex-direction: column;
-            gap: 0.25rem;
-        }
-        .law-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            grid-auto-rows: 112px;
-            gap: 0.75rem;
-            width: 100%;
-            max-width: 960px;
-        }
-        .law-grid > .law-card {
-            box-sizing: border-box;
-            display: grid;
-            grid-template-columns: 1.1rem minmax(0, 1fr);
-            column-gap: 0.75rem;
-            align-content: start;
-            align-items: start;
-            align-self: stretch;
-            justify-self: stretch;
-            width: 100%;
-            min-width: 0;
-            min-height: 112px;
-            height: 112px;
-            max-height: 112px;
-            margin-bottom: 0;
-            padding: 0.9rem 1rem;
-        }
-        .law-grid > .law-card input[type="checkbox"] {
-            flex: 0 0 auto;
-            width: 1.1rem;
-            height: 1.1rem;
-            min-width: 1.1rem;
-            min-height: 1.1rem;
-            margin: 0.15rem 0 0 0;
-        }
-        .law-grid > .law-card .law-info {
-            min-width: 0;
-            width: 100%;
-        }
-        .law-grid > .law-card .law-name {
-            display: block;
-        }
-        .count-fieldset {
-            width: 100%;
-        }
-        .count-grid {
-            display: grid;
-            gap: 0.75rem;
-            width: 100%;
-            max-width: 500px;
-        }
-        .count-grid > .count-card {
-            box-sizing: border-box;
-            display: grid;
-            grid-template-columns: 1.1rem minmax(0, 1fr);
-            column-gap: 0.75rem;
-            align-content: center;
-            align-items: center;
-            width: 100%;
-            min-height: 72px;
-            height: 72px;
-            max-width: none;
-            margin-bottom: 0;
-            padding: 0.9rem 1rem;
-        }
-        .count-grid > .count-card input[type="radio"] {
-            width: 1.1rem;
-            height: 1.1rem;
-            min-width: 1.1rem;
-            min-height: 1.1rem;
-            margin: 0;
-        }
-        .count-card-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-            width: 100%;
-        }
-        .count-card-content input[type="number"] {
-            width: 140px;
-            margin: 0;
-        }
-        fieldset .law-info .question-count {
-            color: #6c757d;
-            font-size: 0.85em;
-        }
-        .question-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-        }
-        .badges {
-            display: flex;
-            gap: 0.4rem;
-            flex-wrap: wrap;
-        }
-        .badge {
-            display: inline-block;
-            padding: 0.15rem 0.6rem;
-            border-radius: 1rem;
-            font-size: 0.75em;
-            font-weight: 600;
-            text-transform: capitalize;
-            white-space: nowrap;
-        }
-        .badge-law {
-            background-color: #e2e8f5;
-            color: #2c3e6b;
-        }
-        .badge-type {
-            background-color: #e9ecef;
-            color: #495057;
-        }
-        .badge-beginner {
-            background-color: #d4edda;
-            color: #1e6b33;
-        }
-        .badge-intermediate {
-            background-color: #fff3cd;
-            color: #7a5c00;
-        }
-        .badge-advanced {
-            background-color: #f8d7da;
-            color: #842029;
-        }
-        .law-detail {
-            background-color: #f0f4fa;
-            border-left: 4px solid #2c3e6b;
-            padding: 0.75rem 1rem;
-            border-radius: 0 0.5rem 0.5rem 0;
-            margin-bottom: 1rem;
-        }
-        .law-detail p {
-            margin-bottom: 0.25rem;
-        }
-        .law-detail .law-ref {
-            color: #2c3e6b;
-        }
-        .filters-fieldset {
-            width: 100%;
-            max-width: 960px;
-            margin-top: 1rem;
-        }
-        .filters-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 1rem;
-            width: 100%;
-        }
-        .review-item {
-            margin-bottom: 1rem;
-        }
-        .review-badges {
-            margin-bottom: 0.5rem;
-        }
-        .review-your-answer {
-            color: #842029;
-            margin-bottom: 0.25rem;
-        }
-        .review-correct-answer {
-            color: #1e6b33;
-        }
-        .results-buttons form {
-            display: block;
-        }
-        .results-buttons form button {
-            width: 100%;
-            margin-bottom: 0;
-        }
-        @media (max-width: 900px) {
-            .law-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-        }
-        @media (max-width: 640px) {
-            .law-grid {
-                grid-template-columns: 1fr;
-            }
-            .progress-bar {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            .end-now-button {
-                text-align: center;
-            }
-            .filters-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+
+        .htmx-indicator { display: none; }
+        .htmx-request .htmx-indicator { display: inline-block; }
+        .htmx-request.htmx-indicator { display: inline-block; }
     </style>
 </head>
-<body>
-    <main class="container">
-        <header>
-            <h1>Rugby Ref Quiz</h1>
-        </header>
+<body class="min-h-screen bg-base-200 text-base-content flex flex-col">
+    <header class="bg-primary text-primary-content shadow-md">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="{{ url_for('main.index') }}" class="flex items-center gap-2 no-underline text-primary-content">
+                <span class="text-2xl">🏉</span>
+                <span>
+                    <span class="block text-xl font-extrabold tracking-tight leading-none">Rugby Ref Quiz</span>
+                    <span class="block text-xs opacity-80 leading-tight">Train your Laws of the Game</span>
+                </span>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-1 w-full max-w-5xl mx-auto px-4 py-6 sm:py-8">
         {% block content %}{% endblock %}
     </main>
+
+    <footer class="text-center text-xs opacity-60 py-6 px-4">
+        Unofficial training tool based on the World Rugby Laws of the Game.
+    </footer>
 </body>
 </html>

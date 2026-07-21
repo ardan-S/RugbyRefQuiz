@@ -4,20 +4,20 @@ metadata:
   source: "World Rugby Laws 2026"
 
 questions:
-  # Principle and Requirements
   - id: L14-001
     text: "Where can a tackle take place?"
     type: factual
     difficulty: beginner
     options:
       - "Anywhere in the field of play"
-      - "Only in open play"
-      - "Anywhere in the playing area"
-      - "Only outside the 22"
+      - "Anywhere in the playing area, including in-goal"
+      - "Only between the two 22-metre lines"
+      - "Only in open play, not at set-piece"
     answers: ["Anywhere in the field of play"]
     law_reference: "14"
-    tags: ["tackle", "location"]
-    explanation: "Law 14 principle: A tackle can take place anywhere in the field of play."
+    tags: ["tackle"]
+    law_quote: "A tackle can take place anywhere in the field of play. The actions of players involved in the tackle must ensure a fair contest and allow the ball to be available for play immediately."
+    explanation: "Field of play - not in-goal. A ball-carrier held and brought down in in-goal is not a 'tackle' in law; different rules apply there."
     contributor: null
 
   - id: L14-002
@@ -25,590 +25,621 @@ questions:
     type: factual
     difficulty: beginner
     options:
-      - "The ball-carrier is held and brought to ground by one or more opponents"
-      - "The ball-carrier falls over"
-      - "The ball-carrier is touched by an opponent"
-      - "The ball-carrier releases the ball"
-    answers: ["The ball-carrier is held and brought to ground by one or more opponents"]
+      - "The ball-carrier is held AND brought to ground by one or more opponents"
+      - "The ball-carrier goes to ground for any reason"
+      - "Any contact from an opponent"
+      - "The ball-carrier is wrapped by both arms"
+    answers: ["The ball-carrier is held AND brought to ground by one or more opponents"]
     law_reference: "14.1"
-    tags: ["tackle", "definition"]
-    explanation: "Law 14.1: For a tackle to occur, the ball-carrier is held and brought to ground by one or more opponents."
+    tags: ["tackle"]
+    law_quote: "For a tackle to occur, the ball-carrier is held and brought to ground by one or more opponents."
+    explanation: "Both elements - held AND brought to ground. A slip with no hold is not a tackle (Law 13 applies); held but staying up may become a maul."
     contributor: null
 
   - id: L14-003
-    text: "What does 'being brought to ground' mean?"
+    text: "What does 'brought to ground' mean for the ball-carrier?"
     type: factual
     difficulty: intermediate
     options:
-      - "Lying, sitting, or at least one knee on ground or on another player on ground"
-      - "Both knees on the ground"
-      - "Completely flat on the ground"
-      - "Any part of the body touching the ground"
-    answers: ["Lying, sitting, or at least one knee on ground or on another player on ground"]
+      - "Lying, sitting, or at least one knee on the ground (or on a player on the ground)"
+      - "Both knees down"
+      - "Torso in contact with the ground"
+      - "Any body part except the feet touching the ground"
+    answers: ["Lying, sitting, or at least one knee on the ground (or on a player on the ground)"]
     law_reference: "14.2"
-    tags: ["tackle", "definition"]
-    explanation: "Law 14.2: Being brought to ground means lying, sitting, or at least one knee on ground or on another player on ground."
+    tags: ["tackle"]
+    law_quote: "Being brought to ground means that the ball-carrier is lying, sitting or has at least one knee on the ground or on another player who is on the ground."
+    explanation: "One knee is enough - and a knee on a body counts the same as a knee on grass."
     contributor: null
 
   - id: L14-004
-    text: "What does 'being held' mean in a tackle?"
+    text: "What does 'held' mean for the tackler?"
     type: factual
     difficulty: intermediate
     options:
-      - "The tackler must continue holding the ball-carrier until they are on the ground"
-      - "The tackler must hold the ball"
-      - "The tackler must hold for 3 seconds"
-      - "The tackler must hold with both arms"
-    answers: ["The tackler must continue holding the ball-carrier until they are on the ground"]
+      - "The tackler continues holding the ball-carrier until the ball-carrier is on the ground"
+      - "Any momentary grip on the ball-carrier"
+      - "A two-armed wrap"
+      - "Contact for at least one second"
+    answers: ["The tackler continues holding the ball-carrier until the ball-carrier is on the ground"]
     law_reference: "14.3"
-    tags: ["tackle", "definition"]
-    explanation: "Law 14.3: Being held means the tackler must continue holding the ball-carrier until the ball-carrier is on the ground."
+    tags: ["tackle"]
+    law_quote: "Being held means that a tackler must continue holding the ball-carrier until the ball-carrier is on the ground."
+    explanation: "If the grip is released before the carrier grounds, there is no tackle - and no tackler rights at the ensuing contest."
     contributor: null
 
-  # Players in a tackle
   - id: L14-005
-    text: "Who are considered 'players in a tackle'?"
+    text: "Who are the 'players in a tackle'?"
     type: factual
     difficulty: intermediate
     options:
-      - "Tackled player, tackler(s), and others arriving or already on ground"
-      - "Only the tackled player and tackler"
-      - "Anyone within 5 metres"
-      - "Only players touching the ball"
-    answers: ["Tackled player, tackler(s), and others arriving or already on ground"]
+      - "The tackled player, tackler(s), and others - assist players staying up, arrivers, and those already on the ground"
+      - "Only the tackled player and tackler(s)"
+      - "Everyone within 10 metres"
+      - "Only players who have touched the ball"
+    answers: ["The tackled player, tackler(s), and others - assist players staying up, arrivers, and those already on the ground"]
     law_reference: "14.4"
-    tags: ["tackle", "players"]
-    explanation: "Law 14.4: Players in a tackle include the tackled player, tackler(s), and others (those holding but not going to ground, arriving players, those already on ground)."
+    tags: ["tackle"]
+    law_quote: "Players in a tackle are: tackled player; tackler(s); others: player(s) who hold the ball-carrier during a tackle but do not go to ground; player(s) who arrive to contest possession in the tackle; player(s) who are already on the ground."
+    explanation: "The categories matter because each carries different obligations - a 'tackler' went to ground; an assist who stayed up is an 'other' with no tackler privileges."
     contributor: null
 
-  # Tackler responsibilities
   - id: L14-006
-    text: "A tackler has not released the ball and ball-carrier after both went to ground. What is the sanction?"
+    text: "Red 7 tackles Blue 12 and both go to ground. Red 7 keeps hold of the ball. What do you award?"
     type: sanction
     difficulty: beginner
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Penalty to Blue - the tackler must release immediately"
+      - "Free-kick to Blue"
+      - "Scrum to Blue"
+      - "Play on - the tackler may compete"
+    answers: ["Penalty to Blue - the tackler must release immediately"]
     law_reference: "14.5a"
     tags: ["tackle", "tackler", "release", "sanction"]
-    explanation: "Law 14.5a: Tacklers must immediately release the ball and ball-carrier after both go to ground. Sanction: Penalty."
+    law_quote: "Tacklers must: immediately release the ball and the ball-carrier after both players go to ground. Sanction: Penalty."
+    explanation: "Release means ball AND carrier. The tackler can only compete again after releasing, getting up, and coming from their own side (Law 14.6)."
     contributor: null
 
   - id: L14-007
-    text: "A tackler has not immediately moved away from the tackled player. What is the sanction?"
+    text: "After a tackle, Red 7 releases but lies between the ball and the arriving Blue players. What do you award?"
     type: sanction
     difficulty: beginner
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Penalty to Blue - the tackler must move away or get up"
+      - "Free-kick to Blue"
+      - "Play on - Red 7 released"
+      - "Scrum to Blue"
+    answers: ["Penalty to Blue - the tackler must move away or get up"]
     law_reference: "14.5b"
-    tags: ["tackle", "tackler", "roll-away", "sanction"]
-    explanation: "Law 14.5b: Tacklers must immediately move away from tackled player and ball, or get up. Sanction: Penalty."
+    tags: ["tackle", "tackler", "sanction"]
+    law_quote: "Tacklers must: immediately move away from the tackled player and from the ball or get up."
+    explanation: "The 'lazy tackler' blocking the recycle - releasing is step one; clearing the space is step two."
     contributor: null
 
   - id: L14-008
-    text: "A tackler attempts to play the ball while still on the ground. What is the sanction?"
+    text: "Still on the ground after making the tackle, Red 7 flicks the ball back to a team-mate. What do you award?"
     type: sanction
     difficulty: beginner
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Penalty to Blue - the tackler must be on their feet to play the ball"
+      - "Play on - tacklers may play immediately"
+      - "Scrum to Blue"
+      - "Free-kick to Blue"
+    answers: ["Penalty to Blue - the tackler must be on their feet to play the ball"]
     law_reference: "14.5c"
-    tags: ["tackle", "tackler", "on-feet", "sanction"]
-    explanation: "Law 14.5c: Tacklers must be on their feet before attempting to play the ball. Sanction: Penalty."
+    tags: ["tackle", "tackler", "sanction"]
+    law_quote: "Tacklers must: be on their feet before attempting to play the ball."
+    explanation: "On their feet means supporting their own body weight - not propped on the tackled player."
     contributor: null
 
   - id: L14-009
-    text: "A tackler prevents the tackled player from releasing the ball. What is the sanction?"
+    text: "Red 7's tackle traps Blue 12's arms so Blue 12 cannot release the ball. Blue 12 holds on. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
+      - "Penalty to Blue - the tackler must allow the tackled player to release the ball"
+      - "Penalty to Red - holding on"
+      - "Scrum to the team going forward"
       - "Play on"
-    answers: ["Penalty"]
+    answers: ["Penalty to Blue - the tackler must allow the tackled player to release the ball"]
     law_reference: "14.5d"
     tags: ["tackle", "tackler", "sanction"]
-    explanation: "Law 14.5d: Tacklers must allow the tackled player to release or play the ball. Sanction: Penalty."
+    law_quote: "Tacklers must: allow the tackled player to release or play the ball."
+    explanation: "Sequence your decision: the carrier cannot be penalised for failing to do something the tackler prevented. Tackler first."
     contributor: null
 
   - id: L14-010
-    text: "A tackler prevents the tackled player from moving away from the ball. What is the sanction?"
+    text: "Red 7 pins the tackled Blue 12 in place so Blue 12 cannot roll clear of the ball. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
+      - "Penalty to Blue - the tackler must allow the tackled player to move away"
+      - "Penalty to Red - Blue 12 is lying near the ball"
+      - "Scrum to Blue"
       - "Play on"
-    answers: ["Penalty"]
+    answers: ["Penalty to Blue - the tackler must allow the tackled player to move away"]
     law_reference: "14.5e"
     tags: ["tackle", "tackler", "sanction"]
-    explanation: "Law 14.5e: Tacklers must allow the tackled player to move away from the ball. Sanction: Penalty."
+    law_quote: "Tacklers must: allow the tackled player to move away from the ball."
+    explanation: "Same sequencing principle - who caused the mess? The trapped player is not the offender."
     contributor: null
 
   - id: L14-011
-    text: "From which direction can a tackler play the ball after complying with their responsibilities?"
+    text: "Having released and got to their feet, from which direction may the tackler play the ball?"
     type: factual
     difficulty: advanced
     options:
-      - "From the direction of their own try line"
-      - "From any direction"
-      - "From behind the tackled player"
-      - "They cannot play the ball"
-    answers: ["From the direction of their own try line"]
+      - "From the direction of their own try line, provided no ruck has formed"
+      - "From any direction - tacklers are exempt from the gate"
+      - "Only from directly behind the ball"
+      - "They may never play the ball again in that tackle"
+    answers: ["From the direction of their own try line, provided no ruck has formed"]
     law_reference: "14.6"
-    tags: ["tackle", "tackler", "jackal"]
-    explanation: "Law 14.6: Tacklers may play the ball from the direction of their own try line, provided they have complied with responsibilities and a ruck has not formed."
+    tags: ["tackle", "tackler"]
+    law_quote: "Tacklers may play the ball from the direction of their own try line provided they have complied with the above responsibilities and a ruck has not formed."
+    explanation: "The 2026 law removed the old 'from any direction' tackler exemption - tacklers now come through their own side like everyone else."
     contributor: null
 
   - id: L14-012
-    text: "When can a tackler NOT play the ball even after getting to their feet?"
+    text: "The tackler is on their feet, hands on the ball - then a ruck forms. May the tackler keep playing the ball?"
     type: factual
     difficulty: advanced
     options:
-      - "When a ruck has formed"
-      - "When the scrum-half is present"
-      - "Within 5 seconds of the tackle"
-      - "When the tackled player is still holding the ball"
-    answers: ["When a ruck has formed"]
+      - "A tackler already legally on the ball may stay; a ruck forming BEFORE they play it ends their chance"
+      - "Yes - a tackler's rights survive the ruck"
+      - "No - they must release the instant any opponent binds"
+      - "Only if the scrum-half has not arrived"
+    answers: ["A tackler already legally on the ball may stay; a ruck forming BEFORE they play it ends their chance"]
     law_reference: "14.6"
     tags: ["tackle", "tackler", "ruck"]
-    explanation: "Law 14.6: Tacklers may play the ball provided a ruck has not formed."
+    law_quote: "Tacklers may play the ball from the direction of their own try line provided they have complied with the above responsibilities and a ruck has not formed."
+    explanation: "Once the jackler is legally on the ball before the ruck forms, they may keep contesting (Law 15.11 lets them be removed by driving). If the ruck forms first, hands off."
     contributor: null
 
-  # Tackled player responsibilities
   - id: L14-013
-    text: "What must a tackled player do with the ball immediately?"
+    text: "What must the tackled player immediately do with the ball?"
     type: factual
     difficulty: beginner
     options:
-      - "Make it available by releasing, passing, or pushing (not forward)"
-      - "Hold onto it until support arrives"
-      - "Pass it forward"
-      - "Place it under their body"
-    answers: ["Make it available by releasing, passing, or pushing (not forward)"]
+      - "Make it available - release, pass, or push it in any direction except forward"
+      - "Hold it until team-mates secure it"
+      - "Push it in any direction, including forward"
+      - "Stand up with it - nothing else is legal"
+    answers: ["Make it available - release, pass, or push it in any direction except forward"]
     law_reference: "14.7a"
-    tags: ["tackle", "tackled-player", "release"]
-    explanation: "Law 14.7a: Tackled players must immediately make the ball available by releasing, passing or pushing (not forward). They may place it in any direction."
+    tags: ["tackle", "tackled-player"]
+    law_quote: "Tackled players must immediately: make the ball available so that play can continue by releasing, passing or pushing the ball in any direction except forward. They may place the ball in any direction."
+    explanation: "Note the asymmetry - PUSHING forward is banned, but PLACING in any direction (including towards the opponents' line) is legal."
     contributor: null
 
   - id: L14-014
-    text: "Can a tackled player place the ball in any direction?"
+    text: "May the tackled player PLACE the ball towards the opponents' try line?"
     type: factual
     difficulty: intermediate
     options:
-      - "Yes"
-      - "No, only backwards"
-      - "No, only sideways"
-      - "No, only towards their own try line"
-    answers: ["Yes"]
+      - "Yes - the ball may be placed in any direction"
+      - "No - only backwards"
+      - "No - only sideways or backwards"
+      - "Only if no opponent is contesting"
+    answers: ["Yes - the ball may be placed in any direction"]
     law_reference: "14.7a"
-    tags: ["tackle", "tackled-player", "placement"]
-    explanation: "Law 14.7a: Tackled players may place the ball in any direction."
+    tags: ["tackle", "tackled-player"]
+    law_quote: "They may place the ball in any direction."
+    explanation: "The long place towards your own attacking line is legal - it is pushing the ball FORWARD that is not."
     contributor: null
 
   - id: L14-015
-    text: "A tackled player does not release the ball immediately. What is the sanction?"
+    text: "Blue 12 is tackled and keeps hold of the ball on the ground. What do you award?"
     type: sanction
     difficulty: beginner
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Turnover"
-    answers: ["Penalty"]
-    law_reference: "14.7"
-    tags: ["tackle", "tackled-player", "holding-on", "sanction"]
-    explanation: "Law 14.7: Tackled players must immediately make ball available. Sanction: Penalty."
+      - "Penalty to Red - holding on"
+      - "Free-kick to Red"
+      - "Scrum to Red"
+      - "Turnover ball, play on"
+    answers: ["Penalty to Red - holding on"]
+    law_reference: "14.7a"
+    tags: ["tackle", "tackled-player", "sanction"]
+    law_quote: "Tackled players must immediately: make the ball available so that play can continue... Sanction: Penalty."
+    explanation: "Check the tackler complied first - if the carrier was prevented from releasing, the penalty goes the other way (Law 14.5d)."
     contributor: null
 
   - id: L14-016
-    text: "A tackled player lies on the ball to prevent opposition gaining possession. What is the sanction?"
+    text: "Tackled just short of the line, Blue 12 deliberately lies over the ball so Red cannot play it. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Penalty to Red - sealing the ball off"
+      - "Scrum to Red"
+      - "Play on if the ball eventually emerges"
+      - "Free-kick to Red"
+    answers: ["Penalty to Red - sealing the ball off"]
     law_reference: "14.7c"
-    tags: ["tackle", "tackled-player", "sealing", "sanction"]
-    explanation: "Law 14.7c: Tackled players must not lie on, over, or near the ball to prevent opponents gaining possession. Sanction: Penalty."
+    tags: ["tackle", "tackled-player", "sanction"]
+    law_quote: "Tackled players must immediately: ensure that they do not lie on, over or near the ball to prevent opposition players from gaining possession of it."
+    explanation: "Near their own line with a penalty already likely, think about the cynical-offence card as well."
     contributor: null
 
   - id: L14-017
-    text: "After releasing the ball, what must a tackled player do?"
+    text: "After making the ball available, what must the tackled player do?"
     type: factual
     difficulty: intermediate
     options:
       - "Move away from the ball or get up"
-      - "Stay and protect the ball"
-      - "Wait for the referee's signal"
-      - "Roll towards their own try line"
+      - "Stay down until the ruck is over"
+      - "Roll towards their own team"
+      - "Nothing further - their obligations are complete"
     answers: ["Move away from the ball or get up"]
     law_reference: "14.7b"
     tags: ["tackle", "tackled-player"]
-    explanation: "Law 14.7b: Tackled players must move away from the ball or get up."
+    law_quote: "Tackled players must immediately: move away from the ball or get up."
+    explanation: null
     contributor: null
 
-  # Other players' responsibilities
   - id: L14-018
-    text: "An arriving player at a tackle does not remain on their feet when playing the ball. What is the sanction?"
+    text: "An arriving Red player goes off their feet as they play the ball at a tackle. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Penalty to Blue - players must stay on their feet to play the ball"
+      - "Play on - securing possession is legal"
+      - "Scrum to Blue"
+      - "Free-kick to Blue"
+    answers: ["Penalty to Blue - players must stay on their feet to play the ball"]
     law_reference: "14.8b"
-    tags: ["tackle", "arriving-player", "on-feet", "sanction"]
-    explanation: "Law 14.8b: Other players must remain on their feet when they play the ball. Sanction: Penalty."
+    tags: ["tackle", "arriving-player", "sanction"]
+    law_quote: "Other players must: remain on their feet when they play the ball."
+    explanation: "Off feet at the tackle - the bread-and-butter breakdown penalty. Judge whether they were supporting their own body weight."
     contributor: null
 
   - id: L14-019
-    text: "From which direction must arriving players approach the tackle before playing the ball?"
+    text: "From where must arriving players enter before playing the ball at a tackle?"
     type: factual
     difficulty: intermediate
     options:
-      - "From the direction of their own try line"
-      - "From any direction"
-      - "From behind the ball"
-      - "From the side"
-    answers: ["From the direction of their own try line"]
+      - "From the direction of their own try line (through 'the gate')"
+      - "From any direction, if they are first to arrive"
+      - "From behind the hindmost foot of the ruck"
+      - "From the side nearest their captain"
+    answers: ["From the direction of their own try line (through 'the gate')"]
     law_reference: "14.8c"
-    tags: ["tackle", "arriving-player", "gate"]
-    explanation: "Law 14.8c: Other players must arrive at the tackle from the direction of their own try line before playing the ball."
+    tags: ["tackle", "arriving-player"]
+    law_quote: "Other players must: arrive at the tackle from the direction of their own try line before playing the ball."
+    explanation: "'The gate' in common parlance - the law's actual words are 'from the direction of their own try line'."
     contributor: null
 
   - id: L14-020
-    text: "A player arrives at a tackle from the side and plays the ball. What is the sanction?"
+    text: "Blue 6 arrives at the side of the tackle and plays the ball. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Penalty to Red - entry not from Blue's own try line direction"
+      - "Play on - first arriver may come from anywhere"
+      - "Scrum to Red"
+      - "Free-kick to Red"
+    answers: ["Penalty to Red - entry not from Blue's own try line direction"]
     law_reference: "14.8c"
-    tags: ["tackle", "arriving-player", "gate", "sanction"]
-    explanation: "Law 14.8c: Players must arrive from the direction of their own try line. Sanction: Penalty."
+    tags: ["tackle", "arriving-player", "sanction"]
+    law_quote: "Other players must: arrive at the tackle from the direction of their own try line before playing the ball."
+    explanation: null
     contributor: null
 
   - id: L14-021
-    text: "A player on the ground near the tackle plays the ball. What is the sanction?"
+    text: "Lying on the ground near a tackle, Red 3 pats the loose ball back to Red's side. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Penalty to Blue - playing the ball from the ground near the tackle"
+      - "Play on - the ball was loose"
+      - "Scrum to Blue"
+      - "Free-kick to Blue"
+    answers: ["Penalty to Blue - playing the ball from the ground near the tackle"]
     law_reference: "14.8d"
-    tags: ["tackle", "on-ground", "sanction"]
-    explanation: "Law 14.8d: Players must not play the ball while on the ground near the tackle. Sanction: Penalty."
+    tags: ["tackle", "sanction"]
+    law_quote: "Other players must: not play the ball or attempt to tackle an opponent while on the ground near the tackle."
+    explanation: null
     contributor: null
 
   - id: L14-022
-    text: "A player on the ground near the tackle attempts to tackle an opponent. What is the sanction?"
+    text: "From the ground near a tackle, Red 3 wraps up a Blue player trying to step over the ball. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Penalty to Blue - tackling from the ground"
+      - "Play on - protecting the ball"
+      - "Scrum to Blue"
+      - "Free-kick to Blue"
+    answers: ["Penalty to Blue - tackling from the ground"]
     law_reference: "14.8d"
-    tags: ["tackle", "on-ground", "sanction"]
-    explanation: "Law 14.8d: Players must not attempt to tackle an opponent while on the ground near the tackle. Sanction: Penalty."
+    tags: ["tackle", "sanction"]
+    law_quote: "Other players must: not play the ball or attempt to tackle an opponent while on the ground near the tackle."
+    explanation: null
     contributor: null
 
   - id: L14-023
-    text: "A player rolls an opponent who is involved in the tackle to the ground. What is the sanction?"
+    text: "Clearing out at a tackle, Blue 4 grabs Red 7 (who is legally contesting) and rolls them to the ground. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on - legal clearout"
-    answers: ["Penalty"]
+      - "Penalty to Red - rolling an opponent in the tackle"
+      - "Play on - a standard clear-out"
+      - "Scrum to Red"
+      - "Free-kick to Red"
+    answers: ["Penalty to Red - rolling an opponent in the tackle"]
     law_reference: "14.8e"
-    tags: ["tackle", "rolling", "sanction"]
-    explanation: "Law 14.8e: Players must not roll, pull or twist an opponent involved in the tackle to the ground. Sanction: Penalty."
+    tags: ["tackle", "clearout", "sanction"]
+    law_quote: "Other players must: not roll, pull or twist an opponent, who is involved in the tackle, to the ground."
+    explanation: "The legal removal is pushing or driving backwards, including via the knee/leg (Law 9.20d). Roll, pull or twist is always a penalty."
     contributor: null
 
   - id: L14-024
-    text: "An arriving player holds the ball-carrier but does not release immediately. What is the sanction?"
-    type: sanction
-    difficulty: intermediate
+    text: "Red 12 holds the ball-carrier in the tackle but stays on their feet. What are Red 12's obligations?"
+    type: factual
+    difficulty: advanced
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Release the ball and carrier immediately - as an assist, they have no tackler privileges"
+      - "None - they are a tackler and may play the ball straight away"
+      - "Only to stay on their feet"
+      - "To retreat to the offside line before doing anything"
+    answers: ["Release the ball and carrier immediately - as an assist, they have no tackler privileges"]
     law_reference: "14.8a"
-    tags: ["tackle", "arriving-player", "release", "sanction"]
-    explanation: "Law 14.8a: Other players must remain on their feet and release the ball and ball-carrier immediately. Sanction: Penalty."
+    tags: ["tackle", "arriving-player"]
+    law_quote: "Other players must: remain on their feet and release the ball and the ball-carrier immediately."
+    explanation: "The 'tackle assist' trap - a player who held but never went to ground is an OTHER, not a tackler. They must release and re-enter from their own side before contesting."
     contributor: null
 
-  # Player gaining possession
   - id: L14-025
-    text: "A player gains possession at a tackle. What must they do?"
+    text: "Red 8 wins the ball on their feet at a tackle. What must Red 8 do?"
     type: factual
     difficulty: intermediate
     options:
-      - "Play it immediately by moving away, passing, or kicking"
-      - "Wait for support"
-      - "Go to ground to secure it"
-      - "Hold onto it"
-    answers: ["Play it immediately by moving away, passing, or kicking"]
+      - "Play it immediately - move away, pass, or kick"
+      - "Wait for the ruck to form around them"
+      - "Go to ground to secure possession"
+      - "Hand it to the scrum-half"
+    answers: ["Play it immediately - move away, pass, or kick"]
     law_reference: "14.9a"
     tags: ["tackle", "possession"]
-    explanation: "Law 14.9a: A player who gains possession must play it immediately by moving away, passing, or kicking."
+    law_quote: "Any player who gains possession of the ball: must play it immediately, by moving away, or by passing or kicking the ball."
+    explanation: null
     contributor: null
 
   - id: L14-026
-    text: "A player gains possession at a tackle and goes to ground voluntarily. What is the sanction?"
+    text: "Red 8 wins the ball at a tackle, then voluntarily dives to the ground with it, untouched. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Penalty to Blue - going to ground at the tackle without being tackled"
+      - "Play on - protecting the ball"
+      - "Scrum to Blue"
+      - "Free-kick to Blue"
+    answers: ["Penalty to Blue - going to ground at the tackle without being tackled"]
     law_reference: "14.9b"
-    tags: ["tackle", "possession", "going-to-ground", "sanction"]
-    explanation: "Law 14.9b: Player gaining possession must remain on feet and not go to ground unless tackled. Sanction: Penalty."
+    tags: ["tackle", "possession", "sanction"]
+    law_quote: "Any player who gains possession of the ball: must remain on their feet, and not go to ground at or near the tackle unless tackled by the opposition."
+    explanation: "Flopping with the ball to kill the contest is a penalty - only an actual opposition tackle excuses going down."
     contributor: null
 
   - id: L14-027
-    text: "Can a player who gains possession at a tackle be tackled?"
+    text: "Red 8 has just won the ball on their feet at a tackle. May Blue tackle Red 8?"
     type: factual
     difficulty: intermediate
     options:
-      - "Yes, if the tackler comes from the direction of their own try line"
-      - "No, they cannot be tackled"
-      - "Yes, from any direction"
-      - "Only after 3 seconds"
-    answers: ["Yes, if the tackler comes from the direction of their own try line"]
+      - "Yes - provided the tackler comes from the direction of Blue's own try line"
+      - "No - the winner of the ball is protected"
+      - "Yes - from any direction"
+      - "Only once Red 8 leaves the tackle area"
+    answers: ["Yes - provided the tackler comes from the direction of Blue's own try line"]
     law_reference: "14.9c"
-    tags: ["tackle", "possession", "counter-ruck"]
-    explanation: "Law 14.9c: A player who gains possession may be tackled, provided the tackler does so from the direction of their own try line."
+    tags: ["tackle", "possession"]
+    law_quote: "[Any player who gains possession of the ball] may be tackled, provided the tackler does so from the direction of their own try line."
+    explanation: "The new pick-and-go carrier is live immediately - but the tackle must come through Blue's side, not around the corner."
     contributor: null
 
   - id: L14-028
-    text: "A player gains possession but does not play it immediately. What is the sanction?"
+    text: "Red 8 wins the ball at the tackle but stands still over it, waiting for support. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Penalty"
-      - "Free-kick"
-      - "Scrum"
-      - "Play on"
-    answers: ["Penalty"]
+      - "Penalty to Blue - the ball must be played immediately"
+      - "Play on - possession has been won"
+      - "Scrum to Blue"
+      - "Free-kick to Blue"
+    answers: ["Penalty to Blue - the ball must be played immediately"]
     law_reference: "14.9a"
     tags: ["tackle", "possession", "sanction"]
-    explanation: "Law 14.9a: Player gaining possession must play it immediately. Sanction: Penalty."
+    law_quote: "Any player who gains possession of the ball: must play it immediately, by moving away, or by passing or kicking the ball. Sanction: Penalty."
+    explanation: "In practice, allow a heartbeat - but a player planted over the ball inviting contact is not 'playing it immediately'."
     contributor: null
 
-  # Offside at tackle
   - id: L14-029
     text: "When are offside lines created at a tackle?"
     type: factual
     difficulty: advanced
     options:
-      - "When at least one player is on their feet and over the ball on the ground"
-      - "As soon as the tackle occurs"
-      - "When the referee signals"
-      - "When three players are involved"
-    answers: ["When at least one player is on their feet and over the ball on the ground"]
+      - "When at least one player is on their feet and over the ball, which is on the ground"
+      - "The moment the tackle is completed"
+      - "Only when a ruck forms"
+      - "When the referee calls 'tackle'"
+    answers: ["When at least one player is on their feet and over the ball, which is on the ground"]
     law_reference: "14.10"
     tags: ["tackle", "offside"]
-    explanation: "Law 14.10: Offside lines are created when at least one player is on their feet and over the ball, which is on the ground."
+    law_quote: "Offside lines are created at a tackle when at least one player is on their feet and over the ball, which is on the ground."
+    explanation: "No one over the ball = no offside lines yet - defenders may still advance from anywhere through their own side."
     contributor: null
 
   - id: L14-030
-    text: "Where does the offside line run at a tackle?"
+    text: "Where do the offside lines run once created at a tackle?"
     type: factual
     difficulty: advanced
     options:
-      - "Through the hindmost point of any player in the tackle or over the ball"
-      - "One metre behind the ball"
-      - "At the point of the tackle"
-      - "Five metres from the ball"
-    answers: ["Through the hindmost point of any player in the tackle or over the ball"]
+      - "Parallel to the try lines, through the hindmost point of any player in the tackle or on their feet over the ball"
+      - "One metre behind the ball on each side"
+      - "Through the middle of the tackled player"
+      - "Five metres either side of the tackle"
+    answers: ["Parallel to the try lines, through the hindmost point of any player in the tackle or on their feet over the ball"]
     law_reference: "14.10"
     tags: ["tackle", "offside"]
-    explanation: "Law 14.10: Each team's offside line runs through the hindmost point of any player in the tackle or on their feet over the ball."
+    law_quote: "Each team's offside line runs parallel to the try line through the hindmost point of any player in the tackle or on their feet over the ball."
+    explanation: null
     contributor: null
 
   - id: L14-031
-    text: "The hindmost point of a player at a tackle is behind the try line. Where is the offside line?"
+    text: "At a tackle near the line, the hindmost point of the defending team's player is behind their try line. Where is the defenders' offside line?"
     type: factual
     difficulty: advanced
     options:
       - "The try line"
-      - "Behind the try line"
-      - "At the hindmost point"
-      - "5 metres from the try line"
+      - "The hindmost point, even behind the try line"
+      - "The five-metre line"
+      - "There is no offside line in that case"
     answers: ["The try line"]
     law_reference: "14.10"
-    tags: ["tackle", "offside", "try-line"]
-    explanation: "Law 14.10: If the hindmost point is on or behind the try line, the offside line for that team is the try line."
+    tags: ["tackle", "offside", "in-goal"]
+    law_quote: "If that point is on or behind the try line, the offside line for that team is the try line."
+    explanation: "Defenders can stand ON their own try line at a tackle inches out - they don't have to retreat into in-goal."
     contributor: null
 
-  # End of tackle
   - id: L14-032
-    text: "When does the tackle end?"
+    text: "Which of these does NOT end a tackle?"
     type: factual
     difficulty: intermediate
     options:
-      - "When a ruck forms, player gains possession and moves/passes/kicks, ball leaves, or ball unplayable"
-      - "When the referee blows the whistle"
-      - "After 5 seconds"
-      - "When the tackled player releases the ball"
-    answers: ["When a ruck forms, player gains possession and moves/passes/kicks, ball leaves, or ball unplayable"]
+      - "The tackled player releasing the ball"
+      - "A ruck forming"
+      - "A player on their feet gaining possession and moving away, passing or kicking"
+      - "The ball leaving the tackle area"
+    answers: ["The tackled player releasing the ball"]
     law_reference: "14.11"
-    tags: ["tackle", "ending"]
-    explanation: "Law 14.11: Tackle ends when ruck forms, player on feet gains possession and moves/passes/kicks, ball leaves the area, or ball is unplayable."
+    tags: ["tackle"]
+    law_quote: "The tackle ends when: a ruck is formed; a player on their feet from either team gains possession of the ball and moves away or passes or kicks the ball; the ball leaves the tackle area; the ball is unplayable."
+    explanation: "Release starts the contest, it doesn't end the tackle - the tackle's obligations run until one of the four endings occurs."
     contributor: null
 
   - id: L14-033
-    text: "The ball becomes unplayable at a tackle. Who throws in at the scrum?"
-    type: factual
+    text: "The ball is unplayable at a tackle and you cannot tell who failed to comply. What do you award?"
+    type: sanction
     difficulty: advanced
     options:
-      - "The team moving forward, or attacking team if neither was moving"
-      - "The team that made the tackle"
-      - "The team that was tackled"
-      - "The defending team"
-    answers: ["The team moving forward, or attacking team if neither was moving"]
+      - "Scrum - throw to the team that was moving forward, or the attacking team if neither was"
+      - "Scrum - always to the defending team"
+      - "Penalty against the tackled player's team"
+      - "Drop-out"
+    answers: ["Scrum - throw to the team that was moving forward, or the attacking team if neither was"]
     law_reference: "14.11d"
-    tags: ["tackle", "unplayable", "scrum"]
-    explanation: "Law 14.11d: If ball is unplayable and there's doubt, scrum is taken by team moving forward, or if neither, the attacking team."
+    tags: ["tackle", "sanction"]
+    law_quote: "The ball is unplayable. If there is doubt about which player did not conform to law, the referee orders a scrum. The throw is taken by the team moving forward prior to the stoppage or, if no team was moving forward, by the attacking team."
+    explanation: "'When in doubt, scrum' - but only when genuinely in doubt. If you saw the offence, penalise it."
     contributor: null
 
-  # Scenario questions
   - id: L14-034
-    text: "Blue 7 tackles White 10. Both go to ground. Blue 7 releases but keeps their body weight on White 10's legs. What is the decision?"
+    text: "Red 7 tackles Blue 10. Both go to ground. Red 7 releases the ball but stays lying across Blue 10's legs. What do you award?"
     type: scenario
     difficulty: intermediate
     options:
-      - "Penalty to White - tackler not moving away"
-      - "Play on - legal release"
-      - "Scrum to White"
-      - "Free-kick to White"
-    answers: ["Penalty to White - tackler not moving away"]
+      - "Penalty to Blue - the tackler has not moved away"
+      - "Play on - Red 7 released the ball"
+      - "Scrum to Blue"
+      - "Free-kick to Blue"
+    answers: ["Penalty to Blue - the tackler has not moved away"]
     law_reference: "14.5b"
-    tags: ["tackle", "tackler", "scenario"]
-    explanation: "The tackler must immediately move away from the tackled player. Keeping body weight on them is not moving away. Penalty."
+    tags: ["tackle", "tackler"]
+    law_quote: "Tacklers must: immediately move away from the tackled player and from the ball or get up."
+    explanation: "Releasing the ball is not enough - lying across the player's legs pins them and blocks the contest."
     contributor: null
 
   - id: L14-035
-    text: "Blue 9 arrives at a tackle from the side and picks up the ball. What is the decision?"
+    text: "Blue 9 arrives at a fresh tackle from the side and picks up the ball. What do you award?"
     type: scenario
     difficulty: intermediate
     options:
-      - "Penalty to White - entering through the side"
-      - "Play on - legal pickup"
-      - "Scrum to White"
-      - "Free-kick to White"
-    answers: ["Penalty to White - entering through the side"]
+      - "Penalty to Red - side entry"
+      - "Play on - the scrum-half may enter from anywhere"
+      - "Scrum to Red"
+      - "Free-kick to Red"
+    answers: ["Penalty to Red - side entry"]
     law_reference: "14.8c"
-    tags: ["tackle", "gate", "scenario"]
-    explanation: "Players must arrive from the direction of their own try line. Entering from the side is a penalty."
+    tags: ["tackle", "arriving-player"]
+    law_quote: "Other players must: arrive at the tackle from the direction of their own try line before playing the ball."
+    explanation: "No exemption for the 9 - every arriving player comes through their own side before playing the ball."
     contributor: null
 
   - id: L14-036
-    text: "White 12 is tackled and holds onto the ball for 3 seconds before releasing. What is the decision?"
+    text: "Blue 12 is tackled, is free to release, but clings on for three seconds while team-mates arrive. What do you award?"
     type: scenario
     difficulty: beginner
     options:
-      - "Penalty to Blue - holding on"
-      - "Play on - acceptable delay"
-      - "Scrum to Blue"
-      - "Free-kick to Blue"
-    answers: ["Penalty to Blue - holding on"]
+      - "Penalty to Red - holding on"
+      - "Play on - a reasonable delay"
+      - "Scrum to Red"
+      - "Free-kick to Red"
+    answers: ["Penalty to Red - holding on"]
     law_reference: "14.7a"
-    tags: ["tackle", "holding-on", "scenario"]
-    explanation: "Tackled players must immediately make the ball available. Holding for 3 seconds is not immediate. Penalty."
+    tags: ["tackle", "tackled-player"]
+    law_quote: "Tackled players must immediately: make the ball available so that play can continue..."
+    explanation: "'Immediately' is not three seconds. Buying time for the cleaners to arrive is exactly what the law prohibits."
     contributor: null
 
   - id: L14-037
-    text: "Blue 7 completes a tackle, releases, gets to feet, and plays the ball from the side. What is the decision?"
+    text: "Red 7 completes a tackle, releases, gets up - then reaches over from the side to play the ball. What do you award?"
     type: scenario
     difficulty: advanced
     options:
-      - "Penalty to White - not from own try line direction"
-      - "Play on - tackler's privilege"
-      - "Scrum to White"
-      - "Free-kick to White"
-    answers: ["Penalty to White - not from own try line direction"]
+      - "Penalty to Blue - even the tackler must play from their own try line direction"
+      - "Play on - tacklers may play from any direction"
+      - "Scrum to Blue"
+      - "Free-kick to Blue"
+    answers: ["Penalty to Blue - even the tackler must play from their own try line direction"]
     law_reference: "14.6"
-    tags: ["tackle", "tackler", "jackal", "scenario"]
-    explanation: "Even tacklers must play the ball from the direction of their own try line. Playing from the side is a penalty."
+    tags: ["tackle", "tackler"]
+    law_quote: "Tacklers may play the ball from the direction of their own try line provided they have complied with the above responsibilities and a ruck has not formed."
+    explanation: "The old any-direction tackler exemption is gone - the 2026 law requires the tackler to come from their own side like everyone else."
     contributor: null
 
   - id: L14-038
-    text: "White 8 picks up the ball at a tackle, is still on their feet, but dives forward to secure it. What is the decision?"
+    text: "Red 8 picks up at a tackle, is untouched on their feet, then dives forward to ground to 'secure' the ball. What do you award?"
     type: scenario
     difficulty: intermediate
     options:
-      - "Penalty to Blue - going to ground voluntarily"
-      - "Play on - securing possession"
+      - "Penalty to Blue - going to ground voluntarily at the tackle"
+      - "Play on - sensible ball protection"
       - "Scrum to Blue"
-      - "Ruck formed"
-    answers: ["Penalty to Blue - going to ground voluntarily"]
+      - "A new ruck has formed - play on"
+    answers: ["Penalty to Blue - going to ground voluntarily at the tackle"]
     law_reference: "14.9b"
-    tags: ["tackle", "possession", "going-to-ground", "scenario"]
-    explanation: "A player gaining possession must remain on feet and not go to ground unless tackled by opposition. Penalty."
+    tags: ["tackle", "possession"]
+    law_quote: "[Any player who gains possession] must remain on their feet, and not go to ground at or near the tackle unless tackled by the opposition."
+    explanation: "Only an opposition tackle excuses going to ground - a voluntary dive re-kills the ball the law wants alive."
     contributor: null
 
   - id: L14-039
-    text: "Blue 6 is on the ground from a previous tackle. They reach out and grab the ball at a new tackle nearby. What is the decision?"
+    text: "Blue 6, on the ground from an earlier phase, reaches out and grabs the ball at a new tackle forming nearby. What do you award?"
     type: scenario
     difficulty: intermediate
     options:
-      - "Penalty to White - playing ball while on ground"
-      - "Play on - legal play"
-      - "Scrum to White"
-      - "Free-kick to White"
-    answers: ["Penalty to White - playing ball while on ground"]
+      - "Penalty to Red - playing the ball from the ground near the tackle"
+      - "Play on - Blue 6 was there first"
+      - "Scrum to Red"
+      - "Free-kick to Red"
+    answers: ["Penalty to Red - playing the ball from the ground near the tackle"]
     law_reference: "14.8d"
-    tags: ["tackle", "on-ground", "scenario"]
-    explanation: "Players on the ground near the tackle must not play the ball. Penalty."
+    tags: ["tackle"]
+    law_quote: "Other players must: not play the ball or attempt to tackle an opponent while on the ground near the tackle."
+    explanation: "Players already on the ground are 'others' in the tackle with the same prohibition - out of the game until they get up."
     contributor: null
 
   - id: L14-040
-    text: "White 4 counter-rucks and clears Blue 7 off the ball by rolling them away. What is the decision?"
+    text: "Red 4 counter-rucks and clears Blue 7 off the ball by rolling them away to the ground. What do you award?"
     type: scenario
     difficulty: advanced
     options:
-      - "Penalty to Blue - rolling an opponent"
-      - "Play on - legal clearout"
-      - "Penalty to White"
-      - "Ruck formed"
-    answers: ["Penalty to Blue - rolling an opponent"]
+      - "Penalty to Blue - rolling an opponent involved in the tackle"
+      - "Play on - a dominant legal clear-out"
+      - "Penalty to Red - Blue 7 was sealing"
+      - "Scrum to Red"
+    answers: ["Penalty to Blue - rolling an opponent involved in the tackle"]
     law_reference: "14.8e"
-    tags: ["tackle", "clearout", "rolling", "scenario"]
-    explanation: "Players must not roll, pull or twist an opponent involved in the tackle to the ground. Penalty."
+    tags: ["tackle", "clearout"]
+    law_quote: "Other players must: not roll, pull or twist an opponent, who is involved in the tackle, to the ground."
+    explanation: "Drive them backwards - legal, including grabbing the knee/leg (Law 9.20d). Roll them sideways - penalty, every time."
     contributor: null

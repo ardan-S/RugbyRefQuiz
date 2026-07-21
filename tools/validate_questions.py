@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """
-Validation script for YAML question files.
+Validation script for YAML question and scenario chain files.
 
 Usage:
     python tools/validate_questions.py [path]
 
-If no path is provided, validates all files in questions/data/.
+If no path is provided, validates all files in questions/data/ and
+questions/scenarios/. Files containing a top-level `chains` key are
+validated against the scenario schema; everything else against the
+question schema.
 
 Exit codes:
     0: All files valid
@@ -19,7 +22,13 @@ from pathlib import Path
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from questions.loader import load_yaml_file, validate_question_file
+from questions.loader import (  # noqa: E402
+    load_yaml_file,
+    validate_question_file,
+    validate_scenario_file,
+)
+
+SKIP_NAMES = {"schema.yaml", "scenario_schema.yaml", "topics.yaml"}
 
 
 def validate_file(filepath: Path) -> list[str]:
@@ -37,6 +46,8 @@ def validate_file(filepath: Path) -> list[str]:
     if not data:
         return ["File is empty or invalid"]
 
+    if 'chains' in data:
+        return validate_scenario_file(data)
     return validate_question_file(data)
 
 
@@ -50,7 +61,7 @@ def validate_directory(dirpath: Path) -> dict[str, list[str]]:
     results = {}
 
     for yaml_file in sorted(dirpath.glob("*.yaml")):
-        if yaml_file.name == "schema.yaml":
+        if yaml_file.name in SKIP_NAMES:
             continue
 
         errors = validate_file(yaml_file)
@@ -62,12 +73,13 @@ def validate_directory(dirpath: Path) -> dict[str, list[str]]:
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Validate YAML question files against schema'
+        description='Validate YAML question/scenario files against schema'
     )
     parser.add_argument(
         'path',
         nargs='?',
-        help='Path to validate (file or directory). Defaults to questions/data/'
+        help='Path to validate (file or directory). Defaults to '
+             'questions/data/ and questions/scenarios/'
     )
     parser.add_argument(
         '--verbose', '-v',
@@ -76,18 +88,22 @@ def main():
     )
     args = parser.parse_args()
 
-    # Determine path to validate
+    # Determine paths to validate
     if args.path:
-        target = Path(args.path)
+        targets = [Path(args.path)]
     else:
-        target = Path(__file__).parent.parent / 'questions' / 'data'
+        base = Path(__file__).parent.parent / 'questions'
+        targets = [base / 'data']
+        if (base / 'scenarios').exists():
+            targets.append(base / 'scenarios')
 
-    if not target.exists():
-        print(f"Error: Path does not exist: {target}")
-        sys.exit(1)
+    for target in targets:
+        if not target.exists():
+            print(f"Error: Path does not exist: {target}")
+            sys.exit(1)
 
-    # Validate
-    if target.is_file():
+    if len(targets) == 1 and targets[0].is_file():
+        target = targets[0]
         errors = validate_file(target)
         if errors:
             print(f"INVALID: {target.name}")
@@ -98,42 +114,43 @@ def main():
             print(f"VALID: {target.name}")
             sys.exit(0)
 
-    elif target.is_dir():
-        yaml_files = list(target.glob("*.yaml"))
-        yaml_files = [f for f in yaml_files if f.name != "schema.yaml"]
+    total_files = 0
+    total_invalid = 0
+
+    for target in targets:
+        if not target.is_dir():
+            print(f"Error: Path is not a file or directory: {target}")
+            sys.exit(1)
+
+        yaml_files = [f for f in target.glob("*.yaml")
+                      if f.name not in SKIP_NAMES]
 
         if not yaml_files:
             print(f"No YAML files found in {target}")
-            sys.exit(0)
+            continue
 
         results = validate_directory(target)
-        valid_count = len(yaml_files) - len(results)
-        invalid_count = len(results)
+        total_files += len(yaml_files)
+        total_invalid += len(results)
 
-        # Print results
         print(f"Validated {len(yaml_files)} files in {target}")
-        print()
 
         if args.verbose:
             for yaml_file in yaml_files:
                 if yaml_file.name not in results:
                     print(f"  VALID: {yaml_file.name}")
 
-        if results:
-            print()
-            for filename, errors in results.items():
-                print(f"  INVALID: {filename}")
-                for error in errors:
-                    print(f"    - {error}")
+        for filename, errors in results.items():
+            print(f"  INVALID: {filename}")
+            for error in errors:
+                print(f"    - {error}")
 
         print()
-        print(f"Summary: {valid_count} valid, {invalid_count} invalid")
 
-        sys.exit(1 if invalid_count > 0 else 0)
+    print(f"Summary: {total_files - total_invalid} valid, "
+          f"{total_invalid} invalid")
 
-    else:
-        print(f"Error: Path is not a file or directory: {target}")
-        sys.exit(1)
+    sys.exit(1 if total_invalid > 0 else 0)
 
 
 if __name__ == '__main__':

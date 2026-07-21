@@ -8,12 +8,17 @@ Live site: https://rugbyrefquiz.onrender.com
 
 The app lets you:
 
-- choose one or more laws to study
+- practise by curated topic (the breakdown, scrum, foul play, ...) or by law
 - filter by difficulty and question type
 - choose how many questions to answer
 - work through a multiple-choice quiz in the browser
 - get immediate feedback with the law reference and an explanation
 - review the questions you missed and retry just those
+- share a quiz link that gives everyone the same questions in the same order
+
+Topics are defined in `questions/topics.yaml` - each topic maps to whole laws
+plus cross-law tags, so "The Breakdown" pulls in tackle/ruck questions wherever
+they live.
 
 Question content is stored in YAML under `questions/data/` and validated against `questions/schema.yaml`.
 

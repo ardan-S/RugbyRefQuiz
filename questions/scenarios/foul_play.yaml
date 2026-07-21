@@ -1,0 +1,391 @@
+metadata:
+  title: "Foul Play scenarios"
+  source: "World Rugby Laws 2026"
+
+chains:
+  - id: CH-FP-001
+    setup: >-
+      Twenty minutes in, Red lead 7-0. Blue 12 rushes up and makes direct,
+      forceful shoulder contact with Red 10's chin. Blue 12 was fully
+      upright throughout, and Red 10 never dropped his height. Red 10 stays
+      down and needs the medics.
+    laws: [9, 3]
+    difficulty: advanced
+    tags: [foul-play, dangerous-play, red-card]
+    steps:
+      - text: "What's the offence?"
+        options:
+          - "A dangerous tackle - contact above the line of the shoulders"
+          - "A fair, dominant hit - contact started at chest height"
+          - "Charging without attempting to grasp the opponent"
+          - "A late tackle"
+        answers:
+          - "A dangerous tackle - contact above the line of the shoulders"
+        law_reference: "9.13"
+        law_quote: "A player must not tackle an opponent early, late or dangerously. Dangerous tackling includes, but is not limited to, tackling or attempting to tackle an opponent above the line of the shoulders even if the tackle starts below the line of the shoulders."
+        explanation: >-
+          Direct shoulder to chin is squarely above the line of the
+          shoulders. Note the law's tail: even a tackle that STARTS below
+          the shoulders becomes dangerous if it rides up.
+      - text: >-
+          Now the sanction. Work it through: contact with the head, a high
+          degree of danger (forceful, direct, shoulder leading), and no
+          mitigation - Blue 12 was upright the whole way and Red 10 never
+          changed height. What's the outcome?
+        options:
+          - "Red card - send Blue 12 off"
+          - "Yellow card and a high-tackle warning"
+          - "Penalty only - it's his first offence of the match"
+          - "Penalty plus a formal team warning"
+        answers:
+          - "Red card - send Blue 12 off"
+        law_reference: "9.13"
+        law_quote: "A player who commits foul play must either be cautioned or shown a yellow card or sent off."
+        explanation: >-
+          This is the head-contact process: foul play? Yes. Head contact?
+          Yes. Degree of danger? High - direct, forceful, upright shoulder.
+          Mitigation? None - no sudden drop, no passive role. High danger
+          with no mitigation is a red card, regardless of intent or of it
+          being a first offence.
+      - text: >-
+          Blue's coach wants to send a replacement fly-half on for Blue 12.
+          What do you allow?
+        options:
+          - "Nothing - a player who is sent off may not be replaced"
+          - "A replacement after 20 minutes of playing time"
+          - "An immediate replacement - the match should stay 15 v 15"
+          - "A replacement only if uncontested scrums result"
+        answers:
+          - "Nothing - a player who is sent off may not be replaced"
+        law_reference: "9.30"
+        law_quote: "When a player is being sent off, the referee will show that player a red card and the player will take no further part in the match. A player sent off may not be replaced."
+        explanation: >-
+          At community level Blue play the rest of the match with 14. The
+          20-minute replacement only exists as an elite-rugby variation (and
+          even there, not for intentional, highly dangerous acts).
+    contributor: null
+
+  - id: CH-FP-002
+    setup: >-
+      Blue lead 27-20 with a minute left. Red attack five metres from
+      Blue's line; Red 8 picks up from the base of a ruck and drives for
+      the corner. Blue 4 flies out and hits him shoulder-first into the
+      chest, arms tucked, making no attempt to wrap.
+    laws: [9, 8, 7]
+    difficulty: advanced
+    tags: [foul-play, dangerous-play, try, advantage]
+    steps:
+      - text: "What's the offence?"
+        options:
+          - "Charging down an opponent without attempting to grasp him"
+          - "A dominant but legal front-on tackle"
+          - "A high tackle"
+          - "Obstruction"
+        answers:
+          - "Charging down an opponent without attempting to grasp him"
+        law_reference: "9.16"
+        law_quote: "A player must not charge or knock down an opponent carrying the ball without attempting to grasp that player."
+        explanation: >-
+          The no-arms shoulder charge. Contact was chest height, so it's not
+          a high tackle - the offence is the absence of any attempt to
+          grasp, and it's dangerous play in its own right.
+      - text: >-
+          Red 8 bounces off the hit, stays on his feet and grounds the ball
+          in the corner in the same movement. What do you award?
+        options:
+          - "The try - the score is the advantage; deal with Blue 4 separately"
+          - "A penalty try - foul play in the act of scoring"
+          - "A penalty five metres out - foul play stops play immediately"
+          - "The try, with the conversion moved in front of the posts"
+        answers:
+          - "The try - the score is the advantage; deal with Blue 4 separately"
+        law_reference: "8.3"
+        law_quote: "A penalty try is awarded between the goal posts if foul play by the opposing team prevents a probable try from being scored, or scored in a more advantageous position."
+        explanation: >-
+          A penalty try exists for tries PREVENTED by foul play - this one
+          was scored, so award it where it was grounded. The foul doesn't
+          vanish, though: you can still card Blue 4 for the dangerous hit
+          before the conversion.
+      - text: >-
+          Replay the moment: this time the hit stops Red 8 dead a metre out
+          and the ball spills forward. Without the foul, the try was
+          probable. What now?
+        options:
+          - "Penalty try, and at least a yellow card for Blue 4"
+          - "Penalty to Red five metres out"
+          - "Scrum to Blue for the knock-on"
+          - "Penalty try, with the conversion taken in front of the posts"
+        answers:
+          - "Penalty try, and at least a yellow card for Blue 4"
+        law_reference: "8.3"
+        law_quote: "A penalty try is awarded between the goal posts if foul play by the opposing team prevents a probable try from being scored, or scored in a more advantageous position. A player guilty of this must be cautioned and shown a yellow card or sent off. No conversion is attempted."
+        explanation: >-
+          Seven points, no conversion - and the card is not optional: the
+          law says the guilty player MUST be cautioned and shown yellow, or
+          sent off. Grade yellow vs red on the danger of the act itself.
+    contributor: null
+
+  - id: CH-FP-003
+    setup: >-
+      Red have given away a string of penalties and you issued their
+      captain a general team warning ten minutes ago. Now Blue 10 clears
+      from inside his own 22; the ball is bouncing near halfway when Red 6
+      clatters into him, clearly late.
+    laws: [9]
+    difficulty: intermediate
+    tags: [foul-play, late-tackle, repeated-infringement]
+    steps:
+      - text: "What's the offence?"
+        options:
+          - "A late charge on the kicker"
+          - "Fair pressure - Red 6 was already committed to the challenge"
+          - "No offence - the kicker is fair game once the ball is gone"
+          - "A dangerous tackle - automatic red card"
+        answers:
+          - "A late charge on the kicker"
+        law_reference: "9.25"
+        law_quote: "A player must not intentionally charge or obstruct an opponent who has just kicked the ball. Sanction: Penalty."
+        explanation: >-
+          "Clearly late" is the key fact - a chaser genuinely committed to a
+          charge-down before the kick is a different picture, but arriving
+          after the ball is 40 metres away is a charge on a player without
+          the ball.
+      - text: "Where can Blue take the penalty?"
+        options:
+          - "Their choice - at the place of the late charge, or where the ball landed (no nearer than 15m to touch)"
+          - "Only at the place of the late charge"
+          - "Only where the ball landed"
+          - "At halfway, at the referee's discretion"
+        answers:
+          - "Their choice - at the place of the late charge, or where the ball landed (no nearer than 15m to touch)"
+        law_reference: "9.25"
+        law_quote: "Sanction: Penalty. The non-offending team chooses to take the penalty either: at the place of the infringement; or where the ball lands or is next played but not nearer than 15 metres from the touchline."
+        explanation: >-
+          This is the one penalty where the non-offending team picks the
+          mark - so the late hit can't gift the offending team 40 metres.
+          Tell Blue their options; most will take the ball's landing spot.
+      - text: >-
+          Red are already under a formal team warning, and this is another
+          deliberate offence. What do you do about Red 6?
+        options:
+          - "Yellow card"
+          - "Another warning to the captain"
+          - "Penalty only - the warning was for breakdown offences, not late hits"
+          - "Red card - any foul play after a team warning is a sending-off"
+        answers:
+          - "Yellow card"
+        law_reference: "9.10"
+        law_quote: "When different players of the same team repeatedly commit the same offence, the referee gives a general caution to the team and if they then repeat the offence, shows a yellow card to the guilty player(s)."
+        explanation: >-
+          A team warning has to mean something - the next deliberate
+          offence draws the card, and a late charge on a kicker is card
+          territory in its own right if it's forceful. Warnings that never
+          escalate teach teams to keep offending.
+    contributor: null
+
+  - id: CH-FP-004
+    setup: >-
+      Red lead 13-10 just before half-time. On halfway, Red 10 floats a
+      pass towards Red 13, who has a two-man overlap outside him. Blue 13
+      shoots up and deliberately slaps the ball down with one hand - no
+      realistic chance of an interception.
+    laws: [11, 9, 8, 7]
+    difficulty: intermediate
+    tags: [knock-on, intentional, foul-play, advantage]
+    steps:
+      - text: "What's the offence?"
+        options:
+          - "An intentional knock forward - a penalty offence"
+          - "A knock-on - scrum to Red"
+          - "Nothing - a good defensive read, play on"
+          - "Foul play - immediate penalty try"
+        answers:
+          - "An intentional knock forward - a penalty offence"
+        law_reference: "11.3"
+        law_quote: "A player must not intentionally knock the ball forward with hand or arm. Sanction: Penalty."
+        explanation: >-
+          The dividing line is the genuine attempt to catch: one hand
+          slapping down with no realistic chance of an interception is a
+          deliberate knock forward, not an unlucky intercept attempt.
+      - text: >-
+          The slap kills the pass, but Red 13 reacts fast, scoops the loose
+          ball at full pace and the overlap is still on. What should you do?
+        options:
+          - "Play advantage - the overlap is worth more than the penalty"
+          - "Whistle immediately - deliberate foul play always stops the game"
+          - "Award the penalty - advantage cannot be played to a deliberate knock forward"
+          - "Scrum to Red"
+        answers:
+          - "Play advantage - the overlap is worth more than the penalty"
+        law_reference: "7.1"
+        law_quote: "Advantage: may be tactical. The non-offending team is free to play the ball as they wish."
+        explanation: >-
+          Nothing about a deliberate offence prevents advantage - and a live
+          two-man overlap is exactly the "clear and real" gain the law has
+          in mind. If Red score, you can still come back and card Blue 13.
+      - text: >-
+          The advantage dies - Red 13 is scragged and the chance is gone,
+          so you come back for the penalty. Given the two-man overlap on
+          halfway, what about a card or penalty try?
+        options:
+          - "A yellow card is a strong option for the cynical offence; no penalty try from 50 metres out"
+          - "Penalty try - the overlap would have scored"
+          - "Penalty only - cards are for dangerous play, not handling offences"
+          - "Red card - deliberate foul play"
+        answers:
+          - "A yellow card is a strong option for the cynical offence; no penalty try from 50 metres out"
+        law_reference: "8.3"
+        law_quote: "A penalty try is awarded between the goal posts if foul play by the opposing team prevents a probable try from being scored, or scored in a more advantageous position."
+        explanation: >-
+          The penalty-try test is a PROBABLE try - a promising overlap 50
+          metres out with cover across doesn't meet it. But cynical,
+          deliberate offences that kill clear attacking chances are classic
+          yellow-card territory, dangerous or not.
+    contributor: null
+
+  - id: CH-FP-005
+    setup: >-
+      Scores level, 68 minutes. A ruck breaks up 30 metres from Blue's
+      line. After the ball is out, Blue 1 keeps Red 5 pinned on the floor
+      well away from play. Red 5 responds with a punch into Blue 1's ribs,
+      and both packs square up. You and your assistant referee saw the
+      whole sequence.
+    laws: [9]
+    difficulty: intermediate
+    tags: [foul-play, misconduct]
+    steps:
+      - text: "Play has stopped. Which way does the penalty go?"
+        options:
+          - "Penalty to Blue - the punch outweighs the original offence; retaliation is never allowed"
+          - "Penalty to Red - Blue 1 started it by holding him down"
+          - "Two offences cancel out - restart with a scrum"
+          - "No penalty - manage both players with a word"
+        answers:
+          - "Penalty to Blue - the punch outweighs the original offence; retaliation is never allowed"
+        law_reference: "9.21"
+        law_quote: "A player must not retaliate. Sanction: Penalty."
+        explanation: >-
+          Blue 1's off-the-ball holding had earned Red a penalty - until
+          Red 5 threw the punch. Retaliation is its own offence and the
+          more serious one, so the penalty reverses. Striking is never the
+          remedy for being fouled; that's what you and your AR are for.
+      - text: "What discipline follows?"
+        options:
+          - "At minimum a yellow card for Red 5 - and deal with Blue 1 too, since his holding started it"
+          - "Nothing beyond the penalty - the punch was to the body, not the head"
+          - "Red cards for both players"
+          - "A general warning to both captains only"
+        answers:
+          - "At minimum a yellow card for Red 5 - and deal with Blue 1 too, since his holding started it"
+        law_reference: "9.12"
+        law_quote: "A player must not physically or verbally abuse anyone. Physical abuse includes, but is not limited to, biting, punching, contact with the eye or eye area, striking with any part of the arm, shoulder, head or knee(s), stamping, trampling, tripping or kicking."
+        explanation: >-
+          A punch is card territory wherever it lands - yellow at minimum,
+          red if forceful or to the head. And don't let the instigator walk
+          away clean: the penalty already reversed, but Blue 1 can still be
+          carded or formally warned for the holding that lit the fuse.
+    contributor: null
+
+  - id: CH-FP-006
+    setup: >-
+      It's 15-15 after half an hour. Blue box-kick to Red 15, who catches
+      cleanly on his own 10-metre line. Red 2 and Red 3 are retreating in
+      front of him as Blue 14 leads the chase.
+    laws: [9]
+    difficulty: intermediate
+    tags: [obstruction, foul-play, materiality]
+    steps:
+      - text: >-
+          Red 3 changes his line to stay between Blue 14 and the catcher,
+          and Blue 14 has to check and run around him. What's your call?
+        options:
+          - "Penalty to Blue - intentional obstruction of a would-be tackler"
+          - "Play on - Red 3 is entitled to retreat along his own path"
+          - "Penalty to Blue only if there is contact"
+          - "Free-kick to Blue - technical obstruction"
+        answers:
+          - "Penalty to Blue - intentional obstruction of a would-be tackler"
+        law_reference: "9.3"
+        law_quote: "A player must not intentionally prevent an opponent from tackling or attempting to tackle the ball-carrier. Sanction: Penalty."
+        explanation: >-
+          The "escort runner". The line change is what convicts him - he
+          adjusted to shield the catcher, and it forced the chaser off his
+          line. No contact is required for obstruction.
+      - text: >-
+          Same picture later in the game - but this time Red 3 runs a
+          straight retreating line, never adjusts, and Blue 14 was never in
+          range to make the tackle anyway. Blue's bench wants a penalty.
+          What's your call?
+        options:
+          - "Play on - no intentional obstruction and no material effect"
+          - "Penalty to Blue - being in front of the catcher is enough"
+          - "Penalty to Blue - consistency with your earlier decision"
+          - "Free-kick to Blue"
+        answers:
+          - "Play on - no intentional obstruction and no material effect"
+        law_reference: "9.3"
+        law_quote: "A player must not intentionally prevent an opponent from tackling or attempting to tackle the ball-carrier. Sanction: Penalty."
+        explanation: >-
+          The offence needs intent, and materiality needs effect - here
+          there's neither. Retreating players will always be somewhere in
+          front of their catcher; that alone is not obstruction. Same
+          standard as before, applied to different facts: that IS
+          consistency.
+    contributor: null
+
+  - id: CH-FP-007
+    setup: >-
+      Twenty-two metres from Red's line, Blue 7 is legally over the ball at
+      a tackle - on his feet, hands on. Red 12 arrives, grips Blue 7 around
+      the torso and rolls him sideways; Blue 7's leg is trapped underneath
+      and he stays down clutching his knee.
+    laws: [9, 15]
+    difficulty: advanced
+    tags: [foul-play, dangerous-play, clearout, ruck]
+    steps:
+      - text: "What's the offence?"
+        options:
+          - "Penalty offence by Red 12 - the jackler must not be rolled, pulled or twisted"
+          - "No offence - clearing out the jackler is part of the contest"
+          - "Penalty offence by Blue 7 - he must release once contact arrives"
+          - "Free-kick offence by Red 12 - an entry infringement"
+        answers:
+          - "Penalty offence by Red 12 - the jackler must not be rolled, pulled or twisted"
+        law_reference: 9.20d
+        law_quote: "A player may remove the jackler/stealer from the tackle area by pushing/driving them backwards (including by grabbing the knee/leg), but must not roll, pull or twist an opponent."
+        explanation: >-
+          Blue 7 has jackler's rights - on his feet, hands on first - so
+          he owes nobody a release. Red 12's remedy was a straight drive;
+          the sideways roll is the offence.
+      - text: >-
+          The roll trapped and twisted Blue 7's lower leg and he can't
+          continue. How do you grade the sanction?
+        options:
+          - "Penalty plus a card - at least a yellow, given the danger to the trapped leg"
+          - "Penalty only - poor technique, but just a breakdown offence"
+          - "Automatic red card - every leg injury from a clear-out is red"
+          - "Penalty and a team warning"
+        answers:
+          - "Penalty plus a card - at least a yellow, given the danger to the trapped leg"
+        law_reference: 9.20e
+        law_quote: "A player must not drop their weight onto an opponent or target the lower limbs."
+        explanation: >-
+          This is the "crocodile roll" the 2026 wording was written to
+          remove from the game - rotation onto a trapped, loaded leg is a
+          serious injury mechanism. Grade the card on force and outcome:
+          yellow as a floor, red where the danger is high.
+      - text: "What would have been the legal way to shift Blue 7?"
+        options:
+          - "Drive him straight backwards off the ball - grabbing the knee or leg to do so is allowed"
+          - "Nothing - a jackler with his hands on the ball cannot be removed"
+          - "Pull him sideways, as long as he lands clear of the ball"
+          - "Drop low and drive onto his ankles"
+        answers:
+          - "Drive him straight backwards off the ball - grabbing the knee or leg to do so is allowed"
+        law_reference: 9.20d
+        law_quote: "A player may remove the jackler/stealer from the tackle area by pushing/driving them backwards (including by grabbing the knee/leg), but must not roll, pull or twist an opponent."
+        explanation: >-
+          The law offers a clean template: backwards is legal - even by the
+          leg - rotation and lower-limb targeting are not. Knowing the
+          legal picture makes the illegal one easier to spot at full speed.
+    contributor: null

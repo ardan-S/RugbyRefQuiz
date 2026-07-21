@@ -11,370 +11,411 @@ questions:
     options:
       - "To restart play after infringements"
       - "To score points"
-      - "To change possession"
-      - "To stop the game"
+      - "To rest the forwards"
+      - "To let the referee reset the game"
     answers: ["To restart play after infringements"]
     law_reference: "20"
     tags: ["penalty", "free-kick", "principle"]
-    explanation: "Penalties and free-kicks are awarded to restart play after infringements."
+    law_quote: "Penalties and free-kicks are awarded to restart play after infringements."
+    explanation: "The graduated sanction ladder: free-kick for technical offences, penalty for more serious ones - with the scrum and lineout options attached."
     contributor: null
 
   - id: L20-002
-    text: "How close to the try line can the mark for a penalty be?"
+    text: "How close to the try line may the mark for a penalty or free-kick be?"
     type: factual
     difficulty: intermediate
     options:
-      - "No closer than 5 metres"
-      - "No closer than 10 metres"
-      - "On the try line"
+      - "No closer than five metres"
+      - "No closer than ten metres"
+      - "Right up to the try line"
       - "No closer than the 22"
-    answers: ["No closer than 5 metres"]
+    answers: ["No closer than five metres"]
     law_reference: "20.1"
-    tags: ["penalty", "location"]
-    explanation: "Law 20.1: The mark for a penalty or free-kick must be no closer than 5 metres from the try line."
+    tags: ["penalty", "free-kick"]
+    law_quote: "The mark for a penalty or free-kick must be in the field of play and be no closer than five metres from the try line."
+    explanation: "Both directions - an attacking penalty near the line comes back to 5m out; a defending one moves off the line too."
     contributor: null
 
   - id: L20-003
-    text: "An infringement occurs in in-goal. Where is the penalty taken?"
+    text: "Blue infringe in their own in-goal. Where is Red's penalty?"
     type: factual
     difficulty: intermediate
     options:
-      - "5 metres from the try line, in line with the infringement"
+      - "In the field of play, five metres from the try line, in line with the infringement"
       - "On the try line"
-      - "In the in-goal area"
+      - "Where the offence happened, in in-goal"
       - "At the 22-metre line"
-    answers: ["5 metres from the try line, in line with the infringement"]
+    answers: ["In the field of play, five metres from the try line, in line with the infringement"]
     law_reference: "20.1"
-    tags: ["penalty", "in-goal", "location"]
-    explanation: "Law 20.1: Any infringement in in-goal or within 5 metres of try line - penalty is 5m from try line, in line with infringement."
+    tags: ["penalty", "in-goal"]
+    law_quote: "Any infringement in in-goal or within five metres of a try line: In the field of play, five metres from the try line, in line with the place of infringement."
+    explanation: "Penalties are never taken in in-goal - they come out to the 5m line. (If the foul play prevented a probable try, a penalty try is the answer instead.)"
     contributor: null
 
   - id: L20-004
-    text: "A team commits a subsequent infringement after a penalty is awarded but before it is taken. What happens?"
-    type: factual
+    text: "After you award Red a penalty, a Blue player disputes the decision. What happens to the mark?"
+    type: sanction
     difficulty: advanced
     options:
-      - "The mark is advanced 10 metres"
-      - "Yellow card is given"
-      - "Another penalty is awarded at the new location"
-      - "The referee warns the captain"
-    answers: ["The mark is advanced 10 metres"]
+      - "It advances 10 metres from the original mark"
+      - "Nothing - dissent only matters once play restarts"
+      - "The penalty becomes a penalty try"
+      - "A separate second penalty is played after the first"
+    answers: ["It advances 10 metres from the original mark"]
     law_reference: "20.1"
-    tags: ["penalty", "10-metre-advance"]
-    explanation: "Law 20.1: Any subsequent infringement by the offending team advances the mark 10 metres."
+    tags: ["penalty", "sanction"]
+    law_quote: "Any subsequent infringement by the original offending team after the first penalty or free-kick is awarded but before it is taken: Advanced 10 metres from the original mark."
+    explanation: "Any follow-up offence marches the mark - dissent, throwing the ball away, slow retreat. Ten metres can turn a halfway penalty into three points."
     contributor: null
 
   - id: L20-005
-    text: "A team is awarded a penalty. What option can they choose instead?"
+    text: "What may a team awarded a penalty choose instead of kicking?"
     type: factual
     difficulty: beginner
     options:
       - "A scrum"
       - "A drop-out"
-      - "A free-kick"
-      - "No other option"
+      - "A lineout anywhere on the field"
+      - "Nothing - a penalty must be kicked"
     answers: ["A scrum"]
     law_reference: "20.3"
-    tags: ["penalty", "options"]
-    explanation: "Law 20.3: A team awarded a penalty may instead choose a scrum."
+    tags: ["penalty"]
+    law_quote: "A team awarded a penalty may instead choose a scrum."
+    explanation: "The full penalty menu: kick at goal, kick to touch (keeping the throw), tap, or scrum."
     contributor: null
 
   - id: L20-006
-    text: "A penalty is awarded at a lineout. What extra options does the team have?"
+    text: "Red are awarded a PENALTY at a lineout. What are their set-piece options?"
     type: factual
     difficulty: intermediate
     options:
-      - "A lineout or scrum at the same mark"
-      - "Only a lineout"
-      - "A quick throw"
-      - "A drop-out"
-    answers: ["A lineout or scrum at the same mark"]
+      - "A lineout or a scrum at the same mark"
+      - "A scrum only"
+      - "A lineout only"
+      - "A quick throw only"
+    answers: ["A lineout or a scrum at the same mark"]
     law_reference: "20.4a"
-    tags: ["penalty", "lineout", "options"]
-    explanation: "Law 20.4a: A team awarded a penalty at a lineout may instead choose a lineout or a scrum at the same mark."
+    tags: ["penalty", "lineout"]
+    law_quote: "A team awarded: a penalty at a lineout may instead choose a lineout or a scrum at the same mark. A free-kick at a lineout may instead choose a lineout at the same mark."
+    explanation: "A FREE-KICK at a lineout offers only the lineout option - no scrum. The extra scrum choice is the penalty's privilege."
     contributor: null
 
   - id: L20-007
-    text: "Must a penalty or free-kick be taken without delay?"
+    text: "How quickly must a penalty or free-kick be taken?"
     type: factual
     difficulty: beginner
     options:
-      - "Yes"
-      - "No, they have 60 seconds"
-      - "No, they have 30 seconds"
-      - "Only for penalties"
-    answers: ["Yes"]
+      - "Without delay"
+      - "Within 60 seconds"
+      - "Within 90 seconds"
+      - "Whenever the kicker is ready"
+    answers: ["Without delay"]
     law_reference: "20.5"
-    tags: ["penalty", "free-kick", "delay"]
-    explanation: "Law 20.5: A penalty or free-kick must be taken without delay."
+    tags: ["penalty", "free-kick"]
+    law_quote: "A penalty or free-kick must be taken without delay."
+    explanation: "The 60-second clocks apply once a kick AT GOAL is indicated (Law 8.21) - otherwise, without delay."
     contributor: null
 
   - id: L20-008
-    text: "Who can take a penalty or free-kick?"
+    text: "Who may take a penalty or free-kick?"
     type: factual
     difficulty: beginner
     options:
-      - "Any player from the non-offending team"
-      - "Only the captain"
-      - "Only the kicker"
-      - "Only the scrum-half"
-    answers: ["Any player from the non-offending team"]
+      - "Any player of the non-offending team - except a free-kick for a mark, which the catcher takes"
+      - "Only the captain or designated kicker"
+      - "Only the scrum-half or fly-half"
+      - "Only the player who was fouled"
+    answers: ["Any player of the non-offending team - except a free-kick for a mark, which the catcher takes"]
     law_reference: "20.6"
-    tags: ["penalty", "free-kick", "who"]
-    explanation: "Law 20.6: Any player from the non-offending team may take it, except for a free-kick after a mark."
+    tags: ["penalty", "free-kick"]
+    law_quote: "Any player from the non-offending team may take it, other than for a free-kick awarded for a mark."
+    explanation: "The mark is personal to the catcher (Law 17.5) - everything else, anyone may take."
     contributor: null
 
   - id: L20-009
-    text: "What types of kick can be used at a penalty (not for touch)?"
+    text: "What kicks may be used to take a penalty (other than for touch)?"
     type: factual
     difficulty: intermediate
     options:
-      - "Punt, drop-kick, or place-kick"
-      - "Drop-kick only"
+      - "Punt, drop-kick or place-kick"
       - "Place-kick only"
-      - "Any kick"
-    answers: ["Punt, drop-kick, or place-kick"]
+      - "Drop-kick only"
+      - "Tap only"
+    answers: ["Punt, drop-kick or place-kick"]
     law_reference: "20.8"
-    tags: ["penalty", "kick-type"]
-    explanation: "Law 20.8: The kicker may punt, drop-kick or place-kick (other than for touch) the ball."
+    tags: ["penalty", "kick"]
+    law_quote: "The kicker may punt, drop-kick or place-kick (other than for touch) the ball."
+    explanation: "The exclusion: you cannot PLACE-kick to touch from a penalty. Punt or drop-kick finds the corner."
     contributor: null
 
   - id: L20-010
-    text: "Where must the kicker's team-mates be when a penalty is taken?"
+    text: "At a penalty, where must the kicker's team-mates be?"
     type: factual
     difficulty: intermediate
     options:
-      - "Behind the ball"
-      - "Behind the kicker"
-      - "Within 10 metres of the ball"
-      - "Anywhere on the field"
-    answers: ["Behind the ball"]
+      - "Behind the ball until it is kicked (except a placer at a place-kick)"
+      - "Behind the kicker's original mark"
+      - "Within 5 metres of the kicker"
+      - "Anywhere onside of the last ruck"
+    answers: ["Behind the ball until it is kicked (except a placer at a place-kick)"]
     law_reference: "20.10"
-    tags: ["penalty", "team-mates", "position"]
-    explanation: "Law 20.10: Other than the placer at a place-kick, the kicker's team must remain behind the ball."
+    tags: ["penalty"]
+    law_quote: "Other than the placer at a place-kick, the kicker's team must remain behind the ball until it has been kicked."
+    explanation: null
     contributor: null
 
   - id: L20-011
-    text: "The ball is not kicked a visible distance at a penalty. What is the sanction?"
+    text: "At a quick tap, the ball barely moves and never clearly leaves the kicker's hands. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Scrum"
-      - "Penalty to opposition"
-      - "Retake the kick"
-      - "Play on"
-    answers: ["Scrum"]
+      - "Scrum to the opposition"
+      - "Penalty retaken"
+      - "Play on - close enough"
+      - "Free-kick to the opposition"
+    answers: ["Scrum to the opposition"]
     law_reference: "20.11"
-    tags: ["penalty", "distance", "sanction"]
-    explanation: "Law 20.11: The ball must be kicked a visible distance. Sanction: Scrum."
+    tags: ["penalty", "sanction"]
+    law_quote: "The ball must be kicked a visible distance. If the kicker is holding it, it must clearly leave the hands. If it is on the ground, it must clearly leave the mark. Once the kick has been successfully taken the kicker may play the ball again. Sanction: Scrum."
+    explanation: "Visible distance is the test - and once properly taken, the kicker may immediately regather and go."
     contributor: null
 
   - id: L20-012
-    text: "How far must the opposing team retreat when a penalty is awarded?"
+    text: "When Red are awarded a penalty, what must Blue immediately do?"
     type: factual
     difficulty: beginner
     options:
-      - "10 metres towards their own try line"
-      - "5 metres"
-      - "Behind the offside line"
-      - "To the half-way line"
-    answers: ["10 metres towards their own try line"]
+      - "Retreat 10 metres towards their own try line (or to the try line if closer)"
+      - "Stand still where they are"
+      - "Retreat 5 metres"
+      - "Retire behind the ball"
+    answers: ["Retreat 10 metres towards their own try line (or to the try line if closer)"]
     law_reference: "20.12"
-    tags: ["penalty", "opposition", "retreat"]
-    explanation: "Law 20.12: The opposing team must immediately retreat 10 metres towards their own try line."
+    tags: ["penalty"]
+    law_quote: "When a penalty or free-kick is awarded, the opposing team must immediately retreat 10 metres towards their own try line or until they have reached their try line if that is closer."
+    explanation: null
     contributor: null
 
   - id: L20-013
-    text: "The opposing team is still retreating when the penalty is taken quickly. What happens?"
+    text: "Red tap quickly while Blue players are still inside 10 metres. What must those Blue players do?"
     type: factual
     difficulty: intermediate
     options:
-      - "They must keep retreating and cannot take part until 10m away"
-      - "They can play immediately"
-      - "Penalty is retaken"
-      - "Free-kick to the kicking team"
-    answers: ["They must keep retreating and cannot take part until 10m away"]
+      - "Keep retreating the full distance - they may not take part until they have"
+      - "Freeze where they are"
+      - "They may tackle immediately once the tap is taken"
+      - "Walk backwards only if the referee tells them"
+    answers: ["Keep retreating the full distance - they may not take part until they have"]
     law_reference: "20.13"
-    tags: ["penalty", "quick-tap", "retreat"]
-    explanation: "Law 20.13: Even if taken quickly, opposing players must keep retreating and cannot take part until 10m away."
+    tags: ["penalty"]
+    law_quote: "Even if the penalty or free-kick is taken quickly and the kicker's team is playing the ball, opposing players must keep retreating the necessary distance. They may not take part in the game until they have done so."
+    explanation: "A retreating player who intercepts a pass before making 10 metres is a penalty - advanced 10m from the original mark."
     contributor: null
 
   - id: L20-014
-    text: "A player intentionally throws the ball out of reach to delay a penalty. What is the sanction?"
+    text: "A Blue player deliberately boots the ball away after you award Red a penalty. What do you award?"
     type: sanction
     difficulty: intermediate
     options:
-      - "Second penalty 10 metres in front"
-      - "Yellow card only"
-      - "Free-kick"
-      - "Warning"
-    answers: ["Second penalty 10 metres in front"]
+      - "A second penalty, 10 metres in front of the original mark"
+      - "A yellow card, same mark"
+      - "A free-kick 10 metres on"
+      - "Nothing - manage it verbally"
+    answers: ["A second penalty, 10 metres in front of the original mark"]
     law_reference: "20.15"
-    tags: ["penalty", "delay", "sanction"]
-    explanation: "Law 20.15: Delaying the kick by throwing ball away results in second penalty 10m in front."
+    tags: ["penalty", "sanction"]
+    law_quote: "The opposing team may not do anything to delay the kick or obstruct the kicker, including intentionally taking, throwing or kicking the ball out of reach of the team awarded the penalty. Sanction: Second penalty or free-kick, 10 metres in front of the original mark."
+    explanation: "The second kick may not be taken before you have made the new mark. Persistent cynical delays also invite a card."
     contributor: null
 
   - id: L20-015
-    text: "At a free-kick, when can the opposing team charge?"
+    text: "At a FREE-KICK, when may the opposing team charge?"
     type: factual
     difficulty: intermediate
     options:
       - "As soon as the kicker initiates movement to kick"
-      - "When the ball is kicked"
-      - "They cannot charge"
-      - "When the referee signals"
+      - "Never"
+      - "Once the ball has been kicked"
+      - "After the referee's signal"
     answers: ["As soon as the kicker initiates movement to kick"]
     law_reference: "20.16"
-    tags: ["free-kick", "charge"]
-    explanation: "Law 20.16: As soon as the kicker initiates movement to kick, the opposing team may charge."
+    tags: ["free-kick"]
+    law_quote: "As soon as the kicker initiates movement to kick, the opposing team may charge and try to prevent the free-kick being taken by tackling the kicker or to block the kick."
+    explanation: "The big penalty/free-kick difference - free-kicks can be charged down; penalties cannot."
     contributor: null
 
   - id: L20-016
-    text: "Can the opposing team charge at a penalty?"
+    text: "May the opposing team charge a PENALTY kick?"
     type: factual
     difficulty: beginner
     options:
-      - "No"
-      - "Yes, always"
-      - "Only if they are 10 metres away"
-      - "Only for a kick at goal"
-    answers: ["No"]
+      - "No - at a penalty the opposition must retreat and may not charge"
+      - "Yes, once the kicker moves"
+      - "Yes, but only a tap"
+      - "Only inside their own 22"
+    answers: ["No - at a penalty the opposition must retreat and may not charge"]
     law_reference: "20.16"
-    tags: ["penalty", "charge"]
-    explanation: "Law 20.16 applies to free-kicks. At a penalty, the opposition must retreat and cannot charge."
+    tags: ["penalty"]
+    law_quote: "[At a free-kick] As soon as the kicker initiates movement to kick, the opposing team may charge... [No equivalent right exists at a penalty - the opposing team must retreat 10 metres.]"
+    explanation: "Charging rights are the free-kick's alone. At a penalty kick at goal, defenders must stand still, hands by their sides (Law 8.22)."
     contributor: null
 
   - id: L20-017
-    text: "The opposition fairly charges and prevents a free-kick being taken. What happens?"
-    type: factual
+    text: "Blue charge a Red free-kick fairly and block it before it can be taken. What do you award?"
+    type: sanction
     difficulty: advanced
     options:
-      - "Scrum with the opposing team throwing in"
-      - "Free-kick is retaken"
-      - "Penalty to the kicking team"
-      - "Play continues"
-    answers: ["Scrum with the opposing team throwing in"]
+      - "Scrum at the mark, Blue throwing in"
+      - "The free-kick is retaken"
+      - "Penalty to Red"
+      - "Scrum at the mark, Red throwing in"
+    answers: ["Scrum at the mark, Blue throwing in"]
     law_reference: "20.17"
-    tags: ["free-kick", "charge", "scrum"]
-    explanation: "Law 20.17: If opposition fairly charges and prevents the free-kick, scrum is awarded to the opposing team."
+    tags: ["free-kick", "sanction"]
+    law_quote: "If the opposing team charge fairly and prevent the free-kick being taken, the kick is disallowed. Play restarts with a scrum at the mark with the opposing team throwing in."
+    explanation: "A successful fair charge wins the put-in - a real turnover reward for alert defence."
     contributor: null
 
   - id: L20-018
-    text: "A free-kick is awarded at a lineout. What option does the team have?"
+    text: "Red are awarded a FREE-KICK at a lineout. What is their set-piece option?"
     type: factual
     difficulty: intermediate
     options:
-      - "A lineout at the same mark"
-      - "A scrum at the same mark"
-      - "A penalty kick"
-      - "A quick throw"
-    answers: ["A lineout at the same mark"]
+      - "A lineout at the same mark (no scrum option)"
+      - "A lineout or a scrum"
+      - "A scrum only"
+      - "No option - the free-kick must be tapped"
+    answers: ["A lineout at the same mark (no scrum option)"]
     law_reference: "20.4b"
-    tags: ["free-kick", "lineout", "options"]
-    explanation: "Law 20.4b: A team awarded a free-kick at a lineout may instead choose a lineout at the same mark."
+    tags: ["free-kick", "lineout"]
+    law_quote: "A team awarded: a free-kick at a lineout may instead choose a lineout at the same mark."
+    explanation: null
     contributor: null
 
   - id: L20-019
-    text: "An infringement occurs at a lineout. Where is the penalty taken?"
+    text: "Blue infringe in a lineout. Where is Red's penalty marked?"
     type: factual
     difficulty: intermediate
     options:
-      - "15 metres from the touchline on the mark of touch"
-      - "At the mark of touch"
-      - "5 metres from the touchline"
-      - "Where the infringement occurred"
-    answers: ["15 metres from the touchline on the mark of touch"]
+      - "15 metres from the touchline, on the mark of touch"
+      - "Where the offence occurred in the lineout"
+      - "5 metres in from touch"
+      - "At the front of the lineout"
+    answers: ["15 metres from the touchline, on the mark of touch"]
     law_reference: "20.1"
-    tags: ["penalty", "lineout", "location"]
-    explanation: "Law 20.1: Any infringement in a lineout - penalty is 15 metres from the touchline on the mark of touch."
+    tags: ["penalty", "lineout"]
+    law_quote: "Any infringement in a lineout: 15 metres from the touchline on the mark of touch."
+    explanation: "Always 15m in - giving the kicker a workable angle regardless of where in the lineout the offence happened."
     contributor: null
 
   - id: L20-020
-    text: "A penalty is taken at the wrong place. What happens?"
-    type: factual
+    text: "A penalty is taken from the wrong place. What happens?"
+    type: sanction
     difficulty: intermediate
     options:
-      - "It must be re-taken at the correct place"
-      - "Play continues"
-      - "Scrum to opposition"
-      - "Free-kick to opposition"
-    answers: ["It must be re-taken at the correct place"]
+      - "It must be retaken from the correct mark"
+      - "Play on if no advantage accrued"
+      - "Scrum to the opposition"
+      - "The penalty is reversed"
+    answers: ["It must be retaken from the correct mark"]
     law_reference: "20.2"
-    tags: ["penalty", "location", "retake"]
-    explanation: "Law 20.2: When a penalty or free-kick is taken at the wrong place, it must be re-taken."
+    tags: ["penalty", "sanction"]
+    law_quote: "When a penalty or free-kick is taken at the wrong place, it must be re-taken."
+    explanation: "And remember - no advantage can be played on an incorrectly taken penalty or free-kick (Law 7.3e); whistle immediately."
     contributor: null
 
   - id: L20-021
-    text: "Can a player take a penalty from behind the mark?"
+    text: "From where may the kicker actually take the penalty?"
     type: factual
     difficulty: intermediate
     options:
-      - "Yes, anywhere behind on a line through the mark parallel to touchlines"
-      - "No, only at the mark"
-      - "Only within 5 metres"
-      - "Only for penalty kicks at goal"
-    answers: ["Yes, anywhere behind on a line through the mark parallel to touchlines"]
+      - "At the mark, or anywhere behind it on a line through the mark parallel to the touchlines"
+      - "Only exactly at the mark"
+      - "Anywhere within 5 metres of the mark"
+      - "Anywhere behind the mark, at any angle"
+    answers: ["At the mark, or anywhere behind it on a line through the mark parallel to the touchlines"]
     law_reference: "20.2"
-    tags: ["penalty", "location"]
-    explanation: "Law 20.2: Penalty is taken at the mark or anywhere behind it on a line through the mark parallel to touchlines."
+    tags: ["penalty"]
+    law_quote: "A penalty or free-kick is taken from where it is awarded or anywhere behind it on a line through the mark and parallel to the touchlines."
+    explanation: "Straight back only - the kicker can retreat for a better angle at goal but cannot walk sideways."
     contributor: null
 
   - id: L20-022
-    text: "Offside at a phase of play. Where is the penalty awarded?"
+    text: "Blue are offside at a phase of play. Where is Red's penalty marked?"
     type: factual
     difficulty: advanced
     options:
-      - "At the offending team's offside line"
-      - "Where the player was standing"
-      - "Where the ball was"
-      - "10 metres behind the offside line"
-    answers: ["At the offending team's offside line"]
+      - "At Blue's offside line"
+      - "Where the offside player stood"
+      - "Where the ball was at the time"
+      - "10 metres behind the offence"
+    answers: ["At Blue's offside line"]
     law_reference: "20.1"
-    tags: ["penalty", "offside", "location"]
-    explanation: "Law 20.1: Offside at a phase of play - penalty at the offending team's offside line."
+    tags: ["penalty", "offside"]
+    law_quote: "Offside at a phase of play: At the offending team's offside line."
+    explanation: "The mark is the LINE they should have been behind, not where the offender stood - often a material difference near the ruck."
     contributor: null
 
   - id: L20-023
-    text: "A late charge on the kicker in open play. Where can the penalty be taken?"
-    type: factual
+    text: "Red 10 is charged late after kicking. What is the penalty placement menu?"
+    type: sanction
     difficulty: advanced
     options:
-      - "At place of infringement, where ball landed, or where ball was next played"
-      - "Only at place of infringement"
-      - "Only where ball landed"
-      - "At the 22-metre line"
-    answers: ["At place of infringement, where ball landed, or where ball was next played"]
+      - "Red choose: the place of the offence, where the ball landed, or where it was next played"
+      - "Only the place of the offence"
+      - "Always where the ball landed"
+      - "Half-way between offence and landing"
+    answers: ["Red choose: the place of the offence, where the ball landed, or where it was next played"]
     law_reference: "20.1"
-    tags: ["penalty", "late-tackle", "kicker", "location"]
-    explanation: "Law 20.1: Late charge on kicker - penalty at place of infringement, where ball landed, or where next played."
+    tags: ["penalty", "late-tackle"]
+    law_quote: "Late charging the kicker: The opposition chooses either at the place of the infringement, where the ball landed or where the ball was next played."
+    explanation: "Plus the special cases - ball into touch: 15m line in line with where it went out; into in-goal or dead: 5m from the try line, at least 15m in (Law 20.1 table; see also Law 9.25)."
     contributor: null
 
   - id: L20-024
-    text: "Which ball must the kicker use for a penalty?"
+    text: "Which ball must be used to take a penalty?"
     type: factual
     difficulty: intermediate
     options:
-      - "The ball that was in play, unless defective"
-      - "Any ball"
-      - "A new ball"
-      - "The referee's choice"
-    answers: ["The ball that was in play, unless defective"]
+      - "The ball that was in play, unless the referee decides it is defective"
+      - "Any ball the kicker prefers"
+      - "A fresh ball from the ball boys"
+      - "The captain's choice of ball"
+    answers: ["The ball that was in play, unless the referee decides it is defective"]
     law_reference: "20.7"
-    tags: ["penalty", "ball"]
-    explanation: "Law 20.7: The kicker must use the ball that was in play unless the referee decides it is defective."
+    tags: ["penalty"]
+    law_quote: "The kicker must use the ball that was in play unless the referee decides it is defective."
+    explanation: "Watch for the swap to a fresh, dry ball for the shot at goal - not allowed unless the match ball is defective."
     contributor: null
 
   - id: L20-025
-    text: "A penalty is taken quickly before opponents have a chance to retreat. Are they penalised?"
+    text: "Red tap so fast that nearby Blue players genuinely had no chance to retreat. Are those Blue players sanctioned?"
     type: factual
     difficulty: advanced
     options:
-      - "No, but they cannot take part until they have retreated 10 metres"
-      - "Yes, penalty 10 metres forward"
-      - "No, and they can play immediately"
-      - "Yes, free-kick"
-    answers: ["No, but they cannot take part until they have retreated 10 metres"]
+      - "No - but they may not take part until they retreat 10m, or an onside team-mate overtakes them"
+      - "Yes - automatic penalty 10m on"
+      - "No, and they may play immediately"
+      - "Yes - free-kick against them"
+    answers: ["No - but they may not take part until they retreat 10m, or an onside team-mate overtakes them"]
     law_reference: "20.14"
-    tags: ["penalty", "quick-tap", "offside"]
-    explanation: "Law 20.14: If taken quickly and opponents had no opportunity to retreat, they are not sanctioned but cannot take part until 10m away."
+    tags: ["penalty"]
+    law_quote: "If it is taken so quickly that opponents have no opportunity to retreat, they will not be sanctioned for this. However, they may not take part in the game until they have retreated 10 metres from the mark or until a team-mate who was 10 metres from the mark has moved in front of them."
+    explanation: "The team-mate route back onside is the detail most refs miss - a retreating team-mate coming from an onside position puts them back in the game."
+    contributor: null
+
+  - id: L20-026
+    text: "An offence occurs while the ball is DEAD, where play would have restarted with a lineout 8 metres in from touch. Where is the penalty marked?"
+    type: sanction
+    difficulty: advanced
+    options:
+      - "On the 15-metre line, in line with where play would have restarted"
+      - "Where play would have restarted, 8m in"
+      - "At the place of the offence"
+      - "Centre of the field on the restart line"
+    answers: ["On the 15-metre line, in line with where play would have restarted"]
+    law_reference: "20.1"
+    tags: ["penalty"]
+    law_quote: "While the ball is dead: At the point where play would have restarted or, if that place is on the touchline or within 15 metres of it, the mark is on the 15-metre line, in line with that place."
+    explanation: "Dead-ball flashpoints (Law 9.6) restart where play would have - pulled to the 15m line when that spot is too close to touch. If the restart would have been a drop-out, the non-offending team picks anywhere on the sanction line."
     contributor: null

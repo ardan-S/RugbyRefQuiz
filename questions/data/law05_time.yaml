@@ -4,51 +4,62 @@ metadata:
   source: World Rugby Laws 2026
 questions:
 - id: L05-001
-  text: How long does a match last?
+  text: What is the maximum duration of a standard match?
   type: factual
-  difficulty: intermediate
+  difficulty: beginner
   options:
-  - 80 minutes
-  - 90 minutes
-  - 70 minutes
-  - 60 minutes
+  - 80 minutes plus time lost
+  - 90 minutes plus time lost
+  - 70 minutes plus time lost
+  - 80 minutes including time lost
   answers:
-  - 80 minutes
-  law_reference: '5'
-  tags: []
-  explanation: null
+  - 80 minutes plus time lost
+  law_reference: '5.1'
+  tags:
+  - time
+  law_quote: A match lasts no longer than 80 minutes (split into two halves, each
+    of not more than 40 minutes plus time lost), unless the match organiser has authorised
+    the playing of extra-time in a drawn match within a knock-out competition.
+  explanation: Extra-time is only possible where the match organiser has authorised
+    it for a drawn knock-out match.
   contributor: null
 - id: L05-002
-  text: How long can each half last?
+  text: What is the maximum length of each half?
   type: factual
-  difficulty: intermediate
+  difficulty: beginner
   options:
-  - 30 minutes
-  - 35 minutes
-  - 40 minutes
-  - 45 minutes
+  - 40 minutes plus time lost
+  - 45 minutes plus time lost
+  - 35 minutes plus time lost
+  - 40 minutes including time lost
   answers:
-  - 40 minutes
-  law_reference: '5'
-  tags: []
+  - 40 minutes plus time lost
+  law_reference: '5.1'
+  tags:
+  - time
+  law_quote: A match lasts no longer than 80 minutes (split into two halves, each
+    of not more than 40 minutes plus time lost)...
   explanation: null
   contributor: null
 - id: L05-003
-  text: What is the maximum duration for half-time?
+  text: What is the maximum duration of the half-time interval?
   type: factual
-  difficulty: intermediate
+  difficulty: beginner
   options:
+  - 15 minutes
   - 10 minutes
   - 12 minutes
-  - 15 minutes
   - 20 minutes
   answers:
   - 15 minutes
-  law_reference: '5'
+  law_reference: '5.2'
   tags:
   - time
   - half-time
-  explanation: null
+  law_quote: Half-time consists of an interval not exceeding 15 minutes as decided
+    by the match organiser. During this time, the teams and match officials may leave
+    the playing enclosure.
+  explanation: The match organiser sets the actual length within the 15-minute cap.
   contributor: null
 - id: L05-004
   text: Who decides the length of the half-time interval?
@@ -56,242 +67,243 @@ questions:
   difficulty: intermediate
   options:
   - The match organiser
-  - The governing body
   - The referee
+  - The two captains
   - World Rugby
   answers:
   - The match organiser
-  law_reference: '5'
+  law_reference: '5.2'
   tags:
-  - time
   - half-time
+  law_quote: Half-time consists of an interval not exceeding 15 minutes as decided
+    by the match organiser.
   explanation: null
   contributor: null
 - id: L05-005
-  text: In non-international matches, who can decide to reduce the length of the match?
-  type: factual
+  text: In a non-international match, nobody has decided the match length in advance
+    and the teams cannot agree. Who decides?
+  type: procedural
   difficulty: intermediate
   options:
-  - The match organiser
-  - The governing body
   - The referee
-  - World Rugby
+  - The match organiser must be contacted
+  - The home team
+  - The match cannot go ahead
   answers:
-  - The match organiser
-  law_reference: '5'
-  tags: []
-  explanation: null
-  contributor: null
-- id: L05-006
-  text: |-
-    If the match organiser does not decide the length of a non-international match, who agrees on the length?
-  type: factual
-  difficulty: intermediate
-  options:
-  - The captains
-  - The coaches
-  - The referees
-  - The spectators
-  answers:
-  - The captains
-  law_reference: '5'
-  tags: []
-  explanation: null
+  - The referee
+  law_reference: '5.3'
+  tags:
+  - referee
+  - time
+  law_quote: In non-international matches, the match organiser may decide to reduce
+    the length of a match. If the match organiser does not decide, the teams agree
+    on the length of a match. If they cannot agree, the referee decides.
+  explanation: 'The order is: match organiser, then the teams by agreement, then
+    the referee as the backstop.'
   contributor: null
 - id: L05-007
   text: Who keeps the time during a match?
   type: factual
-  difficulty: intermediate
-  options:
-  - The match organiser
-  - The referee
-  - The assistant referees
-  - The timekeeper
-  answers:
-  - The referee
-  law_reference: '5'
-  tags:
-  - time
-  explanation: null
-  contributor: null
-- id: L05-008
-  text: |-
-    True or false: the referee can delegate timekeeping duties to an official timekeeper.
-  type: factual
   difficulty: beginner
   options:
-  - 'True'
-  - 'False'
+  - The referee, who may delegate to assistant referees and/or an official time-keeper
+  - The official time-keeper always
+  - The assistant referees
+  - The fourth official
   answers:
-  - 'True'
-  law_reference: '5'
+  - The referee, who may delegate to assistant referees and/or an official time-keeper
+  law_reference: '5.4'
   tags:
   - referee
   - time
-  explanation: null
+  law_quote: The referee keeps the time but may delegate the duty to either or both
+    assistant referees and/or an official time-keeper, in which case the referee
+    signals to them any stoppage.
+  explanation: Even when delegated, stoppages are signalled by the referee - the
+    whistle arm is part of your timekeeping.
   contributor: null
 - id: L05-009
-  text: Who may the referee consult if there is doubt about the correct time?
-  type: factual
-  difficulty: intermediate
+  text: There is no official time-keeper and you are in doubt about the correct time.
+    Who do you consult?
+  type: procedural
+  difficulty: advanced
   options:
-  - The captains
-  - The coaches
-  - The assistant referees and official timekeeper
-  - The spectators
+  - The assistant referees; others only if the assistants cannot help
+  - Anyone nearby with a watch
+  - The two captains jointly
+  - The match organiser
   answers:
-  - The assistant referees and official timekeeper
-  law_reference: '5'
+  - The assistant referees; others only if the assistants cannot help
+  law_reference: '5.4'
   tags:
   - referee
   - time
-  explanation: null
+  law_quote: In matches without an official time-keeper, if the referee is in doubt
+    as to the correct time, the referee consults either or both the assistant referees
+    and may consult others but only if the assistant referees cannot help.
+  explanation: There is a strict order - your assistants first, anyone else only
+    as a last resort.
   contributor: null
 - id: L05-010
-  text: How long may the referee allow for a player injury?
+  text: How long may you allow for a player injury before play resumes?
   type: factual
   difficulty: intermediate
   options:
+  - Up to 1 minute, with discretion for longer if the injury is serious
+  - Up to 2 minutes in all cases
   - Up to 30 seconds
-  - Up to 1 minute
-  - Up to 2 minutes
-  - Up to 5 minutes
+  - As long as the medical staff request
   answers:
-  - Up to 1 minute
-  law_reference: '5'
+  - Up to 1 minute, with discretion for longer if the injury is serious
+  law_reference: 5.5a
   tags:
   - injury
   - referee
-  explanation: null
+  - time
+  law_quote: Player injury for up to one minute. If a player is seriously injured,
+    the referee has the discretion to allow more than one minute for that player
+    to be removed from the playing area.
+  explanation: Serious injury always overrides the clock - never rush a genuinely
+    hurt player off the field.
   contributor: null
-- id: L05-011
-  text: What can the referee do if a player is seriously injured?
+- id: L05-012
+  text: The ball is dead. Which of these is NOT a reason for the referee to allow
+    time?
   type: factual
   difficulty: intermediate
   options:
-  - Stop the match permanently
-  - Call for a stretcher
-  - Allow more than one minute for the player to be removed
-  - Continue the match
-  answers:
-  - Allow more than one minute for the player to be removed
-  law_reference: '5'
-  tags:
-  - referee
-  explanation: null
-  contributor: null
-- id: L05-012
-  text: |-
-    What are the situations in which the referee may allow time once the ball is dead?
-  type: scenario
-  difficulty: intermediate
-  options:
+  - A team huddle to discuss tactics
   - Replacement of players
   - Replacing or repairing players' clothing
   - Re-tying a boot-lace
-  - Retrieving the ball
-  - All of the above
   answers:
-  - All of the above
-  law_reference: '5'
+  - A team huddle to discuss tactics
+  law_reference: '5.6'
   tags:
-  - referee
   - time
-  explanation: null
+  law_quote: 'Once the ball is already dead, the referee may allow time for: replacement
+    of players; replacing or repairing players'' clothing; re-tying a boot-lace;
+    retrieving the ball.'
+  explanation: The four listed reasons are practical necessities. Tactical delays
+    are managed, not accommodated.
   contributor: null
 - id: L05-013
-  text: When does a half end after time has expired?
+  text: Time has expired at the end of a half. When does the half actually end?
   type: factual
   difficulty: intermediate
   options:
-  - When the ball goes out of play
-  - When the referee blows the whistle
-  - When the ball becomes dead
-  - When a try is scored
+  - When the ball next becomes dead (subject to the exceptions in Law 5.7)
+  - Immediately, wherever the ball is
+  - At the next tackle
+  - When the referee's watch beeps
   answers:
-  - When the ball becomes dead
-  law_reference: '5'
+  - When the ball next becomes dead (subject to the exceptions in Law 5.7)
+  law_reference: '5.7'
   tags:
   - time
-  explanation: null
+  law_quote: A half ends when the ball becomes dead after time has expired unless...
+  explanation: '"Dead" doesn''t always end it: an incomplete scrum/lineout/restart
+    awarded before time, a penalty or free-kick, a penalty kicked directly to touch,
+    or a try (allowing the conversion) all extend play.'
   contributor: null
 - id: L05-014
-  text: Which of the following does NOT cause the half to end after time has expired?
+  text: Time has expired. Which of the following ends the half when the ball becomes
+    dead?
   type: factual
-  difficulty: intermediate
+  difficulty: advanced
   options:
-  - A scrum, lineout or restart kick following a try or touchdown
-  - A penalty kick into touch without the ball first being tapped
+  - A knock-on with no advantage - the resulting scrum was awarded after time expired
+  - A scrum awarded before time expired that has not been completed
+  - The referee awarding a penalty
   - A try being scored
-  - A knock-on
   answers:
-  - A knock-on
-  law_reference: '5'
+  - A knock-on with no advantage - the resulting scrum was awarded after time expired
+  law_reference: '5.7'
   tags:
   - time
-  explanation: null
+  law_quote: 'A half ends when the ball becomes dead after time has expired unless:
+    a scrum, lineout or restart kick following a try or touchdown, awarded before
+    time expired, has not been completed...; the referee awards a free-kick or penalty;
+    ...a try has been scored, in which case the referee allows time for the conversion
+    to be taken.'
+  explanation: The exceptions only protect set-pieces awarded BEFORE time expired.
+    A scrum arising after the clock is done cannot be played - the half is over.
   contributor: null
 - id: L05-015
-  text: 'True or false: a team scoring a try may decline the conversion.'
-  type: factual
-  difficulty: beginner
+  text: How does a team decline a conversion attempt?
+  type: procedural
+  difficulty: intermediate
   options:
-  - 'True'
-  - 'False'
+  - The try scorer says "no kick" to the referee after the try is awarded
+  - The captain signals to the referee
+  - The kicker walks away from the tee
+  - A team may not decline a conversion
   answers:
-  - 'True'
-  law_reference: '5'
+  - The try scorer says "no kick" to the referee after the try is awarded
+  law_reference: 5.8a
   tags:
-  - try
   - conversion
-  explanation: null
+  - try
+  law_quote: The decision to decline the conversion must be relayed by the try scorer
+    to the referee by saying "no kick" after the try is awarded.
+  explanation: It must come from the try scorer specifically. If the conversion
+    is attempted, time runs from the strike on the ball (Law 5.8c).
   contributor: null
 - id: L05-016
-  text: When can the referee allow a water break?
+  text: When may you allow a water break?
   type: factual
   difficulty: intermediate
   options:
-  - At half-time
-  - When a player is injured
-  - When the weather conditions are exceptionally hot and/or humid
-  - Any time during the match
+  - When weather conditions are exceptionally hot and/or humid
+  - Whenever either captain requests one
+  - Every 20 minutes in all matches
+  - Only if the match organiser pre-approves one
   answers:
-  - When the weather conditions are exceptionally hot and/or humid
-  law_reference: '5'
+  - When weather conditions are exceptionally hot and/or humid
+  law_reference: '5.9'
   tags:
-  - referee
   - water-break
-  explanation: null
+  - referee
+  law_quote: When weather conditions are exceptionally hot and/or humid, the referee
+    has the discretion to allow for a water break.
+  explanation: It is the referee's discretion. Take it midway through the half,
+    after a score, or when the ball is dead near the half-way line.
   contributor: null
 - id: L05-017
-  text: How long is the water break?
+  text: How long is a water break?
   type: factual
-  difficulty: intermediate
+  difficulty: advanced
   options:
-  - 30 seconds
-  - 1 minute
   - 2 minutes
+  - 1 minute
+  - 3 minutes
   - 5 minutes
   answers:
-  - 1 minute
-  law_reference: '5'
+  - 2 minutes
+  law_reference: '5.9'
   tags:
   - water-break
+  law_quote: This two-minute break should be taken midway through the half, after
+    a score or when the ball is dead near the half-way line.
   explanation: null
   contributor: null
 - id: L05-018
-  text: What power does the referee have regarding ending or suspending the match?
+  text: You believe conditions have become unsafe to continue. What power do you
+    have?
   type: factual
   difficulty: intermediate
   options:
-  - No power
-  - Only in case of foul play
-  - Only if the match is drawn
-  - To end or suspend the match if it is unsafe to continue
+  - End or suspend the match at any time
+  - Suspend for a maximum of 30 minutes only
+  - Only the match organiser can end a match early
+  - Play must continue unless both captains agree to stop
   answers:
-  - To end or suspend the match if it is unsafe to continue
-  law_reference: '5'
+  - End or suspend the match at any time
+  law_reference: '5.10'
   tags:
   - referee
-  explanation: null
+  law_quote: The referee has the power to end or suspend the match at any time if
+    the referee believes that it would be unsafe to continue.
+  explanation: Safety is entirely the referee's call - lightning, a failing pitch,
+    or crowd trouble all qualify. You never need permission to stop a match.
   contributor: null

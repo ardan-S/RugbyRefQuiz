@@ -1,0 +1,145 @@
+# JSON Schema for Rugby Referee Quiz scenario chains
+# Validates YAML files in questions/scenarios/
+#
+# A chain is one match situation followed by 2-4 linked decisions that mirror
+# the real refereeing sequence (offence? -> advantage or whistle? -> sanction?
+# -> restart?). Chains follow the canonical path: after each step the correct
+# call is shown and the next step continues from that call. A chain scores as
+# a single question and is only correct if every step is answered correctly.
+
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "https://rugbyrefquiz.example.com/schema/scenarios.yaml"
+title: "Rugby Referee Quiz Scenario Chains"
+description: "Schema for validating scenario chain files"
+
+type: object
+required:
+  - metadata
+  - chains
+additionalProperties: false
+
+properties:
+  metadata:
+    type: object
+    required:
+      - title
+    additionalProperties: false
+    properties:
+      title:
+        type: string
+        minLength: 1
+        description: "Human-readable name for this group of chains"
+      source:
+        type: string
+        description: "Source document reference (e.g., 'World Rugby Laws 2026')"
+
+  chains:
+    type: array
+    minItems: 1
+    items:
+      $ref: "#/$defs/chain"
+
+$defs:
+  chain:
+    type: object
+    required:
+      - id
+      - setup
+      - laws
+      - difficulty
+      - steps
+    additionalProperties: false
+    properties:
+      id:
+        type: string
+        pattern: "^CH-[A-Z]{2,4}-\\d{3}$"
+        description: "Unique identifier, e.g. CH-BRK-001 (breakdown), CH-FP-001 (foul play)"
+
+      setup:
+        type: string
+        minLength: 30
+        description: "The match situation, including any context that matters (score, clock, prior warnings)"
+
+      laws:
+        type: array
+        minItems: 1
+        items:
+          type: integer
+          minimum: 1
+          maximum: 21
+        description: "Laws this chain draws on, used for law-based quiz selection"
+
+      difficulty:
+        type: string
+        enum:
+          - beginner
+          - intermediate
+          - advanced
+
+      tags:
+        type: array
+        items:
+          type: string
+          pattern: "^[a-z0-9-]+$"
+          minLength: 2
+        description: "Lowercase hyphenated tags, used for topic matching"
+
+      steps:
+        type: array
+        minItems: 2
+        maxItems: 4
+        items:
+          $ref: "#/$defs/step"
+
+      contributor:
+        type:
+          - string
+          - "null"
+
+  step:
+    type: object
+    required:
+      - text
+      - options
+      - answers
+      - law_reference
+      - law_quote
+    additionalProperties: false
+    properties:
+      text:
+        type: string
+        minLength: 10
+        description: "The decision to make; may carry the story forward from the previous (correct) call"
+
+      options:
+        type: array
+        minItems: 2
+        maxItems: 5
+        items:
+          type: string
+          minLength: 1
+
+      answers:
+        type: array
+        minItems: 1
+        items:
+          type: string
+          minLength: 1
+        description: "Correct answer(s); must be a subset of options"
+
+      law_reference:
+        type: string
+        pattern: "^\\d+(\\.\\d+[a-z]?)*(\\.?[a-z]+)?(-\\d+)?$"
+        description: "Clause-level law reference settling this step, e.g. 14.5a"
+
+      law_quote:
+        type:
+          - string
+          - "null"
+        description: "Verbatim wording from the Laws that settles this step (null only for pure judgment steps)"
+
+      explanation:
+        type:
+          - string
+          - "null"
+        description: "Practical explanation shown after the step is answered"
